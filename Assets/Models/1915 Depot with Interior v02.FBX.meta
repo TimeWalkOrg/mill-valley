@@ -1,0 +1,776 @@
+fileFormatVersion: 2
+guid: 7232fda9b4d812847908436c3656193f
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Box Base
+    100002: Box002
+    100004: Box003
+    100006: Brick Arcade
+    100008: Chimney
+    100010: //RootNode
+    100012: Door Type 1
+    100014: Door Type 2
+    100016: Double Door
+    100018: Fascia
+    100020: Fence
+    100022: Fins
+    100024: Handrail
+    100026: Object001
+    100028: Object002
+    100030: Object003
+    100032: Object004
+    100034: Plane001
+    100036: Plane002
+    100038: Rectangle007
+    100040: Roof
+    100042: Walls_01
+    100044: Walls_02
+    100046: Window Type 1
+    100048: Window Type 2
+    100050: Window Type 3
+    100052: Window Type 4
+    100054: Window Type 5
+    100056: Wood_Frames
+    100058: Chair_Louis_005
+    100060: Chair_Louis_006
+    100062: Defpoints_001
+    100064: Defpoints_003
+    100066: Object005
+    100068: Object006
+    100070: Object120
+    100072: Object122
+    100074: Plane003
+    100076: Stairs
+    100078: Object123
+    100080: Group004
+    100082: Group005
+    100084: Group006
+    100086: Group007
+    100088: Group008
+    100090: Group009
+    100092: Mesh52_005
+    100094: Mesh52_006
+    100096: Mesh52_007
+    100098: Mesh52_008
+    100100: Mesh52_009
+    100102: Mesh52_010
+    100104: Mesh53_005
+    100106: Mesh53_006
+    100108: Mesh53_007
+    100110: Mesh53_008
+    100112: Mesh53_009
+    100114: Mesh53_010
+    100116: Mesh56#1_005
+    100118: Mesh56#1_006
+    100120: Mesh56#1_007
+    100122: Mesh56#1_008
+    100124: Mesh56#1_009
+    100126: Mesh56#1_010
+    100128: Plane004
+    100130: Rectangle008
+    100132: Doors Handle
+    100134: InteriorDoors
+    100136: Walls_003
+    100138: Box Base001
+    100140: Brick Arcade001
+    100142: Wood_Frames001
+    100144: Object124
+    100146: Object125
+    100148: Object127
+    100150: Object128
+    100152: Object131
+    100154: Object132
+    100156: Object135
+    100158: Object136
+    100160: Object133
+    100162: Object134
+    100164: Object138
+    100166: Object140
+    100168: Componente#16_004
+    100170: Object142
+    100172: Object144
+    100174: Object145
+    100176: Object146
+    100178: Plane005
+    100180: Cylinder001
+    100182: Group010
+    100184: Mesh52_011
+    100186: Mesh53_011
+    100188: Mesh56#1_011
+    100190: Object147
+    100192: Rectangle009_Elements014
+    100194: Rectangle009_Elements3
+    100196: Rectangle009_Elements4
+    100198: Rectangle011
+    100200: Rectangle012
+    100202: Antique Sofa_001
+    100204: Box011
+    100206: Component#1_045
+    100208: Defpoints_002
+    100210: Object121
+    100212: Object148
+    100214: Doors Handle001
+    100216: InteriorDoors001
+    100218: Line002
+    100220: Antique Sofa_002
+    100222: Component#1_046
+    100224: Component#1_047
+    100226: Component#1_048
+    100228: Component#1_049
+    100230: Component#1_050
+    100232: Group011
+    100234: Group012
+    100236: Mesh52_012
+    100238: Mesh52_013
+    100240: Mesh53_012
+    100242: Mesh53_013
+    100244: Mesh56#1_012
+    100246: Mesh56#1_013
+    100248: Rectangle009_Elements015
+    100250: Object149
+    400000: Box Base
+    400002: Box002
+    400004: Box003
+    400006: Brick Arcade
+    400008: Chimney
+    400010: //RootNode
+    400012: Door Type 1
+    400014: Door Type 2
+    400016: Double Door
+    400018: Fascia
+    400020: Fence
+    400022: Fins
+    400024: Handrail
+    400026: Object001
+    400028: Object002
+    400030: Object003
+    400032: Object004
+    400034: Plane001
+    400036: Plane002
+    400038: Rectangle007
+    400040: Roof
+    400042: Walls_01
+    400044: Walls_02
+    400046: Window Type 1
+    400048: Window Type 2
+    400050: Window Type 3
+    400052: Window Type 4
+    400054: Window Type 5
+    400056: Wood_Frames
+    400058: Chair_Louis_005
+    400060: Chair_Louis_006
+    400062: Defpoints_001
+    400064: Defpoints_003
+    400066: Object005
+    400068: Object006
+    400070: Object120
+    400072: Object122
+    400074: Plane003
+    400076: Stairs
+    400078: Object123
+    400080: Group004
+    400082: Group005
+    400084: Group006
+    400086: Group007
+    400088: Group008
+    400090: Group009
+    400092: Mesh52_005
+    400094: Mesh52_006
+    400096: Mesh52_007
+    400098: Mesh52_008
+    400100: Mesh52_009
+    400102: Mesh52_010
+    400104: Mesh53_005
+    400106: Mesh53_006
+    400108: Mesh53_007
+    400110: Mesh53_008
+    400112: Mesh53_009
+    400114: Mesh53_010
+    400116: Mesh56#1_005
+    400118: Mesh56#1_006
+    400120: Mesh56#1_007
+    400122: Mesh56#1_008
+    400124: Mesh56#1_009
+    400126: Mesh56#1_010
+    400128: Plane004
+    400130: Rectangle008
+    400132: Doors Handle
+    400134: InteriorDoors
+    400136: Walls_003
+    400138: Box Base001
+    400140: Brick Arcade001
+    400142: Wood_Frames001
+    400144: Object124
+    400146: Object125
+    400148: Object127
+    400150: Object128
+    400152: Object131
+    400154: Object132
+    400156: Object135
+    400158: Object136
+    400160: Object133
+    400162: Object134
+    400164: Object138
+    400166: Object140
+    400168: Componente#16_004
+    400170: Object142
+    400172: Object144
+    400174: Object145
+    400176: Object146
+    400178: Plane005
+    400180: Cylinder001
+    400182: Group010
+    400184: Mesh52_011
+    400186: Mesh53_011
+    400188: Mesh56#1_011
+    400190: Object147
+    400192: Rectangle009_Elements014
+    400194: Rectangle009_Elements3
+    400196: Rectangle009_Elements4
+    400198: Rectangle011
+    400200: Rectangle012
+    400202: Antique Sofa_001
+    400204: Box011
+    400206: Component#1_045
+    400208: Defpoints_002
+    400210: Object121
+    400212: Object148
+    400214: Doors Handle001
+    400216: InteriorDoors001
+    400218: Line002
+    400220: Antique Sofa_002
+    400222: Component#1_046
+    400224: Component#1_047
+    400226: Component#1_048
+    400228: Component#1_049
+    400230: Component#1_050
+    400232: Group011
+    400234: Group012
+    400236: Mesh52_012
+    400238: Mesh52_013
+    400240: Mesh53_012
+    400242: Mesh53_013
+    400244: Mesh56#1_012
+    400246: Mesh56#1_013
+    400248: Rectangle009_Elements015
+    400250: Object149
+    2300000: Box Base
+    2300002: Box002
+    2300004: Box003
+    2300006: Brick Arcade
+    2300008: Chimney
+    2300010: Door Type 1
+    2300012: Door Type 2
+    2300014: Double Door
+    2300016: Fascia
+    2300018: Fence
+    2300020: Fins
+    2300022: Handrail
+    2300024: Object001
+    2300026: Object002
+    2300028: Object003
+    2300030: Object004
+    2300032: Plane001
+    2300034: Plane002
+    2300036: Rectangle007
+    2300038: Roof
+    2300040: Walls_01
+    2300042: Walls_02
+    2300044: Window Type 1
+    2300046: Window Type 2
+    2300048: Window Type 3
+    2300050: Window Type 4
+    2300052: Window Type 5
+    2300054: Wood_Frames
+    2300056: Chair_Louis_005
+    2300058: Chair_Louis_006
+    2300060: Defpoints_001
+    2300062: Defpoints_003
+    2300064: Object005
+    2300066: Object006
+    2300068: Object120
+    2300070: Object122
+    2300072: Plane003
+    2300074: Stairs
+    2300076: Object123
+    2300078: Mesh52_005
+    2300080: Mesh52_006
+    2300082: Mesh52_007
+    2300084: Mesh52_008
+    2300086: Mesh52_009
+    2300088: Mesh52_010
+    2300090: Mesh53_005
+    2300092: Mesh53_006
+    2300094: Mesh53_007
+    2300096: Mesh53_008
+    2300098: Mesh53_009
+    2300100: Mesh53_010
+    2300102: Mesh56#1_005
+    2300104: Mesh56#1_006
+    2300106: Mesh56#1_007
+    2300108: Mesh56#1_008
+    2300110: Mesh56#1_009
+    2300112: Mesh56#1_010
+    2300114: Plane004
+    2300116: Rectangle008
+    2300118: Doors Handle
+    2300120: InteriorDoors
+    2300122: Walls_003
+    2300124: Box Base001
+    2300126: Brick Arcade001
+    2300128: Wood_Frames001
+    2300130: Object124
+    2300132: Object125
+    2300134: Object127
+    2300136: Object128
+    2300138: Object131
+    2300140: Object132
+    2300142: Object135
+    2300144: Object136
+    2300146: Object133
+    2300148: Object134
+    2300150: Object138
+    2300152: Object140
+    2300154: Componente#16_004
+    2300156: Object142
+    2300158: Object144
+    2300160: Object145
+    2300162: Object146
+    2300164: Plane005
+    2300166: Cylinder001
+    2300168: Mesh52_011
+    2300170: Mesh53_011
+    2300172: Mesh56#1_011
+    2300174: Object147
+    2300176: Rectangle009_Elements014
+    2300178: Rectangle009_Elements3
+    2300180: Rectangle009_Elements4
+    2300182: Rectangle011
+    2300184: Rectangle012
+    2300186: Antique Sofa_001
+    2300188: Box011
+    2300190: Component#1_045
+    2300192: Defpoints_002
+    2300194: Object121
+    2300196: Object148
+    2300198: Doors Handle001
+    2300200: InteriorDoors001
+    2300202: Line002
+    2300204: Antique Sofa_002
+    2300206: Component#1_046
+    2300208: Component#1_047
+    2300210: Component#1_048
+    2300212: Component#1_049
+    2300214: Component#1_050
+    2300216: Mesh52_012
+    2300218: Mesh52_013
+    2300220: Mesh53_012
+    2300222: Mesh53_013
+    2300224: Mesh56#1_012
+    2300226: Mesh56#1_013
+    2300228: Rectangle009_Elements015
+    2300230: Object149
+    3300000: Box Base
+    3300002: Box002
+    3300004: Box003
+    3300006: Brick Arcade
+    3300008: Chimney
+    3300010: Door Type 1
+    3300012: Door Type 2
+    3300014: Double Door
+    3300016: Fascia
+    3300018: Fence
+    3300020: Fins
+    3300022: Handrail
+    3300024: Object001
+    3300026: Object002
+    3300028: Object003
+    3300030: Object004
+    3300032: Plane001
+    3300034: Plane002
+    3300036: Rectangle007
+    3300038: Roof
+    3300040: Walls_01
+    3300042: Walls_02
+    3300044: Window Type 1
+    3300046: Window Type 2
+    3300048: Window Type 3
+    3300050: Window Type 4
+    3300052: Window Type 5
+    3300054: Wood_Frames
+    3300056: Chair_Louis_005
+    3300058: Chair_Louis_006
+    3300060: Defpoints_001
+    3300062: Defpoints_003
+    3300064: Object005
+    3300066: Object006
+    3300068: Object120
+    3300070: Object122
+    3300072: Plane003
+    3300074: Stairs
+    3300076: Object123
+    3300078: Mesh52_005
+    3300080: Mesh52_006
+    3300082: Mesh52_007
+    3300084: Mesh52_008
+    3300086: Mesh52_009
+    3300088: Mesh52_010
+    3300090: Mesh53_005
+    3300092: Mesh53_006
+    3300094: Mesh53_007
+    3300096: Mesh53_008
+    3300098: Mesh53_009
+    3300100: Mesh53_010
+    3300102: Mesh56#1_005
+    3300104: Mesh56#1_006
+    3300106: Mesh56#1_007
+    3300108: Mesh56#1_008
+    3300110: Mesh56#1_009
+    3300112: Mesh56#1_010
+    3300114: Plane004
+    3300116: Rectangle008
+    3300118: Doors Handle
+    3300120: InteriorDoors
+    3300122: Walls_003
+    3300124: Box Base001
+    3300126: Brick Arcade001
+    3300128: Wood_Frames001
+    3300130: Object124
+    3300132: Object125
+    3300134: Object127
+    3300136: Object128
+    3300138: Object131
+    3300140: Object132
+    3300142: Object135
+    3300144: Object136
+    3300146: Object133
+    3300148: Object134
+    3300150: Object138
+    3300152: Object140
+    3300154: Componente#16_004
+    3300156: Object142
+    3300158: Object144
+    3300160: Object145
+    3300162: Object146
+    3300164: Plane005
+    3300166: Cylinder001
+    3300168: Mesh52_011
+    3300170: Mesh53_011
+    3300172: Mesh56#1_011
+    3300174: Object147
+    3300176: Rectangle009_Elements014
+    3300178: Rectangle009_Elements3
+    3300180: Rectangle009_Elements4
+    3300182: Rectangle011
+    3300184: Rectangle012
+    3300186: Antique Sofa_001
+    3300188: Box011
+    3300190: Component#1_045
+    3300192: Defpoints_002
+    3300194: Object121
+    3300196: Object148
+    3300198: Doors Handle001
+    3300200: InteriorDoors001
+    3300202: Line002
+    3300204: Antique Sofa_002
+    3300206: Component#1_046
+    3300208: Component#1_047
+    3300210: Component#1_048
+    3300212: Component#1_049
+    3300214: Component#1_050
+    3300216: Mesh52_012
+    3300218: Mesh52_013
+    3300220: Mesh53_012
+    3300222: Mesh53_013
+    3300224: Mesh56#1_012
+    3300226: Mesh56#1_013
+    3300228: Rectangle009_Elements015
+    3300230: Object149
+    4300000: Window Type 1
+    4300002: Wood_Frames
+    4300004: Walls_02
+    4300006: Brick Arcade
+    4300008: Box Base
+    4300010: Window Type 2
+    4300012: Door Type 2
+    4300014: Fence
+    4300016: Door Type 1
+    4300018: Roof
+    4300020: Fascia
+    4300022: Window Type 4
+    4300024: Window Type 3
+    4300026: Double Door
+    4300028: Walls_01
+    4300030: Handrail
+    4300032: Window Type 5
+    4300034: Chimney
+    4300036: Fins
+    4300038: Object001
+    4300040: Object002
+    4300042: Object003
+    4300044: Object004
+    4300046: Plane001
+    4300048: Box002
+    4300050: Box003
+    4300052: Rectangle007
+    4300054: Plane002
+    4300056: Object005
+    4300058: Object006
+    4300060: Stairs
+    4300062: Object120
+    4300064: Chair_Louis_005
+    4300066: Defpoints_001
+    4300068: Defpoints_003
+    4300070: Plane003
+    4300072: Object122
+    4300074: Chair_Louis_006
+    4300076: Object123
+    4300078: Mesh53_005
+    4300080: Mesh52_005
+    4300082: Mesh56#1_005
+    4300084: Rectangle008
+    4300086: Mesh52_006
+    4300088: Mesh53_006
+    4300090: Mesh56#1_006
+    4300092: Plane004
+    4300094: Mesh52_007
+    4300096: Mesh53_007
+    4300098: Mesh56#1_007
+    4300100: Mesh56#1_008
+    4300102: Mesh52_008
+    4300104: Mesh53_008
+    4300106: Mesh52_009
+    4300108: Mesh53_009
+    4300110: Mesh56#1_009
+    4300112: Mesh56#1_010
+    4300114: Mesh52_010
+    4300116: Mesh53_010
+    4300118: InteriorDoors
+    4300120: Doors Handle
+    4300122: Walls_003
+    4300124: Brick Arcade001
+    4300126: Box Base001
+    4300128: Wood_Frames001
+    4300130: Object124
+    4300132: Object125
+    4300134: Object127
+    4300136: Object128
+    4300138: Object131
+    4300140: Object132
+    4300142: Object135
+    4300144: Object136
+    4300146: Object133
+    4300148: Object134
+    4300150: Object138
+    4300152: Object140
+    4300154: Object142
+    4300156: Object144
+    4300158: Componente#16_004
+    4300160: Object145
+    4300162: Plane005
+    4300164: Object146
+    4300166: Rectangle009_Elements4
+    4300168: Rectangle009_Elements3
+    4300170: Rectangle009_Elements014
+    4300172: Mesh52_011
+    4300174: Mesh53_011
+    4300176: Mesh56#1_011
+    4300178: Cylinder001
+    4300180: Rectangle011
+    4300182: Rectangle012
+    4300184: Object147
+    4300186: Antique Sofa_001
+    4300188: Box011
+    4300190: Object121
+    4300192: Component#1_045
+    4300194: Defpoints_002
+    4300196: Object148
+    4300198: Doors Handle001
+    4300200: InteriorDoors001
+    4300202: Line002
+    4300204: Antique Sofa_002
+    4300206: Component#1_046
+    4300208: Component#1_047
+    4300210: Component#1_048
+    4300212: Component#1_049
+    4300214: Component#1_050
+    4300216: Rectangle009_Elements015
+    4300218: Mesh52_012
+    4300220: Mesh56#1_012
+    4300222: Mesh53_012
+    4300224: Mesh53_013
+    4300226: Mesh52_013
+    4300228: Mesh56#1_013
+    4300230: Object149
+    6400000: Box Base
+    6400002: Box003
+    6400004: Brick Arcade
+    6400006: Chair_Louis_005
+    6400008: Chair_Louis_006
+    6400010: Defpoints_001
+    6400012: Defpoints_003
+    6400014: Door Type 1
+    6400016: Door Type 2
+    6400018: Double Door
+    6400020: Mesh52_005
+    6400022: Mesh52_006
+    6400024: Mesh52_007
+    6400026: Mesh52_008
+    6400028: Mesh52_009
+    6400030: Mesh52_010
+    6400032: Mesh53_005
+    6400034: Mesh53_006
+    6400036: Mesh53_007
+    6400038: Mesh53_008
+    6400040: Mesh53_009
+    6400042: Mesh53_010
+    6400044: Mesh56#1_005
+    6400046: Mesh56#1_006
+    6400048: Mesh56#1_007
+    6400050: Mesh56#1_008
+    6400052: Mesh56#1_009
+    6400054: Mesh56#1_010
+    6400056: Object001
+    6400058: Object005
+    6400060: Object006
+    6400062: Object120
+    6400064: Object122
+    6400066: Object123
+    6400068: Plane002
+    6400070: Plane003
+    6400072: Plane004
+    6400074: Rectangle007
+    6400076: Rectangle008
+    6400078: Stairs
+    6400080: Walls_01
+    6400082: Walls_02
+    6400084: Window Type 1
+    6400086: Window Type 2
+    6400088: Window Type 3
+    6400090: Window Type 4
+    6400092: Wood_Frames
+    6400094: Doors Handle
+    6400096: InteriorDoors
+    6400098: Walls_003
+    6400100: Box Base001
+    6400102: Brick Arcade001
+    6400104: Wood_Frames001
+    6400106: Object124
+    6400108: Object125
+    6400110: Object127
+    6400112: Object128
+    6400114: Object131
+    6400116: Object132
+    6400118: Object135
+    6400120: Object136
+    6400122: Object133
+    6400124: Object134
+    6400126: Object138
+    6400128: Object140
+    6400130: Componente#16_004
+    6400132: Object142
+    6400134: Object144
+    6400136: Object145
+    6400138: Object146
+    6400140: Plane005
+    6400142: Chimney
+    6400144: Cylinder001
+    6400146: Fence
+    6400148: Fins
+    6400150: Handrail
+    6400152: Mesh52_011
+    6400154: Mesh53_011
+    6400156: Mesh56#1_011
+    6400158: Object002
+    6400160: Object003
+    6400162: Object004
+    6400164: Object147
+    6400166: Rectangle009_Elements014
+    6400168: Rectangle009_Elements3
+    6400170: Rectangle009_Elements4
+    6400172: Rectangle011
+    6400174: Rectangle012
+    6400176: Roof
+    6400178: Window Type 5
+    6400180: Antique Sofa_001
+    6400182: Box011
+    6400184: Component#1_045
+    6400186: Defpoints_002
+    6400188: Object121
+    6400190: Object148
+    6400192: Doors Handle001
+    6400194: InteriorDoors001
+    6400196: Line002
+    6400198: Antique Sofa_002
+    6400200: Component#1_046
+    6400202: Component#1_047
+    6400204: Component#1_048
+    6400206: Component#1_049
+    6400208: Component#1_050
+    6400210: Mesh52_012
+    6400212: Mesh52_013
+    6400214: Mesh53_012
+    6400216: Mesh53_013
+    6400218: Mesh56#1_012
+    6400220: Mesh56#1_013
+    6400222: Rectangle009_Elements015
+    6400224: Object149
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

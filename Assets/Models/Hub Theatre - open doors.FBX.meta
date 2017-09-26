@@ -1,0 +1,196 @@
+fileFormatVersion: 2
+guid: 9371844047381da4588e9165087bb7a4
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Th - Ref_Windows
+    100004: Th - Top Door
+    100006: Th - Top Windows
+    100008: Th- Deco
+    100010: Th-ClearGlass
+    100012: Th-Entry
+    100014: Th-Logo
+    100016: Th-Shade
+    100018: Th-SmallRoof
+    100020: Th-Walls
+    100022: Th-Wood Frames
+    400000: //RootNode
+    400002: Th - Ref_Windows
+    400004: Th - Top Door
+    400006: Th - Top Windows
+    400008: Th- Deco
+    400010: Th-ClearGlass
+    400012: Th-Entry
+    400014: Th-Logo
+    400016: Th-Shade
+    400018: Th-SmallRoof
+    400020: Th-Walls
+    400022: Th-Wood Frames
+    2300000: Th - Ref_Windows
+    2300002: Th - Top Door
+    2300004: Th - Top Windows
+    2300006: Th- Deco
+    2300008: Th-ClearGlass
+    2300010: Th-Entry
+    2300012: Th-Logo
+    2300014: Th-Shade
+    2300016: Th-SmallRoof
+    2300018: Th-Walls
+    2300020: Th-Wood Frames
+    3300000: Th - Ref_Windows
+    3300002: Th - Top Door
+    3300004: Th - Top Windows
+    3300006: Th- Deco
+    3300008: Th-ClearGlass
+    3300010: Th-Entry
+    3300012: Th-Logo
+    3300014: Th-Shade
+    3300016: Th-SmallRoof
+    3300018: Th-Walls
+    3300020: Th-Wood Frames
+    4300000: Th-Wood Frames
+    4300002: Th - Top Door
+    4300004: Th-Shade
+    4300006: Th-Walls
+    4300008: Th-ClearGlass
+    4300010: Th-Entry
+    4300012: Th-Logo
+    4300014: Th- Deco
+    4300016: Th - Ref_Windows
+    4300018: Th - Top Windows
+    4300020: Th-SmallRoof
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ND-White
+    second: {fileID: 2100000, guid: 4446a86b443e0ee41bdd98ba50d85700, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Th-Clear Glass
+    second: {fileID: 2100000, guid: 280afc6e515805c4f95ce6121fea2be0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Th-Concrete
+    second: {fileID: 2100000, guid: 8a0c64c24932ad045b4c29f2bf532a93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Th-Deco
+    second: {fileID: 2100000, guid: 15f8e5b07e6e099489483ada6b25a9e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Th-Logo
+    second: {fileID: 2100000, guid: 980559f38560f8c4383578ce335b6ce7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Th-Ref Glass
+    second: {fileID: 2100000, guid: be0541003181c2140b014265ec950af8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Th-Roof
+    second: {fileID: 2100000, guid: fadaceb3203c2974aaf0558428ce2158, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Th-Shade
+    second: {fileID: 2100000, guid: 6ab6a1f2d02af524ca0557119595f73a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Th-Top door
+    second: {fileID: 2100000, guid: a8c7a9fc01309db47b2ccfe4637f2393, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Th-Top window
+    second: {fileID: 2100000, guid: 5358b7727b59960478b1443c458fa20b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Th-Wood_Dark
+    second: {fileID: 2100000, guid: 74431c720b82763409cf8b848d83d3c1, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
