@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 9371844047381da4588e9165087bb7a4
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
     100002: Th - Ref_Windows
@@ -61,67 +61,10 @@ ModelImporter:
     4300018: Th - Top Windows
     4300020: Th-SmallRoof
     9500000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ND-White
-    second: {fileID: 2100000, guid: 4446a86b443e0ee41bdd98ba50d85700, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Th-Clear Glass
-    second: {fileID: 2100000, guid: 280afc6e515805c4f95ce6121fea2be0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Th-Concrete
-    second: {fileID: 2100000, guid: 8a0c64c24932ad045b4c29f2bf532a93, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Th-Deco
-    second: {fileID: 2100000, guid: 15f8e5b07e6e099489483ada6b25a9e6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Th-Logo
-    second: {fileID: 2100000, guid: 980559f38560f8c4383578ce335b6ce7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Th-Ref Glass
-    second: {fileID: 2100000, guid: be0541003181c2140b014265ec950af8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Th-Roof
-    second: {fileID: 2100000, guid: fadaceb3203c2974aaf0558428ce2158, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Th-Shade
-    second: {fileID: 2100000, guid: 6ab6a1f2d02af524ca0557119595f73a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Th-Top door
-    second: {fileID: 2100000, guid: a8c7a9fc01309db47b2ccfe4637f2393, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Th-Top window
-    second: {fileID: 2100000, guid: 5358b7727b59960478b1443c458fa20b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Th-Wood_Dark
-    second: {fileID: 2100000, guid: 74431c720b82763409cf8b848d83d3c1, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -134,7 +77,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -154,7 +96,7 @@ ModelImporter:
     importCameras: 0
     importLights: 0
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

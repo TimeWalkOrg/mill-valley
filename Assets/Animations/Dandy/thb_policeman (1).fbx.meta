@@ -3,7 +3,7 @@ guid: 8543e54976046b446888c980493c4d2d
 timeCreated: 1427001483
 licenseType: Pro
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: Beards
     100002: Body
@@ -193,15 +193,17 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
+      copied configuration does not match position in animation file:\n\t'mixamorig:LeftUpLeg'
+      : position error = 16.810461 mm\n\t'mixamorig:LeftLeg' : position error = 19.557735
+      mm\n\t'mixamorig:LeftFoot' : position error = 7.983862 mm\n\t'mixamorig:LeftToeBase'
+      : position error = 22.680784 mm\n\t'mixamorig:RightUpLeg' : position error =
+      16.845938 mm\n\t'mixamorig:RightLeg' : position error = 19.733849 mm\n\t'mixamorig:RightFoot'
+      : position error = 7.859065 mm\n\t'mixamorig:RightToeBase' : position error
+      = 22.527018 mm\n"
     animationImportErrors: 
-    animationImportWarnings: "MuscleClip 'thb_policeman (1)' conversion warning: Bone
-      length is different in avatar and animation\n\n     'mixamorig:LeftUpLeg' :
-      position error = 16.810461 mm\n\n     'mixamorig:LeftLeg' : position error =
-      19.557623 mm\n\n     'mixamorig:LeftFoot' : position error = 7.984226 mm\n\n
-      \    'mixamorig:LeftToeBase' : position error = 22.680784 mm\n\n     'mixamorig:RightUpLeg'
-      : position error = 16.845938 mm\n\n     'mixamorig:RightLeg' : position error
-      = 19.733932 mm\n\n     'mixamorig:RightFoot' : position error = 7.859009 mm\n\n
-      \    'mixamorig:RightToeBase' : position error = 22.527018 mm\n\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
@@ -210,6 +212,7 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: mixamo_com
@@ -401,9 +404,12 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
@@ -417,6 +423,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 1
   humanDescription:

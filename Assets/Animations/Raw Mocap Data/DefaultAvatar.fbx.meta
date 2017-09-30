@@ -2,7 +2,7 @@ fileFormatVersion: 2
 guid: 2ab0893f5bba9b243b65e309e78089d0
 timeCreated: 18446744011573954816
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: Chest
     100002: //RootNode
@@ -187,12 +187,10 @@ ModelImporter:
     13700002: Tounge_Mesh
     13700004: Unity_Body_Mesh
     13700006: Up_Teeth_Mesh
-  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 2
     materialSearch: 0
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -205,7 +203,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -225,7 +222,7 @@ ModelImporter:
     importCameras: 0
     importLights: 0
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
