@@ -8,18 +8,20 @@ labels:
 - old
 - fence
 - floor
-timeCreated: 1434771035
+timeCreated: 1508199225
 licenseType: Pro
 SubstanceImporter:
+  externalObjects: {}
   serializedVersion: 5
   materialInstances:
   - serializedVersion: 16
     name: Painted_Wood_01
     prototypeName: Painted_Wood_01
-    shader: {fileID: 2, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: 
+    shaderName: 
+    shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+    shaderKeywords: _EMISSION _NORMALMAP _PARALLAXMAP
     renderQueue: -1
-    lightmapFlags: 5
+    lightmapFlags: 1
     inputs:
     - name: $normalformat
       value:
@@ -28,6 +30,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: $outputsize
       value:
         scalar[0]: 9
@@ -35,6 +38,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: $randomseed
       value:
         scalar[0]: 0
@@ -42,6 +46,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Age
       value:
         scalar[0]: 0
@@ -49,13 +54,15 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Paint_Color
       value:
-        scalar[0]: .0735294223
-        scalar[1]: .0589316711
-        scalar[2]: .0592336953
+        scalar[0]: 0.07352942
+        scalar[1]: 0.05893167
+        scalar[2]: 0.059233695
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Depth
       value:
         scalar[0]: 0
@@ -63,6 +70,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Relief_Balance
       value:
         scalar[0]: 32
@@ -70,13 +78,15 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Normal
       value:
-        scalar[0]: .5
+        scalar[0]: 0.5
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Emboss
       value:
         scalar[0]: 5
@@ -84,13 +94,15 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Angle
       value:
-        scalar[0]: .125
+        scalar[0]: 0.125
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Hue_Shift
       value:
         scalar[0]: 0
@@ -98,20 +110,23 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Saturation
       value:
-        scalar[0]: .5
+        scalar[0]: 0.5
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Luminosity
       value:
-        scalar[0]: .5
+        scalar[0]: 0.5
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Contrast
       value:
         scalar[0]: 0
@@ -119,6 +134,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     materialInformation:
       serializedVersion: 5
       offset: {x: 0, y: 0}
@@ -127,36 +143,66 @@ SubstanceImporter:
       generateAllOutputs: 0
       animationUpdateRate: 42
     materialProperties:
-      serializedVersion: 2
+      serializedVersion: 3
       texEnvs:
-        data:
-          first:
-            name: _MainTex
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 2, y: 24}
-            offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _BumpMap
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 2, y: 24}
-            offset: {x: 0, y: 0}
+      - _BumpMap:
+          texture: {instanceID: 0}
+          scale: {x: 2, y: 24}
+          offset: {x: 0, y: 0}
+      - _DetailAlbedoMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _DetailMask:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _DetailNormalMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _EmissionMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _MainTex:
+          texture: {instanceID: 0}
+          scale: {x: 2, y: 24}
+          offset: {x: 0, y: 0}
+      - _MetallicGlossMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _OcclusionMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _ParallaxMap:
+          texture: {instanceID: 0}
+          scale: {x: 2, y: 24}
+          offset: {x: 0, y: 0}
       floats:
-        data:
-          first:
-            name: _Shininess
-          second: .078125
+      - _BumpScale: 1
+      - _Cutoff: 0.5
+      - _DetailNormalMapScale: 1
+      - _DstBlend: 0
+      - _GlossMapScale: 1
+      - _Glossiness: 0.5
+      - _GlossyReflections: 1
+      - _Metallic: 0
+      - _Mode: 0
+      - _OcclusionStrength: 1
+      - _Parallax: 0.02
+      - _Shininess: 0.078125
+      - _SmoothnessTextureChannel: 0
+      - _SpecularHighlights: 1
+      - _SrcBlend: 1
+      - _UVSec: 0
+      - _ZWrite: 1
       colors:
-        data:
-          first:
-            name: _Color
-          second: {r: 1, g: 1, b: 1, a: 1}
-        data:
-          first:
-            name: _SpecColor
-          second: {r: .5, g: .5, b: .5, a: 1}
+      - _Color: {r: 1, g: 1, b: 1, a: 1}
+      - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+      - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     textureParameters:
     - name: Painted_Wood_01_Diffuse
       alphaSource: 5
@@ -189,14 +235,15 @@ SubstanceImporter:
       aniso: 1
       wrapMode: 0
     textureAssignments:
-    - shaderProp:
-        name: _MainTex
+    - shaderProp: _MainTex
       material: {instanceID: 0}
       baseUID: 4084014816
-    - shaderProp:
-        name: _BumpMap
+    - shaderProp: _BumpMap
       material: {instanceID: 0}
       baseUID: 4084014829
+    - shaderProp: _ParallaxMap
+      material: {instanceID: 0}
+      baseUID: 4084014849
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 
