@@ -5,19 +5,19 @@ licenseType: Pro
 SketchUpImporter:
   generateBackFace: 0
   mergeCoplanarFaces: 0
-  selectedNodes: 000000000100000002000000
+  selectedNodes: 00000000010000000200000003000000
   assetHash:
     serializedVersion: 2
-    Hash: 3014bfcda5695e7d5cf8ac0e8766c5c0
+    Hash: 367d4d75591a349505ccc342e597b532
   longitude: -105.242139
   latitude: 40.018309
   northCorrection: -0
   fileUnit: 0
   sketchUpImportData:
     defaultCamera:
-      position: {x: 1.1303062, y: 3.9610858, z: -17.107903}
-      lookAt: {x: 7.5215874, y: 5.4535656, z: 10.014837}
-      up: {x: -0.012266978, y: 0.9985688, z: -0.05205749}
+      position: {x: -9.393337, y: 1.114063, z: -24.964159}
+      lookAt: {x: 3.710131, y: 3.7907782, z: -0.4722547}
+      up: {x: -0.045249607, y: 0.995389, z: -0.08457677}
       fov: 35
       aspectRatio: 0
       orthoSize: 1
@@ -27,20 +27,45 @@ SketchUpImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: Image 2
+    100004: Group 1
+    100006: Image 3
     400000: //RootNode
     400002: Image 2
+    400004: Group 1
+    400006: Image 3
     2300000: //RootNode
     2300002: Image 2
+    2300004: Group 1
+    2300006: Image 3
     3300000: //RootNode
     3300002: Image 2
+    3300004: Group 1
+    3300006: Image 3
     4300000: Mesh dowds-moving-1920
     4300002: Mesh dowds-moving-1920
+    4300004: Mesh Group 1
+    4300006: Mesh Group 1
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cladding Siding White
+    second: {fileID: 2100000, guid: ca688f7746559b949b87eec4f112a017, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cladding Stucco White
+    second: {fileID: 2100000, guid: e3e9e09969adbc74d9f4e4587b9e74a8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material 27
     second: {fileID: 2100000, guid: b825dc69958a78742a984edd3004c7d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 29
+    second: {fileID: 2100000, guid: 35c419250d70b9146844bfd60153a8d0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

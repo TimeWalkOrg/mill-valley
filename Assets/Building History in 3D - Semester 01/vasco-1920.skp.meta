@@ -5,19 +5,19 @@ licenseType: Pro
 SketchUpImporter:
   generateBackFace: 0
   mergeCoplanarFaces: 0
-  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f00000040000000410000004200000043000000440000004500000046000000
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f00000040000000410000004200000043000000440000004500000046000000470000004800000049000000
   assetHash:
     serializedVersion: 2
-    Hash: 6df2515b3970590554e322d838bfe3a5
+    Hash: cee4f4d6f66847c32d01c67cc86fb7c2
   longitude: -105.242139
   latitude: 40.018309
   northCorrection: -0
   fileUnit: 0
   sketchUpImportData:
     defaultCamera:
-      position: {x: -4.311695, y: 8.318219, z: -17.816088}
-      lookAt: {x: 4.293976, y: 4.3655057, z: 4.82236}
-      up: {x: 0.057234984, y: 0.98694193, z: 0.1505648}
+      position: {x: -0.4410817, y: 3.7966535, z: -16.242125}
+      lookAt: {x: 4.7394085, y: 4.607644, z: 7.730478}
+      up: {x: -0.006980671, y: 0.9994537, z: -0.032302897}
       fov: 35
       aspectRatio: 0
       orthoSize: 1
@@ -61,6 +61,9 @@ SketchUpImporter:
     100066: Stairs
     100068: //RootNode
     100070: Windows
+    100072: Allen & Roseveare sign
+    100074: Group 3
+    100076: Image 2
     400000: Canopy
     400002: Exterior siding
     400004: Floor - first
@@ -97,6 +100,9 @@ SketchUpImporter:
     400066: Stairs
     400068: //RootNode
     400070: Windows
+    400072: Allen & Roseveare sign
+    400074: Group 3
+    400076: Image 2
     2300000: Canopy
     2300002: Exterior siding
     2300004: Floor - first
@@ -132,6 +138,9 @@ SketchUpImporter:
     2300064: Spire
     2300066: Stairs
     2300068: //RootNode
+    2300070: Allen & Roseveare sign
+    2300072: Group 3
+    2300074: Image 2
     3300000: Canopy
     3300002: Exterior siding
     3300004: Floor - first
@@ -167,6 +176,9 @@ SketchUpImporter:
     3300064: Spire
     3300066: Stairs
     3300068: //RootNode
+    3300070: Allen & Roseveare sign
+    3300072: Group 3
+    3300074: Image 2
     4300000: Mesh vasco-1920
     4300002: Mesh Group 2
     4300004: Mesh Canopy
@@ -181,6 +193,9 @@ SketchUpImporter:
     4300022: Mesh Floor - first
     4300024: Mesh Front grey material
     4300026: Mesh GROCERIES.#1
+    4300028: Mesh vasco-1920
+    4300030: Mesh Group 3
+    4300032: Mesh Allen & Roseveare sign
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -210,6 +225,11 @@ SketchUpImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Material 4
+    second: {fileID: 2100000, guid: 0c6c09e3daa720d41b2b63c827f68d66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Tile_Travertine_2inch
     second: {fileID: 2100000, guid: 2ece512a12395ed4e9b050c08971bd05, type: 2}
   - first:
@@ -222,6 +242,21 @@ SketchUpImporter:
       assembly: UnityEngine.CoreModule
       name: Wood_ Floor
     second: {fileID: 2100000, guid: 611c94af48b2bf94bb769c75f267fb29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: eb37cee207d116440b9dd4026ad65dd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scalloping white
+    second: {fileID: 2100000, guid: e22b4405aa2d6554c9f8646b081986ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tight siding
+    second: {fileID: 2100000, guid: fa582c8a4d7a15143b3014dee74ce946, type: 2}
   materials:
     importMaterials: 1
     materialName: 2

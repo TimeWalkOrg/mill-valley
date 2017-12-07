@@ -1,0 +1,783 @@
+fileFormatVersion: 2
+guid: 60a4c8876afe8e84084cc33e4147095a
+timeCreated: 1512684936
+licenseType: Pro
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 0000000001000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c0000000c1000000c2000000c3000000c4000000c5000000c6000000c7000000c8000000c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000dd000000de000000df000000e0000000e1000000e2000000e3000000e4000000e5000000e6000000e7000000e8000000e9000000ea000000eb000000ec000000ed000000ee000000ef000000f0000000f1000000f2000000f3000000f4000000f5000000f6000000f7000000f8000000f9000000fa000000fb000000fc000000fd000000fe000000ff000000000100000101000002010000030100000401000005010000060100000701000008010000090100000a0100000b0100000c0100000d0100000e0100000f010000100100001101000012010000130100001401000015010000160100001701000018010000190100001a0100001b0100001c0100001d0100001e0100001f010000200100002101000022010000230100002401000025010000260100002701000028010000290100002a0100002b0100002c0100002d0100002e0100002f010000300100003101000032010000330100003401000035010000360100003701000038010000390100003a0100003b0100003c010000
+  assetHash:
+    serializedVersion: 2
+    Hash: 34a6a5052c85c57e85d4ccfd859c09dd
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -19.938538, y: 2.2005315, z: 5.300042}
+      lookAt: {x: 10.333267, y: 3.6097078, z: -8.681221}
+      up: {x: -0.03833248, y: 0.9991082, z: 0.017704148}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: CO.
+    100002: Group 11
+    100004: Group 13
+    100006: Group 15
+    100008: Group 17
+    100010: Group 19
+    100012: Group 21
+    100014: Group 23
+    100016: Group 25
+    100018: Group 27
+    100020: Group 29
+    100022: Group 3
+    100024: Group 31
+    100026: Group 33
+    100028: Group 35
+    100030: Group 37
+    100032: Group 39
+    100034: Group 41
+    100036: Group 43
+    100038: Group 45
+    100040: Group 47
+    100042: Group 49
+    100044: Group 5
+    100046: Group 51
+    100048: Group 7
+    100050: Group 9
+    100052: //RootNode
+    100054: post
+    100056: post 1
+    100058: post 10
+    100060: post 100
+    100062: post 101
+    100064: post 102
+    100066: post 103
+    100068: post 104
+    100070: post 105
+    100072: post 106
+    100074: post 107
+    100076: post 108
+    100078: post 109
+    100080: post 11
+    100082: post 110
+    100084: post 111
+    100086: post 112
+    100088: post 113
+    100090: post 114
+    100092: post 115
+    100094: post 116
+    100096: post 117
+    100098: post 118
+    100100: post 119
+    100102: post 12
+    100104: post 120
+    100106: post 121
+    100108: post 122
+    100110: post 123
+    100112: post 13
+    100114: post 14
+    100116: post 15
+    100118: post 16
+    100120: post 17
+    100122: post 18
+    100124: post 19
+    100126: post 2
+    100128: post 2 1
+    100130: post 2 1 1
+    100132: post 2 2
+    100134: post 2 3
+    100136: post 2 4
+    100138: post 2 5
+    100140: post 20
+    100142: post 21
+    100144: post 22
+    100146: post 23
+    100148: post 24
+    100150: post 25
+    100152: post 26
+    100154: post 27
+    100156: post 28
+    100158: post 29
+    100160: post 3
+    100162: post 30
+    100164: post 31
+    100166: post 32
+    100168: post 33
+    100170: post 34
+    100172: post 35
+    100174: post 36
+    100176: post 37
+    100178: post 38
+    100180: post 39
+    100182: post 4
+    100184: post 40
+    100186: post 41
+    100188: post 42
+    100190: post 43
+    100192: post 44
+    100194: post 45
+    100196: post 46
+    100198: post 47
+    100200: post 48
+    100202: post 49
+    100204: post 5
+    100206: post 50
+    100208: post 51
+    100210: post 52
+    100212: post 53
+    100214: post 54
+    100216: post 55
+    100218: post 56
+    100220: post 57
+    100222: post 58
+    100224: post 59
+    100226: post 6
+    100228: post 60
+    100230: post 61
+    100232: post 62
+    100234: post 63
+    100236: post 64
+    100238: post 65
+    100240: post 66
+    100242: post 67
+    100244: post 68
+    100246: post 69
+    100248: post 7
+    100250: post 70
+    100252: post 71
+    100254: post 72
+    100256: post 73
+    100258: post 74
+    100260: post 75
+    100262: post 76
+    100264: post 77
+    100266: post 78
+    100268: post 79
+    100270: post 8
+    100272: post 80
+    100274: post 81
+    100276: post 82
+    100278: post 83
+    100280: post 84
+    100282: post 85
+    100284: post 86
+    100286: post 87
+    100288: post 88
+    100290: post 89
+    100292: post 9
+    100294: post 90
+    100296: post 91
+    100298: post 92
+    100300: post 93
+    100302: post 94
+    100304: post 95
+    100306: post 96
+    100308: post 97
+    100310: post 98
+    100312: post 99
+    100314: TAMALPAIS LAND &
+    400000: CO.
+    400002: Group 11
+    400004: Group 13
+    400006: Group 15
+    400008: Group 17
+    400010: Group 19
+    400012: Group 21
+    400014: Group 23
+    400016: Group 25
+    400018: Group 27
+    400020: Group 29
+    400022: Group 3
+    400024: Group 31
+    400026: Group 33
+    400028: Group 35
+    400030: Group 37
+    400032: Group 39
+    400034: Group 41
+    400036: Group 43
+    400038: Group 45
+    400040: Group 47
+    400042: Group 49
+    400044: Group 5
+    400046: Group 51
+    400048: Group 7
+    400050: Group 9
+    400052: //RootNode
+    400054: post
+    400056: post 1
+    400058: post 10
+    400060: post 100
+    400062: post 101
+    400064: post 102
+    400066: post 103
+    400068: post 104
+    400070: post 105
+    400072: post 106
+    400074: post 107
+    400076: post 108
+    400078: post 109
+    400080: post 11
+    400082: post 110
+    400084: post 111
+    400086: post 112
+    400088: post 113
+    400090: post 114
+    400092: post 115
+    400094: post 116
+    400096: post 117
+    400098: post 118
+    400100: post 119
+    400102: post 12
+    400104: post 120
+    400106: post 121
+    400108: post 122
+    400110: post 123
+    400112: post 13
+    400114: post 14
+    400116: post 15
+    400118: post 16
+    400120: post 17
+    400122: post 18
+    400124: post 19
+    400126: post 2
+    400128: post 2 1
+    400130: post 2 1 1
+    400132: post 2 2
+    400134: post 2 3
+    400136: post 2 4
+    400138: post 2 5
+    400140: post 20
+    400142: post 21
+    400144: post 22
+    400146: post 23
+    400148: post 24
+    400150: post 25
+    400152: post 26
+    400154: post 27
+    400156: post 28
+    400158: post 29
+    400160: post 3
+    400162: post 30
+    400164: post 31
+    400166: post 32
+    400168: post 33
+    400170: post 34
+    400172: post 35
+    400174: post 36
+    400176: post 37
+    400178: post 38
+    400180: post 39
+    400182: post 4
+    400184: post 40
+    400186: post 41
+    400188: post 42
+    400190: post 43
+    400192: post 44
+    400194: post 45
+    400196: post 46
+    400198: post 47
+    400200: post 48
+    400202: post 49
+    400204: post 5
+    400206: post 50
+    400208: post 51
+    400210: post 52
+    400212: post 53
+    400214: post 54
+    400216: post 55
+    400218: post 56
+    400220: post 57
+    400222: post 58
+    400224: post 59
+    400226: post 6
+    400228: post 60
+    400230: post 61
+    400232: post 62
+    400234: post 63
+    400236: post 64
+    400238: post 65
+    400240: post 66
+    400242: post 67
+    400244: post 68
+    400246: post 69
+    400248: post 7
+    400250: post 70
+    400252: post 71
+    400254: post 72
+    400256: post 73
+    400258: post 74
+    400260: post 75
+    400262: post 76
+    400264: post 77
+    400266: post 78
+    400268: post 79
+    400270: post 8
+    400272: post 80
+    400274: post 81
+    400276: post 82
+    400278: post 83
+    400280: post 84
+    400282: post 85
+    400284: post 86
+    400286: post 87
+    400288: post 88
+    400290: post 89
+    400292: post 9
+    400294: post 90
+    400296: post 91
+    400298: post 92
+    400300: post 93
+    400302: post 94
+    400304: post 95
+    400306: post 96
+    400308: post 97
+    400310: post 98
+    400312: post 99
+    400314: TAMALPAIS LAND &
+    2300000: CO.
+    2300002: Group 11
+    2300004: Group 13
+    2300006: Group 15
+    2300008: Group 17
+    2300010: Group 19
+    2300012: Group 21
+    2300014: Group 23
+    2300016: Group 25
+    2300018: Group 27
+    2300020: Group 29
+    2300022: Group 3
+    2300024: Group 31
+    2300026: Group 33
+    2300028: Group 35
+    2300030: Group 37
+    2300032: Group 39
+    2300034: Group 41
+    2300036: Group 43
+    2300038: Group 45
+    2300040: Group 47
+    2300042: Group 49
+    2300044: Group 5
+    2300046: Group 51
+    2300048: Group 7
+    2300050: Group 9
+    2300052: //RootNode
+    2300054: post
+    2300056: post 1
+    2300058: post 10
+    2300060: post 100
+    2300062: post 101
+    2300064: post 102
+    2300066: post 103
+    2300068: post 104
+    2300070: post 105
+    2300072: post 106
+    2300074: post 107
+    2300076: post 108
+    2300078: post 109
+    2300080: post 11
+    2300082: post 110
+    2300084: post 111
+    2300086: post 112
+    2300088: post 113
+    2300090: post 114
+    2300092: post 115
+    2300094: post 116
+    2300096: post 117
+    2300098: post 118
+    2300100: post 119
+    2300102: post 12
+    2300104: post 120
+    2300106: post 121
+    2300108: post 122
+    2300110: post 123
+    2300112: post 13
+    2300114: post 14
+    2300116: post 15
+    2300118: post 16
+    2300120: post 17
+    2300122: post 18
+    2300124: post 19
+    2300126: post 2
+    2300128: post 2 1
+    2300130: post 2 1 1
+    2300132: post 2 2
+    2300134: post 2 3
+    2300136: post 2 4
+    2300138: post 2 5
+    2300140: post 20
+    2300142: post 21
+    2300144: post 22
+    2300146: post 23
+    2300148: post 24
+    2300150: post 25
+    2300152: post 26
+    2300154: post 27
+    2300156: post 28
+    2300158: post 29
+    2300160: post 3
+    2300162: post 30
+    2300164: post 31
+    2300166: post 32
+    2300168: post 33
+    2300170: post 34
+    2300172: post 35
+    2300174: post 36
+    2300176: post 37
+    2300178: post 38
+    2300180: post 39
+    2300182: post 4
+    2300184: post 40
+    2300186: post 41
+    2300188: post 42
+    2300190: post 43
+    2300192: post 44
+    2300194: post 45
+    2300196: post 46
+    2300198: post 47
+    2300200: post 48
+    2300202: post 49
+    2300204: post 5
+    2300206: post 50
+    2300208: post 51
+    2300210: post 52
+    2300212: post 53
+    2300214: post 54
+    2300216: post 55
+    2300218: post 56
+    2300220: post 57
+    2300222: post 58
+    2300224: post 59
+    2300226: post 6
+    2300228: post 60
+    2300230: post 61
+    2300232: post 62
+    2300234: post 63
+    2300236: post 64
+    2300238: post 65
+    2300240: post 66
+    2300242: post 67
+    2300244: post 68
+    2300246: post 69
+    2300248: post 7
+    2300250: post 70
+    2300252: post 71
+    2300254: post 72
+    2300256: post 73
+    2300258: post 74
+    2300260: post 75
+    2300262: post 76
+    2300264: post 77
+    2300266: post 78
+    2300268: post 79
+    2300270: post 8
+    2300272: post 80
+    2300274: post 81
+    2300276: post 82
+    2300278: post 83
+    2300280: post 84
+    2300282: post 85
+    2300284: post 86
+    2300286: post 87
+    2300288: post 88
+    2300290: post 89
+    2300292: post 9
+    2300294: post 90
+    2300296: post 91
+    2300298: post 92
+    2300300: post 93
+    2300302: post 94
+    2300304: post 95
+    2300306: post 96
+    2300308: post 97
+    2300310: post 98
+    2300312: post 99
+    2300314: TAMALPAIS LAND &
+    3300000: CO.
+    3300002: Group 11
+    3300004: Group 13
+    3300006: Group 15
+    3300008: Group 17
+    3300010: Group 19
+    3300012: Group 21
+    3300014: Group 23
+    3300016: Group 25
+    3300018: Group 27
+    3300020: Group 29
+    3300022: Group 3
+    3300024: Group 31
+    3300026: Group 33
+    3300028: Group 35
+    3300030: Group 37
+    3300032: Group 39
+    3300034: Group 41
+    3300036: Group 43
+    3300038: Group 45
+    3300040: Group 47
+    3300042: Group 49
+    3300044: Group 5
+    3300046: Group 51
+    3300048: Group 7
+    3300050: Group 9
+    3300052: //RootNode
+    3300054: post
+    3300056: post 1
+    3300058: post 10
+    3300060: post 100
+    3300062: post 101
+    3300064: post 102
+    3300066: post 103
+    3300068: post 104
+    3300070: post 105
+    3300072: post 106
+    3300074: post 107
+    3300076: post 108
+    3300078: post 109
+    3300080: post 11
+    3300082: post 110
+    3300084: post 111
+    3300086: post 112
+    3300088: post 113
+    3300090: post 114
+    3300092: post 115
+    3300094: post 116
+    3300096: post 117
+    3300098: post 118
+    3300100: post 119
+    3300102: post 12
+    3300104: post 120
+    3300106: post 121
+    3300108: post 122
+    3300110: post 123
+    3300112: post 13
+    3300114: post 14
+    3300116: post 15
+    3300118: post 16
+    3300120: post 17
+    3300122: post 18
+    3300124: post 19
+    3300126: post 2
+    3300128: post 2 1
+    3300130: post 2 1 1
+    3300132: post 2 2
+    3300134: post 2 3
+    3300136: post 2 4
+    3300138: post 2 5
+    3300140: post 20
+    3300142: post 21
+    3300144: post 22
+    3300146: post 23
+    3300148: post 24
+    3300150: post 25
+    3300152: post 26
+    3300154: post 27
+    3300156: post 28
+    3300158: post 29
+    3300160: post 3
+    3300162: post 30
+    3300164: post 31
+    3300166: post 32
+    3300168: post 33
+    3300170: post 34
+    3300172: post 35
+    3300174: post 36
+    3300176: post 37
+    3300178: post 38
+    3300180: post 39
+    3300182: post 4
+    3300184: post 40
+    3300186: post 41
+    3300188: post 42
+    3300190: post 43
+    3300192: post 44
+    3300194: post 45
+    3300196: post 46
+    3300198: post 47
+    3300200: post 48
+    3300202: post 49
+    3300204: post 5
+    3300206: post 50
+    3300208: post 51
+    3300210: post 52
+    3300212: post 53
+    3300214: post 54
+    3300216: post 55
+    3300218: post 56
+    3300220: post 57
+    3300222: post 58
+    3300224: post 59
+    3300226: post 6
+    3300228: post 60
+    3300230: post 61
+    3300232: post 62
+    3300234: post 63
+    3300236: post 64
+    3300238: post 65
+    3300240: post 66
+    3300242: post 67
+    3300244: post 68
+    3300246: post 69
+    3300248: post 7
+    3300250: post 70
+    3300252: post 71
+    3300254: post 72
+    3300256: post 73
+    3300258: post 74
+    3300260: post 75
+    3300262: post 76
+    3300264: post 77
+    3300266: post 78
+    3300268: post 79
+    3300270: post 8
+    3300272: post 80
+    3300274: post 81
+    3300276: post 82
+    3300278: post 83
+    3300280: post 84
+    3300282: post 85
+    3300284: post 86
+    3300286: post 87
+    3300288: post 88
+    3300290: post 89
+    3300292: post 9
+    3300294: post 90
+    3300296: post 91
+    3300298: post 92
+    3300300: post 93
+    3300302: post 94
+    3300304: post 95
+    3300306: post 96
+    3300308: post 97
+    3300310: post 98
+    3300312: post 99
+    3300314: TAMALPAIS LAND &
+    4300000: Mesh mill-valley-land-and-water-co-1920
+    4300002: Mesh Group 3
+    4300004: Mesh Group 5
+    4300006: Mesh Group 7
+    4300008: Mesh Group 9
+    4300010: Mesh Group 43
+    4300012: Mesh Group 51
+    4300014: Mesh post
+    4300016: Mesh post 2
+    4300018: Mesh CO.
+    4300020: Mesh TAMALPAIS LAND &
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brick Tumbled
+    second: {fileID: 2100000, guid: a49c4712712506d4393021d144037145, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chris_Hair
+    second: {fileID: 2100000, guid: 4cf681f40adf42f46b859a49303c12ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color M02
+    second: {fileID: 2100000, guid: 61a444ae5c630a64a8757634f3ed9445, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Translucent Glass Sky Reflection
+    second: {fileID: 2100000, guid: 80d7cca5bcacfe4428098fdeae7496a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: 3470b00734ce98742b8d97baf6687210, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tigher siding
+    second: {fileID: 2100000, guid: dd501a9626131e84f96205035099c94e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tighter shingles
+    second: {fileID: 2100000, guid: eaf9fa7ad4664aa41860bd627c5e31f3, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
