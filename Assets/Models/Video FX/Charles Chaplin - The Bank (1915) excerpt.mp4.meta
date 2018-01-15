@@ -3,6 +3,7 @@ guid: 8c1c786bbe56935498ac1d7df2ea1f3c
 timeCreated: 1504986370
 licenseType: Pro
 VideoClipImporter:
+  externalObjects: {}
   serializedVersion: 2
   useLegacyImporter: 0
   quality: 0.5
@@ -21,6 +22,8 @@ VideoClipImporter:
   sourceHasAlpha: 0
   flipVertical: 0
   flipHorizontal: 0
+  pixelAspectRatioNumerator: 1
+  pixelAspectRatioDenominator: 1
   importAudio: 1
   sourceAudioChannelCount: 0200
   sourceAudioSampleRate: 44ac0000
@@ -46,7 +49,7 @@ VideoClipImporter:
   output:
     format: 1
     settings:
-      enableTranscoding: 1
+      enableTranscoding: 0
       codec: 0
       resizeFormat: 0
       aspectRatio: 0
@@ -59,9 +62,9 @@ VideoClipImporter:
     encodedStartFrame: 0
     encodedEndFrame: 16978
     streamedResource:
-      source: library/metadata/8c/8c1c786bbe56935498ac1d7df2ea1f3c.resource
+      source: 
       offset: 0
-      size: 87456911
+      size: 90068979
   userData: 
   assetBundleName: 
   assetBundleVariant: 
