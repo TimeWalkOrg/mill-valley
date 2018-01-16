@@ -197,7 +197,7 @@ public class MegaWirePlantPolesListEditor : Editor
 		{
 			switch ( Event.current.type )
 			{
-				case EventType.keyDown:
+				case EventType.KeyDown:
 					if ( Event.current.keyCode == KeyCode.A )
 					{
 						if ( !addmode )
@@ -209,7 +209,7 @@ public class MegaWirePlantPolesListEditor : Editor
 					}
 					break;
 
-				case EventType.keyUp:
+				case EventType.KeyUp:
 					if ( Event.current.keyCode == KeyCode.A )
 					{
 						if ( addmode )
