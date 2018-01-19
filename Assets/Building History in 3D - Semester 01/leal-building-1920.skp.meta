@@ -1,23 +1,23 @@
 fileFormatVersion: 2
 guid: 772c39a0dbbd11349b016e58ee41bbbd
-timeCreated: 1512684782
+timeCreated: 1516404780
 licenseType: Pro
 SketchUpImporter:
   generateBackFace: 0
   mergeCoplanarFaces: 0
-  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
   assetHash:
     serializedVersion: 2
-    Hash: 3f5e63fb84fa75160baa6e5899b98d1d
+    Hash: 858d279c445700c25c4ca5d8a363a994
   longitude: -105.242139
   latitude: 40.018309
   northCorrection: -0
   fileUnit: 0
   sketchUpImportData:
     defaultCamera:
-      position: {x: -10.941237, y: 3.6594615, z: 5.624313}
-      lookAt: {x: 1.24581, y: 3.577285, z: -1.2497122}
-      up: {x: 0.005115388, y: 0.9999828, z: -0.0028853014}
+      position: {x: -14.62951, y: 5.8707848, z: 4.744555}
+      lookAt: {x: -11.292122, y: 5.3449955, z: 3.2492595}
+      up: {x: 0.12987094, y: 0.9898221, z: -0.05818785}
       fov: 35
       aspectRatio: 0
       orthoSize: 1
@@ -26,443 +26,59 @@ SketchUpImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: Cupola
-    100002: Group 106
-    100004: Group 12
-    100006: Group 138
-    100008: Group 141
-    100010: Group 144
-    100012: Group 147
-    100014: Group 15
-    100016: Group 150
-    100018: Group 153
-    100020: Group 156
-    100022: Group 159
-    100024: Group 162
-    100026: Group 165
-    100028: Group 168
-    100030: Group 171
-    100032: Group 174
-    100034: Group 177
-    100036: Group 18
-    100038: Group 182
-    100040: Group 2
-    100042: Group 21
-    100044: Group 24
-    100046: Group 27
-    100048: Group 3
-    100050: Group 30
-    100052: Group 31
-    100054: Group 33
-    100056: Group 35
-    100058: Group 38
-    100060: Group 41
-    100062: Group 44
-    100064: Group 47
-    100066: Group 50
-    100068: Group 53
-    100070: Group 56
-    100072: Group 59
-    100074: Group 6
-    100076: Group 62
-    100078: Group 63
-    100080: Group 65
-    100082: Group 66
-    100084: Group 68
-    100086: Group 70
-    100088: Group 72
-    100090: Group 73
-    100092: Group 75
-    100094: Group 77
-    100096: Group 78
-    100098: Group 80
-    100100: Group 82
-    100102: Group 84
-    100104: Group 86
-    100106: Group 88
-    100108: Group 9
-    100110: Group 96
-    100112: //RootNode
-    100114: Roofline
-    100116: Roundabout Rail Ma Boiiii
-    100118: Roundabout Rail Ma Boiiii 1
-    100120: thingunderwindow
-    100122: thingunderwindow 1
-    100124: thingunderwindow 10
-    100126: thingunderwindow 11
-    100128: thingunderwindow 12
-    100130: thingunderwindow 13
-    100132: thingunderwindow 14
-    100134: thingunderwindow 15
-    100136: thingunderwindow 16
-    100138: thingunderwindow 17
-    100140: thingunderwindow 18
-    100142: thingunderwindow 19
-    100144: thingunderwindow 2
-    100146: thingunderwindow 20
-    100148: thingunderwindow 21
-    100150: thingunderwindow 22
-    100152: thingunderwindow 23
-    100154: thingunderwindow 24
-    100156: thingunderwindow 25
-    100158: thingunderwindow 26
-    100160: thingunderwindow 27
-    100162: thingunderwindow 28
-    100164: thingunderwindow 29
-    100166: thingunderwindow 3
-    100168: thingunderwindow 30
-    100170: thingunderwindow 31
-    100172: thingunderwindow 32
-    100174: thingunderwindow 4
-    100176: thingunderwindow 5
-    100178: thingunderwindow 6
-    100180: thingunderwindow 7
-    100182: thingunderwindow 8
-    100184: thingunderwindow 9
-    100186: Window
-    100188: Window 1
-    100190: Window 10
-    100192: Window 11
-    100194: Window 12
-    100196: Window 13
-    100198: Window 14
-    100200: Window 15
-    100202: Window 16
-    100204: Window 17
-    100206: Window 18
-    100208: Window 2
-    100210: Window 3
-    100212: Window 4
-    100214: Window 5
-    100216: Window 6
-    100218: Window 7
-    100220: Window 8
-    100222: Window 9
+    100002: doorKnob
+    100004: doorKnob 1
+    100006: Group 13
+    100008: Group 9
+    100010: Leal Building 1920
+    100012: //RootNode
+    100014: Roofline
     400000: Cupola
-    400002: Group 106
-    400004: Group 12
-    400006: Group 138
-    400008: Group 141
-    400010: Group 144
-    400012: Group 147
-    400014: Group 15
-    400016: Group 150
-    400018: Group 153
-    400020: Group 156
-    400022: Group 159
-    400024: Group 162
-    400026: Group 165
-    400028: Group 168
-    400030: Group 171
-    400032: Group 174
-    400034: Group 177
-    400036: Group 18
-    400038: Group 182
-    400040: Group 2
-    400042: Group 21
-    400044: Group 24
-    400046: Group 27
-    400048: Group 3
-    400050: Group 30
-    400052: Group 31
-    400054: Group 33
-    400056: Group 35
-    400058: Group 38
-    400060: Group 41
-    400062: Group 44
-    400064: Group 47
-    400066: Group 50
-    400068: Group 53
-    400070: Group 56
-    400072: Group 59
-    400074: Group 6
-    400076: Group 62
-    400078: Group 63
-    400080: Group 65
-    400082: Group 66
-    400084: Group 68
-    400086: Group 70
-    400088: Group 72
-    400090: Group 73
-    400092: Group 75
-    400094: Group 77
-    400096: Group 78
-    400098: Group 80
-    400100: Group 82
-    400102: Group 84
-    400104: Group 86
-    400106: Group 88
-    400108: Group 9
-    400110: Group 96
-    400112: //RootNode
-    400114: Roofline
-    400116: Roundabout Rail Ma Boiiii
-    400118: Roundabout Rail Ma Boiiii 1
-    400120: thingunderwindow
-    400122: thingunderwindow 1
-    400124: thingunderwindow 10
-    400126: thingunderwindow 11
-    400128: thingunderwindow 12
-    400130: thingunderwindow 13
-    400132: thingunderwindow 14
-    400134: thingunderwindow 15
-    400136: thingunderwindow 16
-    400138: thingunderwindow 17
-    400140: thingunderwindow 18
-    400142: thingunderwindow 19
-    400144: thingunderwindow 2
-    400146: thingunderwindow 20
-    400148: thingunderwindow 21
-    400150: thingunderwindow 22
-    400152: thingunderwindow 23
-    400154: thingunderwindow 24
-    400156: thingunderwindow 25
-    400158: thingunderwindow 26
-    400160: thingunderwindow 27
-    400162: thingunderwindow 28
-    400164: thingunderwindow 29
-    400166: thingunderwindow 3
-    400168: thingunderwindow 30
-    400170: thingunderwindow 31
-    400172: thingunderwindow 32
-    400174: thingunderwindow 4
-    400176: thingunderwindow 5
-    400178: thingunderwindow 6
-    400180: thingunderwindow 7
-    400182: thingunderwindow 8
-    400184: thingunderwindow 9
-    400186: Window
-    400188: Window 1
-    400190: Window 10
-    400192: Window 11
-    400194: Window 12
-    400196: Window 13
-    400198: Window 14
-    400200: Window 15
-    400202: Window 16
-    400204: Window 17
-    400206: Window 18
-    400208: Window 2
-    400210: Window 3
-    400212: Window 4
-    400214: Window 5
-    400216: Window 6
-    400218: Window 7
-    400220: Window 8
-    400222: Window 9
+    400002: doorKnob
+    400004: doorKnob 1
+    400006: Group 13
+    400008: Group 9
+    400010: Leal Building 1920
+    400012: //RootNode
+    400014: Roofline
+    2100000: _defaultMat
+    2100002: '[Color K01]'
+    2100004: _5
+    2100006: '[Translucent Glass Blue]'
+    2100008: '[Color C08]'
+    2100010: '[Color M08]'
+    2100012: _11
+    2100014: '[Wood Veneer 01]'
+    2100016: '[Roofing Shingles Multi]'
+    2100018: Roof (finer)
+    2100020: '[Chris_Shoe_Sole]'
+    2100022: '[Chris_Shoe]'
     2300000: Cupola
-    2300002: Group 106
-    2300004: Group 31
-    2300006: Group 33
-    2300008: Group 63
-    2300010: Group 66
-    2300012: Group 68
-    2300014: Group 70
-    2300016: Group 73
-    2300018: Group 75
-    2300020: Group 78
-    2300022: Group 80
-    2300024: Group 82
-    2300026: Group 84
-    2300028: Group 86
-    2300030: Group 88
-    2300032: Group 96
-    2300034: //RootNode
-    2300036: Roofline
-    2300038: Roundabout Rail Ma Boiiii
-    2300040: Roundabout Rail Ma Boiiii 1
-    2300042: thingunderwindow
-    2300044: thingunderwindow 1
-    2300046: thingunderwindow 10
-    2300048: thingunderwindow 11
-    2300050: thingunderwindow 12
-    2300052: thingunderwindow 13
-    2300054: thingunderwindow 14
-    2300056: thingunderwindow 15
-    2300058: thingunderwindow 16
-    2300060: thingunderwindow 17
-    2300062: thingunderwindow 18
-    2300064: thingunderwindow 19
-    2300066: thingunderwindow 2
-    2300068: thingunderwindow 20
-    2300070: thingunderwindow 21
-    2300072: thingunderwindow 22
-    2300074: thingunderwindow 23
-    2300076: thingunderwindow 24
-    2300078: thingunderwindow 25
-    2300080: thingunderwindow 26
-    2300082: thingunderwindow 27
-    2300084: thingunderwindow 28
-    2300086: thingunderwindow 29
-    2300088: thingunderwindow 3
-    2300090: thingunderwindow 30
-    2300092: thingunderwindow 31
-    2300094: thingunderwindow 32
-    2300096: thingunderwindow 4
-    2300098: thingunderwindow 5
-    2300100: thingunderwindow 6
-    2300102: thingunderwindow 7
-    2300104: thingunderwindow 8
-    2300106: thingunderwindow 9
-    2300108: Window
-    2300110: Window 1
-    2300112: Window 10
-    2300114: Window 11
-    2300116: Window 12
-    2300118: Window 13
-    2300120: Window 14
-    2300122: Window 15
-    2300124: Window 16
-    2300126: Window 17
-    2300128: Window 18
-    2300130: Window 2
-    2300132: Window 3
-    2300134: Window 4
-    2300136: Window 5
-    2300138: Window 6
-    2300140: Window 7
-    2300142: Window 8
-    2300144: Window 9
+    2300002: doorKnob
+    2300004: doorKnob 1
+    2300006: Group 13
+    2300008: Group 9
+    2300010: Leal Building 1920
+    2300012: Roofline
     3300000: Cupola
-    3300002: Group 106
-    3300004: Group 31
-    3300006: Group 33
-    3300008: Group 63
-    3300010: Group 66
-    3300012: Group 68
-    3300014: Group 70
-    3300016: Group 73
-    3300018: Group 75
-    3300020: Group 78
-    3300022: Group 80
-    3300024: Group 82
-    3300026: Group 84
-    3300028: Group 86
-    3300030: Group 88
-    3300032: Group 96
-    3300034: //RootNode
-    3300036: Roofline
-    3300038: Roundabout Rail Ma Boiiii
-    3300040: Roundabout Rail Ma Boiiii 1
-    3300042: thingunderwindow
-    3300044: thingunderwindow 1
-    3300046: thingunderwindow 10
-    3300048: thingunderwindow 11
-    3300050: thingunderwindow 12
-    3300052: thingunderwindow 13
-    3300054: thingunderwindow 14
-    3300056: thingunderwindow 15
-    3300058: thingunderwindow 16
-    3300060: thingunderwindow 17
-    3300062: thingunderwindow 18
-    3300064: thingunderwindow 19
-    3300066: thingunderwindow 2
-    3300068: thingunderwindow 20
-    3300070: thingunderwindow 21
-    3300072: thingunderwindow 22
-    3300074: thingunderwindow 23
-    3300076: thingunderwindow 24
-    3300078: thingunderwindow 25
-    3300080: thingunderwindow 26
-    3300082: thingunderwindow 27
-    3300084: thingunderwindow 28
-    3300086: thingunderwindow 29
-    3300088: thingunderwindow 3
-    3300090: thingunderwindow 30
-    3300092: thingunderwindow 31
-    3300094: thingunderwindow 32
-    3300096: thingunderwindow 4
-    3300098: thingunderwindow 5
-    3300100: thingunderwindow 6
-    3300102: thingunderwindow 7
-    3300104: thingunderwindow 8
-    3300106: thingunderwindow 9
-    3300108: Window
-    3300110: Window 1
-    3300112: Window 10
-    3300114: Window 11
-    3300116: Window 12
-    3300118: Window 13
-    3300120: Window 14
-    3300122: Window 15
-    3300124: Window 16
-    3300126: Window 17
-    3300128: Window 18
-    3300130: Window 2
-    3300132: Window 3
-    3300134: Window 4
-    3300136: Window 5
-    3300138: Window 6
-    3300140: Window 7
-    3300142: Window 8
-    3300144: Window 9
-    4300000: Mesh leal-building-1920
-    4300002: Mesh thingunderwindow
-    4300004: Mesh Group 31
-    4300006: Mesh Group 33
-    4300008: Mesh Group 63
-    4300010: Mesh Group 66
-    4300012: Mesh Group 68
-    4300014: Mesh Group 70
-    4300016: Mesh Group 73
-    4300018: Mesh Group 82
-    4300020: Mesh Group 84
-    4300022: Mesh Group 88
-    4300024: Mesh Cupola
-    4300026: Mesh Roofline
-    4300028: Mesh Roundabout Rail Ma Boiiii
-    4300030: Mesh Group 96
-    4300032: Mesh Window
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Color C08
-    second: {fileID: 2100000, guid: b03dd859ab794624bafdf184800abf62, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Color M00
-    second: {fileID: 2100000, guid: 33a072f17dc2bb248892677af557a172, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Roofing Shingles Multi
-    second: {fileID: 2100000, guid: 77422da0e099da5498f6bf2e8d56a45d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Translucent Glass Safety
-    second: {fileID: 2100000, guid: 0881be7f79f76fd47b9657661903019d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: _11
-    second: {fileID: 2100000, guid: c94427b9c56d4fe48b4828bad429c826, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: _3
-    second: {fileID: 2100000, guid: 055ec886983114b4ca46195d1dc37ed8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: _5
-    second: {fileID: 2100000, guid: 32ce3c15a51eccf4dae58f2e14bfa3a2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: _9
-    second: {fileID: 2100000, guid: a3b8e838ab19def46be66d1d3d9d76d2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: _defaultMat
-    second: {fileID: 2100000, guid: aa56bb61fcb835c4ca73e95700085764, type: 2}
+    3300002: doorKnob
+    3300004: doorKnob 1
+    3300006: Group 13
+    3300008: Group 9
+    3300010: Leal Building 1920
+    3300012: Roofline
+    4300000: Mesh Leal Building 1920
+    4300002: Mesh Roofline
+    4300004: Mesh Cupola
+    4300006: Mesh doorKnob
+    4300008: Mesh Group 9
+    4300010: Mesh Group 13
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 2
     materialSearch: 0
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -500,6 +116,8 @@ SketchUpImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
