@@ -8,16 +8,16 @@ SketchUpImporter:
   selectedNodes: 0000000001000000020000000300000004000000
   assetHash:
     serializedVersion: 2
-    Hash: b5d0db6540eeaf4d4ef6aade9bdc7576
+    Hash: 7cfb73f0bf320e2ecd95fe53675dedcc
   longitude: -105.242139
   latitude: 40.018309
   northCorrection: -0
   fileUnit: 0
   sketchUpImportData:
     defaultCamera:
-      position: {x: 11.092713, y: 3.1585917, z: -14.6138935}
-      lookAt: {x: 0.13337527, y: 1.7406864, z: 7.296452}
-      up: {x: -0.025848234, y: 0.99832934, z: 0.05167682}
+      position: {x: -17.022654, y: 3.923031, z: -4.7771773}
+      lookAt: {x: 5.426916, y: -0.45196968, z: 4.1142216}
+      up: {x: 0.16575761, y: 0.9839789, z: 0.06565012}
       fov: 35
       aspectRatio: 0
       orthoSize: 1
@@ -48,7 +48,62 @@ SketchUpImporter:
     3300002: Generic building
     4300000: Mesh Generic building
     4300002: Mesh Awning
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: THB-awning
+    second: {fileID: 2100000, guid: 280afc6e515805c4f95ce6121fea2be0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: THB_Lumber
+    second: {fileID: 2100000, guid: 280afc6e515805c4f95ce6121fea2be0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Cladding_Stucco_White]'
+    second: {fileID: 2100000, guid: 280afc6e515805c4f95ce6121fea2be0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color M02]'
+    second: {fileID: 2100000, guid: 280afc6e515805c4f95ce6121fea2be0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color M03]'
+    second: {fileID: 2100000, guid: 280afc6e515805c4f95ce6121fea2be0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color M05]'
+    second: {fileID: 2100000, guid: 280afc6e515805c4f95ce6121fea2be0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color M06]'
+    second: {fileID: 2100000, guid: 280afc6e515805c4f95ce6121fea2be0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color M07]'
+    second: {fileID: 2100000, guid: 280afc6e515805c4f95ce6121fea2be0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Blue]'
+    second: {fileID: 2100000, guid: 280afc6e515805c4f95ce6121fea2be0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood_Cherry_Original]'
+    second: {fileID: 2100000, guid: 280afc6e515805c4f95ce6121fea2be0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: 280afc6e515805c4f95ce6121fea2be0, type: 2}
   materials:
     importMaterials: 1
     materialName: 2
