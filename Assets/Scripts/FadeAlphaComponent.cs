@@ -11,6 +11,8 @@ public class FadeAlphaComponent : MonoBehaviour
 
 	private Image fadeImage;
 	private Color startColor;
+	private Color endColor;
+
 	private void Awake()
 	{
 		fadeImage = GetComponent<Image>();
@@ -18,8 +20,10 @@ public class FadeAlphaComponent : MonoBehaviour
 
 	private void Start()
 	{
-		// TODO removed until Unity 2017.3.0f3 UI bugs are fixed
-		//StartCoroutine(FadeOut());
+		if (isFadeIn)
+			StartCoroutine(FadeIn());
+		else
+			StartCoroutine(FadeOut());
 	}
 
 	private IEnumerator FadeOut()
@@ -29,15 +33,16 @@ public class FadeAlphaComponent : MonoBehaviour
 		yield return new WaitForSeconds(fadeWaitTime);
 
 		float elapsedTime = 0;
-		startColor = fadeImage.material.color;
+		startColor = fadeImage.color;
+		endColor = new Color(startColor.r, startColor.g, startColor.b, 0f);
 
 		while (elapsedTime < fadeTime)
 		{
-			fadeImage.material.color = Color.Lerp(startColor, new Color(startColor.r, startColor.g, startColor.b, 0f), (elapsedTime / fadeTime));
+			fadeImage.color = Color.Lerp(startColor, endColor, (elapsedTime / fadeTime));
 			elapsedTime += Time.deltaTime;
 			yield return null;
 		}
-		fadeImage.material.color = new Color(startColor.r, startColor.g, startColor.b, 0f);
+		fadeImage.color = endColor;
 	}
 
 	private IEnumerator FadeIn()
@@ -47,16 +52,16 @@ public class FadeAlphaComponent : MonoBehaviour
 		yield return new WaitForSeconds(fadeWaitTime);
 
 		float elapsedTime = 0;
-		fadeImage.material.color = new Color(startColor.r, startColor.g, startColor.b, 0f);
-		startColor = fadeImage.material.color;
+		startColor = fadeImage.color;
+		endColor = new Color(startColor.r, startColor.g, startColor.b, 1f);
 
 		while (elapsedTime < fadeTime)
 		{
-			fadeImage.material.color = Color.Lerp(startColor, new Color(startColor.r, startColor.g, startColor.b, 1f), (elapsedTime / fadeTime));
+			fadeImage.color = Color.Lerp(startColor, endColor, (elapsedTime / fadeTime));
 			elapsedTime += Time.deltaTime;
 			yield return null;
 		}
-		fadeImage.material.color = new Color(startColor.r, startColor.g, startColor.b, 0f);
+		fadeImage.color = endColor;
 	}
 
 	private void OnDestroy()
