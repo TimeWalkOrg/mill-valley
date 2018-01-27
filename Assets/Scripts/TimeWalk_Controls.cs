@@ -34,14 +34,17 @@ public class TimeWalk_Controls : MonoBehaviour
 	private float helpHintStartTime;
 	private float helpHintEndTime;
 
-	// Use this for initialization
-	void Awake () {
+	void Awake ()
+	{
 		AudioListener.pause = true;
 		source = GetComponent<AudioSource>();
+		
 		//canvas = GetComponent<Canvas>();
 		//canvas.enabled = false;
 	}
-	void Start() {
+
+	void Start()
+	{
 		levelStartTime = Time.timeSinceLevelLoad;
 		// Since we can't resize builtin arrays
 		// we have to recreate the array to resize it
@@ -147,6 +150,7 @@ public class TimeWalk_Controls : MonoBehaviour
 		// Press "R" key to Restart the level
 		if(Input.GetKeyDown(KeyCode.R))
 		{
+			LoadingManager.instance.ClearControllerGO();
 			Application.LoadLevel(0);
 		}
 

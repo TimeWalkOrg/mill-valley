@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class timeWalkControlsNoUI : MonoBehaviour {
+public class timeWalkControlsNoUI : MonoBehaviour
+{
     public static int yearNowValue;     //global value for the current year being shown
     public static float levelStartTime;     //global value for the time the level started
     public static bool isGamePaused = false;        //global value for whether the game is paused (e.g. by the "H" key)
@@ -58,8 +59,8 @@ public class timeWalkControlsNoUI : MonoBehaviour {
 
         // Press "R" key to Restart the level
         if (Input.GetKeyDown(KeyCode.R))
-        { // pressed the "R" restart level key
-//            Application.LoadLevel(0);
+        {
+			LoadingManager.instance.ClearControllerGO();
             SceneManager.LoadScene(0, LoadSceneMode.Single);
         }
         // Press "Q" key to Restart the level

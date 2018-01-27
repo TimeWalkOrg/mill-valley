@@ -3,12 +3,15 @@
 	private var lastYearDisplayed : int = 0;
 	private var currentYearNowValue: int;
 
-function Update () {
-	if(TimeWalk_Controls.yearNowValue == 0){
-		currentYearNowValue = 1920;
-	} else {
-		currentYearNowValue = TimeWalk_Controls.yearNowValue;
-	}
+function Update ()
+{
+// hack until redone
+currentYearNowValue = 1920;
+	//if(TimeWalk_Controls.yearNowValue == 0){
+	//	currentYearNowValue = 1920;
+	//} else {
+	//	currentYearNowValue = TimeWalk_Controls.yearNowValue;
+	//}
 /*
 	if(timeWalkControlsNoUI.yearNowValue == 0){
 		currentYearNowValue = 1920;

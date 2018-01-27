@@ -3,36 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum ControlTypes
-{
-	None = 0,
-	FPS,
-	VR
-};
-
 public class LoadingManager : MonoBehaviour
 {
 	#region Singleton
 	private static LoadingManager _instance = null;
-	public static bool hasInstance
-	{
-		get { _instanceCheck(); return _instance != null; }
-	}
-	private static LoadingManager _instanceCheck()
-	{
-		if (_instance == null)
-			_instance = GameObject.FindObjectOfType<LoadingManager>();
-		return _instance;
-	}
 	public static LoadingManager instance
 	{
 		get
 		{
-			_instanceCheck();
 			if (_instance == null)
-				Debug.LogError("<color=red>LoadingManager Not Found!</color>");
+				GameObject.FindObjectOfType<LoadingManager>();
 			return _instance;
 		}
+	}
+
+	void Awake()
+	{
+		if (_instance != null && _instance != this)
+		{
+			Destroy(this.gameObject);
+			return;
+		}
+		else
+		{
+			_instance = this;
+		}
+		DontDestroyOnLoad(transform.gameObject);
 	}
 
 	void OnApplicationQuit()
@@ -41,6 +37,13 @@ public class LoadingManager : MonoBehaviour
 		DestroyImmediate(gameObject);
 	}
 	#endregion
+
+	public enum ControlTypes
+	{
+		None = 0,
+		FPS,
+		VR
+	};
 
 	[System.Serializable]
 	public struct ControllerData
@@ -53,25 +56,51 @@ public class LoadingManager : MonoBehaviour
 	private GameObject currentControlGO;
 	private GameObject currentControlUI;
 	private ControlTypes currentControllerType;
+	private bool isMainSceneLoaded = false;
 
-	void Awake()
+	AsyncOperation asyncLoaderMainScene;
+
+	private void Start()
 	{
-		DontDestroyOnLoad(transform.gameObject);
+		isMainSceneLoaded = false;
+		StartCoroutine(LoadAsyncScene());
+	}
+
+	private void OnEnable()
+	{
+		// TODO reload main scene if restarted from main scene into loading scene
+	}
+
+	IEnumerator LoadAsyncScene()
+	{
+		asyncLoaderMainScene = SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
+		asyncLoaderMainScene.allowSceneActivation = false;
+
+		while (asyncLoaderMainScene.progress < 0.9f)
+			yield return null;
+
+		yield return new WaitForEndOfFrame();
+
+		isMainSceneLoaded = true;
 	}
 
 	public void SelectControllerTypeOnClick(int index)
 	{
 		currentControllerType = (ControlTypes)index;
-		LoadMainMenu((ControlTypes)index);
+		StartCoroutine(WaitUntilSceneLoaded((ControlTypes)index));
 	}
 
-	private void LoadMainMenu(ControlTypes type)
+	IEnumerator WaitUntilSceneLoaded(ControlTypes type)
 	{
-		if (currentControlGO != null)
-			Destroy(currentControlGO);
-		if (currentControlUI != null)
-			Destroy(currentControlUI);
+		while (!isMainSceneLoaded)
+			yield return null;
 
+		asyncLoaderMainScene.allowSceneActivation = true;
+
+		while (!asyncLoaderMainScene.isDone)
+			yield return null;
+
+		ClearControllerGO();
 		switch (type)
 		{
 			case ControlTypes.None:
@@ -87,9 +116,20 @@ public class LoadingManager : MonoBehaviour
 			default:
 				break;
 		}
-		SceneManager.LoadSceneAsync(1, LoadSceneMode.Single);
-		SceneManager.UnloadSceneAsync(0);
+
+		Scene mainScene = SceneManager.GetSceneByName("MainScene");
+		while (!mainScene.IsValid())
+			yield return null;
+
+		SceneManager.SetActiveScene(mainScene);
+		SceneManager.UnloadScene(0);
+	}
+
+	public void ClearControllerGO()
+	{
+		if (currentControlGO != null)
+			Destroy(currentControlGO);
+		if (currentControlUI != null)
+			Destroy(currentControlUI);
 	}
 }
-
-
