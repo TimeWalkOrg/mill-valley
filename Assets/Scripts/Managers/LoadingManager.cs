@@ -12,7 +12,7 @@ public class LoadingManager : MonoBehaviour
 		get
 		{
 			if (_instance == null)
-				GameObject.FindObjectOfType<LoadingManager>();
+				_instance = GameObject.FindObjectOfType<LoadingManager>();
 			return _instance;
 		}
 	}
@@ -57,18 +57,22 @@ public class LoadingManager : MonoBehaviour
 	private GameObject currentControlUI;
 	private ControlTypes currentControllerType;
 	private bool isMainSceneLoaded = false;
+	[HideInInspector]
+	public GameObject mainSceneGO;
+	private GameObject loadingSceneGO;
 
-	AsyncOperation asyncLoaderMainScene;
+	private Scene mainScene;
+	private Scene loadingScene;
+
+	private AsyncOperation asyncLoaderMainScene;
 
 	private void Start()
 	{
+		loadingSceneGO = GameObject.Find("LoadingSceneGO");
+		
+		loadingScene = SceneManager.GetSceneByName("LoadingScene");
 		isMainSceneLoaded = false;
 		StartCoroutine(LoadAsyncScene());
-	}
-
-	private void OnEnable()
-	{
-		// TODO reload main scene if restarted from main scene into loading scene
 	}
 
 	IEnumerator LoadAsyncScene()
@@ -100,7 +104,11 @@ public class LoadingManager : MonoBehaviour
 		while (!asyncLoaderMainScene.isDone)
 			yield return null;
 
-		ClearControllerGO();
+		mainScene = SceneManager.GetSceneByName("MainScene");
+
+		while (!mainScene.IsValid())
+			yield return null;
+
 		switch (type)
 		{
 			case ControlTypes.None:
@@ -117,15 +125,31 @@ public class LoadingManager : MonoBehaviour
 				break;
 		}
 
-		Scene mainScene = SceneManager.GetSceneByName("MainScene");
-		while (!mainScene.IsValid())
-			yield return null;
-
-		SceneManager.SetActiveScene(mainScene);
-		SceneManager.UnloadScene(0);
+		ToggleLoadingScene(false);
+		ToggleMainScene(true);
 	}
 
-	public void ClearControllerGO()
+	public void ToggleLoadingScene(bool state)
+	{
+		if (state)
+		{
+			ClearControllerGO();
+			SceneManager.SetActiveScene(loadingScene);
+		}
+		loadingSceneGO.SetActive(state);
+	}
+
+	public void ToggleMainScene(bool state)
+	{
+		if (state)
+			SceneManager.SetActiveScene(mainScene);
+		if (mainSceneGO == null)
+			mainSceneGO = GameObject.Find("MainSceneGO");
+		if (mainSceneGO != null)
+			mainSceneGO.SetActive(state);
+	}
+
+	private void ClearControllerGO()
 	{
 		if (currentControlGO != null)
 			Destroy(currentControlGO);

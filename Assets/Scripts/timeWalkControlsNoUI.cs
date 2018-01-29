@@ -60,9 +60,10 @@ public class timeWalkControlsNoUI : MonoBehaviour
         // Press "R" key to Restart the level
         if (Input.GetKeyDown(KeyCode.R))
         {
-			LoadingManager.instance.ClearControllerGO();
-            SceneManager.LoadScene(0, LoadSceneMode.Single);
-        }
+			LoadingManager.instance.ToggleLoadingScene(true);
+			LoadingManager.instance.ToggleMainScene(false);
+		}
+
         // Press "Q" key to Restart the level
         if (Input.GetKeyDown(KeyCode.Q))
         { // pressed the "Q" Quit game key

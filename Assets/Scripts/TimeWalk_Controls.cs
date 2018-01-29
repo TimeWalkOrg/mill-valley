@@ -150,8 +150,8 @@ public class TimeWalk_Controls : MonoBehaviour
 		// Press "R" key to Restart the level
 		if(Input.GetKeyDown(KeyCode.R))
 		{
-			LoadingManager.instance.ClearControllerGO();
-			Application.LoadLevel(0);
+			LoadingManager.instance.ToggleLoadingScene(true);
+			LoadingManager.instance.ToggleMainScene(false);
 		}
 
 		// Press "Q" key to Restart the level
