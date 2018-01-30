@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR;
 
 public class LoadingManager : MonoBehaviour
 {
@@ -45,6 +46,9 @@ public class LoadingManager : MonoBehaviour
 		VR
 	};
 
+	public GameObject controllerSelectionUIGO;
+	public GameObject controllerVRButtonUIGO;
+
 	[System.Serializable]
 	public struct ControllerData
 	{
@@ -55,7 +59,8 @@ public class LoadingManager : MonoBehaviour
 
 	private GameObject currentControlGO;
 	private GameObject currentControlUI;
-	private ControlTypes currentControllerType;
+	[HideInInspector]
+	public ControlTypes currentControllerType;
 	private bool isMainSceneLoaded = false;
 	[HideInInspector]
 	public GameObject mainSceneGO;
@@ -65,14 +70,31 @@ public class LoadingManager : MonoBehaviour
 	private Scene loadingScene;
 
 	private AsyncOperation asyncLoaderMainScene;
+	private string vrDevice;
 
 	private void Start()
 	{
+		controllerSelectionUIGO.SetActive(false);
+		if (XRDevice.isPresent)
+		{
+			vrDevice = XRDevice.model;
+			Debug.Log(vrDevice);
+			controllerVRButtonUIGO.SetActive(true);
+		}
+		else
+		{
+			controllerVRButtonUIGO.SetActive(false);
+		}
+
 		loadingSceneGO = GameObject.Find("LoadingSceneGO");
-		
 		loadingScene = SceneManager.GetSceneByName("LoadingScene");
 		isMainSceneLoaded = false;
 		StartCoroutine(LoadAsyncScene());
+	}
+
+	private void OnDestroy()
+	{
+		StopAllCoroutines();
 	}
 
 	IEnumerator LoadAsyncScene()
@@ -83,9 +105,8 @@ public class LoadingManager : MonoBehaviour
 		while (asyncLoaderMainScene.progress < 0.9f)
 			yield return null;
 
-		yield return new WaitForEndOfFrame();
-
 		isMainSceneLoaded = true;
+		controllerSelectionUIGO.SetActive(true);
 	}
 
 	public void SelectControllerTypeOnClick(int index)
@@ -101,24 +122,54 @@ public class LoadingManager : MonoBehaviour
 
 		asyncLoaderMainScene.allowSceneActivation = true;
 
+		Debug.Log("activation true");
+
 		while (!asyncLoaderMainScene.isDone)
 			yield return null;
 
+		Debug.Log("isDone");
+
 		mainScene = SceneManager.GetSceneByName("MainScene");
+
+		Debug.Log("get scene");
 
 		while (!mainScene.IsValid())
 			yield return null;
 
+		Debug.Log("isValid");
+
 		switch (type)
 		{
 			case ControlTypes.None:
+				if (XRSettings.isDeviceActive)
+				{
+					XRSettings.LoadDeviceByName("");
+					yield return new WaitForEndOfFrame();
+					XRSettings.enabled = false;
+					yield return null;
+				}
 				currentControlGO = Instantiate(controls[(int)ControlTypes.None].controls[0]);
 				break;
 			case ControlTypes.FPS:
+				if (XRSettings.isDeviceActive)
+				{
+					XRSettings.LoadDeviceByName("");
+					yield return new WaitForEndOfFrame();
+					XRSettings.enabled = false;
+					yield return null;
+				}
 				currentControlGO = Instantiate(controls[(int)ControlTypes.FPS].controls[0]);
 				currentControlUI = Instantiate(controls[(int)ControlTypes.FPS].controls[1]);
 				break;
 			case ControlTypes.VR:
+				// TODO not init VR after disable WIP
+				if (!XRSettings.isDeviceActive)
+				{
+					XRSettings.LoadDeviceByName(vrDevice);
+					yield return new WaitForEndOfFrame();
+					XRSettings.enabled = true;
+					yield return null;
+				}
 				currentControlGO = Instantiate(controls[(int)ControlTypes.VR].controls[0]);
 				break;
 			default:
