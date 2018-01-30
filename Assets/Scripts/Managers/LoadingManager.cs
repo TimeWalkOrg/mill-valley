@@ -100,9 +100,12 @@ public class LoadingManager : MonoBehaviour
 	IEnumerator LoadAsyncScene()
 	{
 		asyncLoaderMainScene = SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
-		asyncLoaderMainScene.allowSceneActivation = false;
+		//asyncLoaderMainScene.allowSceneActivation = false;
 
 		while (asyncLoaderMainScene.progress < 0.9f)
+			yield return null;
+
+		while (!asyncLoaderMainScene.isDone)
 			yield return null;
 
 		isMainSceneLoaded = true;
@@ -120,14 +123,14 @@ public class LoadingManager : MonoBehaviour
 		while (!isMainSceneLoaded)
 			yield return null;
 
-		asyncLoaderMainScene.allowSceneActivation = true;
+		//asyncLoaderMainScene.allowSceneActivation = true;
 
-		Debug.Log("activation true");
+		//Debug.Log("activation true");
 
-		while (!asyncLoaderMainScene.isDone)
-			yield return null;
+		//while (!asyncLoaderMainScene.isDone)
+		//	yield return null;
 
-		Debug.Log("isDone");
+		//Debug.Log("isDone");
 
 		mainScene = SceneManager.GetSceneByName("MainScene");
 
@@ -178,6 +181,8 @@ public class LoadingManager : MonoBehaviour
 
 		ToggleLoadingScene(false);
 		ToggleMainScene(true);
+		yield return new WaitForEndOfFrame();
+		ControlManager.instance.ToggleYear(1920);
 	}
 
 	public void ToggleLoadingScene(bool state)

@@ -7,27 +7,27 @@ public class TimeActiveComponent : MonoBehaviour
 	public int yearBuilt;
 	public int yearReplaced;
 	private int lastYearDisplayed = 0;
-	private int currentYearNowValue;
 
-	private void Update()
+	private void OnEnable()
 	{
-		if (TimeWalk_Controls.yearNowValue == 0)
-		{
-			currentYearNowValue = 1920;
-		}
-		else
-		{
-			currentYearNowValue = TimeWalk_Controls.yearNowValue;
-		}
+		Missive.AddListener<YearDataMissive>(OnYearData);
+	}
 
-		if (lastYearDisplayed != currentYearNowValue) // if year has changed, then...
+	private void OnDisable()
+	{
+		Missive.RemoveListener<YearDataMissive>(OnYearData);
+	}
+
+	private void OnYearData(YearDataMissive missive)
+	{
+		if (lastYearDisplayed != missive.data.year)
 		{
-			bool state = (currentYearNowValue >= yearBuilt) && (currentYearNowValue < yearReplaced);
+			bool state = (missive.data.year >= yearBuilt) && (missive.data.year < yearReplaced);
 			foreach (Transform child in transform)
 			{
 				child.gameObject.SetActive(state);
 			}
-			lastYearDisplayed = currentYearNowValue; // update lastYearDisplayed to the current TimeWalk date
+			lastYearDisplayed = missive.data.year; // update lastYearDisplayed to the current TimeWalk date
 		}
 	}
 }
