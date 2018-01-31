@@ -8,12 +8,22 @@ public struct YearData
 {
 	public int year;
 	public string yearLabel;
-	public AudioClip yearAudioClip;
+	public AudioClip audioClip;
 };
 
 public class YearDataMissive : Missive
 {
 	public YearData data;
+}
+
+public class HelpMissive : Missive
+{
+	public bool state;
+}
+
+public class AudioMissive : Missive
+{
+	//
 }
 
 public class ControlManager : MonoBehaviour
@@ -51,20 +61,20 @@ public class ControlManager : MonoBehaviour
 	}
 	#endregion
 
-	public Color uiDefaultColor = Color.white;
-	public Color uiHighlightColor = Color.yellow;
-
 	public YearData[] yearData;
 	public int currentYear { get; private set; }
 	public int currentYearIndex { get; private set; }
 
-	private void Start()
-	{
-		//
-	}
+	public timeWalkDayNightToggle dayNightRef { get; set; }
 
 	private void Update()
 	{
+		if (Input.GetKeyUp(KeyCode.R))
+			ToggleMenu();
+
+		if (Input.GetKeyUp(KeyCode.Q) || Input.GetKeyUp(KeyCode.Escape))
+			ToggleQuit();
+
 		if (Input.GetKeyUp(KeyCode.Y))
 			ToggleYear();
 
@@ -73,12 +83,22 @@ public class ControlManager : MonoBehaviour
 
 		if (Input.GetKeyUp(KeyCode.H))
 			ToggleHelp();
+	}
 
-		if (Input.GetKeyUp(KeyCode.R))
-			ToggleMenu();
-
-		if (Input.GetKeyUp(KeyCode.Q) || Input.GetKeyUp(KeyCode.Escape))
-			ToggleQuit();
+	public void SetCurrentTime(YearData data)
+	{
+		for (int i = 0; i < yearData.Length; i++)
+		{
+			if (data.year == yearData[i].year)
+			{
+				currentYear = data.year;
+				currentYearIndex = i;
+				return;
+			}
+		}
+		// default if not correct year
+		currentYear = yearData[0].year;
+		currentYearIndex = 0;
 	}
 
 	public void ToggleYear(int year = -1)
@@ -108,36 +128,52 @@ public class ControlManager : MonoBehaviour
 		}
 
 		SendYearDataMissive(yearData[currentYearIndex]);
-
-		// slider text and approx -done
-		// ui text
-		// audio
+		SendAudioMissive();
 	}
 
 	private void ToggleNight()
 	{
-		// night
+		if (dayNightRef == null)
+			dayNightRef = FindObjectOfType<timeWalkDayNightToggle>();
+		if (dayNightRef != null)
+			dayNightRef.ToggleDayNight();
 	}
 
 	private void ToggleHelp()
 	{
-		// help
+		if (LoadingManager.instance.currentControllerType != LoadingManager.ControlTypes.FPS)
+			return;
+
+		SendHelpMissive();
 	}
 
 	private void ToggleMenu()
 	{
-		// menu
+		LoadingManager.instance.ToggleLoadingScene(true);
+		LoadingManager.instance.ToggleMainScene(false);
 	}
 
 	private void ToggleQuit()
 	{
-		// quit
+		Application.Quit();
 	}
 
 	private void SendYearDataMissive(YearData data)
 	{
 		YearDataMissive missive = new YearDataMissive();
 		missive.data = data;
+		Missive.Send(missive);
+	}
+
+	private void SendHelpMissive()
+	{
+		HelpMissive missive = new HelpMissive();
+		Missive.Send(missive);
+	}
+
+	private void SendAudioMissive()
+	{
+		AudioMissive missive = new AudioMissive();
 		Missive.Send(missive);
 	}
 }

@@ -51,6 +51,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c40a804ae033c4789a6abfc94778bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerSelectionUIGO: {fileID: 0}
+  controllerVRButtonUIGO: {fileID: 0}
+  loadingUIGO: {fileID: 0}
+  loadingSlider: {fileID: 0}
+  loadingImage: {fileID: 0}
+  loadingSprites:
+  - {fileID: 21300000, guid: fa688d462bbc8d34391d2d8ba087a48f, type: 3}
+  - {fileID: 21300000, guid: 91a2bc790397fea43a816097f7d340e9, type: 3}
+  - {fileID: 21300000, guid: 55a7fc8921742504e8edc9c3535c9543, type: 3}
   controls:
   - type: 0
     controls:
@@ -62,3 +71,7 @@ MonoBehaviour:
   - type: 2
     controls:
     - {fileID: 1244737008150180, guid: 1f5e627f48a190d4fb3c35fda749e964, type: 2}
+  currentControlGO: {fileID: 0}
+  currentControlUI: {fileID: 0}
+  currentControllerType: 0
+  mainSceneGO: {fileID: 0}

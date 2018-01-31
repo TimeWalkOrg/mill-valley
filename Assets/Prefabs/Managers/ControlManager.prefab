@@ -51,6 +51,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f0eeac8e0f29ae40a66a1977b9a6bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiDefaultColor: {r: 1, g: 1, b: 1, a: 1}
+  uiHighlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  yearAudioClip: {fileID: 8300000, guid: fefb5238567e6aa44befe4a81e29e61a, type: 3}
   yearData:
   - year: 1800
     yearLabel: '1800: Chief Marin'
@@ -64,5 +67,3 @@ MonoBehaviour:
     yearLabel: '1973: Sweetwater'
   - year: 2015
     yearLabel: '2015: The present'
-  currentYear: 0
-  currentYearIndex: 0

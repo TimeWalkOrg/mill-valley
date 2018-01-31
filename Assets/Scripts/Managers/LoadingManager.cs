@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR;
+using UnityEngine.UI;
 
 public class LoadingManager : MonoBehaviour
 {
@@ -48,6 +49,10 @@ public class LoadingManager : MonoBehaviour
 
 	public GameObject controllerSelectionUIGO;
 	public GameObject controllerVRButtonUIGO;
+	public GameObject loadingUIGO;
+	public Slider loadingSlider;
+	public Image loadingImage;
+	public Sprite[] loadingSprites;
 
 	[System.Serializable]
 	public struct ControllerData
@@ -57,8 +62,10 @@ public class LoadingManager : MonoBehaviour
 	}
 	public ControllerData[] controls;
 
-	private GameObject currentControlGO;
-	private GameObject currentControlUI;
+	[HideInInspector]
+	public GameObject currentControlGO;
+	[HideInInspector]
+	public GameObject currentControlUI;
 	[HideInInspector]
 	public ControlTypes currentControllerType;
 	private bool isMainSceneLoaded = false;
@@ -74,7 +81,10 @@ public class LoadingManager : MonoBehaviour
 
 	private void Start()
 	{
+		loadingUIGO.SetActive(true);
 		controllerSelectionUIGO.SetActive(false);
+		StartCoroutine(LoadingImages());
+
 		if (XRDevice.isPresent)
 		{
 			vrDevice = XRDevice.model;
@@ -97,18 +107,30 @@ public class LoadingManager : MonoBehaviour
 		StopAllCoroutines();
 	}
 
+	IEnumerator LoadingImages()
+	{
+		while (loadingUIGO.activeInHierarchy)
+		{
+			int index = (int) Random.Range(0, loadingSprites.Length);
+			loadingImage.sprite = loadingSprites[index];
+			yield return new WaitForSeconds(1f);
+		}
+	}
+
 	IEnumerator LoadAsyncScene()
 	{
+		loadingSlider.value = 0f;
 		asyncLoaderMainScene = SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
-		//asyncLoaderMainScene.allowSceneActivation = false;
-
-		while (asyncLoaderMainScene.progress < 0.9f)
-			yield return null;
 
 		while (!asyncLoaderMainScene.isDone)
+		{
+			if (loadingSlider.value < 1f)
+				loadingSlider.value += 0.005f;
 			yield return null;
+		}
 
 		isMainSceneLoaded = true;
+		loadingUIGO.SetActive(false);
 		controllerSelectionUIGO.SetActive(true);
 	}
 
@@ -122,15 +144,6 @@ public class LoadingManager : MonoBehaviour
 	{
 		while (!isMainSceneLoaded)
 			yield return null;
-
-		//asyncLoaderMainScene.allowSceneActivation = true;
-
-		//Debug.Log("activation true");
-
-		//while (!asyncLoaderMainScene.isDone)
-		//	yield return null;
-
-		//Debug.Log("isDone");
 
 		mainScene = SceneManager.GetSceneByName("MainScene");
 
@@ -203,6 +216,8 @@ public class LoadingManager : MonoBehaviour
 			mainSceneGO = GameObject.Find("MainSceneGO");
 		if (mainSceneGO != null)
 			mainSceneGO.SetActive(state);
+
+		//ControlManager.instance.SetAudio();
 	}
 
 	private void ClearControllerGO()

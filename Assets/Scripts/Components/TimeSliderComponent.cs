@@ -9,7 +9,8 @@ public class TimeSliderComponent : MonoBehaviour
 {
 	public Text sliderText;
 	public Slider yearSlider;
-	private int currentYear;
+	private YearData currentYearData;
+	private float effectTimeLength = 3.0f;
 
 	private void OnEnable()
 	{
@@ -25,7 +26,10 @@ public class TimeSliderComponent : MonoBehaviour
 	{
 		sliderText.text = missive.data.yearLabel;
 		yearSlider.value = missive.data.year;
-		currentYear = missive.data.year;
+		currentYearData.year = missive.data.year;
+		sliderText.color = Color.yellow;
+		CancelInvoke();
+		Invoke("TimedSliderTextChange", effectTimeLength);
 	}
 
 	public void OnEndDrag(BaseEventData eventData)
@@ -35,13 +39,25 @@ public class TimeSliderComponent : MonoBehaviour
 		if (nearest.year != yearSlider.value)
 		{
 			SendYearDataMissive(nearest);
+			ControlManager.instance.SetCurrentTime(nearest);
 		}
 		else
 		{
 			sliderText.text = nearest.yearLabel;
 			yearSlider.value = nearest.year;
-			currentYear = nearest.year;
+			currentYearData.year = nearest.year;
 		}
+	}
+
+	private void TimedSliderTextChange()
+	{
+		sliderText.text = yearSlider.value.ToString();
+		sliderText.color = Color.white;
+	}
+
+	private void OnDestroy()
+	{
+		CancelInvoke();
 	}
 
 	private void SendYearDataMissive(YearData data)

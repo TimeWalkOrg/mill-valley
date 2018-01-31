@@ -38,8 +38,8 @@ public class TimeWalk_Controls : MonoBehaviour
 
 	void Awake ()
 	{
-		AudioListener.pause = true;
-		source = GetComponent<AudioSource>();
+		//AudioListener.pause = true;
+		//source = GetComponent<AudioSource>();
 		
 		//canvas = GetComponent<Canvas>();
 		//canvas.enabled = false;
@@ -47,51 +47,51 @@ public class TimeWalk_Controls : MonoBehaviour
 
 	void Start()
 	{
-		levelStartTime = Time.timeSinceLevelLoad;
-		// Since we can't resize builtin arrays
-		// we have to recreate the array to resize it
-		yearArray = new int[6];
+		//levelStartTime = Time.timeSinceLevelLoad;
+		//// Since we can't resize builtin arrays
+		//// we have to recreate the array to resize it
+		//yearArray = new int[6];
 
-		yearArray[0] = 1920;
-		yearArray[1] = 1950;
-		yearArray[2] = 1973;
-		yearArray[3] = 2015;
-		yearArray[4] = 1800;
-		yearArray[5] = 1850;
+		//yearArray[0] = 1920;
+		//yearArray[1] = 1950;
+		//yearArray[2] = 1973;
+		//yearArray[3] = 2015;
+		//yearArray[4] = 1800;
+		//yearArray[5] = 1850;
 
-		yearNowValue = yearArray [yearIndexValue];
-        yearSlider.value = yearArray[yearIndexValue]; // Sets to 1920 position
-        yearLastValue = yearNowValue;
-		helpHintStartTime = levelStartTime + helpHintStartDelay;
-		helpHintEndTime = helpHintStartTime + helpHintDuration;
-		yearText.color = uiDefaultColor;
-		timeText.color = uiDefaultColor;
-		helpHintText.color = uiDefaultColor;
-		helpFullText.color = uiDefaultColor;
-		locationText.color = uiDefaultColor;
-		sliderText.color = uiDefaultHighlightColor;
+		//yearNowValue = yearArray [yearIndexValue];
+  //      yearSlider.value = yearArray[yearIndexValue]; // Sets to 1920 position
+  //      yearLastValue = yearNowValue;
+		//helpHintStartTime = levelStartTime + helpHintStartDelay;
+		//helpHintEndTime = helpHintStartTime + helpHintDuration;
+		//yearText.color = uiDefaultColor;
+		//timeText.color = uiDefaultColor;
+		//helpHintText.color = uiDefaultColor;
+		//helpFullText.color = uiDefaultColor;
+		//locationText.color = uiDefaultColor;
+		//sliderText.color = uiDefaultHighlightColor;
 		
-		// hide all of the UI elements at start
-		helpHintText.enabled = false;
-		helpFullText.enabled = false;
+		//// hide all of the UI elements at start
+		//helpHintText.enabled = false;
+		//helpFullText.enabled = false;
 	}
 
 	void Update ()
 	{
-		//timeText.text = System.DateTime.Now.ToString ("h:mm:ss tt");  //May cause garbage collection problem
+		//timeText.text = System.DateTime.Now.ToString("h:mm:ss tt");  //May cause garbage collection problem
 		//AudioListener.pause = false;
 
 		//// Press "Y" key to change year
- 	//	if (Input.GetKeyDown (KeyCode.Y))
+		//if (Input.GetKeyDown(KeyCode.Y))
 		//{
 		//	++yearIndexValue;
 		//	if (yearIndexValue == yearArraySize)
-		//		yearIndexValue = 0; 
-		//	yearNowValue = yearArray [yearIndexValue];
+		//		yearIndexValue = 0;
+		//	yearNowValue = yearArray[yearIndexValue];
 
 		//	// temporary hack to change titles.  was having trouble making text array work...
 		//	// eraText.text = eraTitleArray [yearIndexValue];
-					
+
 		//	if (yearIndexValue == 0) sliderText.text = "1920: Prohibition";
 		//	if (yearIndexValue == 1) sliderText.text = "1950: Mid-Century";
 		//	if (yearIndexValue == 2) sliderText.text = "1973: Sweetwater";
@@ -102,8 +102,8 @@ public class TimeWalk_Controls : MonoBehaviour
 		//	//eraText.enabled = true;
 		//	yearSlider.value = yearNowValue;
 
-		//	source.PlayOneShot(timeSound,0.5f);
-		//	yearText.text = yearNowValue.ToString ();
+		//	source.PlayOneShot(timeSound, 0.5f);
+		//	yearText.text = yearNowValue.ToString();
 		//	effectTimeStart = Time.timeSinceLevelLoad;
 		//	effectTimeEnd = effectTimeStart + effectTimeLength;
 		//}
@@ -117,14 +117,14 @@ public class TimeWalk_Controls : MonoBehaviour
 		//	yearText.color = uiDefaultColor;
 		//	sliderText.text = yearText.text;
 		//}
-		
-		//// Show location/time/year after delay
-		////if (Time.timeSinceLevelLoad > helpHintStartTime)
-		////{
-		////	canvas.enabled = true;
-		////}
 
-		//// Show Help hint briefly after launch
+		// Show location/time/year after delay
+		//if (Time.timeSinceLevelLoad > helpHintStartTime)
+		//{
+		//	canvas.enabled = true;
+		//}
+
+		// Show Help hint briefly after launch
 		//if ((Time.timeSinceLevelLoad > helpHintStartTime) && (Time.timeSinceLevelLoad < helpHintEndTime))
 		//{
 		//	helpHintText.enabled = true;
@@ -135,9 +135,9 @@ public class TimeWalk_Controls : MonoBehaviour
 		//}
 
 		//// Press "H" key to toggle Help text
-		//if (Input.GetKeyDown (KeyCode.H))
+		//if (Input.GetKeyDown(KeyCode.H))
 		//{
-		//	if(!helpFullText.enabled)
+		//	if (!helpFullText.enabled)
 		//	{
 		//		helpFullText.enabled = true;
 		//		isGamePaused = true;
@@ -150,7 +150,7 @@ public class TimeWalk_Controls : MonoBehaviour
 		//}
 
 		//// Press "R" key to Restart the level
-		//if(Input.GetKeyDown(KeyCode.R))
+		//if (Input.GetKeyDown(KeyCode.R))
 		//{
 		//	LoadingManager.instance.ToggleLoadingScene(true);
 		//	LoadingManager.instance.ToggleMainScene(false);
@@ -159,19 +159,19 @@ public class TimeWalk_Controls : MonoBehaviour
 		//// Press "Q" key to Restart the level
 		//if (Input.GetKeyDown(KeyCode.Q))
 		//{
-		//	Application.Quit ();
+		//	Application.Quit();
 		//}
 
-		// snap slider to closest year if not in mousedown mode
-		//if ((Input.GetMouseButtonUp (0)) && (yearLastValue != yearSlider.value))
+		////snap slider to closest year if not in mousedown mode
+		//if ((Input.GetMouseButtonUp(0)) && (yearLastValue != yearSlider.value))
 		//{
 		//	int closestYear = 0;
 		//	int closestGap = 9999;
 		//	int closestIndex = 0;
 		//	// cycle through array of years and find the closest value to snap to
-		//	for(int i = 0; i < yearArraySize; i++)
+		//	for (int i = 0; i < yearArraySize; i++)
 		//	{
-		//		int gapCheck = Mathf.Abs(yearArray[i] - Mathf.RoundToInt (yearSlider.value)); //;
+		//		int gapCheck = Mathf.Abs(yearArray[i] - Mathf.RoundToInt(yearSlider.value)); //;
 		//		if (gapCheck < closestGap)
 		//		{
 		//			closestGap = gapCheck;
@@ -181,24 +181,24 @@ public class TimeWalk_Controls : MonoBehaviour
 		//	}
 
 		//	yearSlider.value = closestYear;
-		//	if (yearNowValue != Mathf.RoundToInt (yearSlider.value))
+		//	if (yearNowValue != Mathf.RoundToInt(yearSlider.value))
 		//	{
-		//		yearNowValue = Mathf.RoundToInt (yearSlider.value); // change yearSliderValue
-		//		// temporary hack to change titles.  was having trouble making text array work...
-		//		// eraText.text = eraTitleArray [yearIndexValue];
-				
+		//		yearNowValue = Mathf.RoundToInt(yearSlider.value); // change yearSliderValue
+		//														   // temporary hack to change titles.  was having trouble making text array work...
+		//														   // eraText.text = eraTitleArray [yearIndexValue];
+
 		//		if (closestIndex == 0) sliderText.text = "1920: Prohibition";
 		//		if (closestIndex == 1) sliderText.text = "1950: Mid-Century";
 		//		if (closestIndex == 2) sliderText.text = "1973: Sweetwater";
 		//		if (closestIndex == 3) sliderText.text = "2015: the present";
 		//		if (closestIndex == 4) sliderText.text = "1800: Chief Marin";
 		//		if (closestIndex == 5) sliderText.text = "1850: John Reed's Mill";
-				
-		//		source.PlayOneShot(timeSound,0.5f);
-		//		yearText.text = yearNowValue.ToString ();
+
+		//		source.PlayOneShot(timeSound, 0.5f);
+		//		yearText.text = yearNowValue.ToString();
 		//		effectTimeStart = Time.timeSinceLevelLoad;
-		//		effectTimeEnd = effectTimeStart + effectTimeLength;	
-		//		isGamePaused = false;	
+		//		effectTimeEnd = effectTimeStart + effectTimeLength;
+		//		isGamePaused = false;
 		//	}
 		//}
 	}

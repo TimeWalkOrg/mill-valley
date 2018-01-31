@@ -20,54 +20,54 @@ public class timeWalkControlsNoUI : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
-        AudioListener.pause = true;
-        source = GetComponent<AudioSource>();
+        //AudioListener.pause = true;
+        //source = GetComponent<AudioSource>();
     }
     void Start()
     {
-        levelStartTime = Time.timeSinceLevelLoad;
-        // Since we can't resize builtin arrays
-        // we have to recreate the array to resize it
-        yearArray = new int[6];
+        //levelStartTime = Time.timeSinceLevelLoad;
+        //// Since we can't resize builtin arrays
+        //// we have to recreate the array to resize it
+        //yearArray = new int[6];
 
-        yearArray[0] = 1920;
-        yearArray[1] = 1950;
-        yearArray[2] = 1973;
-        yearArray[3] = 2015;
-        yearArray[4] = 1800;
-        yearArray[5] = 1850;
+        //yearArray[0] = 1920;
+        //yearArray[1] = 1950;
+        //yearArray[2] = 1973;
+        //yearArray[3] = 2015;
+        //yearArray[4] = 1800;
+        //yearArray[5] = 1850;
 
-        yearNowValue = yearArray[yearIndexValue];
-        yearLastValue = yearNowValue;
+        //yearNowValue = yearArray[yearIndexValue];
+        //yearLastValue = yearNowValue;
     }
 
     void Update()
     {
         //		timeText.text = System.DateTime.Now.ToString ("h:mm:ss tt");  //May cause garbage collection problem
-        AudioListener.pause = false;
+  //      AudioListener.pause = false;
 
-        // Press "Y" key to change year
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            ++yearIndexValue;
-            if (yearIndexValue == yearArraySize)
-                yearIndexValue = 0;
-            yearNowValue = yearArray[yearIndexValue];
-            testYearNowValue = yearNowValue;
-            source.PlayOneShot(timeSound, 0.5f);
-        }
+  //      // Press "Y" key to change year
+  //      if (Input.GetKeyDown(KeyCode.Y))
+  //      {
+  //          ++yearIndexValue;
+  //          if (yearIndexValue == yearArraySize)
+  //              yearIndexValue = 0;
+  //          yearNowValue = yearArray[yearIndexValue];
+  //          testYearNowValue = yearNowValue;
+  //          source.PlayOneShot(timeSound, 0.5f);
+  //      }
 
-        // Press "R" key to Restart the level
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-			LoadingManager.instance.ToggleLoadingScene(true);
-			LoadingManager.instance.ToggleMainScene(false);
-		}
+  //      // Press "R" key to Restart the level
+  //      if (Input.GetKeyDown(KeyCode.R))
+  //      {
+		//	LoadingManager.instance.ToggleLoadingScene(true);
+		//	LoadingManager.instance.ToggleMainScene(false);
+		//}
 
-        // Press "Q" key to Restart the level
-        if (Input.GetKeyDown(KeyCode.Q))
-        { // pressed the "Q" Quit game key
-            Application.Quit();
-        }
+  //      // Press "Q" key to Restart the level
+  //      if (Input.GetKeyDown(KeyCode.Q))
+  //      { // pressed the "Q" Quit game key
+  //          Application.Quit();
+  //      }
     }
 }

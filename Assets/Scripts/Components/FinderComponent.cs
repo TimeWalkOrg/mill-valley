@@ -5,6 +5,7 @@ using UnityEngine;
 public class FinderComponent : MonoBehaviour
 {
 	public GameObject mainSceneGO;
+	public timeWalkDayNightToggle dayNightRef;
 
 	private void Awake()
 	{
@@ -14,5 +15,6 @@ public class FinderComponent : MonoBehaviour
 	private void Start()
 	{
 		LoadingManager.instance.mainSceneGO = mainSceneGO;
+		ControlManager.instance.dayNightRef = dayNightRef;
 	}
 }
