@@ -8,16 +8,16 @@ SketchUpImporter:
   selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
   assetHash:
     serializedVersion: 2
-    Hash: 858d279c445700c25c4ca5d8a363a994
+    Hash: 950f45eb206821f7f86fa2ab56353ccd
   longitude: -105.242139
   latitude: 40.018309
   northCorrection: -0
   fileUnit: 0
   sketchUpImportData:
     defaultCamera:
-      position: {x: -14.62951, y: 5.8707848, z: 4.744555}
-      lookAt: {x: -11.292122, y: 5.3449955, z: 3.2492595}
-      up: {x: 0.12987094, y: 0.9898221, z: -0.05818785}
+      position: {x: -22.515814, y: 11.073968, z: 6.5642333}
+      lookAt: {x: -19.094835, y: 10.452719, z: 5.314641}
+      up: {x: 0.15794113, y: 0.9857618, z: -0.057691716}
       fov: 35
       aspectRatio: 0
       orthoSize: 1
@@ -73,7 +73,12 @@ SketchUpImporter:
     4300006: Mesh doorKnob
     4300008: Mesh Group 9
     4300010: Mesh Group 13
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color K01]'
+    second: {fileID: 2100000, guid: c30ef066aee978d47822b36e29bab3e9, type: 2}
   materials:
     importMaterials: 1
     materialName: 2
