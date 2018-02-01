@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [System.Serializable]
-public struct YearData
+public class YearData
 {
 	public int year;
 	public string yearLabel;
 	public AudioClip audioClip;
-};
+}
 
 public class YearDataMissive : Missive
 {
@@ -22,6 +22,11 @@ public class HelpMissive : Missive
 }
 
 public class AudioMissive : Missive
+{
+	//
+}
+
+public class CreditsMissive : Missive
 {
 	//
 }
@@ -62,9 +67,9 @@ public class ControlManager : MonoBehaviour
 	#endregion
 
 	public YearData[] yearData;
+
 	public int currentYear { get; private set; }
 	public int currentYearIndex { get; private set; }
-
 	public timeWalkDayNightToggle dayNightRef { get; set; }
 
 	private void Update()
@@ -83,6 +88,9 @@ public class ControlManager : MonoBehaviour
 
 		if (Input.GetKeyUp(KeyCode.H))
 			ToggleHelp();
+
+		if (Input.GetKeyUp(KeyCode.C))
+			ToggleCredits();
 	}
 
 	public void SetCurrentTime(YearData data)
@@ -153,6 +161,11 @@ public class ControlManager : MonoBehaviour
 		LoadingManager.instance.ToggleMainScene(false);
 	}
 
+	private void ToggleCredits()
+	{
+		SendCreditsMissive();
+	}
+
 	private void ToggleQuit()
 	{
 		Application.Quit();
@@ -174,6 +187,12 @@ public class ControlManager : MonoBehaviour
 	private void SendAudioMissive()
 	{
 		AudioMissive missive = new AudioMissive();
+		Missive.Send(missive);
+	}
+
+	private void SendCreditsMissive()
+	{
+		CreditsMissive missive = new CreditsMissive();
 		Missive.Send(missive);
 	}
 }

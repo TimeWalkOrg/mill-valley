@@ -12,6 +12,11 @@ public class TimeSliderComponent : MonoBehaviour
 	private YearData currentYearData;
 	private float effectTimeLength = 3.0f;
 
+	private void Start()
+	{
+		currentYearData = new YearData();
+	}
+
 	private void OnEnable()
 	{
 		Missive.AddListener<YearDataMissive>(OnYearData);
