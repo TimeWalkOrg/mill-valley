@@ -71,14 +71,27 @@ public class LoadingManager : MonoBehaviour
 	private bool isMainSceneLoaded = false;
 	[HideInInspector]
 	public GameObject mainSceneGO;
+	[HideInInspector]
+	public bool isFirstMainSceneLoaded = false;
+	[HideInInspector]
+	public Transform currentPortalSpawn;
+	public GameObject currentPlayerGO;
+
 	private GameObject loadingSceneGO;
+	private GameObject secondarySceneGO;
 
 	private Scene mainScene;
 	private Scene loadingScene;
+	private Scene secondaryScene;
 
 	private AsyncOperation asyncLoaderMainScene;
+	private AsyncOperation asyncLoaderSecondaryScene;
+	private bool isSecondaryLoading = false;
 	private string vrDevice;
 
+	
+
+	#region mono
 	private void Start()
 	{
 		loadingUIGO.SetActive(true);
@@ -106,6 +119,7 @@ public class LoadingManager : MonoBehaviour
 	{
 		StopAllCoroutines();
 	}
+	#endregion
 
 	IEnumerator LoadingImages()
 	{
@@ -132,6 +146,62 @@ public class LoadingManager : MonoBehaviour
 		isMainSceneLoaded = true;
 		loadingUIGO.SetActive(false);
 		controllerSelectionUIGO.SetActive(true);
+	}
+
+	public void LoadSecondaryScene(string sceneName, GameObject playerGO, Transform portalSpawn)
+	{
+		if (!isSecondaryLoading)
+		{
+			currentPlayerGO = playerGO;
+			currentPortalSpawn = portalSpawn;
+			StartCoroutine(LoadAsyncSecondaryScene(sceneName));
+		}
+
+	}
+
+	IEnumerator LoadAsyncSecondaryScene(string sceneName)
+	{
+		isSecondaryLoading = true;
+		
+		asyncLoaderSecondaryScene = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+		while (!asyncLoaderMainScene.isDone)
+			yield return null;
+
+		secondaryScene = SceneManager.GetSceneByName(sceneName);
+		while (!secondaryScene.IsValid())
+			yield return null;
+
+		while (!secondaryScene.isLoaded)
+			yield return null;
+
+		SceneManager.SetActiveScene(secondaryScene);
+
+		mainSceneGO.SetActive(false);
+		isSecondaryLoading = false;
+	}
+
+	public void ExitSecondaryScene()
+	{
+		ToggleMainScene(true);
+		MovePlayerToPortal();
+		SceneManager.UnloadSceneAsync(secondaryScene);
+	}
+
+	public void MovePlayerToPortal(Transform portalSpawn = null)
+	{
+		if (isFirstMainSceneLoaded)
+		{
+			if (portalSpawn == null)
+			{
+				currentPlayerGO.transform.position = currentPortalSpawn.position;
+				currentPlayerGO.transform.rotation = currentPortalSpawn.rotation;
+			}
+			else
+			{
+				currentPlayerGO.transform.position = portalSpawn.position;
+				currentPlayerGO.transform.rotation = portalSpawn.rotation;
+			}
+		}
 	}
 
 	public void SelectControllerTypeOnClick(int index)
@@ -196,6 +266,7 @@ public class LoadingManager : MonoBehaviour
 		ToggleMainScene(true);
 		yield return new WaitForEndOfFrame();
 		ControlManager.instance.ToggleYear(1920);
+		isFirstMainSceneLoaded = true;
 	}
 
 	public void ToggleLoadingScene(bool state)
@@ -204,6 +275,8 @@ public class LoadingManager : MonoBehaviour
 		{
 			ClearControllerGO();
 			SceneManager.SetActiveScene(loadingScene);
+			if (secondaryScene.IsValid())
+				SceneManager.UnloadSceneAsync(secondaryScene);
 		}
 		loadingSceneGO.SetActive(state);
 	}
@@ -216,8 +289,11 @@ public class LoadingManager : MonoBehaviour
 			mainSceneGO = GameObject.Find("MainSceneGO");
 		if (mainSceneGO != null)
 			mainSceneGO.SetActive(state);
+	}
 
-		//ControlManager.instance.SetAudio();
+	public bool IsMainSceneActive()
+	{
+		return (mainSceneGO != null && mainSceneGO.activeInHierarchy);
 	}
 
 	private void ClearControllerGO()
