@@ -1,32 +1,33 @@
 fileFormatVersion: 2
 guid: 9371844047381da4588e9165087bb7a4
+timeCreated: 18446744011573954816
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Th - Ref_Windows
-    100004: Th - Top Door
-    100006: Th - Top Windows
-    100008: Th- Deco
-    100010: Th-ClearGlass
-    100012: Th-Entry
-    100014: Th-Logo
-    100016: Th-Shade
-    100018: Th-SmallRoof
-    100020: Th-Walls
-    100022: Th-Wood Frames
-    400000: //RootNode
-    400002: Th - Ref_Windows
-    400004: Th - Top Door
-    400006: Th - Top Windows
-    400008: Th- Deco
-    400010: Th-ClearGlass
-    400012: Th-Entry
-    400014: Th-Logo
-    400016: Th-Shade
-    400018: Th-SmallRoof
-    400020: Th-Walls
-    400022: Th-Wood Frames
+    100000: Th - Ref_Windows
+    100002: Th - Top Door
+    100004: Th - Top Windows
+    100006: Th- Deco
+    100008: Th-ClearGlass
+    100010: Th-Entry
+    100012: Th-Logo
+    100014: Th-Shade
+    100016: Th-SmallRoof
+    100018: Th-Walls
+    100020: Th-Wood Frames
+    100022: //RootNode
+    400000: Th - Ref_Windows
+    400002: Th - Top Door
+    400004: Th - Top Windows
+    400006: Th- Deco
+    400008: Th-ClearGlass
+    400010: Th-Entry
+    400012: Th-Logo
+    400014: Th-Shade
+    400016: Th-SmallRoof
+    400018: Th-Walls
+    400020: Th-Wood Frames
+    400022: //RootNode
     2300000: Th - Ref_Windows
     2300002: Th - Top Door
     2300004: Th - Top Windows
@@ -60,11 +61,12 @@ ModelImporter:
     4300016: Th - Ref_Windows
     4300018: Th - Top Windows
     4300020: Th-SmallRoof
-    9500000: //RootNode
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -77,6 +79,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -96,16 +99,18 @@ ModelImporter:
     importCameras: 0
     importLights: 0
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -130,7 +135,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
