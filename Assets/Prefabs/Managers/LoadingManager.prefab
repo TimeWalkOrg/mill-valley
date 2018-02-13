@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1003752301815150}
+  m_IsPrefabParent: 1
+--- !u!1 &1003752301815150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4305048961014650}
+  - component: {fileID: 114548113974081120}
+  m_Layer: 0
+  m_Name: LoadingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4305048961014650
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1003752301815150}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114548113974081120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1003752301815150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c40a804ae033c4789a6abfc94778bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerSelectionUIGO: {fileID: 0}
+  controllerVRButtonUIGO: {fileID: 0}
+  loadingUIGO: {fileID: 0}
+  loadingSlider: {fileID: 0}
+  loadingImage: {fileID: 0}
+  loadingSprites:
+  - {fileID: 21300000, guid: fa688d462bbc8d34391d2d8ba087a48f, type: 3}
+  - {fileID: 21300000, guid: 91a2bc790397fea43a816097f7d340e9, type: 3}
+  - {fileID: 21300000, guid: 55a7fc8921742504e8edc9c3535c9543, type: 3}
+  controls:
+  - type: 0
+    controls:
+    - {fileID: 1280351765929944, guid: 14f484d68ac206040a81b317b45667de, type: 2}
+  - type: 1
+    controls:
+    - {fileID: 1370633650132176, guid: 2261a9ece70cc254e9286b3e2f0637fa, type: 2}
+    - {fileID: 1009062079892602, guid: bb4d0639475f756418fdeb4dfd206285, type: 2}
+  - type: 2
+    controls:
+    - {fileID: 1244737008150180, guid: 1f5e627f48a190d4fb3c35fda749e964, type: 2}
+  currentControlGO: {fileID: 0}
+  currentControlUI: {fileID: 0}
+  currentControllerType: 0
+  mainSceneGO: {fileID: 0}

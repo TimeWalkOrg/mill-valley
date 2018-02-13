@@ -17,42 +17,72 @@ public class timeWalkDayNightToggle : MonoBehaviour {
     public GameObject forceNightTimeObject;
     private bool lastNowIsDay; // remembers last time Day/Night was set deliberately
 
-    // Use this for initialization
-    void Start () {
+    void Start ()
+	{
         sunLightObject = gameObject.GetComponent<Light>();
         lastNowIsDay = nowIsDay;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (forceNightTimeObject.activeSelf)
-        {
-            nowIsDay = false;
-        }
-        else { nowIsDay = lastNowIsDay; }
-        if (Input.GetKeyDown(KeyCode.N))
-        {
-            nowIsDay = !nowIsDay;
-            lastNowIsDay = nowIsDay;
-        }
 
-        if (nowIsDay == false) // NIGHT settings
-        {
-            RenderSettings.skybox = nightMaterial;
-            RenderSettings.ambientIntensity = nightIntensity;
-            RenderSettings.ambientLight = colorSkyColorNight;
-            sunLightObject.color = colorMoon;
-            nightLights.SetActive(true);
-            RenderSettings.fog = false;
-        }
-        else // DAY settings
-        {
-            RenderSettings.skybox = dayMaterial;
-            RenderSettings.ambientLight = colorSkyColorDay;
-            sunLightObject.color = colorSun;
-            RenderSettings.ambientIntensity = dayIntensity;
-            nightLights.SetActive(false);
-            RenderSettings.fog = true;
-        }
-    }
+	//void Update()
+	//{
+	//	if (forceNightTimeObject.activeSelf)
+	//	{
+	//		nowIsDay = false;
+	//	}
+	//	else
+	//	{
+	//		nowIsDay = lastNowIsDay;
+	//	}
+	//}
+
+	public void ToggleDayNight()
+	{
+		nowIsDay = !nowIsDay;
+		lastNowIsDay = nowIsDay;
+
+		if (!nowIsDay) // NIGHT settings
+		{
+			RenderSettings.skybox = nightMaterial;
+			RenderSettings.ambientIntensity = nightIntensity;
+			RenderSettings.ambientLight = colorSkyColorNight;
+			sunLightObject.color = colorMoon;
+			nightLights.SetActive(true);
+			RenderSettings.fog = false;
+		}
+		else // DAY settings
+		{
+			RenderSettings.skybox = dayMaterial;
+			RenderSettings.ambientLight = colorSkyColorDay;
+			sunLightObject.color = colorSun;
+			RenderSettings.ambientIntensity = dayIntensity;
+			nightLights.SetActive(false);
+			RenderSettings.fog = true;
+		}
+	}
+
+	public void SetNight()
+	{
+		nowIsDay = false;
+		lastNowIsDay = nowIsDay;
+
+		RenderSettings.skybox = nightMaterial;
+		RenderSettings.ambientIntensity = nightIntensity;
+		RenderSettings.ambientLight = colorSkyColorNight;
+		sunLightObject.color = colorMoon;
+		nightLights.SetActive(true);
+		RenderSettings.fog = false;
+	}
+
+	public void SetDay()
+	{
+		nowIsDay = false;
+		lastNowIsDay = nowIsDay;
+
+		RenderSettings.skybox = dayMaterial;
+		RenderSettings.ambientLight = colorSkyColorDay;
+		sunLightObject.color = colorSun;
+		RenderSettings.ambientIntensity = dayIntensity;
+		nightLights.SetActive(false);
+		RenderSettings.fog = true;
+	}
 }

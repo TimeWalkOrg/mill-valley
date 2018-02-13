@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1189793249300976}
+  m_IsPrefabParent: 1
+--- !u!1 &1189793249300976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4562928680612104}
+  - component: {fileID: 114259097744771866}
+  m_Layer: 0
+  m_Name: ResearchTeamManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4562928680612104
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1189793249300976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114259097744771866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1189793249300976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45339099403b702489b4fb8592fa90db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  researchTeamGOPrefab: {fileID: 1146605435205598, guid: febd9e49279ac7d47b7263f59d3afa48,
+    type: 2}
+  researchTeamData:
+  - buildingName: Vasco
+    street: 106 Throckmorton Ave.
+    team:
+    - Henry Basnight
+    - Nathan Schwartzman
+    - Rowan Olds
+    date: December, 2017
+    researchTeamAnchorGO: {fileID: 0}
+  - buildingName: The Tamalpais Land & Water Company Building
+    street: 130 Throckmorton Ave.
+    team:
+    - Milo Scola
+    date: December, 2017
+    researchTeamAnchorGO: {fileID: 0}
+  - buildingName: Dowd's Moving & Storage
+    street: 157 Throckmorton Ave.
+    team:
+    - Avery Schoen
+    date: December, 2017
+    researchTeamAnchorGO: {fileID: 0}
+  - buildingName: The Leal Building
+    street: 2 Miller Ave.
+    team:
+    - Alexander Kraemling
+    - Nicolas Owenson
+    date: December, 2017
+    researchTeamAnchorGO: {fileID: 0}
+  - buildingName: The Carnegie Library
+    street: 52 Lovell Ave.
+    team:
+    - Ryan Belza
+    - Max Hasen
+    - Paolo Ciolino
+    date: December, 2017
+    researchTeamAnchorGO: {fileID: 0}
+  - buildingName: The O'Shaughnessy Building
+    street: 41-67 Throckmorton Ave.
+    team:
+    - Sara Kubo
+    - Hayley Lucero
+    date: December, 2017
+    researchTeamAnchorGO: {fileID: 0}
+  - buildingName: Wood Hall  (Tamalpais H.S.)
+    street: 700 Miller Ave.
+    team:
+    - Mey Uysaloglu
+    date: December, 2017
+    researchTeamAnchorGO: {fileID: 0}
+  - buildingName: The Old Mill
+    street: 352 Throckmorton Ave.
+    team:
+    - Jace Monti
+    date: December, 2017
+    researchTeamAnchorGO: {fileID: 0}
+  - buildingName: Mill Valley Depot
+    street: Sunnyside Ave & Miller Ave.
+    team:
+    - Willa Smith
+    - Eric Hayes
+    date: November, 2017
+    researchTeamAnchorGO: {fileID: 0}

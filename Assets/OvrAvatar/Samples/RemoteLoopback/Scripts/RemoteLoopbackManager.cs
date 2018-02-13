@@ -76,13 +76,21 @@ public class RemoteLoopbackManager : MonoBehaviour
         {
             BinaryWriter writer = new BinaryWriter(outputStream);
 
-            var size = CAPI.ovrAvatarPacket_GetSize(args.Packet.ovrNativePacket);
-            byte[] data = new byte[size];
-            CAPI.ovrAvatarPacket_Write(args.Packet.ovrNativePacket, size, data);
+            if (LocalAvatar.UseSDKPackets)
+            {
+                var size = CAPI.ovrAvatarPacket_GetSize(args.Packet.ovrNativePacket);
+                byte[] data = new byte[size];
+                CAPI.ovrAvatarPacket_Write(args.Packet.ovrNativePacket, size, data);
 
-            writer.Write(PacketSequence++);
-            writer.Write(size);
-            writer.Write(data);
+                writer.Write(PacketSequence++);
+                writer.Write(size);
+                writer.Write(data);
+            }
+            else
+            {
+                writer.Write(PacketSequence++);
+                args.Packet.Write(outputStream);
+            }
 
             SendPacketData(outputStream.ToArray());
         }
@@ -127,11 +135,21 @@ public class RemoteLoopbackManager : MonoBehaviour
             BinaryReader reader = new BinaryReader(inputStream);
             int sequence = reader.ReadInt32();
 
-            int size = reader.ReadInt32();
-            byte[] sdkData = reader.ReadBytes(size);
+            OvrAvatarPacket avatarPacket;
+            if (LoopbackAvatar.UseSDKPackets)
+            {
+                int size = reader.ReadInt32();
+                byte[] sdkData = reader.ReadBytes(size);
 
-            IntPtr packet = CAPI.ovrAvatarPacket_Read((UInt32)data.Length, sdkData);
-            LoopbackAvatar.GetComponent<OvrAvatarRemoteDriver>().QueuePacket(sequence, new OvrAvatarPacket { ovrNativePacket = packet });
+                IntPtr packet = CAPI.ovrAvatarPacket_Read((UInt32)data.Length, sdkData);
+                avatarPacket = new OvrAvatarPacket { ovrNativePacket = packet };
+            }
+            else
+            {
+                avatarPacket = OvrAvatarPacket.Read(inputStream);
+            }
+
+            LoopbackAvatar.GetComponent<OvrAvatarRemoteDriver>().QueuePacket(sequence, avatarPacket);
         }
     }
 }
