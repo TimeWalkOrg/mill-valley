@@ -6,28 +6,14 @@ public class TimeActiveComponent : MonoBehaviour
 {
 	public int yearBuilt;
 	public int yearReplaced;
-	private int lastYearDisplayed = 0;
 
 	private void OnEnable()
 	{
-		Missive.AddListener<YearDataMissive>(OnYearData);
+		// enable audio/animations/etc here for time period
 	}
 
 	private void OnDisable()
 	{
-		Missive.RemoveListener<YearDataMissive>(OnYearData);
-	}
-
-	private void OnYearData(YearDataMissive missive)
-	{
-		if (lastYearDisplayed != missive.data.year)
-		{
-			bool state = (missive.data.year >= yearBuilt) && (missive.data.year < yearReplaced);
-			foreach (Transform child in transform)
-			{
-				child.gameObject.SetActive(state);
-			}
-			lastYearDisplayed = missive.data.year; // update lastYearDisplayed to the current TimeWalk date
-		}
+		// disable audio/animations/etc here for time period
 	}
 }

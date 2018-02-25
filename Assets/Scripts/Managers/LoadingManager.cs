@@ -94,25 +94,34 @@ public class LoadingManager : MonoBehaviour
 	#region mono
 	private void Start()
 	{
-		loadingUIGO.SetActive(true);
-		controllerSelectionUIGO.SetActive(false);
-		StartCoroutine(LoadingImages());
-
-		if (XRDevice.isPresent)
+		// game started in loading scene and refs set
+		if (loadingUIGO != null)
 		{
-			vrDevice = XRDevice.model;
-			Debug.Log(vrDevice);
-			controllerVRButtonUIGO.SetActive(true);
-		}
-		else
-		{
-			controllerVRButtonUIGO.SetActive(false);
-		}
+			loadingUIGO.SetActive(true);
+			controllerSelectionUIGO.SetActive(false);
+			StartCoroutine(LoadingImages());
 
-		loadingSceneGO = GameObject.Find("LoadingSceneGO");
-		loadingScene = SceneManager.GetSceneByName("LoadingScene");
-		isMainSceneLoaded = false;
-		StartCoroutine(LoadAsyncScene());
+			if (XRDevice.isPresent)
+			{
+				vrDevice = XRDevice.model;
+				Debug.Log(vrDevice);
+				controllerVRButtonUIGO.SetActive(true);
+			}
+			else
+			{
+				controllerVRButtonUIGO.SetActive(false);
+			}
+
+			loadingSceneGO = GameObject.Find("LoadingSceneGO");
+			loadingScene = SceneManager.GetSceneByName("LoadingScene");
+			isMainSceneLoaded = false;
+			StartCoroutine(LoadAsyncScene());
+		}
+		else // spawned in main scene for testing
+		{
+			isMainSceneLoaded = true;
+			SelectControllerTypeOnClick((int)ControlTypes.FPS);
+		}
 	}
 
 	private void OnDestroy()
@@ -271,6 +280,9 @@ public class LoadingManager : MonoBehaviour
 
 	public void ToggleLoadingScene(bool state)
 	{
+		if (loadingScene == null) return; // started in main scene so no loading scene return
+		if (loadingSceneGO == null) return;
+
 		if (state)
 		{
 			ClearControllerGO();
