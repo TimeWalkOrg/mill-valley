@@ -195,13 +195,8 @@ Transform:
   m_LocalScale: {x: 2.5355968, y: 2.5355968, z: 2.5355968}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &534916266 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4538829749320512, guid: 87295a355b7edf04faba9d1a4e121239,
-    type: 2}
-  m_PrefabInternal: {fileID: 1953383617}
 --- !u!1 &718213041
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,7 +260,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &876070098
 GameObject:
@@ -351,7 +346,7 @@ Transform:
   m_LocalScale: {x: 26.2, y: 31.2, z: 24.64}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1245460941
 GameObject:
@@ -489,187 +484,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1351153735
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1351153737}
-  - component: {fileID: 1351153736}
-  m_Layer: 0
-  m_Name: PathMagic Path
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1351153736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1351153735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9553121615fd34b3eb74d198e87f0e43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pathColor: {r: 1, g: 1, b: 1, a: 1}
-  waypoints:
-  - position: {x: 32.93013, y: -9.3, z: 32.509174}
-    rotation: {x: 0, y: 0, z: 0}
-    lookAt: {fileID: 0}
-    inTangent: {x: 0, y: 0, z: 0}
-    outTangent: {x: 0, y: 0, z: 0}
-    symmetricTangents: 1
-    velocity: 1
-    inVariation: 0
-    outVariation: 0
-    reached:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - position: {x: 40.315933, y: -9.3, z: 23.617235}
-    rotation: {x: 0, y: 0, z: 0}
-    lookAt: {fileID: 0}
-    inTangent: {x: -2.4619346, y: 0, z: 2.9639797}
-    outTangent: {x: 2.4619346, y: -0, z: -2.9639797}
-    symmetricTangents: 1
-    velocity: 1
-    inVariation: 0
-    outVariation: 0
-    reached:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - position: {x: 37.52352, y: -9.3, z: 13.524378}
-    rotation: {x: 0, y: 0, z: 0}
-    lookAt: {fileID: 0}
-    inTangent: {x: 0.93080395, y: 0, z: 3.364286}
-    outTangent: {x: -0.93080395, y: -0, z: -3.364286}
-    symmetricTangents: 1
-    velocity: 1
-    inVariation: 0
-    outVariation: 0
-    reached:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - position: {x: 8.441284, y: -9.3, z: 7.7812786}
-    rotation: {x: 0, y: 0, z: 0}
-    lookAt: {fileID: 0}
-    inTangent: {x: 9.694079, y: 0, z: 1.9143665}
-    outTangent: {x: -9.694079, y: -0, z: -1.9143665}
-    symmetricTangents: 1
-    velocity: 1
-    inVariation: 0
-    outVariation: 0
-    reached:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - position: {x: 2.4171488, y: -9.3, z: 18.519655}
-    rotation: {x: 0, y: 0, z: 0}
-    lookAt: {fileID: 0}
-    inTangent: {x: 2.0080452, y: 0, z: -3.579459}
-    outTangent: {x: -2.0080452, y: -0, z: 3.579459}
-    symmetricTangents: 1
-    velocity: 1
-    inVariation: 0
-    outVariation: 0
-    reached:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - position: {x: 7.458213, y: -9.3, z: 23.746593}
-    rotation: {x: 0, y: 0, z: 0}
-    lookAt: {fileID: 0}
-    inTangent: {x: -1.6803548, y: 0, z: -1.7423128}
-    outTangent: {x: 1.6803548, y: -0, z: 1.7423128}
-    symmetricTangents: 1
-    velocity: 1
-    inVariation: 0
-    outVariation: 0
-    reached:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - position: {x: 14.78311, y: -9.3, z: 33.331116}
-    rotation: {x: 0, y: 0, z: 0}
-    lookAt: {fileID: 0}
-    inTangent: {x: -2.4416323, y: 0, z: -3.194841}
-    outTangent: {x: 2.4416323, y: -0, z: 3.194841}
-    symmetricTangents: 1
-    velocity: 1
-    inVariation: 0
-    outVariation: 0
-    reached:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - position: {x: 34.10166, y: -9.3, z: 46.072327}
-    rotation: {x: 0, y: 0, z: 0}
-    lookAt: {fileID: 0}
-    inTangent: {x: -6.4395175, y: 0, z: -4.2470703}
-    outTangent: {x: 6.4395175, y: -0, z: 4.2470703}
-    symmetricTangents: 1
-    velocity: 1
-    inVariation: 0
-    outVariation: 0
-    reached:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  target: {fileID: 534916266}
-  disableOrientation: 0
-  disablePosition: 0
-  globalLookAt: {fileID: 0}
-  globalFollowPath: 0
-  globalFollowPathBias: 0.001
-  updateMode: 0
-  loop: 0
-  autoStart: 0
-  velocityBias: 0.1
-  currentPos: 0
-  isPlaying: 0
-  waypointChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Jacovone.PathMagic+WaypointChangedEvent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  presampledPath: 0
-  samplesNum: 100
-  positionSamples: []
-  rotationSamples: []
-  velocitySamples: []
-  waypointSamples: 
-  samplesDistances: []
-  totalDistance: 0
-  updateTransform: 1
---- !u!4 &1351153737
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1351153735}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -65.8, y: 14.3, z: 21.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1360495242
 GameObject:
@@ -754,54 +569,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1360495242}
   m_LocalRotation: {x: 0.11302723, y: 0.55061394, z: -0.07556257, w: 0.8236137}
-  m_LocalPosition: {x: -21.954882, y: 22.9, z: 0.8719106}
+  m_LocalPosition: {x: -21.954882, y: 22.9, z: 0.871912}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1953383617
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4538829749320512, guid: 87295a355b7edf04faba9d1a4e121239, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -33.29083
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538829749320512, guid: 87295a355b7edf04faba9d1a4e121239, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538829749320512, guid: 87295a355b7edf04faba9d1a4e121239, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -11.830137
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538829749320512, guid: 87295a355b7edf04faba9d1a4e121239, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538829749320512, guid: 87295a355b7edf04faba9d1a4e121239, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538829749320512, guid: 87295a355b7edf04faba9d1a4e121239, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538829749320512, guid: 87295a355b7edf04faba9d1a4e121239, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538829749320512, guid: 87295a355b7edf04faba9d1a4e121239, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 87295a355b7edf04faba9d1a4e121239, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &2099487996
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,5 +909,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
