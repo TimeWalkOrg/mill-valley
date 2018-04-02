@@ -31,12 +31,12 @@ public class FlockChildSound:MonoBehaviour{
     
     public void PlayRandomSound() {
     	if(gameObject.activeInHierarchy){
-    		if(!_audio.isPlaying && _flightSounds.Length > 0 && _flightSoundRandomChance > Random.value && !_flockChild._landing){
+    		if(!_audio.isPlaying && _flightSoundRandomChance > Random.value){
     			_audio.clip = _flightSounds[Random.Range(0,_flightSounds.Length)];
     			_audio.pitch = Random.Range(_pitchMin, _pitchMax);
     			_audio.volume = Random.Range(_volumeMin, _volumeMax);
     			_audio.Play();
-    		}else if(!_audio.isPlaying && _idleSounds.Length > 0 && _idleSoundRandomChance > Random.value && _flockChild._landing){
+    		}else if(!_audio.isPlaying && _idleSounds.Length > 0 && _idleSoundRandomChance > Random.value){
     			_audio.clip = _idleSounds[Random.Range(0,_idleSounds.Length)];
     			_audio.pitch = Random.Range(_pitchMin, _pitchMax);
     			_audio.volume = Random.Range(_volumeMin, _volumeMax);
