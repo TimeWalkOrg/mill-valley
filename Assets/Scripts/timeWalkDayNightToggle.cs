@@ -56,7 +56,7 @@ public class timeWalkDayNightToggle : MonoBehaviour {
 			sunLightObject.color = colorSun;
 			RenderSettings.ambientIntensity = dayIntensity;
 			nightLights.SetActive(false);
-			RenderSettings.fog = true;
+			RenderSettings.fog = false;
 		}
 	}
 
@@ -83,6 +83,6 @@ public class timeWalkDayNightToggle : MonoBehaviour {
 		sunLightObject.color = colorSun;
 		RenderSettings.ambientIntensity = dayIntensity;
 		nightLights.SetActive(false);
-		RenderSettings.fog = true;
+		RenderSettings.fog = false;
 	}
 }
