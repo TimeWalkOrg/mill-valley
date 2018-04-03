@@ -134,23 +134,28 @@ public class LoadingManager : MonoBehaviour
 	{
 		while (loadingUIGO.activeInHierarchy)
 		{
-			int index = (int) Random.Range(0, loadingSprites.Length);
+			int index = (int)Random.Range(0, loadingSprites.Length);
 			loadingImage.sprite = loadingSprites[index];
-			yield return new WaitForSeconds(1f);
+			yield return new WaitForSecondsRealtime(3f);
 		}
 	}
 
 	IEnumerator LoadAsyncScene()
 	{
 		loadingSlider.value = 0f;
+		Debug.Log("Before load");
 		asyncLoaderMainScene = SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
-
+		Debug.Log("After load");
 		while (!asyncLoaderMainScene.isDone)
 		{
 			if (loadingSlider.value < 1f)
 				loadingSlider.value += 0.005f;
+
+			Debug.Log("Waiting for isDone");
 			yield return null;
 		}
+		Debug.Log("Finished");
+		yield return new WaitForEndOfFrame();
 
 		isMainSceneLoaded = true;
 		loadingUIGO.SetActive(false);
