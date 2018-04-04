@@ -74,7 +74,7 @@ public class ResearchTeamManager : MonoBehaviour
 			if (researchTeamData[i].researchTeamAnchorGO != null)
 			{
 				GameObject go = Instantiate(researchTeamGOPrefab, researchTeamData[i].researchTeamAnchorGO.position, researchTeamData[i].researchTeamAnchorGO.rotation);
-				go.GetComponent<ResearchTeamComponent>().SetResearchTeamData(researchTeamData[i]);
+				//go.GetComponent<ResearchTeamComponent>().SetResearchTeamData(researchTeamData[i]);
 				activeResearchTeamList.Add(go);
 				go.SetActive(false);
 			}
