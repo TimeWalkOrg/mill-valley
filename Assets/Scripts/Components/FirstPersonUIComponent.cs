@@ -12,6 +12,12 @@ public class FirstPersonUIComponent : MonoBehaviour
 	public GameObject helpHintGO;
 	public GameObject helpFullGO;
 
+	public GameObject gameUIGO;
+	public GameObject webViewUIGO;
+
+	// TODO needs #define
+	public ZenFulcrum.EmbeddedBrowser.Browser browser;
+
 	public float helpHintStartDelay = 4.0f;
 	public float helpHintDuration = 5.0f;
 
@@ -19,6 +25,8 @@ public class FirstPersonUIComponent : MonoBehaviour
 	{
 		helpHintGO.SetActive(false);
 		helpFullGO.SetActive(false);
+		gameUIGO.SetActive(true);
+		webViewUIGO.SetActive(false);
 		Invoke("OnStartHint", helpHintStartDelay);
 	}
 
@@ -26,17 +34,39 @@ public class FirstPersonUIComponent : MonoBehaviour
 	{
 		Missive.AddListener<YearDataMissive>(OnYearData);
 		Missive.AddListener<HelpMissive>(OnHelp);
+		Missive.AddListener<WebViewMissive>(OnWebView);
 	}
 
 	private void OnDisable()
 	{
 		Missive.RemoveListener<YearDataMissive>(OnYearData);
 		Missive.RemoveListener<HelpMissive>(OnHelp);
+		Missive.RemoveListener<WebViewMissive>(OnWebView);
+	}
+
+	public void CloseWebView()
+	{
+		ControlManager.instance.SendWebViewMissive("");
 	}
 
 	private void OnYearData(YearDataMissive missive)
 	{
 		yearText.text = missive.data.year.ToString();
+	}
+
+	private void OnWebView(WebViewMissive missive)
+	{
+		if (missive.url != "")
+		{
+			gameUIGO.SetActive(false);
+			webViewUIGO.SetActive(true);
+			browser.Url = missive.url;
+		}
+		else
+		{
+			gameUIGO.SetActive(true);
+			webViewUIGO.SetActive(false);
+		}
 	}
 
 	private void OnStartHint()

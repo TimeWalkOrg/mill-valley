@@ -31,6 +31,11 @@ public class CreditsMissive : Missive
 	//
 }
 
+public class WebViewMissive : Missive
+{
+	public string url = "";
+}
+
 public class ControlManager : MonoBehaviour
 {
 	#region Singleton
@@ -196,6 +201,13 @@ public class ControlManager : MonoBehaviour
 	private void SendCreditsMissive()
 	{
 		CreditsMissive missive = new CreditsMissive();
+		Missive.Send(missive);
+	}
+
+	public void SendWebViewMissive(string url)
+	{
+		WebViewMissive missive = new WebViewMissive();
+		missive.url = url;
 		Missive.Send(missive);
 	}
 }
