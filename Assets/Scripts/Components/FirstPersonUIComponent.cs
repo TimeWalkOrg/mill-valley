@@ -56,6 +56,7 @@ public class FirstPersonUIComponent : MonoBehaviour
 
 	private void OnWebView(WebViewMissive missive)
 	{
+		// TODO needs #define
 		if (missive.url != "")
 		{
 			gameUIGO.SetActive(false);

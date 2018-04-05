@@ -68,6 +68,8 @@ public class LoadingManager : MonoBehaviour
 	public GameObject currentControlUI;
 	[HideInInspector]
 	public ControlTypes currentControllerType;
+	public bool IsVR { get { return (currentControllerType == ControlTypes.VR); } }
+
 	private bool isMainSceneLoaded = false;
 	[HideInInspector]
 	public GameObject mainSceneGO;
@@ -88,8 +90,6 @@ public class LoadingManager : MonoBehaviour
 	private AsyncOperation asyncLoaderSecondaryScene;
 	private bool isSecondaryLoading = false;
 	private string vrDevice;
-
-	
 
 	#region mono
 	private void Start()

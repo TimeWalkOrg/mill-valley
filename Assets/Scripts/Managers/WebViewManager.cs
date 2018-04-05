@@ -70,7 +70,7 @@ public class WebViewManager : MonoBehaviour
 		{
 			if (webViewTriggerData[i].webViewTriggerAnchorGO != null)
 			{
-				GameObject go = Instantiate(webViewTriggerPrefab, webViewTriggerData[i].webViewTriggerAnchorGO.position, Quaternion.Euler(new Vector3(90, 0, 0)));
+				GameObject go = Instantiate(webViewTriggerPrefab, webViewTriggerData[i].webViewTriggerAnchorGO.position, Quaternion.identity);
 				go.GetComponent<WebViewTriggerComponent>().SetURL(webViewTriggerData[i].url);
 				activeWebViewTriggerList.Add(go);
 				go.SetActive(false);
