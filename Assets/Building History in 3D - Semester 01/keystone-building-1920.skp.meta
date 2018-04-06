@@ -5,19 +5,19 @@ licenseType: Pro
 SketchUpImporter:
   generateBackFace: 0
   mergeCoplanarFaces: 0
-  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f0000002000000021000000220000002300000024000000250000002600000027000000
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f00000020000000210000002200000023000000240000002500000026000000270000002800000029000000
   assetHash:
     serializedVersion: 2
-    Hash: d2283cc104f16dbae35c58b9b6bff38f
+    Hash: 5d72ccfc22837ed3ef1a906f6bb113be
   longitude: -105.242139
   latitude: 40.018309
   northCorrection: -0
   fileUnit: 0
   sketchUpImportData:
     defaultCamera:
-      position: {x: 35.27309, y: 5.0551653, z: -24.4807}
-      lookAt: {x: 20.678694, y: 0.9191536, z: 5.980756}
-      up: {x: -0.05251579, y: 0.9925863, z: 0.109611064}
+      position: {x: 21.829884, y: 8.698124, z: -40.825344}
+      lookAt: {x: 20.528034, y: 2.8948092, z: -7.319671}
+      up: {x: -0.006621185, y: 0.9853511, z: 0.17040946}
       fov: 35
       aspectRatio: 0
       orthoSize: 1
@@ -46,6 +46,7 @@ SketchUpImporter:
     100036: window in pair
     100038: window in pair 1
     100040: window in pair 2
+    100042: Group 14
     400000: Blank Awning
     400002: Blank Awning 1
     400004: Blank Awning 2
@@ -67,6 +68,7 @@ SketchUpImporter:
     400036: window in pair
     400038: window in pair 1
     400040: window in pair 2
+    400042: Group 14
     2100000: _defaultMat
     2100002: '[0136_Charcoal]'
     2100004: '[Cladding_Stucco_White]1'
@@ -90,6 +92,10 @@ SketchUpImporter:
     2100040: '[0020_Red]'
     2100042: '[Translucent_Glass_Gray]'
     2100044: '[Wood Cherry Original]1'
+    2100046: '[Wallpaper Thin Brown Stripes]'
+    2100048: '[Wood Cherry Original]2'
+    2100050: '[Carpet Diamond Olive]'
+    2100052: '[Color C08]'
     2300000: Blank Awning
     2300002: Blank Awning 1
     2300004: Blank Awning 2
@@ -111,6 +117,7 @@ SketchUpImporter:
     2300036: window in pair 1
     2300038: window in pair 2
     2300040: //RootNode
+    2300042: Group 14
     3300000: Blank Awning
     3300002: Blank Awning 1
     3300004: Blank Awning 2
@@ -132,6 +139,7 @@ SketchUpImporter:
     3300036: window in pair 1
     3300038: window in pair 2
     3300040: //RootNode
+    3300042: Group 14
     4300000: Mesh Group 1
     4300002: Mesh Blank Awning
     4300004: Mesh Drugs awning
@@ -145,7 +153,198 @@ SketchUpImporter:
     4300020: Mesh window in pair
     4300022: Mesh Lower of pair
     4300024: Mesh keystone-building-1920
-  externalObjects: {}
+    4300026: Mesh Group 14
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Awing stripes red
+    second: {fileID: 2100000, guid: dedb1ab55382af94c956ba119b8d8e3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Awning blue
+    second: {fileID: 2100000, guid: 249b8d92ba5b63e4ab971a777c9495da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: THB_Lumber
+    second: {fileID: 2100000, guid: 6740f3cb8ad87224b92287fd658a2ea6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0020_Red]'
+    second: {fileID: 2100000, guid: 4af7b0b22ac63634eb6da45078172722, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0136_Charcoal]'
+    second: {fileID: 2100000, guid: 3a1615339fbf0d441b973fc1b3ae5ad6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Carpet Diamond Olive]'
+    second: {fileID: 2100000, guid: 2b52a72bf288c264d914507e16225102, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Cladding_Stucco_White]1'
+    second: {fileID: 2100000, guid: a56423a523161d44194294b80313212b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color C08]'
+    second: {fileID: 2100000, guid: 62942917a35b7dd428dde6f7bf6e80db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color M02]'
+    second: {fileID: 2100000, guid: a72f46d08d0c235429a873de5f6460d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Fencing Lattice Natural]'
+    second: {fileID: 2100000, guid: d93ac0ec596409a479334d2b1eb8989a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Fencing_Railing_Metal2]'
+    second: {fileID: 2100000, guid: 42ff361a5621b5141825de18c56852c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Polished Concrete New]'
+    second: {fileID: 2100000, guid: fa71e9f6d1eaf0d4ea44ee338ca1e49f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Blue]'
+    second: {fileID: 2100000, guid: 7412e7d6e3f51ca4ea0a18d64d8ff34e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Gray]'
+    second: {fileID: 2100000, guid: dcb785445df1b684684478a2577a3db5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent_Glass_Gray]'
+    second: {fileID: 2100000, guid: ff457037c0feeae46bd0e97ad4003b20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wallpaper Thin Brown Stripes]'
+    second: {fileID: 2100000, guid: 05347f21ea25a1346959dfc9df6d5945, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood Cherry Original]'
+    second: {fileID: 2100000, guid: bb2e311a37eecba42b6d38e7228de47f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood Cherry Original]1'
+    second: {fileID: 2100000, guid: fce2745562aec284ca75b0a04e3d5ca6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood Cherry Original]2'
+    second: {fileID: 2100000, guid: 2eb2a66d1ccf9644e9337baf0e41e2db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood Plywood Knots]'
+    second: {fileID: 2100000, guid: 056098f15e7e688459fc2a6dff080980, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood Veneer 01]'
+    second: {fileID: 2100000, guid: 39bf6be500dd92548a352ee3dfcd42a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _1
+    second: {fileID: 2100000, guid: 9040a51f1794ed242a74eb134df3d78c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _2
+    second: {fileID: 2100000, guid: 3f1e528b435bf8647b5758a36be406e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _3
+    second: {fileID: 2100000, guid: 3750c0f31ddcfa14b9a5226d4e317cda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _5
+    second: {fileID: 2100000, guid: 20a8534d91de0d242907c0d17490a422, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _6
+    second: {fileID: 2100000, guid: a9ab2616a7da7a34f9049d97ca8525ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: 5e72d9ae7f62a844d82c4410458e4526, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Carpet_Diamond_Olive
+    second: {fileID: 2800000, guid: 97ac9a2f44688e445be3815693b85dcc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cladding_Stucco_White
+    second: {fileID: 2800000, guid: 1c73c42297b5ff14184423d38c7d1940, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fencing_Lattice_Natural
+    second: {fileID: 2800000, guid: 641ca90d02e35c3449a8a5e747f433b8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fencing_Railing_Metal2
+    second: {fileID: 2800000, guid: a09861267e3969941b64e1ba18e84f99, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Polished Concrete New
+    second: {fileID: 2800000, guid: 59808d9e240f09f4785eb8079eb69548, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wallpaper Thin Brown Stripes
+    second: {fileID: 2800000, guid: 28f38de4fa334ee4a8fbdc461a384f17, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood 01
+    second: {fileID: 2800000, guid: e1267ebd0f0130249aeff65076ff8d79, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood_Cherry_Original
+    second: {fileID: 2800000, guid: afa2a27b63a47e446b9ebdabad5db038, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood_Lumber_ButtJoined
+    second: {fileID: 2800000, guid: 3b0ba46bfb15c89428ab7d3982c34299, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood_Plywood_Knots
+    second: {fileID: 2800000, guid: 63a40a4b683d94f40a3771e5fc0c6b8d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: awning stripes
+    second: {fileID: 2800000, guid: 7aad3aadd5931fd4cb7941d6e871861d, type: 3}
   materials:
     importMaterials: 1
     materialName: 2
