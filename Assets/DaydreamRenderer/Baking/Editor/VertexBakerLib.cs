@@ -45,7 +45,7 @@ namespace daydreamrenderer
 #endif
 
         static public readonly string m_settingsFileName = "bakesettings";
-        public static int s_logging = Logging.kVerbose;
+        public static int s_logging = Logging.kMinimal;
 
         static readonly int SIZE_INT = Marshal.SizeOf(typeof(int));
         static readonly int SIZE_FLOAT = Marshal.SizeOf(typeof(float));
