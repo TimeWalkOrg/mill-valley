@@ -42,7 +42,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 11
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
-    serializedVersion: 8
+    serializedVersion: 9
     m_Resolution: 1
     m_BakeResolution: 1
     m_TextureWidth: 32
@@ -72,24 +72,27 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-    m_MixedBakeMode: 3
+    m_MixedBakeMode: 2
     m_BakeBackend: 0
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVRFiltering: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
     m_PVRFilteringMode: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousColorSigma: 1
-    m_PVRFilteringAtrousNormalSigma: 1
-    m_PVRFilteringAtrousPositionSigma: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 112000001, guid: 8d43c0efdaccc7e45b4903e9e404b894,
     type: 2}
-  m_ShadowMaskMode: 1
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -109,6 +112,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &14598544
 GameObject:
@@ -454,8 +459,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f2d353435383534393032
-  m_bakeId: 2d353435383534393032
+  m_lightingMeshName: Sunset_-545854902
+  m_bakeId: -545854902
 --- !u!95 &244224147
 Animator:
   serializedVersion: 3
@@ -497,6 +502,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -512,6 +518,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -601,11 +608,11 @@ Camera:
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!4 &268012076
 Transform:
   m_ObjectHideFlags: 0
@@ -635,9 +642,9 @@ MonoBehaviour:
   - {fileID: 2100000, guid: f48afcaa12c40494b99a247e6abd4ed8, type: 2}
   - {fileID: 2100000, guid: 05336dcefedb3a0408d84a7610aa0893, type: 2}
   m_lightingIds:
-  - 4c6967687473204f6e
-  - 4c6967687473204f6666
-  - 53756e736574
+  - Lights On
+  - Lights Off
+  - Sunset
   m_lightScale: 1
   m_setIndex: 0
 --- !u!95 &268012078
@@ -772,8 +779,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f353334353532323133
-  m_bakeId: 353334353532323133
+  m_lightingMeshName: Sunset_534552213
+  m_bakeId: 534552213
 --- !u!95 &278707697
 Animator:
   serializedVersion: 3
@@ -815,6 +822,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -830,6 +838,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -961,8 +970,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f393335333434363032
-  m_bakeId: 393335333434363032
+  m_lightingMeshName: Sunset_935344602
+  m_bakeId: 935344602
 --- !u!95 &279837421
 Animator:
   serializedVersion: 3
@@ -1004,6 +1013,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -1019,6 +1029,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1194,8 +1205,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f2d31383339363937323738
-  m_bakeId: 2d31383339363937323738
+  m_lightingMeshName: Sunset_-1839697278
+  m_bakeId: -1839697278
 --- !u!95 &376374847
 Animator:
   serializedVersion: 3
@@ -1237,6 +1248,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -1252,6 +1264,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1465,8 +1478,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f333238313930383331
-  m_bakeId: 333238313930383331
+  m_lightingMeshName: Sunset_328190831
+  m_bakeId: 328190831
 --- !u!95 &409641362
 Animator:
   serializedVersion: 3
@@ -1508,6 +1521,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -1523,6 +1537,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1732,8 +1747,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f2d31323935343134383936
-  m_bakeId: 2d31323935343134383936
+  m_lightingMeshName: Sunset_-1295414896
+  m_bakeId: -1295414896
 --- !u!95 &480279562
 Animator:
   serializedVersion: 3
@@ -1775,6 +1790,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -1790,6 +1806,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1991,6 +2008,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -2006,6 +2024,7 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2270,8 +2289,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f2d32303239383836393538
-  m_bakeId: 2d32303239383836393538
+  m_lightingMeshName: Sunset_-2029886958
+  m_bakeId: -2029886958
 --- !u!95 &684096144
 Animator:
   serializedVersion: 3
@@ -2313,6 +2332,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -2328,6 +2348,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2693,8 +2714,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f2d383634373536313737
-  m_bakeId: 2d383634373536313737
+  m_lightingMeshName: Sunset_-864756177
+  m_bakeId: -864756177
 --- !u!95 &944126241
 Animator:
   serializedVersion: 3
@@ -2736,6 +2757,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -2751,6 +2773,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2964,8 +2987,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f2d373732313939343335
-  m_bakeId: 2d373732313939343335
+  m_lightingMeshName: Sunset_-772199435
+  m_bakeId: -772199435
 --- !u!95 &1016164116
 Animator:
   serializedVersion: 3
@@ -3007,6 +3030,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -3022,6 +3046,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3235,8 +3260,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f2d383139373533353830
-  m_bakeId: 2d383139373533353830
+  m_lightingMeshName: Sunset_-819753580
+  m_bakeId: -819753580
 --- !u!95 &1088383283
 Animator:
   serializedVersion: 3
@@ -3278,6 +3303,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -3293,6 +3319,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3535,8 +3562,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f31373731353830393734
-  m_bakeId: 31373731353830393734
+  m_lightingMeshName: Sunset_1771580974
+  m_bakeId: 1771580974
 --- !u!95 &1238246109
 Animator:
   serializedVersion: 3
@@ -3578,6 +3605,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -3593,6 +3621,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3736,8 +3765,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f31393739303630333931
-  m_bakeId: 31393739303630333931
+  m_lightingMeshName: Sunset_1979060391
+  m_bakeId: 1979060391
 --- !u!95 &1260215887
 Animator:
   serializedVersion: 3
@@ -3779,6 +3808,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -3794,6 +3824,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3929,8 +3960,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f2d353035323531353333
-  m_bakeId: 2d353035323531353333
+  m_lightingMeshName: Sunset_-505251533
+  m_bakeId: -505251533
 --- !u!95 &1296360880
 Animator:
   serializedVersion: 3
@@ -3972,6 +4003,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -3987,6 +4019,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4352,8 +4385,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f2d31383339363637333939
-  m_bakeId: 2d31383339363637333939
+  m_lightingMeshName: Sunset_-1839667399
+  m_bakeId: -1839667399
 --- !u!95 &1539615658
 Animator:
   serializedVersion: 3
@@ -4395,6 +4428,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -4410,6 +4444,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4776,8 +4811,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f333931383931363735
-  m_bakeId: 333931383931363735
+  m_lightingMeshName: Sunset_391891675
+  m_bakeId: 391891675
 --- !u!114 &1625811154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4791,10 +4826,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_inherit: 0
   m_bakeSettingsOverride:
-    m_settingsId: 53756e736574
+    m_settingsId: Sunset
     m_lightList:
     - m_idInFile: 0
-      m_group: 53756e53706f746c69676874
+      m_group: SunSpotlight
     m_activeSet: 1
     m_forceAllLights: 0
     m_version: 1
@@ -4911,6 +4946,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -4926,6 +4962,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -5139,8 +5176,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f2d31323639363337323536
-  m_bakeId: 2d31323639363337323536
+  m_lightingMeshName: Sunset_-1269637256
+  m_bakeId: -1269637256
 --- !u!95 &1671727866
 Animator:
   serializedVersion: 3
@@ -5182,6 +5219,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -5197,6 +5235,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -5332,8 +5371,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f2d333732343435363534
-  m_bakeId: 2d333732343435363534
+  m_lightingMeshName: Sunset_-372445654
+  m_bakeId: -372445654
 --- !u!95 &1748254931
 Animator:
   serializedVersion: 3
@@ -5375,6 +5414,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -5390,6 +5430,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -5599,8 +5640,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f2d31343634313536353432
-  m_bakeId: 2d31343634313536353432
+  m_lightingMeshName: Sunset_-1464156542
+  m_bakeId: -1464156542
 --- !u!95 &1813971266
 Animator:
   serializedVersion: 3
@@ -5642,6 +5683,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -5657,6 +5699,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -5788,8 +5831,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f363238353239303739
-  m_bakeId: 363238353239303739
+  m_lightingMeshName: Sunset_628529079
+  m_bakeId: 628529079
 --- !u!95 &1892364105
 Animator:
   serializedVersion: 3
@@ -5831,6 +5874,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -5846,6 +5890,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -5910,11 +5955,11 @@ Camera:
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!114 &1912202002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6302,8 +6347,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f31373830303136383635
-  m_bakeId: 31373830303136383635
+  m_lightingMeshName: Sunset_1780016865
+  m_bakeId: 1780016865
 --- !u!95 &1995015135
 Animator:
   serializedVersion: 3
@@ -6345,6 +6390,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -6360,6 +6406,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -6569,8 +6616,8 @@ MonoBehaviour:
   m_currentContainer: {fileID: 114599612867859786, guid: 10b380f7787acc04fabda6da8cc3941a,
     type: 2}
   m_originalMesh: {fileID: 0}
-  m_lightingMeshName: 53756e7365745f323133313134353032
-  m_bakeId: 323133313134353032
+  m_lightingMeshName: Sunset_213114502
+  m_bakeId: 213114502
 --- !u!95 &2007398728
 Animator:
   serializedVersion: 3
@@ -6612,6 +6659,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
@@ -6627,6 +6675,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

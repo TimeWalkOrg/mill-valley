@@ -12,12 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace GoogleVR.GVRDemo {
+namespace GoogleVR.HelloVR {
   using UnityEngine;
   using System.Collections;
 
   /// Demonstrates the use of GvrHeadset events and APIs.
   public class HeadsetDemoManager : MonoBehaviour {
+    public GameObject safetyRing;
     public bool enableDebugLog = true;
     private WaitForSeconds waitFourSeconds = new WaitForSeconds(4);
 
@@ -58,6 +59,11 @@ namespace GoogleVR.GVRDemo {
       float innerRadius = -1.0f;
       bool success = GvrHeadset.TryGetSafetyCylinderInnerRadius(ref innerRadius);
       Debug.Log("Safety region inner radius success " + success + "; value " + innerRadius);
+      // Don't activate the safety cylinder visual until the radius is a reasonable value.
+      if (innerRadius > 0.1f) {
+        safetyRing.SetActive(true);
+        safetyRing.transform.localScale = new Vector3(innerRadius, 1, innerRadius);
+      }
     }
 
     public void FindSafetyOuterRadius() {
@@ -67,6 +73,7 @@ namespace GoogleVR.GVRDemo {
     }
 
     void OnEnable() {
+      safetyRing.SetActive(false);
       if (!GvrHeadset.SupportsPositionalTracking) {
         return;
       }
