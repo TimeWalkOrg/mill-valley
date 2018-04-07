@@ -11,6 +11,22 @@ public class YearData
 	public AudioClip audioClip;
 }
 
+public enum ControllerType
+{
+	Right,
+	Left
+};
+
+public enum ButtonType
+{
+	Trigger,
+	Grip,
+	TouchPad,
+	ButtonOne,
+	ButtonTwo,
+	StartMenu
+};
+
 public class YearDataMissive : Missive
 {
 	public YearData data;
@@ -34,6 +50,12 @@ public class CreditsMissive : Missive
 public class WebViewMissive : Missive
 {
 	public string url = "";
+}
+
+public class InputDataMissive : Missive
+{
+	public ControllerType controllerType;
+	public ButtonType buttonType;
 }
 
 public class ControlManager : MonoBehaviour
@@ -77,6 +99,12 @@ public class ControlManager : MonoBehaviour
 	public int currentYearIndex { get; private set; }
 	public timeWalkDayNightToggle dayNightRef { get; set; }
 
+	#region mono
+	private void Start()
+	{
+		Missive.AddListener<InputDataMissive>(OnInput);
+	}
+
 	private void Update()
 	{
 		if (Input.GetKeyUp(KeyCode.R))
@@ -101,6 +129,13 @@ public class ControlManager : MonoBehaviour
 			ToggleCredits();
 	}
 
+	private void OnDestroy()
+	{
+		Missive.RemoveListener<InputDataMissive>(OnInput);
+	}
+	#endregion
+
+	#region logic
 	public void SetCurrentTime(YearData data)
 	{
 		for (int i = 0; i < yearData.Length; i++)
@@ -116,7 +151,9 @@ public class ControlManager : MonoBehaviour
 		currentYear = yearData[0].year;
 		currentYearIndex = 0;
 	}
+	#endregion
 
+	#region toggles
 	public void ToggleYear(int year = -1)
 	{
 		// ++year
@@ -178,7 +215,16 @@ public class ControlManager : MonoBehaviour
 	{
 		Application.Quit();
 	}
+	#endregion
 
+	#region inputs
+	public void OnInput(InputDataMissive missive)
+	{
+		Debug.Log("Input received: " + missive.controllerType.ToString() + " / " + missive.buttonType.ToString());
+	}
+	#endregion
+
+	#region missives
 	private void SendYearDataMissive(YearData data)
 	{
 		YearDataMissive missive = new YearDataMissive();
@@ -210,4 +256,5 @@ public class ControlManager : MonoBehaviour
 		missive.url = url;
 		Missive.Send(missive);
 	}
+	#endregion
 }

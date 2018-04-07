@@ -31,6 +31,7 @@ public class LoadingManager : MonoBehaviour
 			_instance = this;
 		}
 		DontDestroyOnLoad(transform.gameObject);
+		Application.backgroundLoadingPriority = ThreadPriority.Low;
 	}
 
 	void OnApplicationQuit()
