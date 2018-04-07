@@ -53,8 +53,8 @@ namespace daydreamrenderer
             const string uAtten = "dr_LightAtten";
 
             // reset position and rotation
-            previewUtil.m_Camera.transform.position = -Vector3.forward * 4.25f;
-            previewUtil.m_Camera.transform.rotation = Quaternion.identity;
+            previewUtil.camera.transform.position = -Vector3.forward * 4.25f;
+            previewUtil.camera.transform.rotation = Quaternion.identity;
 
             Quaternion orientation = Quaternion.identity;
 
@@ -73,8 +73,8 @@ namespace daydreamrenderer
             }
 
             // apply camera orientation and position
-            previewUtil.m_Camera.transform.position = orientation * previewUtil.m_Camera.transform.position;
-            previewUtil.m_Camera.transform.LookAt(Vector3.zero, orientation * Vector3.up);
+            previewUtil.camera.transform.position = orientation * previewUtil.camera.transform.position;
+            previewUtil.camera.transform.LookAt(Vector3.zero, orientation * Vector3.up);
 
             bool staticLit = mat.IsKeywordEnabled("STATIC_LIGHTING");
 
@@ -82,7 +82,7 @@ namespace daydreamrenderer
             Vector4 colorSave = Vector4.zero;
             Vector4 attenSave = Vector4.zero;
 
-            Debug.logger.logEnabled = false;
+            Debug.unityLogger.logEnabled = false;
             if (!staticLit)
             {
                 if (mat.HasProperty(uPosition))
@@ -101,7 +101,7 @@ namespace daydreamrenderer
                 mat.SetVector(uAtten, atten);
             }
 
-            Debug.logger.logEnabled = true;
+            Debug.unityLogger.logEnabled = true;
 
 
             if (mesh != null)
@@ -109,7 +109,7 @@ namespace daydreamrenderer
                 previewUtil.DrawMesh(mesh, Vector3.zero, Quaternion.identity, mat, 0);
             }
 
-            previewUtil.m_Camera.Render();
+            previewUtil.camera.Render();
 
             if (!staticLit)
             {

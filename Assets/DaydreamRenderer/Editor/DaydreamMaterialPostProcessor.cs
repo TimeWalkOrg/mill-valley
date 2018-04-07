@@ -260,19 +260,19 @@ namespace daydreamrenderer
                 RenderTexture newIcon = RenderTexture.GetTemporary(kImageSize, kImageSize, 0, RenderTextureFormat.ARGB32, RenderTextureReadWrite.sRGB);
 
                 // save old target
-                RenderTexture save = m_previewUtility.m_Camera.targetTexture;
+                RenderTexture save = m_previewUtility.camera.targetTexture;
                 // set new RT target
-                m_previewUtility.m_Camera.targetTexture = newIcon;
+                m_previewUtility.camera.targetTexture = newIcon;
                 // configure camera for icon capture
-                m_previewUtility.m_Camera.backgroundColor = new Color(80 / 255f, 80 / 255f, 80 / 255f, 1f);
-                m_previewUtility.m_Camera.clearFlags = CameraClearFlags.SolidColor;
+                m_previewUtility.camera.backgroundColor = new Color(80 / 255f, 80 / 255f, 80 / 255f, 1f);
+                m_previewUtility.camera.clearFlags = CameraClearFlags.SolidColor;
 
                 // draw the preview
                 Quaternion ignore = Quaternion.identity;
                 DREditorUtility.DrawPreview(m_previewUtility, mat, m_previewMesh, DREditorUtility.PreviewType.kIcon, Vector2.zero, ref ignore);
 
                 // restore target
-                m_previewUtility.m_Camera.targetTexture = save;
+                m_previewUtility.camera.targetTexture = save;
 
                 if (icon != null) GameObject.DestroyImmediate(icon);
 
