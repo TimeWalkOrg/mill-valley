@@ -31,6 +31,9 @@ public class WebViewTriggerComponent : MonoBehaviour
 		if (other.tag == "VRPlayer")
 		{
 			EnableWebView();
+
+			this.transform.LookAt(other.transform.position);
+			this.transform.rotation = Quaternion.Euler(new Vector3(0, this.transform.rotation.eulerAngles.y, 0));
 			if (browser != null)
 				browser.Url = thisURL;
 		}
