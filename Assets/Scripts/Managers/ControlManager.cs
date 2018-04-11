@@ -220,6 +220,58 @@ public class ControlManager : MonoBehaviour
 	#region inputs
 	public void OnInput(InputDataMissive missive)
 	{
+		if (missive == null) return;
+		switch (missive.controllerType)
+		{
+			case ControllerType.Right:
+				switch (missive.buttonType)
+				{
+					case ButtonType.Trigger:
+						break;
+					case ButtonType.Grip:
+						break;
+					case ButtonType.TouchPad:
+						break;
+					case ButtonType.ButtonOne:
+						// Oculus A
+
+						break;
+					case ButtonType.ButtonTwo:
+						// Oculus B
+
+						break;
+					case ButtonType.StartMenu:
+						break;
+					default:
+						break;
+				}
+				break;
+			case ControllerType.Left:
+				switch (missive.buttonType)
+				{
+					case ButtonType.Trigger:
+						break;
+					case ButtonType.Grip:
+						break;
+					case ButtonType.TouchPad:
+						break;
+					case ButtonType.ButtonOne:
+						// Oculus X
+
+						break;
+					case ButtonType.ButtonTwo:
+						// Oculus Y
+
+						break;
+					case ButtonType.StartMenu:
+						break;
+					default:
+						break;
+				}
+				break;
+			default:
+				break;
+		}
 		Debug.Log("Input received: " + missive.controllerType.ToString() + " / " + missive.buttonType.ToString());
 	}
 	#endregion

@@ -1832,6 +1832,7 @@ GameObject:
   - component: {fileID: 4088436219277264}
   - component: {fileID: 114597558714769768}
   - component: {fileID: 114884178788321996}
+  - component: {fileID: 114899317103428970}
   m_Layer: 0
   m_Name: PlayArea
   m_TagString: Untagged
@@ -2746,8 +2747,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1244737008150180}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.95716804, z: 0, w: 0.28953308}
+  m_LocalPosition: {x: 12.72, y: 0, z: 91.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4885988523114794}
@@ -2755,7 +2756,7 @@ Transform:
   - {fileID: 4120490865047710}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 146.34, z: 0}
 --- !u!4 &4391404938114160
 Transform:
   m_ObjectHideFlags: 1
@@ -4430,7 +4431,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -4694,7 +4695,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -4727,7 +4728,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -4762,7 +4763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: TooltipText
-  fontSize: 14
+  fontSize: 10
   containerSize: {x: 100, y: 30}
   drawLineFrom: {fileID: 4260410961406088}
   drawLineTo: {fileID: 0}
@@ -4936,7 +4937,7 @@ MonoBehaviour:
   grabToggleButton: 7
   useToggleButton: 3
   uiClickButton: 3
-  menuToggleButton: 14
+  menuToggleButton: 15
   axisFidelity: 1
   triggerClickThreshold: 1
   triggerForceZeroThreshold: 0.01
@@ -5018,7 +5019,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -5056,7 +5057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: TooltipText
-  fontSize: 14
+  fontSize: 10
   containerSize: {x: 100, y: 30}
   drawLineFrom: {fileID: 4604345288768110}
   drawLineTo: {fileID: 0}
@@ -5077,7 +5078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: TooltipText
-  fontSize: 14
+  fontSize: 10
   containerSize: {x: 100, y: 30}
   drawLineFrom: {fileID: 4882612482710558}
   drawLineTo: {fileID: 0}
@@ -5130,7 +5131,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -5221,7 +5222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: TooltipText
-  fontSize: 14
+  fontSize: 10
   containerSize: {x: 100, y: 30}
   drawLineFrom: {fileID: 4683487126637982}
   drawLineTo: {fileID: 0}
@@ -5276,7 +5277,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -5332,7 +5333,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -5462,7 +5463,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -5484,7 +5485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: TooltipText
-  fontSize: 14
+  fontSize: 10
   containerSize: {x: 100, y: 30}
   drawLineFrom: {fileID: 4703573764358736}
   drawLineTo: {fileID: 0}
@@ -5555,7 +5556,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -5589,7 +5590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: TooltipText
-  fontSize: 14
+  fontSize: 10
   containerSize: {x: 100, y: 30}
   drawLineFrom: {fileID: 4973631000929596}
   drawLineTo: {fileID: 0}
@@ -5757,12 +5758,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a9c9ae8b1fb1542b78598ac955afe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerText: Trigger
-  gripText: Grip
-  touchpadText: Touchpad
-  buttonOneText: ButtonOne
-  buttonTwoText: ButtonTwo
-  startMenuText: StartMenu
+  triggerText: Left Trigger
+  gripText: Left Grip
+  touchpadText: Pointer Hold
+  buttonOneText: Time Travel Back
+  buttonTwoText: Time Travel Forward
+  startMenuText: Toggle Help
   tipBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   tipTextColor: {r: 1, g: 1, b: 1, a: 1}
   tipLineColor: {r: 0, g: 0, b: 0, a: 1}
@@ -5891,7 +5892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: TooltipText
-  fontSize: 14
+  fontSize: 10
   containerSize: {x: 100, y: 30}
   drawLineFrom: {fileID: 4870917293740224}
   drawLineTo: {fileID: 0}
@@ -5923,7 +5924,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -5956,7 +5957,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -6251,7 +6252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: TooltipText
-  fontSize: 14
+  fontSize: 10
   containerSize: {x: 100, y: 30}
   drawLineFrom: {fileID: 4540915740764922}
   drawLineTo: {fileID: 0}
@@ -6310,7 +6311,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -6343,7 +6344,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -6447,7 +6448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: TooltipText
-  fontSize: 14
+  fontSize: 10
   containerSize: {x: 100, y: 30}
   drawLineFrom: {fileID: 4864923562948380}
   drawLineTo: {fileID: 0}
@@ -6492,7 +6493,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -6525,7 +6526,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -6573,12 +6574,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a9c9ae8b1fb1542b78598ac955afe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerText: Trigger
-  gripText: Grip
-  touchpadText: Touchpad
-  buttonOneText: ButtonOne
-  buttonTwoText: ButtonTwo
-  startMenuText: StartMenu
+  triggerText: Right Trigger
+  gripText: Right Grip
+  touchpadText: Teleport
+  buttonOneText: See Commentary
+  buttonTwoText: Toggle Day/Night
+  startMenuText: Toggle Help
   tipBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   tipTextColor: {r: 1, g: 1, b: 1, a: 1}
   tipLineColor: {r: 0, g: 0, b: 0, a: 1}
@@ -6687,7 +6688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: TooltipText
-  fontSize: 14
+  fontSize: 10
   containerSize: {x: 100, y: 30}
   drawLineFrom: {fileID: 4343772565086764}
   drawLineTo: {fileID: 0}
@@ -6750,7 +6751,7 @@ MonoBehaviour:
   grabToggleButton: 7
   useToggleButton: 3
   uiClickButton: 3
-  menuToggleButton: 14
+  menuToggleButton: 15
   axisFidelity: 1
   triggerClickThreshold: 1
   triggerForceZeroThreshold: 0.01
@@ -6867,7 +6868,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -6890,6 +6891,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!114 &114899317103428970
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1814471546664512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12afd8fe34ccac44e8b37617988222ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackLeftController: 1
+  trackRightController: 1
+  controllerGlanceRadius: 0.15
+  customRightControllerOrigin: {fileID: 0}
+  customLeftControllerOrigin: {fileID: 0}
+  customRaycast: {fileID: 0}
 --- !u!114 &114914287835279510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6926,7 +6944,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -6948,7 +6966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: TooltipText
-  fontSize: 14
+  fontSize: 10
   containerSize: {x: 100, y: 30}
   drawLineFrom: {fileID: 4987346799418074}
   drawLineTo: {fileID: 0}
@@ -7005,7 +7023,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -7103,7 +7121,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -7136,7 +7154,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -7169,7 +7187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: TooltipText
-  fontSize: 14
+  fontSize: 10
   containerSize: {x: 100, y: 30}
   drawLineFrom: {fileID: 4874264042349366}
   drawLineTo: {fileID: 0}
@@ -7230,7 +7248,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
@@ -7279,7 +7297,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4
