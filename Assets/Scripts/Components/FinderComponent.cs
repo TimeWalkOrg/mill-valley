@@ -10,13 +10,30 @@ public class FinderComponent : MonoBehaviour
 	public GameObject loadingManagerGO;
 	public GameObject controlManagerGO;
 
-	private void Awake()
-	{
-		mainSceneGO.SetActive(false);
-	}
+	public GameObject lightingRefGO;
+	public GameObject environmentRefGO;
+	public GameObject terrianRefGO;
+	public GameObject webViewManagerGO;
+	
+	// not active at the moment
+	public GameObject portalManagerGO;
 
-	private void Start()
+	IEnumerator Start()
 	{
+		// lessen async load
+		if (terrianRefGO != null)
+			terrianRefGO.SetActive(true);
+		yield return new WaitForEndOfFrame();
+
+		if (lightingRefGO != null)
+			lightingRefGO.SetActive(true);
+		yield return new WaitForEndOfFrame();
+
+		if (environmentRefGO != null)
+			environmentRefGO.SetActive(true);
+		yield return new WaitForEndOfFrame();
+
+		// hacks for starting in MainScene instead of loading for edits
 		if (LoadingManager.instance == null)
 			Instantiate(loadingManagerGO);
 		LoadingManager.instance.mainSceneGO = mainSceneGO;
@@ -24,5 +41,15 @@ public class FinderComponent : MonoBehaviour
 		if (ControlManager.instance == null)
 			Instantiate(controlManagerGO);
 		ControlManager.instance.dayNightRef = dayNightRef;
+
+		// wait until main scene is active so all added GO's are in that scene, not loading etc
+		while (!LoadingManager.instance.isFirstMainSceneLoaded)
+			yield return null;
+
+		if (webViewManagerGO != null)
+			webViewManagerGO.SetActive(true);
+
+		if (portalManagerGO != null)
+			portalManagerGO.SetActive(true);
 	}
 }

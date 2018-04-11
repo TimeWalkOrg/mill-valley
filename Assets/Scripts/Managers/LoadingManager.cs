@@ -144,43 +144,25 @@ public class LoadingManager : MonoBehaviour
 	IEnumerator LoadAsyncScene()
 	{
 		loadingSlider.value = 0f;
-		Debug.Log("Before load");
 		asyncLoaderMainScene = SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
 		asyncLoaderMainScene.allowSceneActivation = false;
-		Debug.Log("After load");
 
 		while (asyncLoaderMainScene.progress < 0.9f)
 		{
 			if (loadingSlider.value < 1f)
 				loadingSlider.value += 0.005f;
-
-			Debug.Log("Waiting for isDone");
 			yield return null;
 		}
 		asyncLoaderMainScene.allowSceneActivation = true;
-		Debug.Log("Finished loading Editor");
+		yield return new WaitForEndOfFrame();
+		yield return null;
 
-
-#if !UNITY_EDITOR
 		while (!asyncLoaderMainScene.isDone)
 		{
 			yield return null;
 		}
 		Debug.Log("Finished loading Build");
-#endif
-		// TODO remove after more tests
-		//while (!asyncLoaderMainScene.isDone)
-		//{
-		//	if (loadingSlider.value < 1f)
-		//		loadingSlider.value += 0.005f;
 
-		//	Debug.Log("Waiting for isDone");
-		//	yield return null;
-		//}
-		//Debug.Log("Finished");
-		//yield return null;
-
-		yield return null;
 		isMainSceneLoaded = true;
 		loadingUIGO.SetActive(false);
 		controllerSelectionUIGO.SetActive(true);

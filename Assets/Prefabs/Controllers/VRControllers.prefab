@@ -2748,7 +2748,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1244737008150180}
   m_LocalRotation: {x: 0, y: 0.95716804, z: 0, w: 0.28953308}
-  m_LocalPosition: {x: 12.72, y: 0, z: 91.03}
+  m_LocalPosition: {x: 12.72, y: 0.1, z: 91.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4885988523114794}
@@ -5763,7 +5763,7 @@ MonoBehaviour:
   touchpadText: Pointer Hold
   buttonOneText: Time Travel Back
   buttonTwoText: Time Travel Forward
-  startMenuText: Toggle Help
+  startMenuText: 
   tipBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   tipTextColor: {r: 1, g: 1, b: 1, a: 1}
   tipLineColor: {r: 0, g: 0, b: 0, a: 1}
@@ -6579,7 +6579,7 @@ MonoBehaviour:
   touchpadText: Teleport
   buttonOneText: See Commentary
   buttonTwoText: Toggle Day/Night
-  startMenuText: Toggle Help
+  startMenuText: 
   tipBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   tipTextColor: {r: 1, g: 1, b: 1, a: 1}
   tipLineColor: {r: 0, g: 0, b: 0, a: 1}

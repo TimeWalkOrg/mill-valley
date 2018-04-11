@@ -156,8 +156,12 @@ public class ControlManager : MonoBehaviour
 	#region toggles
 	public void ToggleYear(int year = -1)
 	{
-		// ++year
-		if (year == -1)
+		if (year == -2) // --year
+		{
+			currentYearIndex = (currentYearIndex > 0) ? currentYearIndex - 1 : yearData.Length - 1;
+			currentYear = yearData[currentYearIndex].year;
+		}
+		else if (year == -1) // ++year
 		{
 			currentYearIndex = (currentYearIndex >= yearData.Length-1) ? 0 : currentYearIndex + 1;
 			currentYear = yearData[currentYearIndex].year;
@@ -234,11 +238,11 @@ public class ControlManager : MonoBehaviour
 						break;
 					case ButtonType.ButtonOne:
 						// Oculus A
-
+						ToggleCredits();
 						break;
 					case ButtonType.ButtonTwo:
 						// Oculus B
-
+						ToggleNight();
 						break;
 					case ButtonType.StartMenu:
 						break;
@@ -257,11 +261,11 @@ public class ControlManager : MonoBehaviour
 						break;
 					case ButtonType.ButtonOne:
 						// Oculus X
-
+						ToggleYear(-2);
 						break;
 					case ButtonType.ButtonTwo:
 						// Oculus Y
-
+						ToggleYear();
 						break;
 					case ButtonType.StartMenu:
 						break;
