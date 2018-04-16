@@ -7,9 +7,14 @@ public class VRTKInputComponent : MonoBehaviour
 {
 	public ControllerType thisControllerType;
 
+	private VRTK_ControllerTooltips tooltips;
+
 	private void Start()
 	{
 		InitVRInputListeners();
+		tooltips = GetComponentInChildren<VRTK_ControllerTooltips>();
+		if (tooltips != null)
+			tooltips.ToggleTips(false);
 	}
 
 	private void SendInputMissive(ControllerType controllerType, ButtonType buttonType)
@@ -20,6 +25,9 @@ public class VRTKInputComponent : MonoBehaviour
 		Missive.Send(missive);
 	}
 
+
+
+	#region vrtk methods
 	private void InitVRInputListeners()
 	{
 		if (GetComponent<VRTK_ControllerEvents>() == null)
@@ -88,8 +96,8 @@ public class VRTKInputComponent : MonoBehaviour
 
 	private void DebugLogger(uint index, string button, string action, ControllerInteractionEventArgs e)
 	{
-		VRTK_Logger.Info("Controller on index '" + index + "' " + button + " has been " + action
-				+ " with a pressure of " + e.buttonPressure + " / trackpad axis at: " + e.touchpadAxis + " (" + e.touchpadAngle + " degrees)");
+		//VRTK_Logger.Info("Controller on index '" + index + "' " + button + " has been " + action
+		//		+ " with a pressure of " + e.buttonPressure + " / trackpad axis at: " + e.touchpadAxis + " (" + e.touchpadAngle + " degrees)");
 	}
 
 	private void DoTriggerPressed(object sender, ControllerInteractionEventArgs e)
@@ -278,4 +286,5 @@ public class VRTKInputComponent : MonoBehaviour
 	{
 		DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "CONTROLLER STATE", "INDEX CHANGED", e);
 	}
+	#endregion
 }

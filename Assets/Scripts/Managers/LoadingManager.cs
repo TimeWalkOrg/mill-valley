@@ -79,6 +79,7 @@ public class LoadingManager : MonoBehaviour
 	[HideInInspector]
 	public Transform currentPortalSpawn;
 	public GameObject currentPlayerGO;
+    public float imagePauseTime = 5.0f;
 
 	private GameObject loadingSceneGO;
 	private GameObject secondarySceneGO;
@@ -137,26 +138,31 @@ public class LoadingManager : MonoBehaviour
 		{
 			int index = (int)Random.Range(0, loadingSprites.Length);
 			loadingImage.sprite = loadingSprites[index];
-			yield return new WaitForSecondsRealtime(3f);
+			yield return new WaitForSecondsRealtime(imagePauseTime);
 		}
 	}
 
 	IEnumerator LoadAsyncScene()
 	{
 		loadingSlider.value = 0f;
-		Debug.Log("Before load");
 		asyncLoaderMainScene = SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
-		Debug.Log("After load");
-		while (!asyncLoaderMainScene.isDone)
+		asyncLoaderMainScene.allowSceneActivation = false;
+
+		while (asyncLoaderMainScene.progress < 0.9f)
 		{
 			if (loadingSlider.value < 1f)
 				loadingSlider.value += 0.005f;
-
-			Debug.Log("Waiting for isDone");
 			yield return null;
 		}
-		Debug.Log("Finished");
+		asyncLoaderMainScene.allowSceneActivation = true;
 		yield return new WaitForEndOfFrame();
+		yield return null;
+
+		while (!asyncLoaderMainScene.isDone)
+		{
+			yield return null;
+		}
+		Debug.Log("Finished loading Build");
 
 		isMainSceneLoaded = true;
 		loadingUIGO.SetActive(false);
@@ -171,7 +177,6 @@ public class LoadingManager : MonoBehaviour
 			currentPortalSpawn = portalSpawn;
 			StartCoroutine(LoadAsyncSecondaryScene(sceneName));
 		}
-
 	}
 
 	IEnumerator LoadAsyncSecondaryScene(string sceneName)
