@@ -4625,12 +4625,12 @@ MonoBehaviour:
     smoothsRotation: 0
     maxAllowedPerFrameAngleDifference: 1.5
   validCollisionColor: {r: 0, g: 0.49803922, b: 0, a: 1}
-  invalidCollisionColor: {r: 0.8, g: 0, b: 0, a: 1}
+  invalidCollisionColor: {r: 0.8455882, g: 0.35440093, b: 0.35440093, a: 1}
   tracerVisibility: 0
   cursorVisibility: 0
-  maximumLength: {x: 10, y: Infinity}
-  tracerDensity: 10
-  cursorRadius: 0.5
+  maximumLength: {x: 30, y: Infinity}
+  tracerDensity: 30
+  cursorRadius: 0.4
   heightLimitAngle: 100
   curveOffset: 1
   rescaleTracer: 0
@@ -5597,7 +5597,7 @@ MonoBehaviour:
   lineWidth: 0.001
   fontColor: {r: 1, g: 1, b: 1, a: 1}
   containerColor: {r: 0, g: 0, b: 0, a: 1}
-  lineColor: {r: 0, g: 0, b: 0, a: 1}
+  lineColor: {r: 0.35986152, g: 0.9558824, b: 0.21085638, a: 1}
   alwaysFaceHeadset: 0
 --- !u!114 &114493856458093332
 MonoBehaviour:
@@ -5605,7 +5605,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1186812606822948}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fc65878c7102524bb8c2bcfbefff497, type: 3}
   m_Name: 
@@ -5758,11 +5758,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a9c9ae8b1fb1542b78598ac955afe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerText: Left Trigger
-  gripText: Left Grip
-  touchpadText: Pointer Hold
-  buttonOneText: Time Travel Back
-  buttonTwoText: Time Travel Forward
+  triggerText: 
+  gripText: 
+  touchpadText: 
+  buttonOneText: Time Travel - Back
+  buttonTwoText: Time Travel - Forward
   startMenuText: 
   tipBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   tipTextColor: {r: 1, g: 1, b: 1, a: 1}
@@ -6574,12 +6574,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a9c9ae8b1fb1542b78598ac955afe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerText: Right Trigger
-  gripText: Right Grip
-  touchpadText: Teleport
-  buttonOneText: See Commentary
-  buttonTwoText: Toggle Day/Night
-  startMenuText: 
+  triggerText: 
+  gripText: 
+  touchpadText: Teleport (click down)
+  buttonOneText: TimeWalk info
+  buttonTwoText: Day-Night toggle
+  startMenuText: Exit
   tipBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   tipTextColor: {r: 1, g: 1, b: 1, a: 1}
   tipLineColor: {r: 0, g: 0, b: 0, a: 1}

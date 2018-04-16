@@ -79,6 +79,7 @@ public class LoadingManager : MonoBehaviour
 	[HideInInspector]
 	public Transform currentPortalSpawn;
 	public GameObject currentPlayerGO;
+    public float imagePauseTime = 5.0f;
 
 	private GameObject loadingSceneGO;
 	private GameObject secondarySceneGO;
@@ -137,7 +138,7 @@ public class LoadingManager : MonoBehaviour
 		{
 			int index = (int)Random.Range(0, loadingSprites.Length);
 			loadingImage.sprite = loadingSprites[index];
-			yield return new WaitForSecondsRealtime(3f);
+			yield return new WaitForSecondsRealtime(imagePauseTime);
 		}
 	}
 
