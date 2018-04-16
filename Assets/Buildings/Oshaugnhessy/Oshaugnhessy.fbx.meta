@@ -1,0 +1,376 @@
+fileFormatVersion: 2
+guid: 5a366f5a0d2547842a929f242e48bc5b
+timeCreated: 1523656686
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: CAFE
+    100002: Mill_Valley_Post
+    100004: //RootNode
+    100006: oshaugnhessy_1920 1
+    100008: pCube1
+    100010: Restaurant_Grill
+    100012: Water_Heaters
+    100014: WebViewTriggerAnchorGO
+    100016: Wedgewood_3
+    100018: pCube2
+    100020: M_TablePostOffice
+    100022: polySurface2
+    100024: polySurface3
+    100026: polySurface16
+    100028: Windows_SecondFloor
+    100030: FrameWindows_SecondFloor
+    100032: polySurface31
+    100034: TexturedWindows_SecondFloor
+    100036: transform1
+    100038: Windows_FirstFloor
+    100040: Graphics
+    100042: Doors
+    100044: Osh_Door01
+    100046: Osh_Door02
+    100048: Osh_Door03
+    100050: Osh_Door04
+    100052: Osh_Door06
+    100054: M_OshPost_Tables
+    400000: CAFE
+    400002: Mill_Valley_Post
+    400004: //RootNode
+    400006: oshaugnhessy_1920 1
+    400008: pCube1
+    400010: Restaurant_Grill
+    400012: Water_Heaters
+    400014: WebViewTriggerAnchorGO
+    400016: Wedgewood_3
+    400018: pCube2
+    400020: M_TablePostOffice
+    400022: polySurface2
+    400024: polySurface3
+    400026: polySurface16
+    400028: Windows_SecondFloor
+    400030: FrameWindows_SecondFloor
+    400032: polySurface31
+    400034: TexturedWindows_SecondFloor
+    400036: transform1
+    400038: Windows_FirstFloor
+    400040: Graphics
+    400042: Doors
+    400044: Osh_Door01
+    400046: Osh_Door02
+    400048: Osh_Door03
+    400050: Osh_Door04
+    400052: Osh_Door06
+    400054: M_OshPost_Tables
+    2100000: _defaultMat
+    2100002: _9
+    2100004: dowds_moving_1920_Suede_Dark_Gray
+    2100006: _5
+    2100008: _13
+    2100010: _Carpet_Diamond_Olive_
+    2100012: _Color_A08_
+    2100014: _15
+    2100016: __Wood__Floor_2
+    2100018: _Translucent_Glass_Dark_Green_
+    2100020: _14
+    2100022: _16
+    2100024: Apple_1_Hor
+    2100026: __DarkGray_
+    2100028: lambert1
+    2100030: S_Osh_BarWall_01
+    2100032: S_WoodPostOffice01
+    2100034: S_GlassPostOffice01
+    2100036: S_WoodPostOffice02
+    2100038: blinn3
+    2100040: blinn4
+    2100042: S_WhiteWall
+    2100044: T_Osh_GlassWindows01
+    2100046: S_Osh_BrickWall
+    2100048: S_FramesWindow
+    2100050: S_Glasses01
+    2100052: S_TexturedWindows_SecondFloor
+    2100054: S_graphics01
+    2100056: S_Graphics02
+    2100058: S_Osh_Walls03
+    2100060: S_Osh_Walls02
+    2100062: S_Osh_Walls01
+    2100064: S_Floor01
+    2100066: S_Floor02
+    2100068: S_Floor03
+    2100070: S_Osh_Doors01
+    2100072: S_BlackMetal
+    2100074: S_Cardboard
+    2100076: S_OshCeiling03
+    2100078: S_OshCeiling02
+    2100080: S_Osh_Ceiling01
+    2100082: S_OshPostal_Tables01
+    2100084: S_OshPost_Metal01
+    2300000: CAFE
+    2300002: Mill_Valley_Post
+    2300004: oshaugnhessy_1920 1
+    2300006: pCube1
+    2300008: Restaurant_Grill
+    2300010: Water_Heaters
+    2300012: Wedgewood_3
+    2300014: pCube2
+    2300016: M_TablePostOffice
+    2300018: polySurface2
+    2300020: polySurface3
+    2300022: polySurface16
+    2300024: Windows_SecondFloor
+    2300026: FrameWindows_SecondFloor
+    2300028: polySurface31
+    2300030: TexturedWindows_SecondFloor
+    2300032: Windows_FirstFloor
+    2300034: Osh_Door01
+    2300036: Osh_Door02
+    2300038: Osh_Door03
+    2300040: Osh_Door04
+    2300042: Osh_Door06
+    2300044: M_OshPost_Tables
+    3300000: CAFE
+    3300002: Mill_Valley_Post
+    3300004: oshaugnhessy_1920 1
+    3300006: pCube1
+    3300008: Restaurant_Grill
+    3300010: Water_Heaters
+    3300012: Wedgewood_3
+    3300014: pCube2
+    3300016: M_TablePostOffice
+    3300018: polySurface2
+    3300020: polySurface3
+    3300022: polySurface16
+    3300024: Windows_SecondFloor
+    3300026: FrameWindows_SecondFloor
+    3300028: polySurface31
+    3300030: TexturedWindows_SecondFloor
+    3300032: Windows_FirstFloor
+    3300034: Osh_Door01
+    3300036: Osh_Door02
+    3300038: Osh_Door03
+    3300040: Osh_Door04
+    3300042: Osh_Door06
+    3300044: M_OshPost_Tables
+    4300000: oshaugnhessy_1920
+    4300002: CAFE
+    4300004: Mill_Valley_Post
+    4300006: Restaurant_Grill
+    4300008: Water_Heaters
+    4300010: Wedgewood_3
+    4300012: pCube1
+    4300014: pCube2
+    4300016: M_TablePostOffice
+    4300018: polySurface3
+    4300020: polySurface2
+    4300022: polySurface16
+    4300024: Windows_SecondFloor
+    4300026: polySurface31
+    4300028: FrameWindows_SecondFloor
+    4300030: TexturedWindows_SecondFloor
+    4300032: Windows_FirstFloor
+    4300034: Osh_Door01
+    4300036: Osh_Door02
+    4300038: Osh_Door03
+    4300040: Osh_Door04
+    4300042: Osh_Door06
+    4300044: M_OshPost_Tables
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_BlackMetal
+    second: {fileID: 2100000, guid: 2940d7c011c2f7e4eb537fddcd2a2cab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_Cardboard
+    second: {fileID: 2100000, guid: e45fe59f2d0cdc14eb875899f4714e5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_Floor01
+    second: {fileID: 2100000, guid: 19c2bca94767e084681653dd7e325161, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_Floor02
+    second: {fileID: 2100000, guid: a9c921ff5f1247c4d9733fdf97faa762, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_Floor03
+    second: {fileID: 2100000, guid: 3b537720cff5ff346a83c6704b520425, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_FramesWindow
+    second: {fileID: 2100000, guid: 95ab69d16308b324a9e8dde1aebf0709, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_GlassPostOffice01
+    second: {fileID: 2100000, guid: f9a86330d68a60f4dacba5b3fa3a569c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_Graphics02
+    second: {fileID: 2100000, guid: 3c700c999c8d924418da794eed2bd9c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_OshCeiling02
+    second: {fileID: 2100000, guid: e3ca7484d3564b14ca4724d30876351b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_OshCeiling03
+    second: {fileID: 2100000, guid: 8f46858a5b2e2ce44882019792370f33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_OshPost_Metal01
+    second: {fileID: 2100000, guid: a8619b09e2accb34f96495b75188e569, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_OshPostal_Tables01
+    second: {fileID: 2100000, guid: 12236b382f66c504d9e687e4b7429954, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_Osh_BarWall_01
+    second: {fileID: 2100000, guid: 99737fa4e87d8b74489d11ed0e63febc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_Osh_BrickWall
+    second: {fileID: 2100000, guid: e9ad9ffe6cc1ec748ab919491373686e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_Osh_Ceiling01
+    second: {fileID: 2100000, guid: 9dbab913f4d009f49ae9ca56a6c62793, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_Osh_Doors01
+    second: {fileID: 2100000, guid: 1653197d7395b874a8794ccc26acd2c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_Osh_Walls01
+    second: {fileID: 2100000, guid: 70080b943a6f0f841a9da10adf090711, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_Osh_Walls02
+    second: {fileID: 2100000, guid: 60b802a883487444d847f8983d40c2d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_Osh_Walls03
+    second: {fileID: 2100000, guid: 8b5c264f080b69c4e92a8c210b004455, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_WhiteWall
+    second: {fileID: 2100000, guid: a8c84e8952841b548af9c06079efee3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_WoodPostOffice01
+    second: {fileID: 2100000, guid: 5e008cf96117c04438a6c903164818f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_WoodPostOffice02
+    second: {fileID: 2100000, guid: aef3df3ed34741a40a4872c461b66ccb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: S_graphics01
+    second: {fileID: 2100000, guid: f6800fb152d73ac47aa4f73744894c4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn4
+    second: {fileID: 2100000, guid: 762a244ce88a29544930dcf8bfe5d899, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
