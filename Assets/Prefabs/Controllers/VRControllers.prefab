@@ -88,6 +88,8 @@ GameObject:
   - component: {fileID: 114754224082184980}
   - component: {fileID: 114100893619026508}
   - component: {fileID: 114158763536077568}
+  - component: {fileID: 114685361883428160}
+  - component: {fileID: 114383642603317372}
   m_Layer: 0
   m_Name: RightController
   m_TagString: Untagged
@@ -5310,6 +5312,18 @@ MonoBehaviour:
   smoothsScale: 0
   maxAllowedPerFrameSizeDifference: 0.003
   _moment: 2
+--- !u!114 &114383642603317372
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1043695814467264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e104da36bd3b04b90c6ae969ac66dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customColliderContainer: {fileID: 0}
 --- !u!114 &114385659316967304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6117,6 +6131,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 0}
+--- !u!114 &114685361883428160
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1043695814467264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 947b27445602ed640b885db7e667dfc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabButton: 7
+  grabPrecognition: 0
+  throwMultiplier: 1
+  createRigidBodyWhenNotTouching: 1
+  controllerAttachPoint: {fileID: 0}
+  controllerEvents: {fileID: 0}
+  interactTouch: {fileID: 0}
 --- !u!114 &114701867821402492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6575,7 +6607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerText: 
-  gripText: 
+  gripText: Grab
   touchpadText: Teleport (click down)
   buttonOneText: TimeWalk info
   buttonTwoText: Day-Night toggle
