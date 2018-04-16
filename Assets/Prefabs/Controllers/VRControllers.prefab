@@ -5605,7 +5605,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1186812606822948}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fc65878c7102524bb8c2bcfbefff497, type: 3}
   m_Name: 
@@ -5621,7 +5621,7 @@ MonoBehaviour:
     maxAllowedPerFrameDistanceDifference: 0.003
     smoothsRotation: 0
     maxAllowedPerFrameAngleDifference: 1.5
-  validCollisionColor: {r: 0, g: 0.49803922, b: 0, a: 1}
+  validCollisionColor: {r: 0.15511253, g: 0.12651385, b: 0.9558824, a: 1}
   invalidCollisionColor: {r: 0.8, g: 0, b: 0, a: 1}
   tracerVisibility: 0
   cursorVisibility: 0
@@ -5760,7 +5760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerText: 
   gripText: 
-  touchpadText: 
+  touchpadText: Pointer
   buttonOneText: Time Travel - Back
   buttonTwoText: Time Travel - Forward
   startMenuText: 
@@ -6579,7 +6579,7 @@ MonoBehaviour:
   touchpadText: Teleport (click down)
   buttonOneText: TimeWalk info
   buttonTwoText: Day-Night toggle
-  startMenuText: Exit
+  startMenuText: 
   tipBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   tipTextColor: {r: 1, g: 1, b: 1, a: 1}
   tipLineColor: {r: 0, g: 0, b: 0, a: 1}
