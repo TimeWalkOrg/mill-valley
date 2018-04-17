@@ -4633,7 +4633,7 @@ MonoBehaviour:
   maximumLength: {x: 30, y: Infinity}
   tracerDensity: 30
   cursorRadius: 0.4
-  heightLimitAngle: 100
+  heightLimitAngle: 90
   curveOffset: 1
   rescaleTracer: 0
   cursorMatchTargetRotation: 1
@@ -4939,7 +4939,7 @@ MonoBehaviour:
   grabToggleButton: 7
   useToggleButton: 3
   uiClickButton: 3
-  menuToggleButton: 15
+  menuToggleButton: 0
   axisFidelity: 1
   triggerClickThreshold: 1
   triggerForceZeroThreshold: 0.01
@@ -6611,7 +6611,7 @@ MonoBehaviour:
   touchpadText: Teleport (click down)
   buttonOneText: TimeWalk info
   buttonTwoText: Day-Night toggle
-  startMenuText: 
+  startMenuText: Exit
   tipBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   tipTextColor: {r: 1, g: 1, b: 1, a: 1}
   tipLineColor: {r: 0, g: 0, b: 0, a: 1}
@@ -6783,7 +6783,7 @@ MonoBehaviour:
   grabToggleButton: 7
   useToggleButton: 3
   uiClickButton: 3
-  menuToggleButton: 15
+  menuToggleButton: 14
   axisFidelity: 1
   triggerClickThreshold: 1
   triggerForceZeroThreshold: 0.01
