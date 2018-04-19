@@ -122,7 +122,10 @@ public class LoadingManager : MonoBehaviour
 		else // spawned in main scene for testing
 		{
 			isMainSceneLoaded = true;
-			SelectControllerTypeOnClick((int)ControlTypes.FPS);
+			if (XRSettings.isDeviceActive)
+				SelectControllerTypeOnClick((int)ControlTypes.VR);
+			else
+				SelectControllerTypeOnClick((int)ControlTypes.FPS);
 		}
 	}
 
