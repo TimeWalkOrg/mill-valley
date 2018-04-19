@@ -245,7 +245,7 @@ Transform:
   - {fileID: 4334077657571460}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -101.337006, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -212.096, z: 0}
 --- !u!4 &4334077657571460
 Transform:
   m_ObjectHideFlags: 1
@@ -544,7 +544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09fbfa8e06d12404fb850c57984a1c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoadName: SecondaryScene01
+  sceneToLoadName: TamHighScene
   portalSpawn: {fileID: 4334077657571460}
 --- !u!198 &198101566013746142
 ParticleSystem:
@@ -606,7 +606,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -1342811804
+  randomSeed: -1932049245
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3877,7 +3877,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 538880426
+  randomSeed: 244939832
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -7178,7 +7178,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -1482211477
+  randomSeed: -1158922368
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -10543,7 +10543,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 1423374535
+  randomSeed: -1220257534
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -13814,7 +13814,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -485594714
+  randomSeed: -1579093837
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -17175,7 +17175,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -767824881
+  randomSeed: -685444769
   InitialModule:
     serializedVersion: 3
     enabled: 1
