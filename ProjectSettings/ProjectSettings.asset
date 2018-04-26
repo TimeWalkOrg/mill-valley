@@ -278,8 +278,10 @@ PlayerSettings:
     m_Enabled: 0
     m_Devices: []
   - m_BuildTarget: Android
-    m_Enabled: 0
-    m_Devices: []
+    m_Enabled: 1
+    m_Devices:
+    - None
+    - Daydream
   - m_BuildTarget: WebGL
     m_Enabled: 0
     m_Devices: []

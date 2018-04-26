@@ -200,7 +200,7 @@ namespace VRTK
             InitButtonsArray();
         }
 
-        protected virtual void OnEnable()
+		protected virtual void OnEnable()
         {
             controllerEvents = (controllerEvents != null ? controllerEvents : GetComponentInParent<VRTK_ControllerEvents>());
             InitButtonsArray();
@@ -348,33 +348,33 @@ namespace VRTK
                 VRTK_ObjectTooltip tooltip = tooltips[i];
                 string tipText = "";
                 Transform tipTransform = null;
-
+				
                 switch (tooltip.name.Replace("Tooltip", "").ToLower())
                 {
                     case "trigger":
                         tipText = triggerText;
                         tipTransform = GetTransform(trigger, SDK_BaseController.ControllerElements.Trigger);
-                        break;
+						break;
                     case "grip":
                         tipText = gripText;
                         tipTransform = GetTransform(grip, SDK_BaseController.ControllerElements.GripLeft);
-                        break;
+						break;
                     case "touchpad":
                         tipText = touchpadText;
                         tipTransform = GetTransform(touchpad, SDK_BaseController.ControllerElements.Touchpad);
-                        break;
+						break;
                     case "buttonone":
                         tipText = buttonOneText;
                         tipTransform = GetTransform(buttonOne, SDK_BaseController.ControllerElements.ButtonOne);
-                        break;
+						break;
                     case "buttontwo":
                         tipText = buttonTwoText;
                         tipTransform = GetTransform(buttonTwo, SDK_BaseController.ControllerElements.ButtonTwo);
-                        break;
+						break;
                     case "startmenu":
                         tipText = startMenuText;
                         tipTransform = GetTransform(startMenu, SDK_BaseController.ControllerElements.StartMenu);
-                        break;
+						break;
                 }
 
                 initComplete = (tipTransform != null);

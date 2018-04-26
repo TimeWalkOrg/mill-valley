@@ -240,12 +240,12 @@ public class LoadingManager : MonoBehaviour
 
 		mainScene = SceneManager.GetSceneByName("MainScene");
 
-		Debug.Log("get scene");
-
 		while (!mainScene.IsValid())
 			yield return null;
 
-		Debug.Log("isValid");
+		ToggleLoadingScene(false);
+		ToggleMainScene(true);
+		yield return new WaitForEndOfFrame();
 
 		switch (type)
 		{
@@ -280,6 +280,8 @@ public class LoadingManager : MonoBehaviour
 					yield return null;
 				}
 				currentControlGO = Instantiate(controls[(int)ControlTypes.VR].controls[0]);
+				yield return new WaitForEndOfFrame();
+				currentControlGO.SetActive(true);
 				break;
 			default:
 				break;
@@ -288,6 +290,7 @@ public class LoadingManager : MonoBehaviour
 		ToggleLoadingScene(false);
 		ToggleMainScene(true);
 		yield return new WaitForEndOfFrame();
+
 		ControlManager.instance.ToggleYear(1920);
 		isFirstMainSceneLoaded = true;
 	}

@@ -29,6 +29,8 @@ public class TimeSliderComponent : MonoBehaviour
 
 	private void OnYearData(YearDataMissive missive)
 	{
+		if (missive == null) return;
+
 		sliderText.text = missive.data.yearLabel;
 		yearSlider.value = missive.data.year;
 		currentYearData.year = missive.data.year;

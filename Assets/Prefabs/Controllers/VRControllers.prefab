@@ -1787,7 +1787,7 @@ GameObject:
   - component: {fileID: 4423178483151734}
   - component: {fileID: 114532410235506932}
   m_Layer: 2
-  m_Name: TWControllerTooltips
+  m_Name: ControllerTooltips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2168,7 +2168,7 @@ GameObject:
   - component: {fileID: 4301674446790876}
   - component: {fileID: 114809119438696268}
   m_Layer: 2
-  m_Name: TWControllerTooltips
+  m_Name: ControllerTooltips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4558,6 +4558,7 @@ MonoBehaviour:
   useRotationTracking: 1
   useIPDInPositionTracking: 1
   resetTrackerOnLoad: 0
+  AllowRecenter: 1
 --- !u!114 &114063446783858790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4938,8 +4939,8 @@ MonoBehaviour:
   pointerSetButton: 10
   grabToggleButton: 7
   useToggleButton: 3
-  uiClickButton: 3
-  menuToggleButton: 0
+  uiClickButton: 4
+  menuToggleButton: 15
   axisFidelity: 1
   triggerClickThreshold: 1
   triggerForceZeroThreshold: 0.01
@@ -5251,7 +5252,7 @@ MonoBehaviour:
     buildTargetGroupName: Standalone
   scriptAliasLeftController: {fileID: 1186812606822948}
   scriptAliasRightController: {fileID: 1043695814467264}
-  autoManageVRSettings: 1
+  autoManageVRSettings: 0
   autoLoadSetup: 1
   setups:
   - {fileID: 114835210095252404}
@@ -5682,11 +5683,11 @@ MonoBehaviour:
   enableTeleport: 0
   targetListPolicy: {fileID: 0}
   pointerRenderer: {fileID: 114493856458093332}
-  activationButton: 9
+  activationButton: 1
   holdButtonToActivate: 0
   activateOnEnable: 0
   activationDelay: 0
-  selectionButton: 3
+  selectionButton: 4
   selectOnPress: 0
   selectionDelay: 0
   selectAfterHoverDuration: 0
@@ -5772,9 +5773,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a9c9ae8b1fb1542b78598ac955afe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerText: Click
+  triggerText: UI Click
   gripText: 
-  touchpadText: Pointer
+  touchpadText: 
   buttonOneText: Time Travel - Back
   buttonTwoText: Time Travel - Forward
   startMenuText: 
@@ -7018,8 +7019,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71b26f999cbdac8478b6c2a046256169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activationButton: 9
-  activationMode: 2
+  activationButton: 10
+  activationMode: 0
   selectionButton: 3
   clickMethod: 0
   attemptClickOnDeactivate: 0
