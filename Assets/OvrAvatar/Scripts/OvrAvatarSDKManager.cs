@@ -148,7 +148,9 @@ public class OvrAvatarSDKManager : MonoBehaviour {
             callbackSet = new HashSet<specificationCallback>();
             specificationCallbacks.Add(userId, callbackSet);
             //Only request the spec if we don't already have one in flight.
-            CAPI.ovrAvatar_RequestAvatarSpecification(userId);
+            IntPtr specRequest = CAPI.ovrAvatarSpecificationRequest_Create(userId);
+            CAPI.ovrAvatar_RequestAvatarSpecificationFromSpecRequest(specRequest);
+            CAPI.ovrAvatarSpecificationRequest_Destroy(specRequest);
         }
         //callbackSet is now in the callbacks dictionary ready to be added to
         callbackSet.Add(callback);

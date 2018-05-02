@@ -562,7 +562,9 @@ namespace Oculus.Platform
   public static partial class Achievements
   {
     /// Add 'count' to the achievement with the given name. This must be a COUNT
-    /// achievement.
+    /// achievement. The largest number that is supported by this method is the max
+    /// value of a signed 64-bit integer. If the number is larger than that, it is
+    /// clamped to that max value before being passed to the servers.
     ///
     public static Request<Models.AchievementUpdate> AddCount(string name, ulong count)
     {
@@ -661,6 +663,205 @@ namespace Oculus.Platform
       if (Core.IsInitialized())
       {
         return new Request<Models.ApplicationVersion>(CAPI.ovr_Application_GetVersion());
+      }
+
+      return null;
+    }
+
+    /// Launches a different application in the user's library. If the user does
+    /// not have that application installed, they will be taken to that app's page
+    /// in the Oculus Store
+    /// \param appID The ID of the app to launch
+    /// \param deeplink_options Additional configuration for this requests. Optional.
+    ///
+    public static Request<string> LaunchOtherApp(UInt64 appID, ApplicationOptions deeplink_options = null)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<string>(CAPI.ovr_Application_LaunchOtherApp(appID, (IntPtr)deeplink_options));
+      }
+
+      return null;
+    }
+
+  }
+
+  public static partial class AssetFile
+  {
+    /// DEPRECATED. Alias to DeleteById()
+    ///
+    public static Request<Models.AssetFileDeleteResult> Delete(UInt64 assetFileID)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetFileDeleteResult>(CAPI.ovr_AssetFile_Delete(assetFileID));
+      }
+
+      return null;
+    }
+
+    /// Removes an previously installed asset file from the device by its ID.
+    /// Returns an object containing the asset ID and file name, and a success
+    /// flag.
+    /// \param assetFileID The asset file ID
+    ///
+    public static Request<Models.AssetFileDeleteResult> DeleteById(UInt64 assetFileID)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetFileDeleteResult>(CAPI.ovr_AssetFile_DeleteById(assetFileID));
+      }
+
+      return null;
+    }
+
+    /// Removes an previously installed asset file from the device by its name.
+    /// Returns an object containing the asset ID and file name, and a success
+    /// flag.
+    /// \param assetFileName The asset file name
+    ///
+    public static Request<Models.AssetFileDeleteResult> DeleteByName(string assetFileName)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetFileDeleteResult>(CAPI.ovr_AssetFile_DeleteByName(assetFileName));
+      }
+
+      return null;
+    }
+
+    /// DEPRECATED. Alias to DownloadById()
+    ///
+    public static Request<Models.AssetFileDownloadResult> Download(UInt64 assetFileID)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetFileDownloadResult>(CAPI.ovr_AssetFile_Download(assetFileID));
+      }
+
+      return null;
+    }
+
+    /// Downloads an asset file by its ID on demand. Returns an object containing
+    /// the asset ID and filepath. Sends periodic
+    /// MessageType.Notification_AssetFile_DownloadUpdate to track the downloads.
+    /// \param assetFileID The asset file ID
+    ///
+    public static Request<Models.AssetFileDownloadResult> DownloadById(UInt64 assetFileID)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetFileDownloadResult>(CAPI.ovr_AssetFile_DownloadById(assetFileID));
+      }
+
+      return null;
+    }
+
+    /// Downloads an asset file by its name on demand. Returns an object containing
+    /// the asset ID and filepath. Sends periodic
+    /// {notifications.asset_file.download_update}} to track the downloads.
+    /// \param assetFileName The asset file name
+    ///
+    public static Request<Models.AssetFileDownloadResult> DownloadByName(string assetFileName)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetFileDownloadResult>(CAPI.ovr_AssetFile_DownloadByName(assetFileName));
+      }
+
+      return null;
+    }
+
+    /// DEPRECATED. Alias to DownloadCancelById()
+    ///
+    public static Request<Models.AssetFileDownloadCancelResult> DownloadCancel(UInt64 assetFileID)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetFileDownloadCancelResult>(CAPI.ovr_AssetFile_DownloadCancel(assetFileID));
+      }
+
+      return null;
+    }
+
+    /// Cancels a previously spawned download request for an asset file by its ID.
+    /// Returns an object containing the asset ID and file path, and a success
+    /// flag.
+    /// \param assetFileID The asset file ID
+    ///
+    public static Request<Models.AssetFileDownloadCancelResult> DownloadCancelById(UInt64 assetFileID)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetFileDownloadCancelResult>(CAPI.ovr_AssetFile_DownloadCancelById(assetFileID));
+      }
+
+      return null;
+    }
+
+    /// Cancels a previously spawned download request for an asset file by its
+    /// name. Returns an object containing the asset ID and file path, and a
+    /// success flag.
+    /// \param assetFileName The asset file name
+    ///
+    public static Request<Models.AssetFileDownloadCancelResult> DownloadCancelByName(string assetFileName)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetFileDownloadCancelResult>(CAPI.ovr_AssetFile_DownloadCancelByName(assetFileName));
+      }
+
+      return null;
+    }
+
+    /// Returns an array of objects with asset file names and their associated IDs,
+    /// and and whether it's currently installed.
+    ///
+    public static Request<Models.AssetDetailsList> GetList()
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetDetailsList>(CAPI.ovr_AssetFile_GetList());
+      }
+
+      return null;
+    }
+
+    /// DEPRECATED. Alias to StatusById()
+    ///
+    public static Request<Models.AssetDetails> Status(UInt64 assetFileID)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetDetails>(CAPI.ovr_AssetFile_Status(assetFileID));
+      }
+
+      return null;
+    }
+
+    /// Returns the details on a single asset: ID, file name, and whether it's
+    /// currently installed
+    /// \param assetFileID The asset file ID
+    ///
+    public static Request<Models.AssetDetails> StatusById(UInt64 assetFileID)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetDetails>(CAPI.ovr_AssetFile_StatusById(assetFileID));
+      }
+
+      return null;
+    }
+
+    /// Returns the details on a single asset: ID, file name, and whether it's
+    /// currently installed
+    /// \param assetFileName The asset file name
+    ///
+    public static Request<Models.AssetDetails> StatusByName(string assetFileName)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetDetails>(CAPI.ovr_AssetFile_StatusByName(assetFileName));
       }
 
       return null;
@@ -789,7 +990,14 @@ namespace Oculus.Platform
       return null;
     }
 
-    /// Send a save data buffer to the platform.
+    /// Note: Cloud Storage is only available for Rift apps.
+    ///
+    /// Send a save data buffer to the platform. CloudStorage.Save() passes a
+    /// pointer to your data in an async call. You need to maintain the save data
+    /// until you receive the message indicating that the save was successful.
+    ///
+    /// If the data is destroyed or modified prior to receiving that message the
+    /// data will not be saved.
     /// \param bucket The name of the storage bucket.
     /// \param key The name for this saved data.
     /// \param data Start of the data block.
@@ -1087,8 +1295,8 @@ namespace Oculus.Platform
     /// method. But, if you do not wish to automatically enqueue the room, you can
     /// call CreateRoom2 instead.
     ///
-    /// Visit https://developer2.oculus.com/application/[YOUR_APP_ID]/matchmaking
-    /// to set up pools and queries
+    /// Visit https://dashboard.oculus.com/application/[YOUR_APP_ID]/matchmaking to
+    /// set up pools and queries
     /// \param pool The matchmaking pool to use, which is defined for the app.
     /// \param matchmakingOptions Additional matchmaking configuration for this request. Optional.
     ///
@@ -1127,8 +1335,8 @@ namespace Oculus.Platform
     /// creation, you can call EnqueueRoom. Consider using CreateAndEnqueueRoom
     /// instead.
     ///
-    /// Visit https://developer2.oculus.com/application/[YOUR_APP_ID]/matchmaking
-    /// to set up pools and queries
+    /// Visit https://dashboard.oculus.com/application/[YOUR_APP_ID]/matchmaking to
+    /// set up pools and queries
     /// \param pool The matchmaking pool to use, which is defined for the app.
     /// \param matchmakingOptions Additional matchmaking configuration for this request. Optional.
     ///
@@ -1259,6 +1467,31 @@ namespace Oculus.Platform
       if (Core.IsInitialized())
       {
         return new Request(CAPI.ovr_Matchmaking_StartMatch(roomID));
+      }
+
+      return null;
+    }
+
+  }
+
+  public static partial class Media
+  {
+    /// Launch the Share to Facebook modal via a deeplink to Home on Gear VR,
+    /// allowing users to share local media files to Facebook. Accepts a
+    /// postTextSuggestion string for the default text of the Facebook post.
+    /// Requires a filePath string as the path to the image to be shared to
+    /// Facebook. This image should be located in your app's internal storage
+    /// directory. Requires a contentType indicating the type of media to be shared
+    /// (only 'photo' is currently supported.)
+    /// \param postTextSuggestion this text will prepopulate the facebook status text-input box within the share modal
+    /// \param filePath path to the file to be shared to facebook
+    /// \param contentType content type of the media to be shared
+    ///
+    public static Request<Models.ShareMediaResult> ShareToFacebook(string postTextSuggestion, string filePath, MediaContentType contentType)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.ShareMediaResult>(CAPI.ovr_Media_ShareToFacebook(postTextSuggestion, filePath, contentType));
       }
 
       return null;
@@ -1405,25 +1638,41 @@ namespace Oculus.Platform
     }
 
     /// Loads a list of users you can invite to a room. These are pulled from your
-    /// friends list and filtered for relevance and interest. If the room cannot be
-    /// joined, this list will be empty. By default, the invitable users returned
-    /// will be for the user's current room.
+    /// friends list and recently met lists and filtered for relevance and
+    /// interest. If the room cannot be joined, this list will be empty. By
+    /// default, the invitable users returned will be for the user's current room.
+    ///
+    /// If your application grouping was created after September 9 2017, recently
+    /// met users will be included by default. If your application grouping was
+    /// created before then, you can go to edit the setting in the "Rooms and
+    /// Matchmaking" section of Platform Services at dashboard.oculus.com
     ///
     /// Customization can be done via RoomOptions. Create this object with
-    /// ovr_RoomOptions_Create. The params that could be used are:
+    /// RoomOptions(). The params that could be used are:
     ///
-    /// 1. roomID - will return the invitable users for this room (instead of the
-    /// current room).
+    /// 1. RoomOptions.SetRoomId()- will return the invitable users for this room
+    /// (instead of the current room).
     ///
-    /// 2. ordering - returns the list of users in the provided ordering (see
-    /// UserOrdering enum).
+    /// 2. RoomOptions.SetOrdering() - returns the list of users in the provided
+    /// ordering (see UserOrdering enum).
     ///
-    /// Example usage:
+    /// 3. RoomOptions.SetRecentlyMetTimeWindow() - how long long ago should we
+    /// include users you've recently met in the results?
+    ///
+    /// 4. RoomOptions.SetMaxUserResults() - we will limit the number of results
+    /// returned. By default, the number is unlimited, but the server may choose to
+    /// limit results for performance reasons.
+    ///
+    /// 5. RoomOptions.SetExcludeRecentlyMet() - Don't include users recently in
+    /// rooms with this user in the result. Also, see the above comment.
+    ///
+    /// Example custom C++ usage:
     ///
     ///   auto roomOptions = ovr_RoomOptions_Create();
     ///   ovr_RoomOptions_SetOrdering(roomOptions, ovrUserOrdering_PresenceAlphabetical);
     ///   ovr_RoomOptions_SetRoomId(roomOptions, roomID);
     ///   ovr_Room_GetInvitableUsers2(roomOptions);
+    ///   ovr_RoomOptions_Destroy(roomOptions);
     /// \param roomOptions Additional configuration for this request. Optional.
     ///
     public static Request<Models.UserList> GetInvitableUsers2(RoomOptions roomOptions = null)
@@ -1677,14 +1926,14 @@ namespace Oculus.Platform
     /// and the amount of time they spend together.
     ///
     /// Customization can be done via UserOptions. Create this object with
-    /// ovr_UserOptions_Create. The params that could be used are:
+    /// UserOptions(). The params that could be used are:
     ///
-    /// 1. TimeWindow - how recently should the users have played? The default is
-    /// ovrTimeWindow_ThirtyDays.
+    /// 1. UserOptions.SetTimeWindow() - how recently should the users have played?
+    /// The default is TimeWindow.ThirtyDays.
     ///
-    /// 2. MaxUsers - we will limit the number of results returned. By default, the
-    /// number is unlimited, but the server may choose to limit results for
-    /// performance reasons.
+    /// 2. UserOptions.SetMaxUsers() - we will limit the number of results
+    /// returned. By default, the number is unlimited, but the server may choose to
+    /// limit results for performance reasons.
     /// \param userOptions Additional configuration for this request. Optional.
     ///
     public static Request<Models.UserAndRoomList> GetLoggedInUserRecentlyMetUsersAndRooms(UserOptions userOptions = null)
@@ -1742,9 +1991,9 @@ namespace Oculus.Platform
       return null;
     }
 
-    /// Launch the profile of the given user on Gear VR. The profile surfaces
-    /// information about the user and supports relevant actions that the viewer
-    /// may take on that user, e.g. sending a friend request.
+    /// Launch the profile of the given user. The profile surfaces information
+    /// about the user and supports relevant actions that the viewer may take on
+    /// that user, e.g. sending a friend request.
     /// \param userID User ID for profile being viewed
     ///
     public static Request LaunchProfile(UInt64 userID)

@@ -61,6 +61,7 @@ public class OvrAvatar : MonoBehaviour
     public Shader SurfaceShader;
     public Shader SurfaceShaderSelfOccluding;
     public Shader SurfaceShaderPBS;
+    public Shader SurfaceShaderPBSV2;
 
     int renderPartCount = 0;
     bool showLeftController;
@@ -178,6 +179,13 @@ public class OvrAvatar : MonoBehaviour
     {
         OvrAvatarSkinnedMeshRenderPBSComponent skinnedMeshRenderer = gameObject.AddComponent<OvrAvatarSkinnedMeshRenderPBSComponent>();
         skinnedMeshRenderer.Initialize(skinnedMeshRenderPBS, SurfaceShaderPBS, ThirdPersonLayer.layerIndex, FirstPersonLayer.layerIndex, renderPartCount++);
+        return skinnedMeshRenderer;
+    }
+
+    private OvrAvatarSkinnedMeshPBSV2RenderComponent AddSkinnedMeshRenderPBSV2Component(GameObject gameObject, ovrAvatarRenderPart_SkinnedMeshRenderPBS_V2 skinnedMeshRenderPBSV2)
+    {
+        OvrAvatarSkinnedMeshPBSV2RenderComponent skinnedMeshRenderer = gameObject.AddComponent<OvrAvatarSkinnedMeshPBSV2RenderComponent>();
+        skinnedMeshRenderer.Initialize(skinnedMeshRenderPBSV2, SurfaceShaderPBSV2, ThirdPersonLayer.layerIndex, FirstPersonLayer.layerIndex, renderPartCount++);
         return skinnedMeshRenderer;
     }
 
@@ -671,6 +679,10 @@ public class OvrAvatar : MonoBehaviour
                 case ovrAvatarRenderPartType.ProjectorRender:
                     combineMeshes = false;
                     ovrRenderPart = AddProjectorRenderComponent(renderPartObject, CAPI.ovrAvatarRenderPart_GetProjectorRender(renderPart));
+                    break;
+                case ovrAvatarRenderPartType.SkinnedMeshRenderPBS_V2:
+                    combineMeshes = false;
+                    ovrRenderPart = AddSkinnedMeshRenderPBSV2Component(renderPartObject, CAPI.ovrAvatarRenderPart_GetSkinnedMeshRenderPBSV2(renderPart));
                     break;
                 default:
                     throw new NotImplementedException(string.Format("Unsupported render part type: {0}", type.ToString()));

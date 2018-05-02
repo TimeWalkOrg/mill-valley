@@ -636,8 +636,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4384274735491852}
-  - component: {fileID: 114359760604977228}
-  - component: {fileID: 114839742893701136}
   m_Layer: 0
   m_Name: VRControllers
   m_TagString: Untagged
@@ -4619,9 +4617,6 @@ MonoBehaviour:
   playareaCursor: {fileID: 0}
   directionIndicator: {fileID: 0}
   customRaycast: {fileID: 0}
-  layersToIgnore:
-    serializedVersion: 2
-    m_Bits: 33554436
   pointerOriginSmoothingSettings:
     smoothsPosition: 0
     maxAllowedPerFrameDistanceDifference: 0.003
@@ -4935,13 +4930,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba3cd5456cd79e49948f5ceb58544b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointerToggleButton: 10
-  pointerSetButton: 10
-  grabToggleButton: 7
-  useToggleButton: 3
-  uiClickButton: 4
-  menuToggleButton: 15
   axisFidelity: 1
+  senseAxisForceZeroThreshold: 0.15
+  senseAxisPressThreshold: 0.95
   triggerClickThreshold: 1
   triggerForceZeroThreshold: 0.01
   triggerAxisZeroOnUntouch: 0
@@ -4953,6 +4944,7 @@ MonoBehaviour:
   triggerHairlinePressed: 0
   triggerClicked: 0
   triggerAxisChanged: 0
+  triggerSenseAxisChanged: 0
   gripPressed: 0
   gripTouched: 0
   gripHairlinePressed: 0
@@ -4961,16 +4953,20 @@ MonoBehaviour:
   touchpadPressed: 0
   touchpadTouched: 0
   touchpadAxisChanged: 0
+  touchpadSenseAxisChanged: 0
+  touchpadTwoTouched: 0
+  touchpadTwoPressed: 0
+  touchpadTwoAxisChanged: 0
   buttonOnePressed: 0
   buttonOneTouched: 0
   buttonTwoPressed: 0
   buttonTwoTouched: 0
   startMenuPressed: 0
-  pointerPressed: 0
-  grabPressed: 0
-  usePressed: 0
-  uiClickPressed: 0
-  menuPressed: 0
+  middleFingerSenseAxisChanged: 0
+  ringFingerSenseAxisChanged: 0
+  pinkyFingerSenseAxisChanged: 0
+  gripSenseAxisChanged: 0
+  gripSensePressed: 0
   controllerVisible: 1
 --- !u!114 &114245448871191060
 MonoBehaviour:
@@ -5202,6 +5198,7 @@ MonoBehaviour:
   SurfaceShaderSelfOccluding: {fileID: 4800000, guid: 10513ef587704324487f3061a7e6699d,
     type: 3}
   SurfaceShaderPBS: {fileID: 4800000, guid: d7662dbac0646464a9b4a48e93989adb, type: 3}
+  SurfaceShaderPBSV2: {fileID: 0}
   oculusUserID: 0
   CombineMeshes: 0
   AssetsDoneLoading:
@@ -5234,29 +5231,6 @@ MonoBehaviour:
   containerColor: {r: 0, g: 0, b: 0, a: 1}
   lineColor: {r: 0, g: 0, b: 0, a: 1}
   alwaysFaceHeadset: 0
---- !u!114 &114359760604977228
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1244737008150180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5837af0260a118e4d808bfe0405429a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  persistOnLoad: 1
-  autoManageScriptDefines: 1
-  activeScriptingDefineSymbolsWithoutSDKClasses:
-  - symbol: VRTK_DEFINE_SDK_OCULUS_AVATAR
-    buildTargetGroupName: Standalone
-  scriptAliasLeftController: {fileID: 1186812606822948}
-  scriptAliasRightController: {fileID: 1043695814467264}
-  autoManageVRSettings: 0
-  autoLoadSetup: 1
-  setups:
-  - {fileID: 114835210095252404}
-  - {fileID: 114444972550398390}
 --- !u!114 &114363461383888834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5628,9 +5602,6 @@ MonoBehaviour:
   playareaCursor: {fileID: 0}
   directionIndicator: {fileID: 0}
   customRaycast: {fileID: 0}
-  layersToIgnore:
-    serializedVersion: 2
-    m_Bits: 33554436
   pointerOriginSmoothingSettings:
     smoothsPosition: 0
     maxAllowedPerFrameDistanceDifference: 0.003
@@ -5693,9 +5664,11 @@ MonoBehaviour:
   selectAfterHoverDuration: 0
   interactWithObjects: 0
   grabToPointerTip: 0
-  controller: {fileID: 0}
+  attachedTo: {fileID: 0}
+  controllerEvents: {fileID: 0}
   interactUse: {fileID: 0}
   customOrigin: {fileID: 0}
+  controller: {fileID: 0}
 --- !u!114 &114500654398233996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5776,6 +5749,7 @@ MonoBehaviour:
   triggerText: UI Click
   gripText: 
   touchpadText: 
+  touchpadTwoText: 
   buttonOneText: Time Travel - Back
   buttonTwoText: Time Travel - Forward
   startMenuText: 
@@ -5785,6 +5759,7 @@ MonoBehaviour:
   trigger: {fileID: 0}
   grip: {fileID: 0}
   touchpad: {fileID: 0}
+  touchpadTwo: {fileID: 0}
   buttonOne: {fileID: 0}
   buttonTwo: {fileID: 0}
   startMenu: {fileID: 0}
@@ -5870,15 +5845,13 @@ MonoBehaviour:
   stepThicknessMultiplier: 0.5
   stepDropThreshold: 0.08
   customRaycast: {fileID: 0}
-  layersToIgnore:
-    serializedVersion: 2
-    m_Bits: 4
   fallRestriction: 0
   gravityFallYThreshold: 1
   blinkYThreshold: 0.15
   floorHeightTolerance: 0.001
   fallCheckPrecision: 5
   teleporter: {fileID: 0}
+  customPlayAreaRigidbody: {fileID: 0}
   customBodyColliderContainer: {fileID: 1762858817043016, guid: 8ce37bcf2c6fd5941a113a2f073857ab,
     type: 2}
   customFootColliderContainer: {fileID: 0}
@@ -6318,9 +6291,11 @@ MonoBehaviour:
   selectAfterHoverDuration: 0
   interactWithObjects: 0
   grabToPointerTip: 0
-  controller: {fileID: 0}
+  attachedTo: {fileID: 0}
+  controllerEvents: {fileID: 0}
   interactUse: {fileID: 0}
   customOrigin: {fileID: 0}
+  controller: {fileID: 0}
 --- !u!114 &114760065005705732
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6610,6 +6585,7 @@ MonoBehaviour:
   triggerText: 
   gripText: Grab
   touchpadText: Teleport (click down)
+  touchpadTwoText: 
   buttonOneText: TimeWalk info
   buttonTwoText: Day-Night toggle
   startMenuText: 
@@ -6619,6 +6595,7 @@ MonoBehaviour:
   trigger: {fileID: 0}
   grip: {fileID: 0}
   touchpad: {fileID: 0}
+  touchpadTwo: {fileID: 0}
   buttonOne: {fileID: 0}
   buttonTwo: {fileID: 0}
   startMenu: {fileID: 0}
@@ -6730,17 +6707,6 @@ MonoBehaviour:
   containerColor: {r: 0, g: 0, b: 0, a: 1}
   lineColor: {r: 0, g: 0, b: 0, a: 1}
   alwaysFaceHeadset: 0
---- !u!114 &114839742893701136
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1244737008150180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c8372e14d6f413458c1f2953b0db9ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114843578655613520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6779,13 +6745,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba3cd5456cd79e49948f5ceb58544b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointerToggleButton: 10
-  pointerSetButton: 10
-  grabToggleButton: 7
-  useToggleButton: 3
-  uiClickButton: 3
-  menuToggleButton: 14
   axisFidelity: 1
+  senseAxisForceZeroThreshold: 0.15
+  senseAxisPressThreshold: 0.95
   triggerClickThreshold: 1
   triggerForceZeroThreshold: 0.01
   triggerAxisZeroOnUntouch: 0
@@ -6797,6 +6759,7 @@ MonoBehaviour:
   triggerHairlinePressed: 0
   triggerClicked: 0
   triggerAxisChanged: 0
+  triggerSenseAxisChanged: 0
   gripPressed: 0
   gripTouched: 0
   gripHairlinePressed: 0
@@ -6805,16 +6768,20 @@ MonoBehaviour:
   touchpadPressed: 0
   touchpadTouched: 0
   touchpadAxisChanged: 0
+  touchpadSenseAxisChanged: 0
+  touchpadTwoTouched: 0
+  touchpadTwoPressed: 0
+  touchpadTwoAxisChanged: 0
   buttonOnePressed: 0
   buttonOneTouched: 0
   buttonTwoPressed: 0
   buttonTwoTouched: 0
   startMenuPressed: 0
-  pointerPressed: 0
-  grabPressed: 0
-  usePressed: 0
-  uiClickPressed: 0
-  menuPressed: 0
+  middleFingerSenseAxisChanged: 0
+  ringFingerSenseAxisChanged: 0
+  pinkyFingerSenseAxisChanged: 0
+  gripSenseAxisChanged: 0
+  gripSensePressed: 0
   controllerVisible: 1
 --- !u!114 &114855441193874422
 MonoBehaviour:
@@ -6872,12 +6839,11 @@ MonoBehaviour:
   distanceBlinkDelay: 0
   headsetPositionCompensation: 1
   targetListPolicy: {fileID: 0}
+  navMeshData: {fileID: 0}
   navMeshLimitDistance: 0
   snapToNearestFloor: 1
+  applyPlayareaParentOffset: 0
   customRaycast: {fileID: 0}
-  layersToIgnore:
-    serializedVersion: 2
-    m_Bits: 4
 --- !u!114 &114888916317093096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7025,6 +6991,10 @@ MonoBehaviour:
   clickMethod: 0
   attemptClickOnDeactivate: 0
   clickAfterHoverDuration: 0
+  maximumLength: Infinity
+  attachedTo: {fileID: 0}
+  controllerEvents: {fileID: 0}
+  customOrigin: {fileID: 0}
   controller: {fileID: 0}
   pointerOriginTransform: {fileID: 0}
   hoveringElement: {fileID: 0}

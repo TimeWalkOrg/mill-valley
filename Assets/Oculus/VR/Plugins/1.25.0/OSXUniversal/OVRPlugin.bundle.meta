@@ -12,6 +12,13 @@ PluginImporter:
   isOverridable: 0
   platformData:
   - first:
+      '': Editor
+    second:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+        OS: OSX
+  - first:
       '': OSXIntel
     second:
       enabled: 1
@@ -22,6 +29,12 @@ PluginImporter:
       enabled: 1
       settings: {}
   - first:
+      Android: Android
+    second:
+      enabled: 0
+      settings:
+        CPU: ARMv7
+  - first:
       Any: 
     second:
       enabled: 0
@@ -31,7 +44,9 @@ PluginImporter:
     second:
       enabled: 1
       settings:
+        CPU: AnyCPU
         DefaultValueInitialized: true
+        OS: OSX
   - first:
       Standalone: OSXUniversal
     second:

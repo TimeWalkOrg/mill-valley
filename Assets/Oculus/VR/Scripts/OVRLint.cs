@@ -24,6 +24,7 @@ limitations under the License.
 using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
+using Assets.OVR.Scripts;
 
 /// <summary>
 ///Scans the project and warns about the following conditions:
@@ -73,34 +74,11 @@ public class OVRLint : EditorWindow
 	///Use of Unity WWW (exceptionally high overhead for large file downloads, but acceptable for tiny gets).
 	///Declared but empty Awake/Start/Update/OnCollisionEnter/OnCollisionExit/OnCollisionStay.  Also OnCollision* star methods that declare the Collision  argument but do not reference it (omitting it short-circuits the collision contact calculation).
 
-	public delegate void FixMethodDelegate(UnityEngine.Object obj, bool isLastInSet, int selectedIndex);
-
-	public struct FixRecord
-	{
-		public string category;
-		public string message;
-		public FixMethodDelegate fixMethod;
-		public UnityEngine.Object targetObject;
-		public string[] buttonNames;
-		public bool complete;
-
-
-		public FixRecord(string cat, string msg, FixMethodDelegate fix, UnityEngine.Object target, string[] buttons)
-		{
-			category = cat;
-			message = msg;
-			buttonNames = buttons;
-			fixMethod = fix;
-			targetObject = target;
-			complete = false;
-		}
-	}
-
 	private static List<FixRecord> mRecords = new List<FixRecord>();
 	private Vector2 mScrollPosition;
 
 
-	[MenuItem("Tools/Oculus/Audit Project for VR Performance Issues")]
+	[MenuItem("Tools/Oculus/OVR Performance Lint Tool")]
 	static void Init()
 	{
 		// Get existing open window or if none, make a new one:
@@ -110,7 +88,7 @@ public class OVRLint : EditorWindow
 
 	void OnGUI()
 	{
-		GUILayout.Label("OVR Lint Tool", EditorStyles.boldLabel);
+		GUILayout.Label("OVR Performance Lint Tool", EditorStyles.boldLabel);
 		if (GUILayout.Button("Refresh", EditorStyles.toolbarButton, GUILayout.ExpandWidth(false)))
 		{
 			RunCheck();
@@ -533,7 +511,7 @@ public class OVRLint : EditorWindow
 
 	static void CheckStaticAndroidIssues()
 	{
-		AndroidSdkVersions recommendedAndroidSdkVersion = AndroidSdkVersions.AndroidApiLevel21;
+		AndroidSdkVersions recommendedAndroidSdkVersion = AndroidSdkVersions.AndroidApiLevel19;
 		if ((int)PlayerSettings.Android.minSdkVersion < (int)recommendedAndroidSdkVersion)
 		{
 			AddFix("Optimize Android API Level", "To avoid legacy workarounds, please require at least API level " + (int)recommendedAndroidSdkVersion, delegate (UnityEngine.Object obj, bool last, int selected)

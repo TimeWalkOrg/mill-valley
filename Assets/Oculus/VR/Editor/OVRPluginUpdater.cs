@@ -58,6 +58,11 @@ class OVRPluginUpdater
 
     static OVRPluginUpdater()
 	{
+		EditorApplication.delayCall += OnDelayCall;
+	}
+
+	static void OnDelayCall()
+	{
 		if (ShouldAttemptPluginUpdate())
 		{
 			AttemptPluginUpdate(true);

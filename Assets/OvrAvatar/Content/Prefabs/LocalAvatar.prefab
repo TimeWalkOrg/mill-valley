@@ -199,6 +199,7 @@ MonoBehaviour:
   HandLeft: {fileID: 114000011404857786}
   HandRight: {fileID: 114000010372160784}
   RecordPackets: 0
+  UseSDKPackets: 1
   StartWithControllers: 0
   FirstPersonLayer:
     layerIndex: 0
@@ -211,7 +212,9 @@ MonoBehaviour:
   SurfaceShaderSelfOccluding: {fileID: 4800000, guid: 10513ef587704324487f3061a7e6699d,
     type: 3}
   SurfaceShaderPBS: {fileID: 4800000, guid: d7662dbac0646464a9b4a48e93989adb, type: 3}
+  SurfaceShaderPBSV2: {fileID: 4800000, guid: 3934b2d879c6eb94eb26fa19814c7fcd, type: 3}
   oculusUserID: 0
+  CombineMeshes: 0
   AssetsDoneLoading:
     m_PersistentCalls:
       m_Calls: []
@@ -219,6 +222,8 @@ MonoBehaviour:
       PublicKeyToken=null
   LeftHandCustomPose: {fileID: 0}
   RightHandCustomPose: {fileID: 0}
+  PacketSettings:
+    UpdateRate: 0.033333335
 --- !u!114 &11441414
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -230,6 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac27124318cf8e84aa7350c2ac1cdb80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Mode: 0
 --- !u!114 &11477770
 MonoBehaviour:
   m_ObjectHideFlags: 1

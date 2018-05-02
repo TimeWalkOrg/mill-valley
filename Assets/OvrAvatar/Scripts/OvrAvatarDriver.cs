@@ -80,9 +80,9 @@ public abstract class OvrAvatarDriver : MonoBehaviour {
 
             CAPI.ovrAvatarPose_UpdateBody(sdkAvatar, bodyTransform);
 
-            if (GetIsMalibu())
+            if (GetIsTrackedRemote())
             {
-                CAPI.ovrAvatarPose_UpdateSDK3DofHands(sdkAvatar, inputStateLeft, inputStateRight, ovrAvatarControllerType.Malibu);
+                CAPI.ovrAvatarPose_UpdateSDK3DofHands(sdkAvatar, inputStateLeft, inputStateRight, GetRemoteControllerType());
             }
             else
             {
@@ -91,8 +91,13 @@ public abstract class OvrAvatarDriver : MonoBehaviour {
         }
     }
 
-    public static bool GetIsMalibu()
+    public static bool GetIsTrackedRemote()
     {
         return OVRInput.IsControllerConnected(OVRInput.Controller.RTrackedRemote) || OVRInput.IsControllerConnected(OVRInput.Controller.LTrackedRemote);
+    }
+
+    private ovrAvatarControllerType GetRemoteControllerType()
+    {
+        return OVRPlugin.productName == "Oculus Go" ? ovrAvatarControllerType.Go : ovrAvatarControllerType.Malibu;
     }
 }
