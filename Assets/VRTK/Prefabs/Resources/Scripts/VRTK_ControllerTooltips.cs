@@ -206,6 +206,7 @@ namespace VRTK
             InitButtonsArray();
             InitListeners();
             ResetTooltip();
+			Debug.Log("INIT ToolTips");
         }
 
         protected virtual void OnDisable()

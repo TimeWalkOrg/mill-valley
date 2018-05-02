@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR;
 
 [System.Serializable]
 public class YearData
@@ -25,6 +26,13 @@ public enum ButtonType
 	ButtonOne,
 	ButtonTwo,
 	StartMenu
+};
+
+public enum ControlType
+{
+	None = 0,
+	FPS,
+	VR
 };
 
 public class YearDataMissive : Missive
@@ -56,6 +64,11 @@ public class InputDataMissive : Missive
 {
 	public ControllerType controllerType;
 	public ButtonType buttonType;
+}
+
+public class ControlSelectMissive : Missive
+{
+	public ControlType controlType;
 }
 
 public class ControlManager : MonoBehaviour
@@ -99,9 +112,27 @@ public class ControlManager : MonoBehaviour
 	public int currentYearIndex { get; private set; }
 	public timeWalkDayNightToggle dayNightRef { get; set; }
 
+	[System.Serializable]
+	public struct ControllerData
+	{
+		public ControlType type;
+		public GameObject[] controlObjects;
+	}
+	public ControllerData[] controls;
+	[HideInInspector]
+	public GameObject currentControlGO;
+	[HideInInspector]
+	public GameObject currentControlUI;
+	[HideInInspector]
+	public ControlType currentControlType;
+	public bool IsVR { get { return (XRDevice.isPresent); } }
+
+	public ControlType testingControlType;
+
 	#region mono
 	private void Start()
 	{
+		Missive.AddListener<ControlSelectMissive>(OnControlSelect);
 		Missive.AddListener<InputDataMissive>(OnInput);
 	}
 
@@ -131,6 +162,7 @@ public class ControlManager : MonoBehaviour
 
 	private void OnDestroy()
 	{
+		Missive.RemoveListener<ControlSelectMissive>(OnControlSelect);
 		Missive.RemoveListener<InputDataMissive>(OnInput);
 	}
 	#endregion
@@ -198,7 +230,7 @@ public class ControlManager : MonoBehaviour
 
 	private void ToggleHelp()
 	{
-		if (LoadingManager.instance.currentControllerType != LoadingManager.ControlTypes.FPS)
+		if (currentControlType != ControlType.FPS)
 			return;
 
 		SendHelpMissive();
@@ -277,6 +309,60 @@ public class ControlManager : MonoBehaviour
 				break;
 		}
 		Debug.Log("Input received: " + missive.controllerType.ToString() + " / " + missive.buttonType.ToString());
+	}
+
+	private void OnControlSelect(ControlSelectMissive missive)
+	{
+		Debug.Log("CurrentControl: " + missive.controlType.ToString());
+		if (currentControlGO != null)
+			currentControlGO.SetActive(false);
+		if (currentControlUI != null)
+			currentControlUI.SetActive(false);
+		currentControlType = missive.controlType;
+		// Enable control type
+		switch (missive.controlType)
+		{
+			case ControlType.None:
+				currentControlGO = controls[0].controlObjects[0];
+				currentControlUI = null;
+				break;
+			case ControlType.FPS:
+				currentControlGO = controls[1].controlObjects[0];
+				currentControlUI = controls[1].controlObjects[1];
+				break;
+			case ControlType.VR:
+				currentControlGO = controls[2].controlObjects[0];
+				currentControlUI = null;
+				break;
+			default:
+				break;
+		}
+
+		if (currentControlGO != null)
+			currentControlGO.SetActive(true);
+		if (currentControlUI != null)
+			currentControlUI.SetActive(true);
+
+		LoadingManager.instance.ToggleLoadingScene(false);
+		LoadingManager.instance.ToggleMainScene(true);
+		ToggleYear(1920);
+	}
+
+	public void DisableAllControlTypes()
+	{
+		if (currentControlGO != null)
+			currentControlGO.SetActive(false);
+		if (currentControlUI != null)
+			currentControlUI.SetActive(false);
+		currentControlGO = null;
+		currentControlUI = null;
+		for (int i = 0; i < controls.Length; i++)
+		{
+			for (int j = 0; j < controls[i].controlObjects.Length; j++)
+			{
+				controls[i].controlObjects[j].SetActive(false);
+			}
+		}
 	}
 	#endregion
 

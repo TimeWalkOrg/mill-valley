@@ -41,35 +41,12 @@ public class LoadingManager : MonoBehaviour
 	}
 	#endregion
 
-	public enum ControlTypes
-	{
-		None = 0,
-		FPS,
-		VR
-	};
-
 	public GameObject controllerSelectionUIGO;
 	public GameObject controllerVRButtonUIGO;
 	public GameObject loadingUIGO;
 	public Slider loadingSlider;
 	public Image loadingImage;
 	public Sprite[] loadingSprites;
-
-	[System.Serializable]
-	public struct ControllerData
-	{
-		public ControlTypes type;
-		public GameObject[] controls;
-	}
-	public ControllerData[] controls;
-
-	[HideInInspector]
-	public GameObject currentControlGO;
-	[HideInInspector]
-	public GameObject currentControlUI;
-	[HideInInspector]
-	public ControlTypes currentControllerType;
-	public bool IsVR { get { return (currentControllerType == ControlTypes.VR); } }
 
 	private bool isMainSceneLoaded = false;
 	[HideInInspector]
@@ -78,6 +55,7 @@ public class LoadingManager : MonoBehaviour
 	public bool isFirstMainSceneLoaded = false;
 	[HideInInspector]
 	public Transform currentPortalSpawn;
+	[HideInInspector]
 	public GameObject currentPlayerGO;
     public float imagePauseTime = 5.0f;
 
@@ -91,7 +69,7 @@ public class LoadingManager : MonoBehaviour
 	private AsyncOperation asyncLoaderMainScene;
 	private AsyncOperation asyncLoaderSecondaryScene;
 	private bool isSecondaryLoading = false;
-	private string vrDevice;
+	//private string vrDevice;
 
 	#region mono
 	private void Start()
@@ -103,16 +81,18 @@ public class LoadingManager : MonoBehaviour
 			controllerSelectionUIGO.SetActive(false);
 			StartCoroutine(LoadingImages());
 
-			if (XRDevice.isPresent)
-			{
-				vrDevice = XRDevice.model;
-				Debug.Log(vrDevice);
-				controllerVRButtonUIGO.SetActive(true);
-			}
-			else
-			{
-				controllerVRButtonUIGO.SetActive(false);
-			}
+			//controllerVRButtonUIGO.SetActive(XRDevice.isPresent);
+
+			//if (XRDevice.isPresent)
+			//{
+			//	vrDevice = XRDevice.model;
+			//	Debug.Log(vrDevice);
+			//	controllerVRButtonUIGO.SetActive(true);
+			//}
+			//else
+			//{
+			//	controllerVRButtonUIGO.SetActive(false);
+			//}
 
 			loadingSceneGO = GameObject.Find("LoadingSceneGO");
 			loadingScene = SceneManager.GetSceneByName("LoadingScene");
@@ -122,10 +102,10 @@ public class LoadingManager : MonoBehaviour
 		else // spawned in main scene for testing
 		{
 			isMainSceneLoaded = true;
-			if (XRSettings.isDeviceActive)
-				SelectControllerTypeOnClick((int)ControlTypes.VR);
-			else
-				SelectControllerTypeOnClick((int)ControlTypes.FPS);
+			//if (XRSettings.isDeviceActive)
+			//	SelectControllerTypeOnClick((int)ControlTypes.VR);
+			//else
+			//	SelectControllerTypeOnClick((int)ControlTypes.FPS);
 		}
 	}
 
@@ -168,8 +148,21 @@ public class LoadingManager : MonoBehaviour
 		Debug.Log("Finished loading Build");
 
 		isMainSceneLoaded = true;
-		loadingUIGO.SetActive(false);
-		controllerSelectionUIGO.SetActive(true);
+		mainScene = SceneManager.GetSceneByName("MainScene");
+
+		if (XRDevice.isPresent)
+		{
+			ControlSelectMissive missive = new ControlSelectMissive();
+			missive.controlType = ControlType.VR;
+			Missive.Send(missive);
+		}
+		else
+		{
+			loadingUIGO.SetActive(false);
+			controllerSelectionUIGO.SetActive(true);
+		}
+		
+		isFirstMainSceneLoaded = true;
 	}
 
 	public void LoadSecondaryScene(string sceneName, GameObject playerGO, Transform portalSpawn)
@@ -227,73 +220,67 @@ public class LoadingManager : MonoBehaviour
 		}
 	}
 
-	public void SelectControllerTypeOnClick(int index)
-	{
-		currentControllerType = (ControlTypes)index;
-		StartCoroutine(WaitUntilSceneLoaded((ControlTypes)index));
-	}
+	//IEnumerator WaitUntilSceneLoaded(ControlTypes type)
+	//{
+	//	while (!isMainSceneLoaded)
+	//		yield return null;
 
-	IEnumerator WaitUntilSceneLoaded(ControlTypes type)
-	{
-		while (!isMainSceneLoaded)
-			yield return null;
+	//	mainScene = SceneManager.GetSceneByName("MainScene");
 
-		mainScene = SceneManager.GetSceneByName("MainScene");
+	//	while (!mainScene.IsValid())
+	//		yield return null;
 
-		while (!mainScene.IsValid())
-			yield return null;
+	//	//ToggleLoadingScene(false);
+	//	//ToggleMainScene(true);
+	//	//yield return new WaitForEndOfFrame();
 
-		ToggleLoadingScene(false);
-		ToggleMainScene(true);
-		yield return new WaitForEndOfFrame();
+	//	switch (type)
+	//	{
+	//		case ControlTypes.None:
+	//			if (XRSettings.isDeviceActive)
+	//			{
+	//				XRSettings.LoadDeviceByName("");
+	//				yield return new WaitForEndOfFrame();
+	//				XRSettings.enabled = false;
+	//				yield return null;
+	//			}
+	//			currentControlGO = Instantiate(controls[(int)ControlTypes.None].controls[0]);
+	//			break;
+	//		case ControlTypes.FPS:
+	//			if (XRSettings.isDeviceActive)
+	//			{
+	//				XRSettings.LoadDeviceByName("");
+	//				yield return new WaitForEndOfFrame();
+	//				XRSettings.enabled = false;
+	//				yield return null;
+	//			}
+	//			currentControlGO = Instantiate(controls[(int)ControlTypes.FPS].controls[0]);
+	//			currentControlUI = Instantiate(controls[(int)ControlTypes.FPS].controls[1]);
+	//			break;
+	//		case ControlTypes.VR:
+	//			// TODO not init VR after disable WIP
+	//			if (!XRSettings.isDeviceActive)
+	//			{
+	//				XRSettings.LoadDeviceByName(vrDevice);
+	//				yield return new WaitForEndOfFrame();
+	//				XRSettings.enabled = true;
+	//				yield return null;
+	//			}
+	//			currentControlGO = Instantiate(controls[(int)ControlTypes.VR].controls[0]);
+	//			yield return new WaitForEndOfFrame();
+	//			currentControlGO.SetActive(true);
+	//			break;
+	//		default:
+	//			break;
+	//	}
 
-		switch (type)
-		{
-			case ControlTypes.None:
-				if (XRSettings.isDeviceActive)
-				{
-					XRSettings.LoadDeviceByName("");
-					yield return new WaitForEndOfFrame();
-					XRSettings.enabled = false;
-					yield return null;
-				}
-				currentControlGO = Instantiate(controls[(int)ControlTypes.None].controls[0]);
-				break;
-			case ControlTypes.FPS:
-				if (XRSettings.isDeviceActive)
-				{
-					XRSettings.LoadDeviceByName("");
-					yield return new WaitForEndOfFrame();
-					XRSettings.enabled = false;
-					yield return null;
-				}
-				currentControlGO = Instantiate(controls[(int)ControlTypes.FPS].controls[0]);
-				currentControlUI = Instantiate(controls[(int)ControlTypes.FPS].controls[1]);
-				break;
-			case ControlTypes.VR:
-				// TODO not init VR after disable WIP
-				if (!XRSettings.isDeviceActive)
-				{
-					XRSettings.LoadDeviceByName(vrDevice);
-					yield return new WaitForEndOfFrame();
-					XRSettings.enabled = true;
-					yield return null;
-				}
-				currentControlGO = Instantiate(controls[(int)ControlTypes.VR].controls[0]);
-				yield return new WaitForEndOfFrame();
-				currentControlGO.SetActive(true);
-				break;
-			default:
-				break;
-		}
+	//	ToggleLoadingScene(false);
+	//	ToggleMainScene(true);
+	//	yield return new WaitForEndOfFrame();
 
-		ToggleLoadingScene(false);
-		ToggleMainScene(true);
-		yield return new WaitForEndOfFrame();
-
-		ControlManager.instance.ToggleYear(1920);
-		isFirstMainSceneLoaded = true;
-	}
+	//	ControlManager.instance.ToggleYear(1920);
+	//	isFirstMainSceneLoaded = true;
+	//}
 
 	public void ToggleLoadingScene(bool state)
 	{
@@ -302,7 +289,7 @@ public class LoadingManager : MonoBehaviour
 
 		if (state)
 		{
-			ClearControllerGO();
+			ControlManager.instance.DisableAllControlTypes();
 			SceneManager.SetActiveScene(loadingScene);
 			if (secondaryScene.IsValid())
 				SceneManager.UnloadSceneAsync(secondaryScene);
@@ -315,7 +302,13 @@ public class LoadingManager : MonoBehaviour
 		if (state)
 			SceneManager.SetActiveScene(mainScene);
 		if (mainSceneGO == null)
-			mainSceneGO = GameObject.Find("MainSceneGO");
+		{
+			FinderComponent tempRef = FindObjectOfType<FinderComponent>();
+			if (tempRef != null)
+			{
+				mainSceneGO = tempRef.mainSceneGO;
+			}
+		}
 		if (mainSceneGO != null)
 			mainSceneGO.SetActive(state);
 	}
@@ -323,13 +316,5 @@ public class LoadingManager : MonoBehaviour
 	public bool IsMainSceneActive()
 	{
 		return (mainSceneGO != null && mainSceneGO.activeInHierarchy);
-	}
-
-	private void ClearControllerGO()
-	{
-		if (currentControlGO != null)
-			Destroy(currentControlGO);
-		if (currentControlUI != null)
-			Destroy(currentControlUI);
 	}
 }

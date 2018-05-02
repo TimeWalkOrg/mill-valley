@@ -16,7 +16,7 @@ public class PortalManager : MonoBehaviour
 
 	private void OnEnable()
 	{
-		bool state = (LoadingManager.instance.currentControllerType != LoadingManager.ControlTypes.None);
+		bool state = (ControlManager.instance.currentControlType != ControlType.None);
 		TogglePortals(state);
 	}
 

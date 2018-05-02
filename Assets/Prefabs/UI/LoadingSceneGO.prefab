@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 114448205656122454}
   - component: {fileID: 114247487235181284}
   - component: {fileID: 114620454764372250}
+  - component: {fileID: 114468139821696188}
   m_Layer: 5
   m_Name: VRButton
   m_TagString: Untagged
@@ -190,6 +191,7 @@ GameObject:
   - component: {fileID: 114549976981096702}
   - component: {fileID: 114978887393475140}
   - component: {fileID: 114503454861046100}
+  - component: {fileID: 114114533842316822}
   m_Layer: 5
   m_Name: FlyThroughButton
   m_TagString: Untagged
@@ -272,7 +274,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4594651012526798}
   - component: {fileID: 20696605886411988}
-  - component: {fileID: 124126257868608976}
   - component: {fileID: 81871436599634998}
   m_Layer: 0
   m_Name: Camera
@@ -331,7 +332,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1832762078346424
 GameObject:
   m_ObjectHideFlags: 1
@@ -361,6 +362,7 @@ GameObject:
   - component: {fileID: 114784005775341942}
   - component: {fileID: 114433011864928482}
   - component: {fileID: 114828653396182736}
+  - component: {fileID: 114181564406581770}
   m_Layer: 5
   m_Name: FPSButton
   m_TagString: Untagged
@@ -556,7 +558,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -596,7 +598,19 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Visit TimeWalk in...
+  m_Text: How would you like to visit?
+--- !u!114 &114114533842316822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1430024017515298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac6f3ec14aa72b4386d3f9e7031e6ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisControlType: 0
 --- !u!114 &114131980642014910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -629,7 +643,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Oculus VR
+  m_Text: Virtual Reality
 --- !u!114 &114143035624862576
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -644,8 +658,8 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 250
-    m_Bottom: 100
+    m_Top: 200
+    m_Bottom: 400
   m_ChildAlignment: 4
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
@@ -679,6 +693,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114181564406581770
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1893580329011124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac6f3ec14aa72b4386d3f9e7031e6ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisControlType: 1
 --- !u!114 &114247487235181284
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -698,9 +724,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.22804932, g: 0.4090013, b: 0.83823526, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.5514706, g: 0.5514706, b: 0.5514706, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -718,9 +744,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SelectControllerTypeOnClick
-        m_Mode: 3
+      - m_Target: {fileID: 114468139821696188}
+        m_MethodName: ControlSelectOnClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -850,9 +876,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.85294116, g: 0.7712801, b: 0.112889275, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.5514706, g: 0.5514706, b: 0.5514706, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -870,9 +896,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SelectControllerTypeOnClick
-        m_Mode: 3
+      - m_Target: {fileID: 114181564406581770}
+        m_MethodName: ControlSelectOnClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -910,6 +936,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114468139821696188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1415587429962308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac6f3ec14aa72b4386d3f9e7031e6ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisControlType: 2
 --- !u!114 &114498439513166602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1216,9 +1254,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.5645687, g: 0.5661765, b: 0.44961074, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.5514706, g: 0.5514706, b: 0.5514706, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1236,9 +1274,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SelectControllerTypeOnClick
-        m_Mode: 3
+      - m_Target: {fileID: 114114533842316822}
+        m_MethodName: ControlSelectOnClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1270,13 +1308,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!124 &124126257868608976
-Behaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1711586224865458}
-  m_Enabled: 1
 --- !u!222 &222001071397737860
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -1611,10 +1642,10 @@ RectTransform:
   m_Father: {fileID: 224776054316555166}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 910.81995, y: -381.38583}
-  m_SizeDelta: {x: 250, y: 75}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 300, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224718774674274774
 RectTransform:
@@ -1652,10 +1683,10 @@ RectTransform:
   m_Father: {fileID: 224776054316555166}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 910.81995, y: -644.1575}
-  m_SizeDelta: {x: 250, y: 75}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 300, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224776054316555166
 RectTransform:
@@ -1748,8 +1779,8 @@ RectTransform:
   m_Father: {fileID: 224776054316555166}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 910.81995, y: -906.9292}
-  m_SizeDelta: {x: 250, y: 75}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 300, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
