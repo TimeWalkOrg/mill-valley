@@ -10,6 +10,9 @@ public class WebViewTriggerComponent : MonoBehaviour
 	public ZenFulcrum.EmbeddedBrowser.Browser browser;
 	private string thisURL;
 
+	private bool isWebViewActive = false;
+	private bool isVRPlayerNear = false;
+
 	private void Start()
 	{
 		DisableWebView();
@@ -27,11 +30,9 @@ public class WebViewTriggerComponent : MonoBehaviour
 			ControlManager.instance.SendWebViewMissive(thisURL);
 		}
 
-		// TODO needs #define
 		if (other.tag == "VRPlayer")
 		{
 			EnableWebView();
-
 			this.transform.LookAt(other.transform.position);
 			this.transform.rotation = Quaternion.Euler(new Vector3(0, this.transform.rotation.eulerAngles.y, 0));
 			if (browser != null)
@@ -39,15 +40,25 @@ public class WebViewTriggerComponent : MonoBehaviour
 		}
 	}
 
+	private void OnTriggerExit(Collider other)
+	{
+		if (other.tag == "VRPlayer")
+		{
+			DisableWebView();
+		}
+	}
+
 	public void DisableWebView()
 	{
 		if (vRWebViewGO != null)
 			vRWebViewGO.SetActive(false);
+		isWebViewActive = false;
 	}
 
 	private void EnableWebView()
 	{
 		if (vRWebViewGO != null)
 			vRWebViewGO.SetActive(true);
+		isWebViewActive = true;
 	}
 }

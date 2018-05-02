@@ -310,10 +310,11 @@ public class ControlManager : MonoBehaviour
 		}
 		Debug.Log("Input received: " + missive.controllerType.ToString() + " / " + missive.buttonType.ToString());
 	}
+	#endregion
 
+	#region control type
 	private void OnControlSelect(ControlSelectMissive missive)
 	{
-		Debug.Log("CurrentControl: " + missive.controlType.ToString());
 		if (currentControlGO != null)
 			currentControlGO.SetActive(false);
 		if (currentControlUI != null)
@@ -337,6 +338,27 @@ public class ControlManager : MonoBehaviour
 			default:
 				break;
 		}
+
+		if (currentControlGO != null)
+			currentControlGO.SetActive(true);
+		if (currentControlUI != null)
+			currentControlUI.SetActive(true);
+
+		LoadingManager.instance.ToggleLoadingScene(false);
+		LoadingManager.instance.ToggleMainScene(true);
+		ToggleYear(1920);
+	}
+
+	public void EnableVR()
+	{
+		if (currentControlGO != null)
+			currentControlGO.SetActive(false);
+		if (currentControlUI != null)
+			currentControlUI.SetActive(false);
+		currentControlType = ControlType.VR;
+		// Enable control type
+		currentControlGO = controls[2].controlObjects[0];
+		currentControlUI = null;
 
 		if (currentControlGO != null)
 			currentControlGO.SetActive(true);

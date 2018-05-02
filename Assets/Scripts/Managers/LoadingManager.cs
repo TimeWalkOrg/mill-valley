@@ -81,18 +81,15 @@ public class LoadingManager : MonoBehaviour
 			controllerSelectionUIGO.SetActive(false);
 			StartCoroutine(LoadingImages());
 
-			//controllerVRButtonUIGO.SetActive(XRDevice.isPresent);
+			controllerVRButtonUIGO.SetActive(XRDevice.isPresent);
 
-			//if (XRDevice.isPresent)
-			//{
-			//	vrDevice = XRDevice.model;
-			//	Debug.Log(vrDevice);
-			//	controllerVRButtonUIGO.SetActive(true);
-			//}
-			//else
-			//{
-			//	controllerVRButtonUIGO.SetActive(false);
-			//}
+			if (XRDevice.isPresent)
+			{
+				//vrDevice = XRDevice.model;
+				ControlSelectMissive missive = new ControlSelectMissive();
+				missive.controlType = ControlType.VR;
+				Missive.Send(missive);
+			}
 
 			loadingSceneGO = GameObject.Find("LoadingSceneGO");
 			loadingScene = SceneManager.GetSceneByName("LoadingScene");
@@ -145,16 +142,13 @@ public class LoadingManager : MonoBehaviour
 		{
 			yield return null;
 		}
-		Debug.Log("Finished loading Build");
 
 		isMainSceneLoaded = true;
 		mainScene = SceneManager.GetSceneByName("MainScene");
 
 		if (XRDevice.isPresent)
 		{
-			ControlSelectMissive missive = new ControlSelectMissive();
-			missive.controlType = ControlType.VR;
-			Missive.Send(missive);
+			ControlManager.instance.EnableVR();
 		}
 		else
 		{
