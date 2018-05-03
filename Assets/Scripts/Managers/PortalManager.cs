@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PortalManager : MonoBehaviour
 {
-	public List<GameObject> portalList;
+	private List<GameObject> portalList = new List<GameObject>();
 
 	private void Start()
 	{

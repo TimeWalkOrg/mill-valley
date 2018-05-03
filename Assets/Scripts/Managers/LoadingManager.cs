@@ -163,7 +163,15 @@ public class LoadingManager : MonoBehaviour
 	{
 		if (!isSecondaryLoading)
 		{
-			currentPlayerGO = playerGO;
+			if (playerGO == null)
+			{
+				// need root to move rig
+				// TODO gotta be a better way
+				currentPlayerGO = GameObject.FindGameObjectWithTag("VRTKRoot");
+			}
+			else
+				currentPlayerGO = playerGO;
+
 			currentPortalSpawn = portalSpawn;
 			StartCoroutine(LoadAsyncSecondaryScene(sceneName));
 		}
@@ -203,78 +211,18 @@ public class LoadingManager : MonoBehaviour
 		{
 			if (portalSpawn == null)
 			{
+				// return to main scene so move player to saved position and rotation
 				currentPlayerGO.transform.position = currentPortalSpawn.position;
 				currentPlayerGO.transform.rotation = currentPortalSpawn.rotation;
 			}
 			else
 			{
+				// onenable call from portal component so use passed position and rotation
 				currentPlayerGO.transform.position = portalSpawn.position;
 				currentPlayerGO.transform.rotation = portalSpawn.rotation;
 			}
 		}
 	}
-
-	//IEnumerator WaitUntilSceneLoaded(ControlTypes type)
-	//{
-	//	while (!isMainSceneLoaded)
-	//		yield return null;
-
-	//	mainScene = SceneManager.GetSceneByName("MainScene");
-
-	//	while (!mainScene.IsValid())
-	//		yield return null;
-
-	//	//ToggleLoadingScene(false);
-	//	//ToggleMainScene(true);
-	//	//yield return new WaitForEndOfFrame();
-
-	//	switch (type)
-	//	{
-	//		case ControlTypes.None:
-	//			if (XRSettings.isDeviceActive)
-	//			{
-	//				XRSettings.LoadDeviceByName("");
-	//				yield return new WaitForEndOfFrame();
-	//				XRSettings.enabled = false;
-	//				yield return null;
-	//			}
-	//			currentControlGO = Instantiate(controls[(int)ControlTypes.None].controls[0]);
-	//			break;
-	//		case ControlTypes.FPS:
-	//			if (XRSettings.isDeviceActive)
-	//			{
-	//				XRSettings.LoadDeviceByName("");
-	//				yield return new WaitForEndOfFrame();
-	//				XRSettings.enabled = false;
-	//				yield return null;
-	//			}
-	//			currentControlGO = Instantiate(controls[(int)ControlTypes.FPS].controls[0]);
-	//			currentControlUI = Instantiate(controls[(int)ControlTypes.FPS].controls[1]);
-	//			break;
-	//		case ControlTypes.VR:
-	//			// TODO not init VR after disable WIP
-	//			if (!XRSettings.isDeviceActive)
-	//			{
-	//				XRSettings.LoadDeviceByName(vrDevice);
-	//				yield return new WaitForEndOfFrame();
-	//				XRSettings.enabled = true;
-	//				yield return null;
-	//			}
-	//			currentControlGO = Instantiate(controls[(int)ControlTypes.VR].controls[0]);
-	//			yield return new WaitForEndOfFrame();
-	//			currentControlGO.SetActive(true);
-	//			break;
-	//		default:
-	//			break;
-	//	}
-
-	//	ToggleLoadingScene(false);
-	//	ToggleMainScene(true);
-	//	yield return new WaitForEndOfFrame();
-
-	//	ControlManager.instance.ToggleYear(1920);
-	//	isFirstMainSceneLoaded = true;
-	//}
 
 	public void ToggleLoadingScene(bool state)
 	{

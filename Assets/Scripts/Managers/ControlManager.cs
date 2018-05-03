@@ -308,7 +308,7 @@ public class ControlManager : MonoBehaviour
 			default:
 				break;
 		}
-		Debug.Log("Input received: " + missive.controllerType.ToString() + " / " + missive.buttonType.ToString());
+		//Debug.Log("Input received: " + missive.controllerType.ToString() + " / " + missive.buttonType.ToString());
 	}
 	#endregion
 
