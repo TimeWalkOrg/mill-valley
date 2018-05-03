@@ -188,6 +188,9 @@ public class ControlManager : MonoBehaviour
 	#region toggles
 	public void ToggleYear(int year = -1)
 	{
+		// if in a secondary scene disable year changes uncomment if wanted
+		//if (!LoadingManager.instance.IsMainSceneActive()) return;
+
 		if (year == -2) // --year
 		{
 			currentYearIndex = (currentYearIndex > 0) ? currentYearIndex - 1 : yearData.Length - 1;
@@ -319,9 +322,53 @@ public class ControlManager : MonoBehaviour
 			currentControlGO.SetActive(false);
 		if (currentControlUI != null)
 			currentControlUI.SetActive(false);
+
 		currentControlType = missive.controlType;
+		
 		// Enable control type
 		switch (missive.controlType)
+		{
+			case ControlType.None:
+				currentControlGO = controls[0].controlObjects[0];
+				currentControlUI = null;
+				break;
+			case ControlType.FPS:
+				currentControlGO = controls[1].controlObjects[0];
+				currentControlUI = controls[1].controlObjects[1];
+				break;
+			case ControlType.VR:
+				currentControlGO = controls[2].controlObjects[0];
+				currentControlUI = null;
+				break;
+			default:
+				break;
+		}
+
+		if (currentControlGO != null)
+			currentControlGO.SetActive(true);
+		if (currentControlUI != null)
+			currentControlUI.SetActive(true);
+
+		LoadingManager.instance.ToggleLoadingScene(false);
+		LoadingManager.instance.ToggleMainScene(true);
+		ToggleYear(1920);
+	}
+
+	public void EnableTestingControlType()
+	{
+		if (currentControlGO != null)
+			currentControlGO.SetActive(false);
+		if (currentControlUI != null)
+			currentControlUI.SetActive(false);
+
+		currentControlType = testingControlType;
+
+		// check for actual VR isPresent
+		if (currentControlType == ControlType.VR && !XRDevice.isPresent)
+			currentControlType = ControlType.FPS;
+
+		// Enable control type
+		switch (currentControlType)
 		{
 			case ControlType.None:
 				currentControlGO = controls[0].controlObjects[0];
@@ -355,7 +402,9 @@ public class ControlManager : MonoBehaviour
 			currentControlGO.SetActive(false);
 		if (currentControlUI != null)
 			currentControlUI.SetActive(false);
+
 		currentControlType = ControlType.VR;
+		
 		// Enable control type
 		currentControlGO = controls[2].controlObjects[0];
 		currentControlUI = null;

@@ -42,6 +42,12 @@ public class WebViewTriggerComponent : MonoBehaviour
 
 	private void OnTriggerExit(Collider other)
 	{
+		// if you wanted players to be able to move away to disable in FPS uncomment this
+		//if (other.tag == "Player")
+		//{
+		//	DisableWebView();
+		//}
+
 		if (other.tag == "VRPlayer")
 		{
 			DisableWebView();

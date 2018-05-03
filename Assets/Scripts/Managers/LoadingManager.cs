@@ -69,7 +69,6 @@ public class LoadingManager : MonoBehaviour
 	private AsyncOperation asyncLoaderMainScene;
 	private AsyncOperation asyncLoaderSecondaryScene;
 	private bool isSecondaryLoading = false;
-	//private string vrDevice;
 
 	#region mono
 	private void Start()
@@ -83,14 +82,6 @@ public class LoadingManager : MonoBehaviour
 
 			controllerVRButtonUIGO.SetActive(XRDevice.isPresent);
 
-			if (XRDevice.isPresent)
-			{
-				//vrDevice = XRDevice.model;
-				ControlSelectMissive missive = new ControlSelectMissive();
-				missive.controlType = ControlType.VR;
-				Missive.Send(missive);
-			}
-
 			loadingSceneGO = GameObject.Find("LoadingSceneGO");
 			loadingScene = SceneManager.GetSceneByName("LoadingScene");
 			isMainSceneLoaded = false;
@@ -99,10 +90,10 @@ public class LoadingManager : MonoBehaviour
 		else // spawned in main scene for testing
 		{
 			isMainSceneLoaded = true;
-			//if (XRSettings.isDeviceActive)
-			//	SelectControllerTypeOnClick((int)ControlTypes.VR);
-			//else
-			//	SelectControllerTypeOnClick((int)ControlTypes.FPS);
+			isFirstMainSceneLoaded = true;
+			mainScene = SceneManager.GetSceneByName("MainScene");
+			ToggleMainScene(true);
+			ControlManager.instance.EnableTestingControlType();
 		}
 	}
 
@@ -181,10 +172,11 @@ public class LoadingManager : MonoBehaviour
 	IEnumerator LoadAsyncSecondaryScene(string sceneName)
 	{
 		isSecondaryLoading = true;
-		
+
+		// turn off webviews if left active
+		WebViewManager.instance.DisableCredits();
+
 		asyncLoaderSecondaryScene = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
-		while (!asyncLoaderMainScene.isDone)
-			yield return null;
 
 		secondaryScene = SceneManager.GetSceneByName(sceneName);
 		while (!secondaryScene.IsValid())

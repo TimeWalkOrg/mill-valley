@@ -2031,7 +2031,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1590993422871750
 GameObject:
   m_ObjectHideFlags: 1
@@ -7960,7 +7960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableTeleport: 1
   targetListPolicy: {fileID: 0}
-  enableBodyCollisions: 1
+  enableBodyCollisions: 0
   ignoreGrabbedCollisions: 1
   ignoreCollisionsWith: []
   headsetYOffset: 0.2
@@ -8786,7 +8786,7 @@ MonoBehaviour:
   currentControlGO: {fileID: 0}
   currentControlUI: {fileID: 0}
   currentControlType: 0
-  testingControlType: 2
+  testingControlType: 1
 --- !u!114 &114600363597671068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13926,10 +13926,10 @@ RectTransform:
   m_Father: {fileID: 224742883126074414}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -24.5}
+  m_SizeDelta: {x: 0, y: 49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224359290602363344
 RectTransform:
@@ -14566,10 +14566,10 @@ RectTransform:
   m_Father: {fileID: 224384588441764444}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 314}
-  m_SizeDelta: {x: 0, y: -628}
+  m_AnchoredPosition: {x: 0, y: -25}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224744552809727236
 RectTransform:

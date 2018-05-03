@@ -85,4 +85,12 @@ public class WebViewManager : MonoBehaviour
 			activeWebViewTriggerList[i].SetActive(!activeWebViewTriggerList[i].activeInHierarchy);
 		}
 	}
+
+	public void DisableCredits()
+	{
+		for (int i = 0; i < activeWebViewTriggerList.Count; i++)
+		{
+			activeWebViewTriggerList[i].SetActive(false);
+		}
+	}
 }
