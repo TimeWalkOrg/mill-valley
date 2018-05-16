@@ -3,7 +3,7 @@ guid: 5e6193d5512535c4fb5587dfc4c40c61
 timeCreated: 1426918735
 licenseType: Pro
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: Head
     100002: HeadEND
@@ -141,10 +141,22 @@ ModelImporter:
     9500000: //RootNode
     13700000: horse_MID1
     13700002: mesh_WesternHorseTack
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: horse_MID__RIG_horse_MID__SKIN_horse_MID_phong1
+    second: {fileID: 2100000, guid: 481dfd4ced7bd8b4d9f1de227d718011, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_WesternHorseTackMat
+    second: {fileID: 2100000, guid: f491261a7758a52439414699bab6ac19, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -157,6 +169,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -181,6 +194,8 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88

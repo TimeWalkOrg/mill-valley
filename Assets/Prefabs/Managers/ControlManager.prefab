@@ -6709,10 +6709,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerText: 
   gripText: Grab
-  touchpadText: Teleport (click down)
+  touchpadText: Teleport (click)
   touchpadTwoText: 
-  buttonOneText: TimeWalk info
-  buttonTwoText: Day-Night toggle
+  buttonOneText: Info
+  buttonTwoText: Day/Night
   startMenuText: VR Menu
   tipBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   tipTextColor: {r: 1, g: 1, b: 1, a: 1}
@@ -10268,9 +10268,9 @@ MonoBehaviour:
   gripText: Grab
   touchpadText: Touchpad
   touchpadTwoText: 
-  buttonOneText: Time Travel - Back
-  buttonTwoText: Time Travel - Forward
-  startMenuText: StartL
+  buttonOneText: Time Travel -
+  buttonTwoText: Time Travel +
+  startMenuText: Start
   tipBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   tipTextColor: {r: 1, g: 1, b: 1, a: 1}
   tipLineColor: {r: 0, g: 0, b: 0, a: 1}
