@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: 53bf5db8f924864428252f4eb2e7baeb
+timeCreated: 1526518263
+licenseType: Pro
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000004000000050000000600000007000000
+  assetHash:
+    serializedVersion: 2
+    Hash: e295cc3785c874c02ee807fed815ed4f
+  longitude: -122.54869490861893
+  latitude: 37.90616241022244
+  northCorrection: 0.27732374049594455
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 15.1751585, y: 8.905571, z: -27.851875}
+      lookAt: {x: 6.220742, y: 5.200468, z: -8.925354}
+      up: {x: -0.0745207, y: 0.9847015, z: 0.15751082}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: 120
+    100002: Door - right
+    100004: //RootNode
+    400000: 120
+    400002: Door - right
+    400004: //RootNode
+    2100000: _defaultMat
+    2100002: planks
+    2100004: '[Roofing Shingles GAF Estates]'
+    2100006: '[0135_DarkGray]'
+    2100008: _9
+    2100010: _5
+    2100012: '[Translucent Glass Gray]'
+    2100014: '[0107_MidnightBlue]'
+    2100016: '[0040_Peru]'
+    2100018: '[Metal Aluminum Anodized]'
+    2100020: '[Aluminum]'
+    2100022: CocaColaAD
+    2100024: '[0066_Honeydew]'
+    2100026: '[Translucent Glass Blue]'
+    2100028: _7
+    2100030: _6
+    2100032: '[Upholstery Striped Multi-Colored]'
+    2100034: '[Suede Brown]'
+    2100036: '[Suede Dark Gray]'
+    2100038: '[0136_Charcoal]'
+    2100040: '[0043_SaddleBrown]'
+    2300000: 120
+    2300002: Door - right
+    2300004: //RootNode
+    3300000: 120
+    3300002: Door - right
+    3300004: //RootNode
+    4300000: Mesh mill-valley-market
+    4300002: Mesh Door - right
+    4300004: Mesh 120
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CocaColaAD
+    second: {fileID: 2100000, guid: 5a4374296ef4ad243b1a0c7071c511f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0040_Peru]'
+    second: {fileID: 2100000, guid: 7bfd1793774b74c418eb63494bde178e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0043_SaddleBrown]'
+    second: {fileID: 2100000, guid: a67c0544093c0a64bbbb8eaff19c1d73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0066_Honeydew]'
+    second: {fileID: 2100000, guid: c3c11096579a35d43ab70c82fa044803, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0107_MidnightBlue]'
+    second: {fileID: 2100000, guid: a8e4cffe30ad533418cb074e3329713b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0135_DarkGray]'
+    second: {fileID: 2100000, guid: 0b409f9486a825246b5a40785cf993ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0136_Charcoal]'
+    second: {fileID: 2100000, guid: 1811770a0df19204f9dad0105289cd33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Aluminum]'
+    second: {fileID: 2100000, guid: a6dd0a54a5c8b5246b23afaa043528a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Metal Aluminum Anodized]'
+    second: {fileID: 2100000, guid: 77158a6d2d00f18488654da8a709a299, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Roofing Shingles GAF Estates]'
+    second: {fileID: 2100000, guid: 146adb4e56c5c80498c9f8e6cb09af14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Suede Brown]'
+    second: {fileID: 2100000, guid: b5b02efe978c9a14f881943436d94d03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Suede Dark Gray]'
+    second: {fileID: 2100000, guid: 7d5f4c0c87302d64f92fcbfcfb10c2fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Blue]'
+    second: {fileID: 2100000, guid: 88a10f8c71260444fac8d8d772e44da6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Gray]'
+    second: {fileID: 2100000, guid: c14418816e86c22478a643eb9dc54830, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Upholstery Striped Multi-Colored]'
+    second: {fileID: 2100000, guid: 6e968118e453238489cbd878f525a12e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _5
+    second: {fileID: 2100000, guid: f3ccdd25369e31a44b9dd077cbae0924, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _6
+    second: {fileID: 2100000, guid: cf1a9e882b69fca479b2789faf8a5e5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _7
+    second: {fileID: 2100000, guid: c968a383671f316438b3e8b88ba860c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _9
+    second: {fileID: 2100000, guid: ecc433a1dabc0284b90a3d07cb84edc3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: 5241bce382e0907409880eb9c3c45519, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: planks
+    second: {fileID: 2100000, guid: ad76c3cc46caa81419a32d5a5667099c, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Aluminum
+    second: {fileID: 2800000, guid: 7fe3c698dc4929f48bbb7af85a6e7147, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CocaColaAD
+    second: {fileID: 2800000, guid: 2efed258ed6d3b6419a7ce35c7827aa8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Leather Suede
+    second: {fileID: 2800000, guid: 4e7cf6dd89de7ac448ce1e91c195df92, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal_Aluminum_Anodized
+    second: {fileID: 2800000, guid: 29a71d4a7492b7241a2e839310615921, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Roofing_Shingles_GAF_Estates
+    second: {fileID: 2800000, guid: 8afb58e1bd6cd6445a2a234687dcd537, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Screen Shot 2018-03-22 at 4.44.53 PM
+    second: {fileID: 2800000, guid: 33d933f2ef61651498f91e18edbfd53c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Suede Brown
+    second: {fileID: 2800000, guid: 9be5d7844cfb94f4d9731edd6a517a17, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Upholstery Stripped Multi-Colored
+    second: {fileID: 2800000, guid: 5b229724030abe5488e67bf7463b9d91, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
