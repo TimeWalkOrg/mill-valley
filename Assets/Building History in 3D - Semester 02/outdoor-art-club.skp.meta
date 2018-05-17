@@ -1,0 +1,291 @@
+fileFormatVersion: 2
+guid: 949de2bfcc08c294d975c5ba26519bea
+timeCreated: 1526533948
+licenseType: Pro
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 644c07ec60a7444ee2387cdc41dcc695
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 68.45352, y: 25.705252, z: -64.656105}
+      lookAt: {x: 53.374943, y: 17.842861, z: -21.21961}
+      up: {x: -0.055275477, y: 0.98569274, z: 0.15923074}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: doorway
+    100002: doorway 1
+    100004: doorway 10
+    100006: doorway 11
+    100008: doorway 12
+    100010: doorway 13
+    100012: doorway 14
+    100014: doorway 2
+    100016: doorway 3
+    100018: doorway 4
+    100020: doorway 5
+    100022: doorway 6
+    100024: doorway 7
+    100026: doorway 8
+    100028: doorway 9
+    100030: Main Hall and porch
+    100032: //RootNode
+    100034: outdoor-art-club 1
+    100036: West Wing
+    400000: doorway
+    400002: doorway 1
+    400004: doorway 10
+    400006: doorway 11
+    400008: doorway 12
+    400010: doorway 13
+    400012: doorway 14
+    400014: doorway 2
+    400016: doorway 3
+    400018: doorway 4
+    400020: doorway 5
+    400022: doorway 6
+    400024: doorway 7
+    400026: doorway 8
+    400028: doorway 9
+    400030: Main Hall and porch
+    400032: //RootNode
+    400034: outdoor-art-club 1
+    400036: West Wing
+    2100000: _defaultMat
+    2100002: '[Roofing Shingles Multi]'
+    2100004: '[Roofing Shingles Variable]'
+    2100006: _29
+    2100008: '[Wood Floor]'
+    2100010: '[0086_MediumAquamarine]'
+    2100012: _1
+    2100014: _32
+    2100016: _31
+    2100018: _30
+    2100020: _3
+    2100022: '[Brick Antique 01]'
+    2100024: '[Translucent Glass Gray]'
+    2300000: doorway
+    2300002: doorway 1
+    2300004: doorway 10
+    2300006: doorway 11
+    2300008: doorway 12
+    2300010: doorway 13
+    2300012: doorway 14
+    2300014: doorway 2
+    2300016: doorway 3
+    2300018: doorway 4
+    2300020: doorway 5
+    2300022: doorway 6
+    2300024: doorway 7
+    2300026: doorway 8
+    2300028: doorway 9
+    2300030: Main Hall and porch
+    2300032: //RootNode
+    2300034: outdoor-art-club 1
+    2300036: West Wing
+    3300000: doorway
+    3300002: doorway 1
+    3300004: doorway 10
+    3300006: doorway 11
+    3300008: doorway 12
+    3300010: doorway 13
+    3300012: doorway 14
+    3300014: doorway 2
+    3300016: doorway 3
+    3300018: doorway 4
+    3300020: doorway 5
+    3300022: doorway 6
+    3300024: doorway 7
+    3300026: doorway 8
+    3300028: doorway 9
+    3300030: Main Hall and porch
+    3300032: //RootNode
+    3300034: outdoor-art-club 1
+    3300036: West Wing
+    4300000: Mesh outdoor-art-club
+    4300002: Mesh outdoor-art-club
+    4300004: Mesh West Wing
+    4300006: Mesh Main Hall and porch
+    4300008: Mesh doorway
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0086_MediumAquamarine]'
+    second: {fileID: 2100000, guid: 465570ca304d84942921f7e3b005ef9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Brick Antique 01]'
+    second: {fileID: 2100000, guid: 0f1bb906e5f019741ae41ec80e56e3e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Roofing Shingles Multi]'
+    second: {fileID: 2100000, guid: aed69bb1ae032d34a8636a168e27b53d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Roofing Shingles Variable]'
+    second: {fileID: 2100000, guid: f5276cfab11307847aaa76d4817f8614, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Gray]'
+    second: {fileID: 2100000, guid: 2118a170907839045bc21a04b9583dd3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood Floor]'
+    second: {fileID: 2100000, guid: c236717e1a4732a44a2ec3a21b716960, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _1
+    second: {fileID: 2100000, guid: 2c7159eec994c294eb5cb3e7370dd3b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _29
+    second: {fileID: 2100000, guid: 69034cea19c97ae42a2ec1db2ca544e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _3
+    second: {fileID: 2100000, guid: e98d4f317dd4e634d926edd7f5e71e99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _30
+    second: {fileID: 2100000, guid: b15540eeb65b30e46b7b8d6afa86636d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _31
+    second: {fileID: 2100000, guid: 05efab33fc277f240928b67231ded25b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _32
+    second: {fileID: 2100000, guid: f262896d850eecc4eac6680863b34519, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: fcce099574e589641ab0bd0ebc62158c, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Brick_Antique
+    second: {fileID: 2800000, guid: cf4d407c14f6d62449a42c04c47fec39, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: IMG_0503
+    second: {fileID: 2800000, guid: 13b8295168d3c374aa4c73de41185be0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Roofing_Shingles_Multi
+    second: {fileID: 2800000, guid: ac66b85652a012e4f82113086a1ceeea, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Roofing_Shingles_Variable
+    second: {fileID: 2800000, guid: 93b37951323bec14881a2dc79431278f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood_Floor
+    second: {fileID: 2800000, guid: 3e5142884b233874999822712a5586f2, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
