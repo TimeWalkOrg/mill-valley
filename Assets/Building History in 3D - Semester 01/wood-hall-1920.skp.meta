@@ -1,0 +1,335 @@
+fileFormatVersion: 2
+guid: bcd537fb53d0d3044b3006060ab9502d
+timeCreated: 1526529386
+licenseType: Pro
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f00000030000000310000003200000033000000340000003500000036000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 3fdbec6f0baadfcb27455e146b9d2457
+  longitude: -122.52861857414246
+  latitude: 37.890980544038655
+  northCorrection: 0.28956229748689566
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -124.73204, y: 22.421392, z: 190.74963}
+      lookAt: {x: -147.91771, y: 19.177204, z: 174.1547}
+      up: {x: -0.09193048, y: 0.9935891, z: -0.06579846}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Group 7
+    100002: Left window
+    100004: Left window 1
+    100006: Left window 10
+    100008: Left window 2
+    100010: Left window 3
+    100012: Left window 4
+    100014: Left window 5
+    100016: Left window 6
+    100018: Left window 7
+    100020: Left window 8
+    100022: Left window 9
+    100024: Left window#1
+    100026: North Wood Hall
+    100028: Tower
+    100030: Tower filial
+    100032: Wood Hall Lower Windows
+    100034: Wood Hall Lower Windows 1
+    100036: Wood Hall Lower Windows 2
+    100038: Wood Hall Lower Windows 3
+    100040: Wood Hall Top Windows
+    100042: Wood Hall Top Windows 1
+    100044: Wood Hall Top Windows 2
+    100046: Wood Hall Top Windows 3
+    100048: //RootNode
+    400000: Group 7
+    400002: Left window
+    400004: Left window 1
+    400006: Left window 10
+    400008: Left window 2
+    400010: Left window 3
+    400012: Left window 4
+    400014: Left window 5
+    400016: Left window 6
+    400018: Left window 7
+    400020: Left window 8
+    400022: Left window 9
+    400024: Left window#1
+    400026: North Wood Hall
+    400028: Tower
+    400030: Tower filial
+    400032: Wood Hall Lower Windows
+    400034: Wood Hall Lower Windows 1
+    400036: Wood Hall Lower Windows 2
+    400038: Wood Hall Lower Windows 3
+    400040: Wood Hall Top Windows
+    400042: Wood Hall Top Windows 1
+    400044: Wood Hall Top Windows 2
+    400046: Wood Hall Top Windows 3
+    400048: //RootNode
+    2100000: _defaultMat
+    2100002: '[Roofing Tile Spanish]'
+    2100004: _3
+    2100006: _6
+    2100008: _4
+    2100010: '[0133_Gray]'
+    2100012: '[0029_BlanchedAlmond]'
+    2100014: '[0128_White]'
+    2100016: '[Chris_Shoe]'
+    2100018: TamHighRailing
+    2100020: '[Fencing Railing Metal]'
+    2100022: '[0136_Charcoal]'
+    2100024: '[0020_Red]'
+    2100026: '[0043_SaddleBrown]'
+    2100028: '[Translucent Glass Blue]'
+    2100030: '[Translucent Glass Sky Reflection]'
+    2100032: '[Translucent Glass Safety]'
+    2300000: Group 7
+    2300002: Left window
+    2300004: Left window 1
+    2300006: Left window 10
+    2300008: Left window 2
+    2300010: Left window 3
+    2300012: Left window 4
+    2300014: Left window 5
+    2300016: Left window 6
+    2300018: Left window 7
+    2300020: Left window 8
+    2300022: Left window 9
+    2300024: Left window#1
+    2300026: North Wood Hall
+    2300028: Tower
+    2300030: Tower filial
+    2300032: Wood Hall Lower Windows
+    2300034: Wood Hall Lower Windows 1
+    2300036: Wood Hall Lower Windows 2
+    2300038: Wood Hall Lower Windows 3
+    2300040: Wood Hall Top Windows
+    2300042: Wood Hall Top Windows 1
+    2300044: Wood Hall Top Windows 2
+    2300046: Wood Hall Top Windows 3
+    3300000: Group 7
+    3300002: Left window
+    3300004: Left window 1
+    3300006: Left window 10
+    3300008: Left window 2
+    3300010: Left window 3
+    3300012: Left window 4
+    3300014: Left window 5
+    3300016: Left window 6
+    3300018: Left window 7
+    3300020: Left window 8
+    3300022: Left window 9
+    3300024: Left window#1
+    3300026: North Wood Hall
+    3300028: Tower
+    3300030: Tower filial
+    3300032: Wood Hall Lower Windows
+    3300034: Wood Hall Lower Windows 1
+    3300036: Wood Hall Lower Windows 2
+    3300038: Wood Hall Lower Windows 3
+    3300040: Wood Hall Top Windows
+    3300042: Wood Hall Top Windows 1
+    3300044: Wood Hall Top Windows 2
+    3300046: Wood Hall Top Windows 3
+    4300000: Mesh Group 7
+    4300002: Mesh Tower
+    4300004: Mesh Tower filial
+    4300006: Mesh North Wood Hall
+    4300008: Mesh Wood Hall Lower Windows
+    4300010: Mesh Wood Hall Top Windows
+    4300012: Mesh Left window
+    4300014: Mesh Left window#1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TamHighRailing
+    second: {fileID: 2100000, guid: 146cfc24c2cb57940b061e464553b7e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0020_Red]'
+    second: {fileID: 2100000, guid: 23aafa8526609c9418f26fdecfa155f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0029_BlanchedAlmond]'
+    second: {fileID: 2100000, guid: e2c745efbbc806d489ef6037952f793c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0043_SaddleBrown]'
+    second: {fileID: 2100000, guid: a5d7b1219d6083a4ab20c3b19f66b470, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0128_White]'
+    second: {fileID: 2100000, guid: dc8a192de10021046aae21f62856ccdf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0133_Gray]'
+    second: {fileID: 2100000, guid: 405c97ac672cb0c41be5f5aef6113d9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0136_Charcoal]'
+    second: {fileID: 2100000, guid: 9a353ed313848e0459a9c7b4b9cdaf87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Chris_Shoe]'
+    second: {fileID: 2100000, guid: 034dc7efdf2643748aa29a5063dfb9da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Fencing Railing Metal]'
+    second: {fileID: 2100000, guid: df8aaef307d6a7244a36c9f56c04eb21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Roofing Tile Spanish]'
+    second: {fileID: 2100000, guid: 1b5b443dbeb66c94a94114260ecc1427, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Blue]'
+    second: {fileID: 2100000, guid: 83dfd7f1338b7a547aea6de56d497069, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Safety]'
+    second: {fileID: 2100000, guid: 2736d1857b036e442aa2193f57c3ae7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Sky Reflection]'
+    second: {fileID: 2100000, guid: 7de3050ef4487fe4099daf93bd1fdb89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _3
+    second: {fileID: 2100000, guid: a348e0a477db5084eb2ba8d356bf6f03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _4
+    second: {fileID: 2100000, guid: f64b64739fc99de409c2220d5879533b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _6
+    second: {fileID: 2100000, guid: 136d9454644c01444a756addf10d502c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: 5886f2a63a8fbc142a0fb04788ed921d, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fencing_Railing_Metal2
+    second: {fileID: 2800000, guid: 38cd070e88bdd6141a2d71e659ee6c1c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Roofing_Tile_Spanish
+    second: {fileID: 2800000, guid: adf8bff901c92984383d35b094f1378a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Translucent_Glass_Saftey
+    second: {fileID: 2800000, guid: 4ad79735ebdd8fa40aae4a4bd571246d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Translucent_Glass_Sky_Reflection_
+    second: {fileID: 2800000, guid: 0fbb79d2dee4c3a4f897389c934d60f1, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
