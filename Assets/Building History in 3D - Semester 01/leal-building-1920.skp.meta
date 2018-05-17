@@ -8,16 +8,16 @@ SketchUpImporter:
   selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
   assetHash:
     serializedVersion: 2
-    Hash: 950f45eb206821f7f86fa2ab56353ccd
+    Hash: c12cb82d26d607d2bce1677959b3b667
   longitude: -105.242139
   latitude: 40.018309
   northCorrection: -0
   fileUnit: 0
   sketchUpImportData:
     defaultCamera:
-      position: {x: -22.515814, y: 11.073968, z: 6.5642333}
-      lookAt: {x: -19.094835, y: 10.452719, z: 5.314641}
-      up: {x: 0.15794113, y: 0.9857618, z: -0.057691716}
+      position: {x: -17.166483, y: 7.8878107, z: 10.468941}
+      lookAt: {x: -14.180326, y: 6.917735, z: 8.521544}
+      up: {x: 0.21992745, y: 0.9649153, z: -0.14342381}
       fov: 35
       aspectRatio: 0
       orthoSize: 1
@@ -53,6 +53,7 @@ SketchUpImporter:
     2100018: Roof (finer)
     2100020: '[Chris_Shoe_Sole]'
     2100022: '[Chris_Shoe]'
+    2100024: '[Translucent Glass Gray]'
     2300000: Cupola
     2300002: doorKnob
     2300004: doorKnob 1
@@ -77,8 +78,78 @@ SketchUpImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Roof (finer)
+    second: {fileID: 2100000, guid: dee161fd9f6375b469ae15ca8c91c07d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Chris_Shoe]'
+    second: {fileID: 2100000, guid: 1473e367f94c1854b9a84e326652ec98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Chris_Shoe_Sole]'
+    second: {fileID: 2100000, guid: f4ab8e1f623e61f40b9f6d74e016f42e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color C08]'
+    second: {fileID: 2100000, guid: ed41cb94eb7ce2146bfe856e1d6d9034, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: '[Color K01]'
     second: {fileID: 2100000, guid: c30ef066aee978d47822b36e29bab3e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color M08]'
+    second: {fileID: 2100000, guid: 70f40c5f39fbf3e48836be4ba8924e9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Roofing Shingles Multi]'
+    second: {fileID: 2100000, guid: 01b4959acd67a524db971f762a7637f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Blue]'
+    second: {fileID: 2100000, guid: c57e877debad9364d89306794c93bbab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Gray]'
+    second: {fileID: 2100000, guid: 85c1183a7777bbb4b91bd94d6efaa3a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood Veneer 01]'
+    second: {fileID: 2100000, guid: 75333291ce1e96a48b4ee06c0185667d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _11
+    second: {fileID: 2100000, guid: f89fd37bb9e0a9748baa20f7c2f22c5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _5
+    second: {fileID: 2100000, guid: 8f16431e09bf7184582fa476001d4900, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: 15cf265427c57324e860b66b883775c7, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Roofing_Shingles_Multi
+    second: {fileID: 2800000, guid: 149f2c7c1c1589f47aa9399a9aadbb8c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood 01
+    second: {fileID: 2800000, guid: 578771551fbe238439ee19dcbda73574, type: 3}
   materials:
     importMaterials: 1
     materialName: 2

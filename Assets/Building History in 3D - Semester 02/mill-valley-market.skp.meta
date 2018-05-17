@@ -8,16 +8,16 @@ SketchUpImporter:
   selectedNodes: 000000000100000004000000050000000600000007000000
   assetHash:
     serializedVersion: 2
-    Hash: e295cc3785c874c02ee807fed815ed4f
+    Hash: 07c9af862483f40a968aafbf5cf80805
   longitude: -122.54869490861893
   latitude: 37.90616241022244
   northCorrection: 0.27732374049594455
   fileUnit: 0
   sketchUpImportData:
     defaultCamera:
-      position: {x: 15.1751585, y: 8.905571, z: -27.851875}
-      lookAt: {x: 6.220742, y: 5.200468, z: -8.925354}
-      up: {x: -0.0745207, y: 0.9847015, z: 0.15751082}
+      position: {x: 18.759666, y: 4.2387705, z: -24.292107}
+      lookAt: {x: 8.090917, y: 1.2017003, z: -6.151641}
+      up: {x: -0.07240827, y: 0.9897469, z: 0.12311842}
       fov: 35
       aspectRatio: 0
       orthoSize: 1
@@ -52,6 +52,9 @@ SketchUpImporter:
     2100036: '[Suede Dark Gray]'
     2100038: '[0136_Charcoal]'
     2100040: '[0043_SaddleBrown]'
+    2100042: market-teal
+    2100044: market-blue
+    2100046: '[Metal Embossed]1'
     2300000: 120
     2300002: Door - right
     2300004: //RootNode
@@ -110,6 +113,11 @@ SketchUpImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: '[Metal Embossed]1'
+    second: {fileID: 2100000, guid: 935740405c75e664cb692d66bc6ede15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: '[Roofing Shingles GAF Estates]'
     second: {fileID: 2100000, guid: 146adb4e56c5c80498c9f8e6cb09af14, type: 2}
   - first:
@@ -165,48 +173,63 @@ SketchUpImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: market-blue
+    second: {fileID: 2100000, guid: b67ff5dff9ae8a34dab4dd5181fb03bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: market-teal
+    second: {fileID: 2100000, guid: 29cae8bc682083442ba8e05a71ec227c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: planks
     second: {fileID: 2100000, guid: ad76c3cc46caa81419a32d5a5667099c, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Aluminum
-    second: {fileID: 2800000, guid: 7fe3c698dc4929f48bbb7af85a6e7147, type: 3}
+    second: {fileID: 2800000, guid: 825d1ab930c06ae47b6b2d2eae74c2d4, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: CocaColaAD
-    second: {fileID: 2800000, guid: 2efed258ed6d3b6419a7ce35c7827aa8, type: 3}
+    second: {fileID: 2800000, guid: d4a685c424920134482706e033e4d3c3, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Leather Suede
-    second: {fileID: 2800000, guid: 4e7cf6dd89de7ac448ce1e91c195df92, type: 3}
+    second: {fileID: 2800000, guid: 546c77e76b4ee8f4294b19c8d233decc, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Metal_Aluminum_Anodized
-    second: {fileID: 2800000, guid: 29a71d4a7492b7241a2e839310615921, type: 3}
+    second: {fileID: 2800000, guid: 1268f22039d167a45809ac6f498c84e9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal_Embossed
+    second: {fileID: 2800000, guid: d2d5e141b70237a488d45fac9b9dcd42, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Roofing_Shingles_GAF_Estates
-    second: {fileID: 2800000, guid: 8afb58e1bd6cd6445a2a234687dcd537, type: 3}
+    second: {fileID: 2800000, guid: 633617c9108c88c41b9c53168b8ba7ce, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Screen Shot 2018-03-22 at 4.44.53 PM
-    second: {fileID: 2800000, guid: 33d933f2ef61651498f91e18edbfd53c, type: 3}
+    second: {fileID: 2800000, guid: 5e0618093f440174fbdf91ac8b74ccdb, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Suede Brown
-    second: {fileID: 2800000, guid: 9be5d7844cfb94f4d9731edd6a517a17, type: 3}
+    second: {fileID: 2800000, guid: 14c8b5551db418d4598f817ddb23d405, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Upholstery Stripped Multi-Colored
-    second: {fileID: 2800000, guid: 5b229724030abe5488e67bf7463b9d91, type: 3}
+    second: {fileID: 2800000, guid: f96ff3184496f7f49b752db631582f01, type: 3}
   materials:
     importMaterials: 1
     materialName: 2
