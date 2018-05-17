@@ -482,7 +482,7 @@ Transform:
   - {fileID: 883771028}
   - {fileID: 1459318937}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &485740135
 Prefab:
@@ -591,7 +591,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400048, guid: 392e658b9c20e4b4cb23539bc9aefb6c, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 100048, guid: 392e658b9c20e4b4cb23539bc9aefb6c, type: 3}
       propertyPath: m_IsActive
@@ -650,11 +650,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b90bfccf2a2cca41937d2e29a14c342, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &575735076 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4510109691144218, guid: 5b90bfccf2a2cca41937d2e29a14c342,
-    type: 2}
-  m_PrefabInternal: {fileID: 575735075}
 --- !u!1001 &608243369
 Prefab:
   m_ObjectHideFlags: 0
@@ -806,7 +801,7 @@ Transform:
   - {fileID: 351787513}
   - {fileID: 1848124286}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &766063879
 Prefab:
@@ -850,11 +845,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b90bfccf2a2cca41937d2e29a14c342, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &766063880 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4510109691144218, guid: 5b90bfccf2a2cca41937d2e29a14c342,
-    type: 2}
-  m_PrefabInternal: {fileID: 766063879}
 --- !u!1001 &825816125
 Prefab:
   m_ObjectHideFlags: 0
@@ -1387,7 +1377,7 @@ Transform:
   - {fileID: 1753176555}
   - {fileID: 36286211}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1240779945
 Prefab:
@@ -1459,143 +1449,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e2214d4f09be65d4d9b05345dfadc509, type: 2}
   m_PrefabInternal: {fileID: 1240779945}
---- !u!1001 &1250946752
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310449727965882, guid: b560a76ddedbb9c4292897c6f25cf1ba, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310449727965882, guid: b560a76ddedbb9c4292897c6f25cf1ba, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310449727965882, guid: b560a76ddedbb9c4292897c6f25cf1ba, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310449727965882, guid: b560a76ddedbb9c4292897c6f25cf1ba, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310449727965882, guid: b560a76ddedbb9c4292897c6f25cf1ba, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310449727965882, guid: b560a76ddedbb9c4292897c6f25cf1ba, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310449727965882, guid: b560a76ddedbb9c4292897c6f25cf1ba, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310449727965882, guid: b560a76ddedbb9c4292897c6f25cf1ba, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[2].buildingName
-      value: leal
-      objectReference: {fileID: 0}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[2].url
-      value: https://pages.timewalk.org/building-mill-valley-ca-leal-building/
-      objectReference: {fileID: 0}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[3].buildingName
-      value: oshaugnhessy
-      objectReference: {fileID: 0}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[3].url
-      value: https://pages.timewalk.org/building-mill-valley-ca-oshaughnessy/
-      objectReference: {fileID: 0}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[4].buildingName
-      value: vasco
-      objectReference: {fileID: 0}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[4].url
-      value: https://pages.timewalk.org/building-mill-valley-ca-vasco/
-      objectReference: {fileID: 0}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[5].buildingName
-      value: depot
-      objectReference: {fileID: 0}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[5].url
-      value: https://pages.timewalk.org/building-mill-valley-ca-train-depot/
-      objectReference: {fileID: 0}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[6].buildingName
-      value: carnegieLibrary
-      objectReference: {fileID: 0}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[6].url
-      value: https://pages.timewalk.org/building-mill-valley-ca-carnegie-library/
-      objectReference: {fileID: 0}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[7].buildingName
-      value: hubTheatre
-      objectReference: {fileID: 0}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[7].url
-      value: https://pages.timewalk.org/building-mill-valley-ca-hub-theatre/
-      objectReference: {fileID: 0}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[0].buildingName
-      value: wood-hall
-      objectReference: {fileID: 0}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[1].buildingName
-      value: wood-auditorium
-      objectReference: {fileID: 0}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[0].webViewTriggerAnchorGO
-      value: 
-      objectReference: {fileID: 575735076}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[1].webViewTriggerAnchorGO
-      value: 
-      objectReference: {fileID: 766063880}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[0].url
-      value: https://pages.timewalk.org/building-mill-valley-ca-wood-hall/
-      objectReference: {fileID: 0}
-    - target: {fileID: 114932806714098560, guid: b560a76ddedbb9c4292897c6f25cf1ba,
-        type: 2}
-      propertyPath: webViewTriggerData.Array.data[1].url
-      value: https://pages.timewalk.org/building-mill-valley-ca-wood-auditorium/
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b560a76ddedbb9c4292897c6f25cf1ba, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1400371203
 Prefab:
   m_ObjectHideFlags: 0
@@ -2516,7 +2369,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: d7f83361cfaae4540a062aa64b689e8c, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: d7f83361cfaae4540a062aa64b689e8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2636,7 +2489,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4577003525465702, guid: 779c42c3b0032b4488ddcd6a190fd09b, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1921002873383800, guid: 779c42c3b0032b4488ddcd6a190fd09b, type: 2}
       propertyPath: m_Name
@@ -2778,5 +2631,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 52.653004, y: 196.06299, z: 296.714}
