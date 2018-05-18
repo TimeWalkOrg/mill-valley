@@ -7,7 +7,6 @@ public class WebViewTriggerData
 {
 	public string buildingName;
 	public string url;
-	public Transform webViewTriggerAnchorGO;
 }
 
 public class WebViewManager : MonoBehaviour
@@ -35,6 +34,7 @@ public class WebViewManager : MonoBehaviour
 		{
 			_instance = this;
 		}
+		DontDestroyOnLoad(transform.gameObject);
 	}
 
 	void OnApplicationQuit()
@@ -45,52 +45,53 @@ public class WebViewManager : MonoBehaviour
 	#endregion
 
 	public GameObject webViewTriggerPrefab;
-	public WebViewTriggerData[] webViewTriggerData;
+	//public WebViewTriggerData[] webViewTriggerData;
 
-	private List<GameObject> activeWebViewTriggerList = new List<GameObject>();
-
-	private void Start()
-	{
-		InitActiveResearchTeamObjects();
-	}
-
-	private void OnEnable()
-	{
-		Missive.AddListener<CreditsMissive>(OnToggleCredits);
-	}
-
-	private void OnDisable()
-	{
-		Missive.RemoveListener<CreditsMissive>(OnToggleCredits);
-	}
-
-	private void InitActiveResearchTeamObjects()
-	{
-		for (int i = 0; i < webViewTriggerData.Length; i++)
-		{
-			if (webViewTriggerData[i].webViewTriggerAnchorGO != null)
-			{
-				GameObject go = Instantiate(webViewTriggerPrefab, webViewTriggerData[i].webViewTriggerAnchorGO.position, Quaternion.identity);
-				go.GetComponent<WebViewTriggerComponent>().SetURL(webViewTriggerData[i].url);
-				activeWebViewTriggerList.Add(go);
-				go.SetActive(false);
-			}
-		}
-	}
-
-	private void OnToggleCredits(CreditsMissive missive)
-	{
-		for (int i = 0; i < activeWebViewTriggerList.Count; i++)
-		{
-			activeWebViewTriggerList[i].SetActive(!activeWebViewTriggerList[i].activeInHierarchy);
-		}
-	}
-
-	public void DisableCredits()
-	{
-		for (int i = 0; i < activeWebViewTriggerList.Count; i++)
-		{
-			activeWebViewTriggerList[i].SetActive(false);
-		}
-	}
+	/*
+	 * dowds
+	 * https://pages.timewalk.org/building-mill-valley-ca-dowds-moving/
+	 * 
+	 * landwater
+	 * https://pages.timewalk.org/building-mill-valley-ca-land-and-water-co/
+	 * 
+	 * leal
+	 * https://pages.timewalk.org/building-mill-valley-ca-leal-building/
+	 * 
+	 * oshaugnhessy
+	 * https://pages.timewalk.org/building-mill-valley-ca-oshaughnessy/
+	 * 
+	 * vasco
+	 * https://pages.timewalk.org/building-mill-valley-ca-vasco/
+	 * 
+	 * depot
+	 * https://pages.timewalk.org/building-mill-valley-ca-train-depot/
+	 * 
+	 * carnegieLibrary
+	 * https://pages.timewalk.org/building-mill-valley-ca-carnegie-library/
+	 * 
+	 * hubTheatre
+	 * https://pages.timewalk.org/building-mill-valley-ca-hub-theatre/
+	 * 
+	 * keystoneBuilding
+	 * https://pages.timewalk.org/building-mill-valley-ca-keystone-building/
+	 * 
+	 * bank-of-mill-valley
+	 * https://pages.timewalk.org/building-mill-valley-ca-bank-of-mill-valley/
+	 * 
+	 * browns-building
+	 * https://pages.timewalk.org/building-mill-valley-ca-browns-building/
+	 * 
+	 * lumberyard
+	 * https://pages.timewalk.org/building-mill-valley-ca-lumberyard/
+	 * 
+	 * mill-valley-market
+	 * https://pages.timewalk.org/building-mill-valley-ca-mill-valley-market/
+	 * 
+	 * outdoor-art-club
+	 * https://pages.timewalk.org/building-mill-valley-ca-outdoor-art-club/
+	 * 
+	 * town-hall
+	 * https://pages.timewalk.org/building-mill-valley-ca-town-hall/
+	 * 
+	 */
 }

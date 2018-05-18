@@ -173,9 +173,6 @@ public class LoadingManager : MonoBehaviour
 	{
 		isSecondaryLoading = true;
 
-		// turn off webviews if left active
-		WebViewManager.instance.DisableCredits();
-
 		asyncLoaderSecondaryScene = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
 
 		secondaryScene = SceneManager.GetSceneByName(sceneName);

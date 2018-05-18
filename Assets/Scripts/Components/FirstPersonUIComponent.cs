@@ -15,6 +15,8 @@ public class FirstPersonUIComponent : MonoBehaviour
 	public GameObject gameUIGO;
 	public GameObject webViewUIGO;
 
+	public CharacterMotor characterMotorRef;
+
 	// TODO needs #define
 	public ZenFulcrum.EmbeddedBrowser.Browser browser;
 
@@ -27,6 +29,7 @@ public class FirstPersonUIComponent : MonoBehaviour
 		helpFullGO.SetActive(false);
 		gameUIGO.SetActive(true);
 		webViewUIGO.SetActive(false);
+		browser.Url = "https://www.timewalk.org/";
 		Invoke("OnStartHint", helpHintStartDelay);
 	}
 
@@ -62,11 +65,13 @@ public class FirstPersonUIComponent : MonoBehaviour
 			gameUIGO.SetActive(false);
 			webViewUIGO.SetActive(true);
 			browser.Url = missive.url;
+			ToggleFPSControl(false);
 		}
 		else
 		{
 			gameUIGO.SetActive(true);
 			webViewUIGO.SetActive(false);
+			ToggleFPSControl(true);
 		}
 	}
 
@@ -91,6 +96,19 @@ public class FirstPersonUIComponent : MonoBehaviour
 		{
 			helpFullGO.SetActive(true);
 			Invoke("CloseHelpFullGO", helpHintDuration);
+		}
+	}
+
+	private void ToggleFPSControl(bool state)
+	{
+		if (characterMotorRef == null) return;
+
+		characterMotorRef.canControl = state;
+
+		if (state)
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+			Cursor.lockState = CursorLockMode.None;
 		}
 	}
 

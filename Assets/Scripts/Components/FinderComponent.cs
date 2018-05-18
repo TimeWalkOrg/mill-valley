@@ -13,10 +13,6 @@ public class FinderComponent : MonoBehaviour
 	public GameObject lightingRefGO;
 	public GameObject environmentRefGO;
 	public GameObject terrianRefGO;
-	public GameObject webViewManagerGO;
-	
-	// not active at the moment
-	public GameObject portalManagerGO;
 
 	IEnumerator Start()
 	{
@@ -41,15 +37,5 @@ public class FinderComponent : MonoBehaviour
 		if (ControlManager.instance == null)
 			Instantiate(controlManagerGO);
 		ControlManager.instance.dayNightRef = dayNightRef;
-
-		// wait until main scene is active so all added GO's are in that scene, not loading etc
-		while (!LoadingManager.instance.isFirstMainSceneLoaded)
-			yield return null;
-
-		if (webViewManagerGO != null)
-			webViewManagerGO.SetActive(true);
-
-		if (portalManagerGO != null)
-			portalManagerGO.SetActive(true);
 	}
 }
