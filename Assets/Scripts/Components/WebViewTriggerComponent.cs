@@ -1,30 +1,45 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WebViewTriggerComponent : MonoBehaviour
 {
-	//public GameObject exclaimationGO;
+	public GameObject webviewHolder;
 	public GameObject vRWebViewGO;
 	// TODO needs #define
 	public ZenFulcrum.EmbeddedBrowser.Browser browser;
 	private string thisURL;
 
 	private bool isWebViewActive = false;
-	private bool isVRPlayerNear = false;
 
 	private void Start()
 	{
 		DisableWebView();
+		ToggleWebViewHolder(false);
 	}
 
-	public void SetURL(string url)
+	private void OnEnable()
 	{
-		thisURL = url;
+		Missive.AddListener<CreditsMissive>(OnToggleCredits);
+		SceneManager.activeSceneChanged += ChangedActiveScene;
+	}
+
+	private void OnDisable()
+	{
+		Missive.RemoveListener<CreditsMissive>(OnToggleCredits);
+		SceneManager.activeSceneChanged -= ChangedActiveScene;
+	}
+
+	private void ChangedActiveScene(Scene current, Scene next)
+	{
+		ToggleWebViewHolder(false);
 	}
 
 	private void OnTriggerEnter(Collider other)
 	{
+		if (!webviewHolder.activeInHierarchy) return;
+
 		if (other.tag == "Player")
 		{
 			ControlManager.instance.SendWebViewMissive(thisURL);
@@ -42,29 +57,42 @@ public class WebViewTriggerComponent : MonoBehaviour
 
 	private void OnTriggerExit(Collider other)
 	{
-		// if you wanted players to be able to move away to disable in FPS uncomment this
-		//if (other.tag == "Player")
-		//{
-		//	DisableWebView();
-		//}
-
 		if (other.tag == "VRPlayer")
 		{
 			DisableWebView();
 		}
 	}
 
+	public void SetURL(string url)
+	{
+		thisURL = url;
+	}
+
 	public void DisableWebView()
 	{
-		if (vRWebViewGO != null)
-			vRWebViewGO.SetActive(false);
+		if (vRWebViewGO == null) return;
+
+		vRWebViewGO.SetActive(false);
 		isWebViewActive = false;
 	}
 
 	private void EnableWebView()
 	{
-		if (vRWebViewGO != null)
-			vRWebViewGO.SetActive(true);
+		if (vRWebViewGO == null) return;
+
+		vRWebViewGO.SetActive(true);
 		isWebViewActive = true;
+	}
+
+	private void ToggleWebViewHolder(bool state)
+	{
+		if (webviewHolder == null) return;
+
+		webviewHolder.SetActive(state);
+	}
+
+	private void OnToggleCredits(CreditsMissive missive)
+	{
+		webviewHolder.SetActive(!webviewHolder.activeInHierarchy);
 	}
 }
