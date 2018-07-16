@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: 62748e5007cdca747a67972dccd61ac1
-timeCreated: 1428467544
-licenseType: Pro
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     100002: group_0
@@ -865,10 +863,103 @@ ModelImporter:
     4300338: ID333
     4300340: image_0
     9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_006
+    second: {fileID: 2100000, guid: e16b30a53d3e9924ba6e6de535e9ca73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_A22
+    second: {fileID: 2100000, guid: 23381fd6d211c9d49870fe301d1a6c27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_B05
+    second: {fileID: 2100000, guid: 7a03df3faa8de524496e435dbc309060, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_B10
+    second: {fileID: 2100000, guid: d2a4d5eaac88d104eaf9f44b2a5d8021, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_B18
+    second: {fileID: 2100000, guid: 98f4edc686ce944468e6b1df1b8484d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_C12
+    second: {fileID: 2100000, guid: 78fad54438844b34999505d7670ee326, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VS_Bronze
+    second: {fileID: 2100000, guid: 2f362fde7d63e22459bc67665e6f8545, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VS_Burgundy
+    second: {fileID: 2100000, guid: 69ac0bea29d93664d866bbc8118a655d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VS_Gloss_Black
+    second: {fileID: 2100000, guid: a45a67528658b7d4d850c35817350b2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VS_Gray
+    second: {fileID: 2100000, guid: 6f73adb5e60e6f14086e6652d1fecf11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VS_Green
+    second: {fileID: 2100000, guid: 5b755056f3b44274784e307b04cbf1e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VS_New_Teal
+    second: {fileID: 2100000, guid: 0b599dccc5f89024fb4be0cc541a087c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VS_Red
+    second: {fileID: 2100000, guid: a798f80d113d1d5468c4f3aed876bf21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VS_Silver
+    second: {fileID: 2100000, guid: cd2f47d9961ce284e9c27fa85db5d907, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VS_Tavern_Square_Green
+    second: {fileID: 2100000, guid: 5ab72d7b21b355043a8d424e0babc448, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VS_White
+    second: {fileID: 2100000, guid: 5e6ea78b2c120c448b52ea3ff3da5b23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VS__Blue
+    second: {fileID: 2100000, guid: e5c646e38ebd2554fa21caa3567983ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material
+    second: {fileID: 2100000, guid: d25d0bd411cbf6440b49a527e7a59335, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -881,6 +972,8 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -905,6 +998,8 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88

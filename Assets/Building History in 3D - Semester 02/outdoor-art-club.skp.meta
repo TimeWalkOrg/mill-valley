@@ -1,14 +1,12 @@
 fileFormatVersion: 2
 guid: 949de2bfcc08c294d975c5ba26519bea
-timeCreated: 1526533948
-licenseType: Pro
 SketchUpImporter:
   generateBackFace: 0
   mergeCoplanarFaces: 0
   selectedNodes: 0000000001000000020000000300000004000000050000000600000007000000
   assetHash:
     serializedVersion: 2
-    Hash: 7ded3eb26ba946494339077f677a41ca
+    Hash: af9914d468ae102edbb21a6c07c307a1
   longitude: -105.242139
   latitude: 40.018309
   northCorrection: -0
@@ -164,6 +162,7 @@ SketchUpImporter:
     4300004: Mesh West Wing
     4300006: Mesh Main Hall and porch
     4300008: Mesh doorway
+    2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -523,6 +522,7 @@ SketchUpImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

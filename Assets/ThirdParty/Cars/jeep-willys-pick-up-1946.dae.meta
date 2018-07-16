@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: 611fa16a4b27bba4b81ec25a9e86341d
-timeCreated: 1427664507
-licenseType: Pro
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: _.5
     100002: _.5 1
@@ -5572,10 +5570,93 @@ ModelImporter:
     4300776: ID2387
     4300778: group_68
     9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_002
+    second: {fileID: 2100000, guid: 2d45f2339093dfc47857b2086dcf186d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_005
+    second: {fileID: 2100000, guid: 52cbf728eb43e434a95416706e7a2000, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_008
+    second: {fileID: 2100000, guid: aaf64d9a59289ce4e9f3c3109cded51f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_A01
+    second: {fileID: 2100000, guid: 7aa710e87576b234f978ddf3666a9639, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_B18
+    second: {fileID: 2100000, guid: 6b2d1efbc214a0147a7423f33e1c2495, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_C03
+    second: {fileID: 2100000, guid: 105b11bf5b3b2244e902af14de494904, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_C11
+    second: {fileID: 2100000, guid: 2437b7f8b686d404b9edab65636cab05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_C12
+    second: {fileID: 2100000, guid: 1e3f44226270b0a4c97520af59fcaf8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_F18
+    second: {fileID: 2100000, guid: f85cf17c345c7894c828ce35b3dbe114, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_G19
+    second: {fileID: 2100000, guid: 70530a05728aefa47a0411d284d24019, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood_Bamboo_Medium
+    second: {fileID: 2100000, guid: 91a1ed8548340d042a2254da2285e5a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood_Cherry_Original
+    second: {fileID: 2100000, guid: 40b54e11c5aca044fac2ba83b5ab33ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: __Charcoal_1
+    second: {fileID: 2100000, guid: 3660badcdc57bf24a928b701e7a9c7f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: __PowderBlue_
+    second: {fileID: 2100000, guid: 539643f4881c2364b96082ae8d1a42b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: __Silver_
+    second: {fileID: 2100000, guid: 55904511a044f284d8acc48eb54187f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_frame
+    second: {fileID: 2100000, guid: def700832d79d534384961d8f40c9d5e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -5588,6 +5669,8 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -5612,6 +5695,8 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88

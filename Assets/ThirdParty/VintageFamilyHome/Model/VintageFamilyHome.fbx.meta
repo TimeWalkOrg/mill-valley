@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 6665117892dc7374b9867d48334ddbd7
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: FamilyHouse
     100002: PorchLamp
@@ -19,10 +19,33 @@ ModelImporter:
     4300002: FamilyHouse
     4300004: VintageHome
     9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FamilyHomeNewMat
+    second: {fileID: 2100000, guid: e8b6fd849b2358c44a16acc845c05cfd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FamilyHomeRoofTile
+    second: {fileID: 2100000, guid: efa6e508319361c4ea42bfc13d25cb53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PorchLightGlow
+    second: {fileID: 2100000, guid: 7ce4350585c8d584191027dec793f694, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PorchLightMetal
+    second: {fileID: 2100000, guid: 5f77654e261b4d24b959afcc7a270040, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -35,6 +58,8 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -59,6 +84,8 @@ ModelImporter:
     optimizeMeshForGPU: 0
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88

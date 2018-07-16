@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: 4cf387f1ff5fa10409b4bfb69cecf554
-timeCreated: 1427755811
-licenseType: Pro
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: Component_51
     100002: dash
@@ -974,10 +972,158 @@ ModelImporter:
     4300364: ID444
     4300366: ID450
     9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chrome1
+    second: {fileID: 2100000, guid: 53847ef9e7efd1744997bf66b07db1b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chrome_Texture_by_Zobiana
+    second: {fileID: 2100000, guid: 0050c677dee46ac418e6ce54e5afff3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_003
+    second: {fileID: 2100000, guid: b9867115054758b49924b8232dd4a94a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_004
+    second: {fileID: 2100000, guid: fa09cc56475437b4e9ca1e410a75302e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_005
+    second: {fileID: 2100000, guid: 53e5351c992f0294faa2063b092e66a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_008
+    second: {fileID: 2100000, guid: 80e183e3f41a3374aa1f70a5b075ceae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_A11
+    second: {fileID: 2100000, guid: fc3df87bb7ef68a4982120749144da7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_E09
+    second: {fileID: 2100000, guid: 6b501f8a87579194e84596e71aeb377e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_E10
+    second: {fileID: 2100000, guid: b4e72cc323828ec438e7a3b5578a7ca3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_L25
+    second: {fileID: 2100000, guid: 588fd9fe6e546594ab9b1ca92495890a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Interior_and_Underbody
+    second: {fileID: 2100000, guid: be32cde80e149364283143c05a2c0592, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_Aluminum_Anodized
+    second: {fileID: 2100000, guid: bbac50e05b6652640aa05e13497c4b40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Steering_Wheel
+    second: {fileID: 2100000, guid: d5c09c099dc559a4b89d334d00c920cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Translucent_Glass_Blue
+    second: {fileID: 2100000, guid: c5a293c28315aa643bf93339b8fb301f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Translucent_Glass_Gray
+    second: {fileID: 2100000, guid: 9eec82a47eb31004581f80d1c63b97c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _0135_DarkGray
+    second: {fileID: 2100000, guid: dcb0dbe5e8fd44740bf6a6327ea5a4a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _0137_Black
+    second: {fileID: 2100000, guid: f4c9261c893dee047a9dbd0a8b66071b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: __Charcoal_
+    second: {fileID: 2100000, guid: fcb924611e7361f4992e8da55e30dddd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: __Color_006_1
+    second: {fileID: 2100000, guid: c606c4cce4f893d4d906db5c88e8dfba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: __DarkGray_
+    second: {fileID: 2100000, guid: 5588035e34694894e80c18b2b4472d6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: __Linen_
+    second: {fileID: 2100000, guid: fae41b92d05a8db4588cb7234f305f21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: __Metal_Corrogated_Shiny_1
+    second: {fileID: 2100000, guid: ad99a073f8cf146479b592f338d32636, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: __Metal_Corrogated_Shiny_1_0
+    second: {fileID: 2100000, guid: 1334f979d2f4404479cbf7f66666cbdc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: __Metal_Seamed_1
+    second: {fileID: 2100000, guid: 52d13d45a03d7a74498cf340c56364da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: __Red_
+    second: {fileID: 2100000, guid: 0344671ee632a7246841fb441e782ffa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fractal-hippie-snail-background
+    second: {fileID: 2100000, guid: 671bf4ce6b5c73644a87de60fbe7890a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: b351bcfb41dd3d24e89fa82f08b1b03e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mZe_7zV_CsDPtKs7Fv2P02A
+    second: {fileID: 2100000, guid: 80d4b0de31691cc4c9bd2e5ec11c8d07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material
+    second: {fileID: 2100000, guid: 090478919cbe4f844a30c2ffe9f00e40, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -990,6 +1136,8 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -1014,6 +1162,8 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
