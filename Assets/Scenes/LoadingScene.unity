@@ -1212,12 +1212,12 @@ Prefab:
     - target: {fileID: 224693903324217652, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 1301.9685
+      value: 1016.30347
       objectReference: {fileID: 0}
     - target: {fileID: 224693903324217652, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -262.5
+      value: -270.02795
       objectReference: {fileID: 0}
     - target: {fileID: 224753181702911992, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
@@ -1232,12 +1232,12 @@ Prefab:
     - target: {fileID: 224753181702911992, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 1301.9685
+      value: 1016.30347
       objectReference: {fileID: 0}
     - target: {fileID: 224753181702911992, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -387.5
+      value: -410.08386
       objectReference: {fileID: 0}
     - target: {fileID: 224915823064202862, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
@@ -1252,12 +1252,12 @@ Prefab:
     - target: {fileID: 224915823064202862, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 1301.9685
+      value: 1016.30347
       objectReference: {fileID: 0}
     - target: {fileID: 224915823064202862, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -512.5
+      value: -550.1398
       objectReference: {fileID: 0}
     - target: {fileID: 1167026006559610, guid: 797afa0f085fac441a295e1eb9273cf0, type: 2}
       propertyPath: m_IsActive
@@ -2792,6 +2792,16 @@ Prefab:
     - target: {fileID: 1431277188219108, guid: 920dbff816c7e1641b07b1ac4662e54f, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114949111636557380, guid: 920dbff816c7e1641b07b1ac4662e54f,
+        type: 2}
+      propertyPath: activationButton
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114949111636557380, guid: 920dbff816c7e1641b07b1ac4662e54f,
+        type: 2}
+      propertyPath: holdButtonToActivate
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 920dbff816c7e1641b07b1ac4662e54f, type: 2}
