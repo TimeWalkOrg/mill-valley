@@ -1212,12 +1212,12 @@ Prefab:
     - target: {fileID: 224693903324217652, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 941.6858
+      value: 910.6571
       objectReference: {fileID: 0}
     - target: {fileID: 224693903324217652, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -283.5007
+      value: -289.75308
       objectReference: {fileID: 0}
     - target: {fileID: 224753181702911992, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
@@ -1232,12 +1232,12 @@ Prefab:
     - target: {fileID: 224753181702911992, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 941.6858
+      value: 910.6571
       objectReference: {fileID: 0}
     - target: {fileID: 224753181702911992, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -450.5021
+      value: -469.25925
       objectReference: {fileID: 0}
     - target: {fileID: 224915823064202862, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
@@ -1252,12 +1252,12 @@ Prefab:
     - target: {fileID: 224915823064202862, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 941.6858
+      value: 910.6571
       objectReference: {fileID: 0}
     - target: {fileID: 224915823064202862, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -617.50354
+      value: -648.7654
       objectReference: {fileID: 0}
     - target: {fileID: 1167026006559610, guid: 797afa0f085fac441a295e1eb9273cf0, type: 2}
       propertyPath: m_IsActive
@@ -2750,7 +2750,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1643428121
+--- !u!1001 &1793253454
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2788,20 +2788,6 @@ Prefab:
     - target: {fileID: 4591581223640798, guid: 920dbff816c7e1641b07b1ac4662e54f, type: 2}
       propertyPath: m_RootOrder
       value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 1431277188219108, guid: 920dbff816c7e1641b07b1ac4662e54f, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114949111636557380, guid: 920dbff816c7e1641b07b1ac4662e54f,
-        type: 2}
-      propertyPath: activationButton
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114949111636557380, guid: 920dbff816c7e1641b07b1ac4662e54f,
-        type: 2}
-      propertyPath: holdButtonToActivate
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 920dbff816c7e1641b07b1ac4662e54f, type: 2}
