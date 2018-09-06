@@ -8,7 +8,7 @@ public class WebViewTriggerComponent : MonoBehaviour
 	public GameObject webviewHolder;
 	public GameObject vRWebViewGO;
 	// TODO needs #define
-	public ZenFulcrum.EmbeddedBrowser.Browser browser;
+	//public ZenFulcrum.EmbeddedBrowser.Browser browser;
 	private string thisURL;
 
 	private bool isWebViewActive = false;
@@ -50,8 +50,8 @@ public class WebViewTriggerComponent : MonoBehaviour
 			EnableWebView();
 			this.transform.LookAt(other.transform.position);
 			this.transform.rotation = Quaternion.Euler(new Vector3(0, this.transform.rotation.eulerAngles.y, 0));
-			if (browser != null)
-				browser.Url = thisURL;
+			//if (browser != null)
+				//browser.Url = thisURL;
 		}
 	}
 

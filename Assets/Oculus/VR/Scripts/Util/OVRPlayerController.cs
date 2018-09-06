@@ -154,6 +154,8 @@ public class OVRPlayerController : MonoBehaviour
 
 	void Start()
 	{
+		// hack for odd joystick movement
+		this.transform.SetParent(null);
 		// Add eye-depth as a camera offset from the player controller
 		var p = CameraRig.transform.localPosition;
 		p.z = OVRManager.profile.eyeDepth;
@@ -367,7 +369,7 @@ public class OVRPlayerController : MonoBehaviour
 #if !UNITY_ANDROID // LeftTrigger not avail on Android game pad
 			moveInfluence *= 1.0f + OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger);
 #endif
-
+			// edit for go input
 			Vector2 primaryAxis = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
 
 			// If speed quantization is enabled, adjust the input to the number of fixed speed steps.

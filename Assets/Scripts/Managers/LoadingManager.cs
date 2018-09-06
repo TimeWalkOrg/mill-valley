@@ -156,10 +156,11 @@ public class LoadingManager : MonoBehaviour
 		{
 			if (playerGO == null)
 			{
+				currentPlayerGO = GameObject.FindGameObjectWithTag("VRPlayer");
 				// need root and boundries to move rig
-				Transform tempBounds = VRTK.VRTK_SDK_Bridge.GetPlayArea();
-				if (tempBounds != null)
-					currentPlayerGO = tempBounds.gameObject;
+				//Transform tempBounds = VRTK.VRTK_SDK_Bridge.GetPlayArea();
+				//if (tempBounds != null)
+				//	currentPlayerGO = tempBounds.gameObject;
 			}
 			else
 				currentPlayerGO = playerGO;
