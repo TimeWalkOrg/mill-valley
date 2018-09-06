@@ -158,6 +158,45 @@ public class ControlManager : MonoBehaviour
 
 		if (Input.GetKeyUp(KeyCode.C))
 			ToggleCredits();
+
+		if (UnityEngine.XR.XRSettings.enabled)
+		{
+			OVRInput.Button oculusTouchButtonA = OVRInput.Button.One;
+			OVRInput.Button oculusTouchButtonB = OVRInput.Button.Two;
+			OVRInput.Button oculusTouchButtonC = OVRInput.Button.Three;
+			OVRInput.Button oculusTouchButtonD = OVRInput.Button.Four;
+
+			OVRInput.Button oculusTouchButtonE = OVRInput.Button.PrimaryThumbstick;
+
+
+			OVRInput.Controller activeController = OVRInput.GetActiveController();
+
+			if (OVRInput.GetUp(oculusTouchButtonA))
+			{
+				ToggleCredits();
+			}
+
+			if (OVRInput.GetUp(oculusTouchButtonB))
+			{
+				ToggleNight();
+			}
+
+			if (OVRInput.GetUp(oculusTouchButtonC))
+			{
+				ToggleYear(-2);
+			}
+
+			if (OVRInput.GetUp(oculusTouchButtonD))
+			{
+				ToggleYear();
+			}
+
+			if (OVRInput.GetUp(oculusTouchButtonE))
+			{
+				// not used
+			}
+		}
+
 	}
 
 	private void OnDestroy()
@@ -259,6 +298,10 @@ public class ControlManager : MonoBehaviour
 	#region inputs
 	public void OnInput(InputDataMissive missive)
 	{
+		// Not used atm after VRTK removed
+		// OnInput and InputDataMissive code can be deleted
+		// Keep if VRTK or you need a missive input system
+
 		if (missive == null) return;
 		switch (missive.controllerType)
 		{
