@@ -6868,8 +6868,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cMotor: {fileID: 114365923387151906}
   axes: 2
-  sensitivityX: 10
-  sensitivityY: 10
+  sensitivityX: 3
+  sensitivityY: 3
   minimumX: 0
   maximumX: 360
   minimumY: -60
@@ -9274,7 +9274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cMotor: {fileID: 114365923387151906}
   axes: 1
-  sensitivityX: 10
+  sensitivityX: 3
   sensitivityY: 0
   minimumX: -360
   maximumX: 360

@@ -144,8 +144,8 @@ public class ControlManager : MonoBehaviour
 		if (Input.GetKeyUp(KeyCode.Q) || Input.GetKeyUp(KeyCode.Escape))
 			ToggleQuit();
 
-		if (!LoadingManager.instance.IsMainSceneActive())
-			return;
+//		if (!LoadingManager.instance.IsMainSceneActive())
+//			return;
 
 		if (Input.GetKeyUp(KeyCode.Y))
 			ToggleYear();
