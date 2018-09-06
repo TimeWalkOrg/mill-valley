@@ -77,10 +77,9 @@ GameObject:
   - component: {fileID: 114388586503344640}
   - component: {fileID: 114823301342439112}
   - component: {fileID: 114748427588657128}
-  - component: {fileID: 136236621311534626}
   m_Layer: 26
   m_Name: PlayerController
-  m_TagString: Player
+  m_TagString: VRPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -386,6 +385,7 @@ GameObject:
   - component: {fileID: 114656222811161914}
   - component: {fileID: 23406683118865820}
   - component: {fileID: 33064948580519564}
+  - component: {fileID: 136445704689097682}
   m_Layer: 26
   m_Name: CharacterCapsuleMesh
   m_TagString: Untagged
@@ -456,26 +456,6 @@ GameObject:
   - component: {fileID: 114664888148636308}
   m_Layer: 5
   m_Name: Text - era
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1222385777456948
-GameObject:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 224335342714948850}
-  - component: {fileID: 222964593873841510}
-  - component: {fileID: 114733362084482508}
-  - component: {fileID: 114272875961995026}
-  - component: {fileID: 114531997550786176}
-  - component: {fileID: 114312841009658322}
-  m_Layer: 5
-  m_Name: Browser (GUI)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -612,7 +592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4685100492365028}
   - component: {fileID: 20891873142017278}
-  m_Layer: 26
+  m_Layer: 0
   m_Name: RightEyeAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -894,7 +874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4445336900034554}
-  m_Layer: 26
+  m_Layer: 0
   m_Name: RightHandAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -976,7 +956,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4972299813081742}
-  m_Layer: 26
+  m_Layer: 0
   m_Name: TrackingSpace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1148,7 +1128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4722089611565740}
   - component: {fileID: 20641413834147956}
-  m_Layer: 26
+  m_Layer: 0
   m_Name: LeftEyeAnchor
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -1195,7 +1175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4270124128685840}
-  m_Layer: 26
+  m_Layer: 0
   m_Name: LeftHandAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1443,7 +1423,7 @@ GameObject:
   - component: {fileID: 114086282142223362}
   - component: {fileID: 114451727117529470}
   - component: {fileID: 114085536935354008}
-  m_Layer: 26
+  m_Layer: 0
   m_Name: LocomotionController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1493,7 +1473,7 @@ GameObject:
   - component: {fileID: 4070533858430644}
   - component: {fileID: 114509395299261548}
   - component: {fileID: 114693509075538874}
-  m_Layer: 26
+  m_Layer: 0
   m_Name: OVRCameraRig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1662,7 +1642,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4012341080286968}
-  m_Layer: 26
+  m_Layer: 0
   m_Name: TrackerAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1713,7 +1693,7 @@ GameObject:
   - component: {fileID: 81804787441644462}
   - component: {fileID: 20482757768740102}
   - component: {fileID: 114784194315915694}
-  m_Layer: 26
+  m_Layer: 0
   m_Name: CenterEyeAnchor
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -4688,27 +4668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77e19ec58d4a9e844970103e5bd8946a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114272875961995026
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1222385777456948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35bf0bd4ded61a34f9be34f6738e4010, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _url: https://www.timewalk.org/
-  _width: 512
-  _height: 512
-  generateMipmap: 0
-  baseColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  _zoom: 0
-  allowContextMenuOn: 2
-  newWindowAction: 2
 --- !u!114 &114274093415959792
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4889,7 +4848,6 @@ MonoBehaviour:
   gameUIGO: {fileID: 1510668709192532}
   webViewUIGO: {fileID: 1572998017175788}
   characterMotorRef: {fileID: 114365923387151906}
-  browser: {fileID: 114272875961995026}
   helpHintStartDelay: 4
   helpHintDuration: 5
 --- !u!114 &114302094550246444
@@ -4921,20 +4879,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraRig: {fileID: 114509395299261548}
-  CharacterController: {fileID: 0}
-  PlayerController: {fileID: 0}
---- !u!114 &114312841009658322
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1222385777456948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b27bad8d50722bb4083b964da1d1cae4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursorNormallyVisible: 1
+  CharacterController: {fileID: 143517433839133454}
+  PlayerController: {fileID: 114074811229689784}
 --- !u!114 &114318069536326540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5819,27 +5765,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mode: 0
---- !u!114 &114531997550786176
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1222385777456948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f0449828438f1c4eb0712205cc11bb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dragMovementThreshold: 0
-  viewCamera: {fileID: 0}
-  enableMouseInput: 1
-  enableTouchInput: 1
-  enableFPSInput: 0
-  enableVRInput: 0
-  maxDistance: Infinity
-  disableMouseEmulation: 0
-  enableInput: 1
-  automaticResize: 1
 --- !u!114 &114542829991905804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6498,32 +6423,6 @@ MonoBehaviour:
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
   m_BiasY: 0
---- !u!114 &114733362084482508
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1222385777456948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -98529514, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 30a28a853ae87d44bab2c4bdc861c40d, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
 --- !u!114 &114736044597754860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6782,7 +6681,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114272875961995026}
+      - m_Target: {fileID: 0}
         m_MethodName: GoBack
         m_Mode: 1
         m_Arguments:
@@ -6936,7 +6835,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'Joystick - slide/walk
 
-    (click joystick to Teleport)'
+    Trigger to fast walk
+
+    Y - Timewalk forward
+
+    X - Timewalk backward'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6970,7 +6873,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 260
+  m_textAlignment: 258
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -6981,7 +6884,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 43
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -7004,19 +6907,19 @@ MonoBehaviour:
   m_margin: {x: -0.91035575, y: 0, z: 0, w: 1.1064944}
   m_textInfo:
     textComponent: {fileID: 114851703618579478}
-    characterCount: 50
+    characterCount: 85
     spriteCount: 0
-    spaceCount: 6
-    wordCount: 8
+    spaceCount: 14
+    wordCount: 16
     linkCount: 0
-    lineCount: 2
+    lineCount: 4
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 23036394568661768}
@@ -7191,11 +7094,13 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'B - Night/Day
+  m_text: 'Joystick forward - teleport
 
-    A - Change Year
+    Joystick Left/Right - rotate
 
-    Joystick - point to destination'
+    B - Night/Day
+
+    A - Toggle Credits'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7229,7 +7134,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 257
+  m_textAlignment: 258
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -7263,19 +7168,19 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -4.365598, w: -3.4379764}
   m_textInfo:
     textComponent: {fileID: 114922055818464038}
-    characterCount: 61
+    characterCount: 89
     spriteCount: 0
-    spaceCount: 11
-    wordCount: 13
+    spaceCount: 14
+    wordCount: 17
     linkCount: 0
-    lineCount: 3
+    lineCount: 4
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 23878235456453064}
@@ -7909,17 +7814,17 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1980174198605674}
   m_Enabled: 1
---- !u!136 &136236621311534626
+--- !u!136 &136445704689097682
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1027415291300062}
+  m_GameObject: {fileID: 1205793892389842}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   m_Radius: 0.25
-  m_Height: 2
+  m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!143 &143517433839133454
@@ -8187,13 +8092,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1532234309591524}
   m_CullTransparentMesh: 0
---- !u!222 &222964593873841510
-CanvasRenderer:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1222385777456948}
-  m_CullTransparentMesh: 0
 --- !u!222 &222973868984570206
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -8325,7 +8223,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1024461628785542}
   m_LocalRotation: {x: 0.2065681, y: 0.02614182, z: -0.005521161, w: 0.97806746}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0647}
+  m_LocalPosition: {x: 0, y: 0, z: 0.069}
   m_LocalScale: {x: 0.01571, y: 0.015899999, z: 0.01571}
   m_Children: []
   m_Father: {fileID: 4360331051618716}
@@ -8333,7 +8231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -203.851, y: 183.062, z: -180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.1902, y: 0.0423}
+  m_AnchoredPosition: {x: -0.259, y: 0.04}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224084619164983428
@@ -8538,24 +8436,6 @@ RectTransform:
   m_AnchoredPosition: {x: 331.1, y: -134}
   m_SizeDelta: {x: 600, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!224 &224335342714948850
-RectTransform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1222385777456948}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 224384588441764444}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 0, y: -50}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224343530327154406
 RectTransform:
   m_ObjectHideFlags: 1
@@ -8621,7 +8501,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1254219479174458}
   m_LocalRotation: {x: 0.2065681, y: 0.02614182, z: -0.005521161, w: 0.97806746}
-  m_LocalPosition: {x: 0, y: 0, z: 0.04999987}
+  m_LocalPosition: {x: 0, y: 0, z: 0.027}
   m_LocalScale: {x: 0.015709097, y: 0.015897654, z: 0.015709097}
   m_Children: []
   m_Father: {fileID: 4874014492491202}
@@ -8629,7 +8509,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -203.851, y: 183.062, z: -180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.21400025, y: 0.09500009}
+  m_AnchoredPosition: {x: 0.213, y: 0.04}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224384588441764444
@@ -8644,7 +8524,6 @@ RectTransform:
   m_Children:
   - {fileID: 224580467234622220}
   - {fileID: 224742883126074414}
-  - {fileID: 224335342714948850}
   - {fileID: 224572353901792824}
   - {fileID: 224975543607620224}
   m_Father: {fileID: 224274001633116544}
@@ -8830,7 +8709,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224384588441764444}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -9104,7 +8983,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224384588441764444}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}

@@ -144,6 +144,7 @@ public class ControlManager : MonoBehaviour
 		if (Input.GetKeyUp(KeyCode.Q) || Input.GetKeyUp(KeyCode.Escape))
 			ToggleQuit();
 
+		// TED comment this out to get inputs in secondary scenes
 		if (!LoadingManager.instance.IsMainSceneActive())
 			return;
 
@@ -158,6 +159,44 @@ public class ControlManager : MonoBehaviour
 
 		if (Input.GetKeyUp(KeyCode.C))
 			ToggleCredits();
+
+		if (UnityEngine.XR.XRSettings.enabled)
+		{
+			OVRInput.Button oculusTouchButtonA = OVRInput.Button.One;
+			OVRInput.Button oculusTouchButtonB = OVRInput.Button.Two;
+			OVRInput.Button oculusTouchButtonC = OVRInput.Button.Three;
+			OVRInput.Button oculusTouchButtonD = OVRInput.Button.Four;
+
+			OVRInput.Button oculusTouchButtonE = OVRInput.Button.PrimaryThumbstick;
+			
+
+			OVRInput.Controller activeController = OVRInput.GetActiveController();
+
+			if (OVRInput.GetUp(oculusTouchButtonA))
+			{
+				ToggleCredits();
+			}
+
+			if (OVRInput.GetUp(oculusTouchButtonB))
+			{
+				ToggleNight();
+			}
+
+			if (OVRInput.GetUp(oculusTouchButtonC))
+			{
+				ToggleYear(-2);
+			}
+
+			if (OVRInput.GetUp(oculusTouchButtonD))
+			{
+				ToggleYear();
+			}
+
+			if (OVRInput.GetUp(oculusTouchButtonE))
+			{
+				// not used
+			}
+		}
 	}
 
 	private void OnDestroy()
