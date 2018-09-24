@@ -1240,12 +1240,12 @@ Prefab:
     - target: {fileID: 224693903324217652, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 1067.7046
+      value: 941.7234
       objectReference: {fileID: 0}
     - target: {fileID: 224693903324217652, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -262.5
+      value: -283.49338
       objectReference: {fileID: 0}
     - target: {fileID: 224753181702911992, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
@@ -1260,12 +1260,12 @@ Prefab:
     - target: {fileID: 224753181702911992, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 1067.7046
+      value: 941.7234
       objectReference: {fileID: 0}
     - target: {fileID: 224753181702911992, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -387.5
+      value: -450.48013
       objectReference: {fileID: 0}
     - target: {fileID: 224915823064202862, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
@@ -1280,12 +1280,12 @@ Prefab:
     - target: {fileID: 224915823064202862, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 1067.7046
+      value: 941.7234
       objectReference: {fileID: 0}
     - target: {fileID: 224915823064202862, guid: 797afa0f085fac441a295e1eb9273cf0,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -512.5
+      value: -617.46686
       objectReference: {fileID: 0}
     - target: {fileID: 1167026006559610, guid: 797afa0f085fac441a295e1eb9273cf0, type: 2}
       propertyPath: m_IsActive
@@ -2852,6 +2852,17 @@ Prefab:
         type: 2}
       propertyPath: movement.maxForwardSpeed
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376784988675528, guid: 920dbff816c7e1641b07b1ac4662e54f,
+        type: 2}
+      propertyPath: profile
+      value: 
+      objectReference: {fileID: 11400000, guid: bf6c6fcad11798f44810628da0eb0432,
+        type: 2}
+    - target: {fileID: 114376784988675528, guid: 920dbff816c7e1641b07b1ac4662e54f,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114352534071220918, guid: 920dbff816c7e1641b07b1ac4662e54f, type: 2}
