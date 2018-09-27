@@ -127,7 +127,6 @@
 
 			#include "Assets/Oculus/Avatar/Content/Materials/AvatarMaterialStateShader.cginc"
 
-
 			float4 frag(VertexOutput IN) : COLOR
 			{
 				return ComputeSurface(IN);

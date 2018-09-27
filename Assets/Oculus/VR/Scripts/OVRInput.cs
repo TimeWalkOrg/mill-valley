@@ -1,9 +1,9 @@
 /************************************************************************************
 
-Copyright   :   Copyright 2017 Oculus VR, LLC. All Rights reserved.
+Copyright   :   Copyright (c) Facebook Technologies, LLC and its affiliates. All rights reserved.
 
-Licensed under the Oculus VR Rift SDK License Version 3.4.1 (the "License");
-you may not use the Oculus VR Rift SDK except in compliance with the License,
+Licensed under the Oculus SDK License Version 3.4.1 (the "License");
+you may not use the Oculus SDK except in compliance with the License,
 which is provided at the time of installation or download, or which
 otherwise accompanies this software in either electronic or hard copy form.
 
@@ -11,7 +11,7 @@ You may obtain a copy of the License at
 
 https://developer.oculus.com/licenses/sdk-3.4.1
 
-Unless required by applicable law or agreed to in writing, the Oculus VR SDK
+Unless required by applicable law or agreed to in writing, the Oculus SDK
 distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
@@ -236,6 +236,13 @@ public static class OVRInput
 		All                       = OVRPlugin.Controller.All,            ///< Represents the logical OR of all controllers.
 	}
 
+	public enum Handedness
+	{
+		Unsupported	              = OVRPlugin.Handedness.Unsupported,
+		LeftHanded                = OVRPlugin.Handedness.LeftHanded,
+		RightHanded               = OVRPlugin.Handedness.RightHanded,
+	}
+
 	private static readonly float AXIS_AS_BUTTON_THRESHOLD = 0.5f;
 	private static readonly float AXIS_DEADZONE_THRESHOLD = 0.2f;
 	private static List<OVRControllerBase> controllers;
@@ -278,6 +285,9 @@ public static class OVRInput
 			new OVRControllerTouchpad(),
 			new OVRControllerLTrackedRemote(),
 			new OVRControllerRTrackedRemote(),
+			new OVRControllerTouch(),
+			new OVRControllerLTouch(),
+			new OVRControllerRTouch(),
 #elif UNITY_STANDALONE_OSX || UNITY_EDITOR_OSX
 			new OVRControllerGamepadMac(),
 #else
@@ -320,8 +330,11 @@ public static class OVRInput
 
 		if ((activeControllerType == Controller.LTouch) || (activeControllerType == Controller.RTouch))
 		{
-			// If either Touch controller is Active, set both to Active.
-			activeControllerType = Controller.Touch;
+			if ((connectedControllerTypes & Controller.Touch) == Controller.Touch)
+			{
+				// If either Touch controller is Active and both Touch controllers are connected, set both to Active.
+				activeControllerType = Controller.Touch;
+			}
 		}
 
 		if ((connectedControllerTypes & activeControllerType) == 0)
@@ -479,7 +492,7 @@ public static class OVRInput
 
 	/// <summary>
 	/// Gets the angular velocity of the given Controller local to its tracking space in radians per second around each axis.
-	/// Only supported for Oculus LTouch and RTouch controllers. Non-tracked controllers will return Quaternion.identity.
+	/// Only supported for Oculus LTouch and RTouch controllers. Non-tracked controllers will return Vector3.zero.
 	/// </summary>
 	public static Vector3 GetLocalControllerAngularVelocity(OVRInput.Controller controllerType)
 	{
@@ -498,7 +511,7 @@ public static class OVRInput
 
 	/// <summary>
 	/// Gets the angular acceleration of the given Controller local to its tracking space in radians per second per second around each axis.
-	/// Only supported for Oculus LTouch and RTouch controllers. Non-tracked controllers will return Quaternion.identity.
+	/// Only supported for Oculus LTouch and RTouch controllers. Non-tracked controllers will return Vector3.zero.
 	/// </summary>
 	public static Vector3 GetLocalControllerAngularAcceleration(OVRInput.Controller controllerType)
 	{
@@ -513,6 +526,14 @@ public static class OVRInput
 		default:
 			return Vector3.zero;
 		}
+	}
+
+	/// <summary>
+	/// Gets the dominant hand that the user has specified in settings, for mobile devices.
+	/// </summary>
+	public static Handedness GetDominantHand()
+	{
+		return (Handedness) OVRPlugin.GetDominantHand();
 	}
 
 	/// <summary>
@@ -1571,7 +1592,12 @@ public static class OVRInput
 
 		public virtual Controller Update()
 		{
-			OVRPlugin.ControllerState4 state = OVRPlugin.GetControllerState4((uint)controllerType);
+			OVRPlugin.ControllerState4 state;
+
+			if (!OVRPlugin.initialized && ( (controllerType & Controller.Touch) != 0) )
+				state = GetCrossPlatformState(controllerType);
+			else
+				state = OVRPlugin.GetControllerState4((uint)controllerType);
 
 			if (state.LIndexTrigger >= AXIS_AS_BUTTON_THRESHOLD)
 				state.Buttons |= (uint)RawButton.LIndexTrigger;
@@ -1603,6 +1629,39 @@ public static class OVRInput
 			currentState = state;
 
 			return ((Controller)currentState.ConnectedControllers & controllerType);
+		}
+
+		private OVRPlugin.ControllerState4 GetCrossPlatformState(Controller controllerType)
+		{
+			OVRPlugin.ControllerState4 state = new OVRPlugin.ControllerState4();
+
+			if (controllerType == Controller.LTouch)
+			{
+				if (Input.GetButton("Oculus_CrossPlatform_Button4"))
+					state.Buttons |= (uint)RawButton.Y;
+				if (Input.GetButton("Oculus_CrossPlatform_PrimaryThumbstick"))
+					state.Buttons |= (uint)RawButton.LThumbstick;
+
+				state.LThumbstick.x = Input.GetAxis("Oculus_CrossPlatform_PrimaryThumbstickHorizontal");
+				state.LThumbstick.y = Input.GetAxis("Oculus_CrossPlatform_PrimaryThumbstickVertical");
+				state.LIndexTrigger = Input.GetAxis("Oculus_CrossPlatform_PrimaryIndexTrigger");
+				state.LHandTrigger = Input.GetAxis("Oculus_CrossPlatform_PrimaryHandTrigger");
+			}
+			else if (controllerType == Controller.RTouch)
+			{
+				if (Input.GetButton("Oculus_CrossPlatform_Button2"))
+					state.Buttons |= (uint)RawButton.B;
+
+				if (Input.GetButton("Oculus_CrossPlatform_SecondaryThumbstick"))
+					state.Buttons |= (uint)RawButton.RThumbstick;
+
+				state.RThumbstick.x = Input.GetAxis("Oculus_CrossPlatform_SecondaryThumbstickHorizontal");
+				state.RThumbstick.y = Input.GetAxis("Oculus_CrossPlatform_SecondaryThumbstickVertical");
+				state.RIndexTrigger = Input.GetAxis("Oculus_CrossPlatform_SecondaryIndexTrigger");
+				state.RHandTrigger = Input.GetAxis("Oculus_CrossPlatform_SecondaryHandTrigger");
+			}
+
+			return state;
 		}
 
 		public virtual void SetControllerVibration(float frequency, float amplitude)
@@ -1749,6 +1808,25 @@ public static class OVRInput
 			axis2DMap.SecondaryThumbstick       = RawAxis2D.RThumbstick;
 			axis2DMap.SecondaryTouchpad         = RawAxis2D.None;
 		}
+
+		public override bool WasRecentered()
+		{
+			return ((currentState.LRecenterCount + currentState.RRecenterCount) != (previousState.LRecenterCount + previousState.RRecenterCount));
+		}
+
+		public override byte GetRecenterCount()
+		{
+			return (byte)(currentState.LRecenterCount + currentState.RRecenterCount);
+		}
+
+		public override byte GetBatteryPercentRemaining()
+		{
+			byte leftBattery = currentState.LBatteryPercentRemaining;
+			byte rightBattery = currentState.RBatteryPercentRemaining;
+			byte minBattery = (leftBattery <= rightBattery) ? leftBattery : rightBattery;
+
+			return minBattery;
+		}
 	}
 
 	private class OVRControllerLTouch : OVRControllerBase
@@ -1838,6 +1916,21 @@ public static class OVRInput
 			axis2DMap.SecondaryThumbstick       = RawAxis2D.None;
 			axis2DMap.SecondaryTouchpad         = RawAxis2D.None;
 		}
+
+		public override bool WasRecentered()
+		{
+			return (currentState.LRecenterCount != previousState.LRecenterCount);
+		}
+
+		public override byte GetRecenterCount()
+		{
+			return currentState.LRecenterCount;
+		}
+
+		public override byte GetBatteryPercentRemaining()
+		{
+			return currentState.LBatteryPercentRemaining;
+		}
 	}
 
 	private class OVRControllerRTouch : OVRControllerBase
@@ -1926,6 +2019,21 @@ public static class OVRInput
 			axis2DMap.PrimaryTouchpad           = RawAxis2D.None;
 			axis2DMap.SecondaryThumbstick       = RawAxis2D.None;
 			axis2DMap.SecondaryTouchpad         = RawAxis2D.None;
+		}
+
+		public override bool WasRecentered()
+		{
+			return (currentState.RRecenterCount != previousState.RRecenterCount);
+		}
+
+		public override byte GetRecenterCount()
+		{
+			return currentState.RRecenterCount;
+		}
+
+		public override byte GetBatteryPercentRemaining()
+		{
+			return currentState.RBatteryPercentRemaining;
 		}
 	}
 

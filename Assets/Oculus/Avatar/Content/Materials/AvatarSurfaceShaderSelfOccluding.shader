@@ -161,7 +161,6 @@
 
 			#include "Assets/Oculus/Avatar/Content/Materials/AvatarMaterialStateShader.cginc"
 
-
 			float4 frag(VertexOutput IN) : SV_Target
 			{
 				return ComputeSurface(IN);
