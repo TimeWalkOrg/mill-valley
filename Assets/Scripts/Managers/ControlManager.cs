@@ -198,12 +198,12 @@ public class ControlManager : MonoBehaviour
 		}
 
 	}
-
+    
 	private void OnDestroy()
 	{
 		Missive.RemoveListener<ControlSelectMissive>(OnControlSelect);
 		Missive.RemoveListener<InputDataMissive>(OnInput);
-	}
+	} 
 	#endregion
 
 	#region logic
@@ -221,7 +221,7 @@ public class ControlManager : MonoBehaviour
 		// default if not correct year
 		currentYear = yearData[0].year;
 		currentYearIndex = 0;
-	}
+	} 
 	#endregion
 
 	#region toggles

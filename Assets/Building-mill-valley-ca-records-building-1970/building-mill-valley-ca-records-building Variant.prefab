@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &302970790297508536
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3137735549962603399}
+    m_Modifications:
+    - target: {fileID: 1814233129723624, guid: 664d9f55dc7362b4e93f09406ec85af7, type: 3}
+      propertyPath: m_Name
+      value: Credits sign - Hub (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1814233129723624, guid: 664d9f55dc7362b4e93f09406ec85af7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.6074007
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.40481007
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.4891357
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 6.6100006
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0021577177
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999977
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.40767
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.00911
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 39.931004
+      objectReference: {fileID: 0}
+    - target: {fileID: 33366256441679258, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807100420336408, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_text
+      value: '<b>Records Building</b>
+
+        <size=70%>78 East Blith Edale
+
+        built in 1970
+
+        Now Golden Gate Sotheby''s International Realty
+
+        </size><size=100%><color=#3999dc>Connor Ng</color></size>'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807100420336408, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 107
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807100420336408, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807100420336408, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807100420336408, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807100420336408, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807100420336408, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1304647261979436, guid: 664d9f55dc7362b4e93f09406ec85af7, type: 3}
+      propertyPath: m_Name
+      value: TextMeshPro - hub-theatre
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 664d9f55dc7362b4e93f09406ec85af7, type: 3}
+--- !u!1001 &7994396304563986589
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 2dfa54583ed132d468f8615bbb4e75e1,
+        type: 3}
+      propertyPath: m_Name
+      value: building-mill-valley-ca-records-building
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfa54583ed132d468f8615bbb4e75e1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -309.1817
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfa54583ed132d468f8615bbb4e75e1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -17.468313
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfa54583ed132d468f8615bbb4e75e1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 138.00012
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfa54583ed132d468f8615bbb4e75e1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfa54583ed132d468f8615bbb4e75e1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.34348136
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfa54583ed132d468f8615bbb4e75e1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfa54583ed132d468f8615bbb4e75e1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9391596
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfa54583ed132d468f8615bbb4e75e1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfa54583ed132d468f8615bbb4e75e1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfa54583ed132d468f8615bbb4e75e1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 40.178
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfa54583ed132d468f8615bbb4e75e1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2dfa54583ed132d468f8615bbb4e75e1, type: 3}
+--- !u!4 &3137735549962603399 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 2dfa54583ed132d468f8615bbb4e75e1,
+    type: 3}
+  m_PrefabInstance: {fileID: 7994396304563986589}
+  m_PrefabAsset: {fileID: 0}

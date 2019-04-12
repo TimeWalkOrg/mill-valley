@@ -1,78 +1,218 @@
 fileFormatVersion: 2
 guid: 7856fd37b4ebb344ea13d8082677b62e
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: controlarm_back
-    100002: controlarm_back_end
-    100004: controlarm_front
-    100006: controlarm_front_end
-    100008: //RootNode
-    100010: heisler_controlarm_back
-    100012: heisler_controlarm_front
-    100014: heisler_main
-    100016: heisler_wheel_back1
-    100018: heisler_wheel_back_2
-    100020: heisler_wheel_front_1
-    100022: heisler_wheel_front_2
-    100024: train_root
-    100026: wheelpin_back_1
-    100028: wheelpin_back_1_end
-    100030: wheelpin_back_2
-    100032: wheelpin_front_1
-    100034: wheelpin_front_1_end
-    100036: wheelpin_front_2
-    100038: wheels_back_1
-    100040: wheels_back_2 (MAIN DRIVE)
-    100042: wheels_front_1
-    100044: wheels_front_2
-    400000: controlarm_back
-    400002: controlarm_back_end
-    400004: controlarm_front
-    400006: controlarm_front_end
-    400008: //RootNode
-    400010: heisler_controlarm_back
-    400012: heisler_controlarm_front
-    400014: heisler_main
-    400016: heisler_wheel_back1
-    400018: heisler_wheel_back_2
-    400020: heisler_wheel_front_1
-    400022: heisler_wheel_front_2
-    400024: train_root
-    400026: wheelpin_back_1
-    400028: wheelpin_back_1_end
-    400030: wheelpin_back_2
-    400032: wheelpin_front_1
-    400034: wheelpin_front_1_end
-    400036: wheelpin_front_2
-    400038: wheels_back_1
-    400040: wheels_back_2 (MAIN DRIVE)
-    400042: wheels_front_1
-    400044: wheels_front_2
-    2100000: No Name
-    2300000: heisler_controlarm_back
-    2300002: heisler_controlarm_front
-    2300004: heisler_wheel_back1
-    2300006: heisler_wheel_back_2
-    2300008: heisler_wheel_front_1
-    2300010: heisler_wheel_front_2
-    3300000: heisler_controlarm_back
-    3300002: heisler_controlarm_front
-    3300004: heisler_wheel_back1
-    3300006: heisler_wheel_back_2
-    3300008: heisler_wheel_front_1
-    3300010: heisler_wheel_front_2
-    4300000: heisler_main
-    4300002: heisler_wheel_back1
-    4300004: heisler_wheel_front_2
-    4300006: heisler_controlarm_front
-    4300008: heisler_wheel_front_1
-    4300010: heisler_wheel_back_2
-    4300012: heisler_controlarm_back
-    7400000: heisler_armature|spinning wheels
-    9500000: //RootNode
-    13700000: heisler_main
-    2186277476908879412: ImportLogs
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: controlarm_back
+  - first:
+      1: 100002
+    second: controlarm_back_end
+  - first:
+      1: 100004
+    second: controlarm_front
+  - first:
+      1: 100006
+    second: controlarm_front_end
+  - first:
+      1: 100008
+    second: //RootNode
+  - first:
+      1: 100010
+    second: heisler_controlarm_back
+  - first:
+      1: 100012
+    second: heisler_controlarm_front
+  - first:
+      1: 100014
+    second: heisler_main
+  - first:
+      1: 100016
+    second: heisler_wheel_back1
+  - first:
+      1: 100018
+    second: heisler_wheel_back_2
+  - first:
+      1: 100020
+    second: heisler_wheel_front_1
+  - first:
+      1: 100022
+    second: heisler_wheel_front_2
+  - first:
+      1: 100024
+    second: train_root
+  - first:
+      1: 100026
+    second: wheelpin_back_1
+  - first:
+      1: 100028
+    second: wheelpin_back_1_end
+  - first:
+      1: 100030
+    second: wheelpin_back_2
+  - first:
+      1: 100032
+    second: wheelpin_front_1
+  - first:
+      1: 100034
+    second: wheelpin_front_1_end
+  - first:
+      1: 100036
+    second: wheelpin_front_2
+  - first:
+      1: 100038
+    second: wheels_back_1
+  - first:
+      1: 100040
+    second: wheels_back_2 (MAIN DRIVE)
+  - first:
+      1: 100042
+    second: wheels_front_1
+  - first:
+      1: 100044
+    second: wheels_front_2
+  - first:
+      4: 400000
+    second: controlarm_back
+  - first:
+      4: 400002
+    second: controlarm_back_end
+  - first:
+      4: 400004
+    second: controlarm_front
+  - first:
+      4: 400006
+    second: controlarm_front_end
+  - first:
+      4: 400008
+    second: //RootNode
+  - first:
+      4: 400010
+    second: heisler_controlarm_back
+  - first:
+      4: 400012
+    second: heisler_controlarm_front
+  - first:
+      4: 400014
+    second: heisler_main
+  - first:
+      4: 400016
+    second: heisler_wheel_back1
+  - first:
+      4: 400018
+    second: heisler_wheel_back_2
+  - first:
+      4: 400020
+    second: heisler_wheel_front_1
+  - first:
+      4: 400022
+    second: heisler_wheel_front_2
+  - first:
+      4: 400024
+    second: train_root
+  - first:
+      4: 400026
+    second: wheelpin_back_1
+  - first:
+      4: 400028
+    second: wheelpin_back_1_end
+  - first:
+      4: 400030
+    second: wheelpin_back_2
+  - first:
+      4: 400032
+    second: wheelpin_front_1
+  - first:
+      4: 400034
+    second: wheelpin_front_1_end
+  - first:
+      4: 400036
+    second: wheelpin_front_2
+  - first:
+      4: 400038
+    second: wheels_back_1
+  - first:
+      4: 400040
+    second: wheels_back_2 (MAIN DRIVE)
+  - first:
+      4: 400042
+    second: wheels_front_1
+  - first:
+      4: 400044
+    second: wheels_front_2
+  - first:
+      21: 2100000
+    second: No Name
+  - first:
+      23: 2300000
+    second: heisler_controlarm_back
+  - first:
+      23: 2300002
+    second: heisler_controlarm_front
+  - first:
+      23: 2300004
+    second: heisler_wheel_back1
+  - first:
+      23: 2300006
+    second: heisler_wheel_back_2
+  - first:
+      23: 2300008
+    second: heisler_wheel_front_1
+  - first:
+      23: 2300010
+    second: heisler_wheel_front_2
+  - first:
+      33: 3300000
+    second: heisler_controlarm_back
+  - first:
+      33: 3300002
+    second: heisler_controlarm_front
+  - first:
+      33: 3300004
+    second: heisler_wheel_back1
+  - first:
+      33: 3300006
+    second: heisler_wheel_back_2
+  - first:
+      33: 3300008
+    second: heisler_wheel_front_1
+  - first:
+      33: 3300010
+    second: heisler_wheel_front_2
+  - first:
+      43: 4300000
+    second: heisler_main
+  - first:
+      43: 4300002
+    second: heisler_wheel_back1
+  - first:
+      43: 4300004
+    second: heisler_wheel_front_2
+  - first:
+      43: 4300006
+    second: heisler_controlarm_front
+  - first:
+      43: 4300008
+    second: heisler_wheel_front_1
+  - first:
+      43: 4300010
+    second: heisler_wheel_back_2
+  - first:
+      43: 4300012
+    second: heisler_controlarm_back
+  - first:
+      74: 7400000
+    second: heisler_armature|spinning wheels
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: heisler_main
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -97,6 +237,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -108,6 +249,7 @@ ModelImporter:
     - serializedVersion: 16
       name: heisler_armature|spinning wheels
       takeName: heisler_armature|spinning wheels
+      internalID: 7400000
       firstFrame: 0
       lastFrame: 249
       wrapMode: 0
@@ -139,6 +281,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -146,10 +289,13 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
@@ -161,10 +307,14 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -174,8 +324,8 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

@@ -14,6 +14,8 @@ public class timeWalkDayNightToggle : MonoBehaviour {
     public float nightIntensity = 0.1f;
     public Light sunLightObject;
     public GameObject nightLights;
+    public GameObject TrainLampFront;
+    public GameObject TrainLampRear;
     public GameObject forceNightTimeObject;
     private bool lastNowIsDay; // remembers last time Day/Night was set deliberately
 
@@ -21,6 +23,7 @@ public class timeWalkDayNightToggle : MonoBehaviour {
 	{
         sunLightObject = gameObject.GetComponent<Light>();
         lastNowIsDay = nowIsDay;
+
 	}
 
 	//void Update()
@@ -47,7 +50,9 @@ public class timeWalkDayNightToggle : MonoBehaviour {
 			RenderSettings.ambientLight = colorSkyColorNight;
 			sunLightObject.color = colorMoon;
 			nightLights.SetActive(true);
-			RenderSettings.fog = false;
+            TrainLampFront.SetActive(true);
+            TrainLampRear.SetActive(true);
+            RenderSettings.fog = false;
 		}
 		else // DAY settings
 		{
@@ -56,7 +61,9 @@ public class timeWalkDayNightToggle : MonoBehaviour {
 			sunLightObject.color = colorSun;
 			RenderSettings.ambientIntensity = dayIntensity;
 			nightLights.SetActive(false);
-			RenderSettings.fog = false;
+            TrainLampFront.SetActive(false);
+            TrainLampRear.SetActive(false);
+            RenderSettings.fog = false;
 		}
 	}
 
