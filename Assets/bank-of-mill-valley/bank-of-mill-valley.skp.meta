@@ -6,7 +6,7 @@ SketchUpImporter:
   selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000
   assetHash:
     serializedVersion: 2
-    Hash: 921649921b7419c66c1b874ae1ba7431
+    Hash: 34ee81475463c84b66e42751d6021f0a
   longitude: -105.242139
   latitude: 40.018309
   northCorrection: -0
@@ -30,57 +30,62 @@ SketchUpImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Blinds_Cellular_White
-    second: {fileID: 2800000, guid: c0a83e0580ec79b469ceb08c9c7bbe94, type: 3}
+    second: {fileID: 2800000, guid: e8377302fdd8958418ec9a1487bf9ddd, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Blinds_Vertical_Stripe_Gray
-    second: {fileID: 2800000, guid: 0cf7c5a9d51dc024aa19f1b308b221c0, type: 3}
+    second: {fileID: 2800000, guid: f3c158f1e1e6b3a4da78be45632cf632, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Brick_Antique
-    second: {fileID: 2800000, guid: 2dcb693456373214e939a521f5cc604b, type: 3}
+    second: {fileID: 2800000, guid: ad753847396541948a7d97b219dd3318, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Carrera Marble
-    second: {fileID: 2800000, guid: a1984527fcf9fab4e99d2c0f230d13f8, type: 3}
+    second: {fileID: 2800000, guid: 115a6f4b68d799a4a8d70aac2aac0da2, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Cladding_Siding_White
-    second: {fileID: 2800000, guid: 6766ca437f9f96e45b1a845ccbf6b9a2, type: 3}
+    second: {fileID: 2800000, guid: 09cf519f75751f94382dc930ce649ba9, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Cladding_Stucco_White
-    second: {fileID: 2800000, guid: eb4958950c026854dafc29f49f0d9459, type: 3}
+    second: {fileID: 2800000, guid: 126b5230ca5ebdb4aa0cd58d05385c96, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Formica Beige
-    second: {fileID: 2800000, guid: b16d75ee7a882034e8f3b8931554f8ca, type: 3}
+    second: {fileID: 2800000, guid: a10ec5d636dd2e84696fd44741a3ad15, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Formica Laminate Dark
-    second: {fileID: 2800000, guid: ccc608cb68e298c43becbaa4649067eb, type: 3}
+    second: {fileID: 2800000, guid: 678ad9b2333eb024da2d9253cc072166, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Masonry.Unit Masonry.Brick.Modular.Vertical
-    second: {fileID: 2800000, guid: 7cdca1b515f080948ad3161d202c160d, type: 3}
+    second: {fileID: 2800000, guid: 019a71c44aedd1a40a7151deaa57c6f7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Textile_Rug_Stripes
-    second: {fileID: 2800000, guid: 40e9d0920ae37f24688578ec1d79d613, type: 3}
+    second: {fileID: 2800000, guid: c06cba96555ae49449aca91eed4fde3a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Translucent_Resin_Crush_Gray
-    second: {fileID: 2800000, guid: 2b2505c8a39d0a64a86220a713b90f27, type: 3}
+    second: {fileID: 2800000, guid: d04385b761244614f81656c21b471a55, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bankOfAmericaPlaquete
+    second: {fileID: 2800000, guid: 7cbe6dcb637b79946ae108055fc9ae68, type: 3}
   materials:
     importMaterials: 1
     materialName: 2
