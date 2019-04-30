@@ -1,0 +1,816 @@
+fileFormatVersion: 2
+guid: 2ebf3b7a19c99446b894d09150b38045
+timeCreated: 1456100172
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Anca
+    100002: Anca.1
+    100004: Arm
+    100006: Base
+    100008: Base.1
+    100010: Base.2
+    100012: Base.3
+    100014: Base.4
+    100016: Base.5
+    100018: BaseBocca
+    100020: Body
+    100022: Braccio
+    100024: Braccio.1
+    100026: Coda1
+    100028: Coda2
+    100030: Coda3
+    100032: Coda4
+    100034: Coda5
+    100036: Collo
+    100038: Gamba
+    100040: Gamba.1
+    100042: Ginocchio
+    100044: Ginocchio.1
+    100046: LeftEye
+    100048: Leg
+    100050: Mandibola1
+    100052: Mandibola2
+    100054: Mandibola3
+    100056: Mano
+    100058: Mano.1
+    100060: Naso
+    100062: Piede
+    100064: Piede.1
+    100066: RightEye
+    100068: Root
+    100070: Spalla
+    100072: Spalla.1
+    100074: Tallone
+    100076: Tallone.1
+    100078: //RootNode
+    400000: Anca
+    400002: Anca.1
+    400004: Arm
+    400006: Base
+    400008: Base.1
+    400010: Base.2
+    400012: Base.3
+    400014: Base.4
+    400016: Base.5
+    400018: BaseBocca
+    400020: Body
+    400022: Braccio
+    400024: Braccio.1
+    400026: Coda1
+    400028: Coda2
+    400030: Coda3
+    400032: Coda4
+    400034: Coda5
+    400036: Collo
+    400038: Gamba
+    400040: Gamba.1
+    400042: Ginocchio
+    400044: Ginocchio.1
+    400046: LeftEye
+    400048: Leg
+    400050: Mandibola1
+    400052: Mandibola2
+    400054: Mandibola3
+    400056: Mano
+    400058: Mano.1
+    400060: Naso
+    400062: Piede
+    400064: Piede.1
+    400066: RightEye
+    400068: Root
+    400070: Spalla
+    400072: Spalla.1
+    400074: Tallone
+    400076: Tallone.1
+    400078: //RootNode
+    4300000: Leg
+    4300002: Arm
+    4300004: RightEye
+    4300006: LeftEye
+    4300008: Body
+    7400000: Walk
+    7400002: Idle
+    7400004: JumpStart
+    7400006: JumpMiddle
+    7400008: JumpEnd
+    7400010: Run
+    9500000: //RootNode
+    13700000: Arm
+    13700002: Body
+    13700004: LeftEye
+    13700006: Leg
+    13700008: RightEye
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Walk
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Arm
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: LeftEye
+        weight: 1
+      - path: Leg
+        weight: 1
+      - path: RightEye
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Base
+        weight: 1
+      - path: Root/Base/Collo
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1/Mandibola2
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1/Mandibola2/Mandibola3
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Naso
+        weight: 1
+      - path: Root/Base.1
+        weight: 1
+      - path: Root/Base.1/Spalla
+        weight: 1
+      - path: Root/Base.1/Spalla/Braccio
+        weight: 1
+      - path: Root/Base.1/Spalla/Braccio/Mano
+        weight: 1
+      - path: Root/Base.2
+        weight: 1
+      - path: Root/Base.2/Spalla.1
+        weight: 1
+      - path: Root/Base.2/Spalla.1/Braccio.1
+        weight: 1
+      - path: Root/Base.2/Spalla.1/Braccio.1/Mano.1
+        weight: 1
+      - path: Root/Base.3
+        weight: 1
+      - path: Root/Base.3/Coda1
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3/Coda4
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3/Coda4/Coda5
+        weight: 1
+      - path: Root/Base.4
+        weight: 1
+      - path: Root/Base.4/Anca
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio/Tallone
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio/Tallone/Piede
+        weight: 1
+      - path: Root/Base.5
+        weight: 1
+      - path: Root/Base.5/Anca.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1/Tallone.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1/Tallone.1/Piede.1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 0
+      lastFrame: 450
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Arm
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: LeftEye
+        weight: 1
+      - path: Leg
+        weight: 1
+      - path: RightEye
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Base
+        weight: 1
+      - path: Root/Base/Collo
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1/Mandibola2
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1/Mandibola2/Mandibola3
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Naso
+        weight: 1
+      - path: Root/Base.1
+        weight: 1
+      - path: Root/Base.1/Spalla
+        weight: 1
+      - path: Root/Base.1/Spalla/Braccio
+        weight: 1
+      - path: Root/Base.1/Spalla/Braccio/Mano
+        weight: 1
+      - path: Root/Base.2
+        weight: 1
+      - path: Root/Base.2/Spalla.1
+        weight: 1
+      - path: Root/Base.2/Spalla.1/Braccio.1
+        weight: 1
+      - path: Root/Base.2/Spalla.1/Braccio.1/Mano.1
+        weight: 1
+      - path: Root/Base.3
+        weight: 1
+      - path: Root/Base.3/Coda1
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3/Coda4
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3/Coda4/Coda5
+        weight: 1
+      - path: Root/Base.4
+        weight: 1
+      - path: Root/Base.4/Anca
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio/Tallone
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio/Tallone/Piede
+        weight: 1
+      - path: Root/Base.5
+        weight: 1
+      - path: Root/Base.5/Anca.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1/Tallone.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1/Tallone.1/Piede.1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: JumpStart
+      takeName: JumpStart
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Arm
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: LeftEye
+        weight: 1
+      - path: Leg
+        weight: 1
+      - path: RightEye
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Base
+        weight: 1
+      - path: Root/Base/Collo
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1/Mandibola2
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1/Mandibola2/Mandibola3
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Naso
+        weight: 1
+      - path: Root/Base.1
+        weight: 1
+      - path: Root/Base.1/Spalla
+        weight: 1
+      - path: Root/Base.1/Spalla/Braccio
+        weight: 1
+      - path: Root/Base.1/Spalla/Braccio/Mano
+        weight: 1
+      - path: Root/Base.2
+        weight: 1
+      - path: Root/Base.2/Spalla.1
+        weight: 1
+      - path: Root/Base.2/Spalla.1/Braccio.1
+        weight: 1
+      - path: Root/Base.2/Spalla.1/Braccio.1/Mano.1
+        weight: 1
+      - path: Root/Base.3
+        weight: 1
+      - path: Root/Base.3/Coda1
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3/Coda4
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3/Coda4/Coda5
+        weight: 1
+      - path: Root/Base.4
+        weight: 1
+      - path: Root/Base.4/Anca
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio/Tallone
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio/Tallone/Piede
+        weight: 1
+      - path: Root/Base.5
+        weight: 1
+      - path: Root/Base.5/Anca.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1/Tallone.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1/Tallone.1/Piede.1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: JumpMiddle
+      takeName: JumpMiddle
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Arm
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: LeftEye
+        weight: 1
+      - path: Leg
+        weight: 1
+      - path: RightEye
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Base
+        weight: 1
+      - path: Root/Base/Collo
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1/Mandibola2
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1/Mandibola2/Mandibola3
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Naso
+        weight: 1
+      - path: Root/Base.1
+        weight: 1
+      - path: Root/Base.1/Spalla
+        weight: 1
+      - path: Root/Base.1/Spalla/Braccio
+        weight: 1
+      - path: Root/Base.1/Spalla/Braccio/Mano
+        weight: 1
+      - path: Root/Base.2
+        weight: 1
+      - path: Root/Base.2/Spalla.1
+        weight: 1
+      - path: Root/Base.2/Spalla.1/Braccio.1
+        weight: 1
+      - path: Root/Base.2/Spalla.1/Braccio.1/Mano.1
+        weight: 1
+      - path: Root/Base.3
+        weight: 1
+      - path: Root/Base.3/Coda1
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3/Coda4
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3/Coda4/Coda5
+        weight: 1
+      - path: Root/Base.4
+        weight: 1
+      - path: Root/Base.4/Anca
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio/Tallone
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio/Tallone/Piede
+        weight: 1
+      - path: Root/Base.5
+        weight: 1
+      - path: Root/Base.5/Anca.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1/Tallone.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1/Tallone.1/Piede.1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: JumpEnd
+      takeName: JumpEnd
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Arm
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: LeftEye
+        weight: 1
+      - path: Leg
+        weight: 1
+      - path: RightEye
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Base
+        weight: 1
+      - path: Root/Base/Collo
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1/Mandibola2
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1/Mandibola2/Mandibola3
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Naso
+        weight: 1
+      - path: Root/Base.1
+        weight: 1
+      - path: Root/Base.1/Spalla
+        weight: 1
+      - path: Root/Base.1/Spalla/Braccio
+        weight: 1
+      - path: Root/Base.1/Spalla/Braccio/Mano
+        weight: 1
+      - path: Root/Base.2
+        weight: 1
+      - path: Root/Base.2/Spalla.1
+        weight: 1
+      - path: Root/Base.2/Spalla.1/Braccio.1
+        weight: 1
+      - path: Root/Base.2/Spalla.1/Braccio.1/Mano.1
+        weight: 1
+      - path: Root/Base.3
+        weight: 1
+      - path: Root/Base.3/Coda1
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3/Coda4
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3/Coda4/Coda5
+        weight: 1
+      - path: Root/Base.4
+        weight: 1
+      - path: Root/Base.4/Anca
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio/Tallone
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio/Tallone/Piede
+        weight: 1
+      - path: Root/Base.5
+        weight: 1
+      - path: Root/Base.5/Anca.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1/Tallone.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1/Tallone.1/Piede.1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Run
+      firstFrame: 0
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Arm
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: LeftEye
+        weight: 1
+      - path: Leg
+        weight: 1
+      - path: RightEye
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Base
+        weight: 1
+      - path: Root/Base/Collo
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1/Mandibola2
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Mandibola1/Mandibola2/Mandibola3
+        weight: 1
+      - path: Root/Base/Collo/BaseBocca/Naso
+        weight: 1
+      - path: Root/Base.1
+        weight: 1
+      - path: Root/Base.1/Spalla
+        weight: 1
+      - path: Root/Base.1/Spalla/Braccio
+        weight: 1
+      - path: Root/Base.1/Spalla/Braccio/Mano
+        weight: 1
+      - path: Root/Base.2
+        weight: 1
+      - path: Root/Base.2/Spalla.1
+        weight: 1
+      - path: Root/Base.2/Spalla.1/Braccio.1
+        weight: 1
+      - path: Root/Base.2/Spalla.1/Braccio.1/Mano.1
+        weight: 1
+      - path: Root/Base.3
+        weight: 1
+      - path: Root/Base.3/Coda1
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3/Coda4
+        weight: 1
+      - path: Root/Base.3/Coda1/Coda2/Coda3/Coda4/Coda5
+        weight: 1
+      - path: Root/Base.4
+        weight: 1
+      - path: Root/Base.4/Anca
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio/Tallone
+        weight: 1
+      - path: Root/Base.4/Anca/Gamba/Ginocchio/Tallone/Piede
+        weight: 1
+      - path: Root/Base.5
+        weight: 1
+      - path: Root/Base.5/Anca.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1/Tallone.1
+        weight: 1
+      - path: Root/Base.5/Anca.1/Gamba.1/Ginocchio.1/Tallone.1/Piede.1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

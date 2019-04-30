@@ -1,0 +1,87 @@
+RELEASE NOTES
+
+1.2.5
+	Improvements
+		- Bake animation utility
+		- Disable Position option
+		- Mark waypoint as a different color if has attached events
+		- 2017.x compatibility
+	Fixes
+		- First waypoint now fire reached event at start
+		- Some minor fixes
+
+1.2.4
+	Improvements
+		- Use CTRL/CMD + left mouse click create a new waypoint over a collider for a given PathMagic
+		- Some (experimental) mesh creation: Torus and Road
+	Changes
+		- Some minor fixes
+
+1.2.3
+	Improvements
+		- Manual set of waypoint tangents
+		- New PathMagicJoint component
+		- Small editor enhancements
+1.2.2
+	Improvements
+		- New "Disable Orientation" flag in PathMagic and PathMagicAnimator
+		- New PathMagicFollower script (see documentation)
+		- Set Position at Waypoint from the waypoints editor
+	Changes
+		- Small inspector rationalization
+
+1.2.1
+	Improvements
+		- New Global Follow Path bias for smooth camera paths
+		- New Path templates (GameObject->PathMagic->Create new path from template)
+		- Override Global Follow Target in PathMagicAnimator
+		- Override Global Follow Path in PathMagicAnimator (only for non-pre-sampled paths)
+		- Scripting: All public attributes become properties in PathMagic class
+		- Scripting: All public attributes become properties in PathMagicAnimator class
+		- Customizable path color in editor
+		- Some editor styles looks better
+		- Ease in/out for velocity at waypoint level
+		- Compatibility with Unity 4.6.6
+	Changes
+		- Clear selection shortcut (Esc) does not select all waypoints anymore
+		- "F" don't center on waypoint anymore, use Enter
+	Fixes
+		- Corrected strange rotation at end of path with GlobalFollowPath and not looped
+
+1.2
+	Improvements
+		- Asymmetric tangents at waypoint
+		- Path sampling (constant velocity along path)
+		- Use "F" to reveal current selected wp in scene view (Thanks to Leon)
+		- Use "," to select previous waypoint
+		- Use "." to select next waypoint
+		- Use "Esc" to clear waypoint selection
+		- Show/Hide tangents of waypoints (Thanks to Leon)
+		- New Animation architecture allow many objects animated on the same path! (From an idea of Leon, Thanks)
+	Changes
+		- Pause instead Stop at begin/End of non-loop path (Thanks to Leon)
+	Bug Fixing
+		- Some small issues
+
+1.1.2
+	Improvements
+		- Global follow path direction
+	Buf Fixing
+		- Strange transform handles in scene view (thanks to Lion)
+		- Simulation, Play and final build now goes at the same velocity (thanks to Mads)
+1.1.1
+	Improvements
+		- Exposed GetCurrentWaypoint() to get the last passed waypoint
+		- Play in reverse support with negative velocityBias
+		- New Inspector "Global Look At" for continuous looking at target without interpolation between waypoints
+		- Events management (waypoint changed and reached)
+1.1.0
+	Improvements
+		- FixedUpdate and Update as choice for update target
+	Bug Fixing
+	Changes
+		- UNITY 4.6.6 and 5.1.2 Compatibility
+		- Remove models, materials and prefabs. Minimal demo scenes
+
+1.0
+	First release

@@ -1,0 +1,188 @@
+fileFormatVersion: 2
+guid: 7856fd37b4ebb344ea13d8082677b62e
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: controlarm_back
+    100002: controlarm_back_end
+    100004: controlarm_front
+    100006: controlarm_front_end
+    100008: //RootNode
+    100010: heisler_controlarm_back
+    100012: heisler_controlarm_front
+    100014: heisler_main
+    100016: heisler_wheel_back1
+    100018: heisler_wheel_back_2
+    100020: heisler_wheel_front_1
+    100022: heisler_wheel_front_2
+    100024: train_root
+    100026: wheelpin_back_1
+    100028: wheelpin_back_1_end
+    100030: wheelpin_back_2
+    100032: wheelpin_front_1
+    100034: wheelpin_front_1_end
+    100036: wheelpin_front_2
+    100038: wheels_back_1
+    100040: wheels_back_2 (MAIN DRIVE)
+    100042: wheels_front_1
+    100044: wheels_front_2
+    400000: controlarm_back
+    400002: controlarm_back_end
+    400004: controlarm_front
+    400006: controlarm_front_end
+    400008: //RootNode
+    400010: heisler_controlarm_back
+    400012: heisler_controlarm_front
+    400014: heisler_main
+    400016: heisler_wheel_back1
+    400018: heisler_wheel_back_2
+    400020: heisler_wheel_front_1
+    400022: heisler_wheel_front_2
+    400024: train_root
+    400026: wheelpin_back_1
+    400028: wheelpin_back_1_end
+    400030: wheelpin_back_2
+    400032: wheelpin_front_1
+    400034: wheelpin_front_1_end
+    400036: wheelpin_front_2
+    400038: wheels_back_1
+    400040: wheels_back_2 (MAIN DRIVE)
+    400042: wheels_front_1
+    400044: wheels_front_2
+    2100000: No Name
+    2300000: heisler_controlarm_back
+    2300002: heisler_controlarm_front
+    2300004: heisler_wheel_back1
+    2300006: heisler_wheel_back_2
+    2300008: heisler_wheel_front_1
+    2300010: heisler_wheel_front_2
+    3300000: heisler_controlarm_back
+    3300002: heisler_controlarm_front
+    3300004: heisler_wheel_back1
+    3300006: heisler_wheel_back_2
+    3300008: heisler_wheel_front_1
+    3300010: heisler_wheel_front_2
+    4300000: heisler_main
+    4300002: heisler_wheel_back1
+    4300004: heisler_wheel_front_2
+    4300006: heisler_controlarm_front
+    4300008: heisler_wheel_front_1
+    4300010: heisler_wheel_back_2
+    4300012: heisler_controlarm_back
+    7400000: heisler_armature|spinning wheels
+    9500000: //RootNode
+    13700000: heisler_main
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: c0a4cd289bab12b48802eaa548efa7c3, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: heisler_armature|spinning wheels
+      takeName: heisler_armature|spinning wheels
+      firstFrame: 0
+      lastFrame: 249
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
