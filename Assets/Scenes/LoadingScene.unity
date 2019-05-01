@@ -3104,6 +3104,29 @@ PrefabInstance:
       objectReference: {fileID: 2096519290}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 920dbff816c7e1641b07b1ac4662e54f, type: 3}
+--- !u!1 &1643428122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1559681622348004, guid: 920dbff816c7e1641b07b1ac4662e54f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1643428121}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1643428123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643428122}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5178bc8574ce2bf4388e787a2e2af326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opMode: 1
+  resetHmdPoseOnRelease: 1
+  resetHmdPoseByMiddleMouseButton: 1
+  activateKeys: 3201000031010000
+  pitchKeys: 3401000033010000
 --- !u!1 &1797789301
 GameObject:
   m_ObjectHideFlags: 3
