@@ -2047,11 +2047,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OffsetY: 0
-  CameraRig: {fileID: 114810121274370616}
-  CameraCenter: {fileID: 4326184380566558}
-  CompassIndicator: {fileID: 4810399054478578}
-  PlayerIndicator: {fileID: 4072541335797610}
-  ViewIndicator: {fileID: 4792495843452920}
+  CameraRig: {fileID: 0}
+  CameraCenter: {fileID: 0}
+  CompassIndicator: {fileID: 0}
+  PlayerIndicator: {fileID: 0}
+  ViewIndicator: {fileID: 0}
 --- !u!1 &1246186398210778
 GameObject:
   m_ObjectHideFlags: 0
@@ -2259,7 +2259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 356f152b10ed2c44f99b113613abe1b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 114890602688059752}
+  Player: {fileID: 0}
 --- !u!1 &1257958377000276
 GameObject:
   m_ObjectHideFlags: 0
@@ -4359,9 +4359,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 085d9ec7bb5e55f48b879d93931f553e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CameraRig: {fileID: 114810121274370616}
-  CharacterController: {fileID: 143578693731461614}
-  PlayerController: {fileID: 114890602688059752}
+  CameraRig: {fileID: 0}
+  CharacterController: {fileID: 0}
+  PlayerController: {fileID: 0}
 --- !u!114 &114093191270449012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4375,19 +4375,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnableMovementDuringReady: 1
-  EnableMovementDuringAim: 0
-  EnableMovementDuringPreTeleport: 0
+  EnableMovementDuringAim: 1
+  EnableMovementDuringPreTeleport: 1
   EnableMovementDuringPostTeleport: 1
   EnableRotationDuringReady: 1
-  EnableRotationDuringAim: 0
-  EnableRotationDuringPreTeleport: 0
+  EnableRotationDuringAim: 1
+  EnableRotationDuringPreTeleport: 1
   EnableRotationDuringPostTeleport: 1
-  TeleportDestinationPrefab: {fileID: 114000013141257940, guid: d9a70b93c8a832e468d7000b1671a4e4,
-    type: 3}
-  AimCollisionType: 1
-  UseCharacterCollisionData: 1
-  AimCollisionRadius: 0.1
-  AimCollisionHeight: 2
+  TeleportDestinationPrefab: {fileID: 0}
+  AimCollisionType: 0
+  UseCharacterCollisionData: 0
+  AimCollisionRadius: 0
+  AimCollisionHeight: 0
 --- !u!114 &114493085212180074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4400,13 +4399,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b3bb179010e22743be0b39a97a69566, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AimButton: 4
-  TeleportButton: 4
+  AimButton: 0
+  TeleportButton: 0
   FastTeleport: 0
-  Avatar: {fileID: 114209001614116070}
-  InputMode: 2
-  AimingController: 1
-  CapacitiveAimAndTeleportButton: 5
+  Avatar: {fileID: 0}
+  InputMode: 0
+  AimingController: 0
+  CapacitiveAimAndTeleportButton: 0
   ThumbstickTeleportThreshold: 0.5
 --- !u!114 &114417810501078250
 MonoBehaviour:
@@ -4433,11 +4432,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2207d0346672d340874d20d6a45eb69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Range: 100
+  Range: 0
   MinimumElevation: -100
   Gravity: -9.8
-  AimVelocity: 2
-  AimStep: 0.2
+  AimVelocity: 1
+  AimStep: 1
 --- !u!114 &114398295728080868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4452,7 +4451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AimCollisionLayerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 0
 --- !u!114 &114852588621589494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4465,7 +4464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8ac578d8d4eff4eae43b9c3eb1529c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LaserPrefab: {fileID: 120040632274902162}
+  LaserPrefab: {fileID: 0}
 --- !u!114 &114090974198989672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4479,7 +4478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OrientationMode: 0
-  Thumbstick: 1
+  Thumbstick: 0
   RotateStickThreshold: 0.8
 --- !u!114 &114882266861847742
 MonoBehaviour:
@@ -4517,8 +4516,8 @@ MonoBehaviour:
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 0.5
       value: 1
@@ -4526,8 +4525,8 @@ MonoBehaviour:
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 0
@@ -4535,8 +4534,8 @@ MonoBehaviour:
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -4552,7 +4551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1bbfae4990937048b888479caae4fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TransitionDuration: 0.1
+  TransitionDuration: 0.5
   PositionLerp:
     serializedVersion: 2
     m_Curve:
@@ -4563,8 +4562,8 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 1
@@ -4572,8 +4571,8 @@ MonoBehaviour:
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -4588,6 +4587,7 @@ GameObject:
   - component: {fileID: 4121705064327474}
   - component: {fileID: 114810121274370616}
   - component: {fileID: 114958577852892026}
+  - component: {fileID: 1643428123}
   m_Layer: 0
   m_Name: OVRCameraRig
   m_TagString: Untagged
@@ -4676,6 +4676,23 @@ MonoBehaviour:
   resetTrackerOnLoad: 0
   AllowRecenter: 1
   _reorientHMDOnControllerRecenter: 1
+--- !u!114 &1643428123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559681622348004}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5178bc8574ce2bf4388e787a2e2af326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opMode: 1
+  resetHmdPoseOnRelease: 1
+  resetHmdPoseByMiddleMouseButton: 1
+  activateKeys: 3201000031010000
+  pitchKeys: 3401000033010000
 --- !u!1 &1562193190504494
 GameObject:
   m_ObjectHideFlags: 0
