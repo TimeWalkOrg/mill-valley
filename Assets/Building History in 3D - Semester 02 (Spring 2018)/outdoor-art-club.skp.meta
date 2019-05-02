@@ -1,0 +1,586 @@
+fileFormatVersion: 2
+guid: 949de2bfcc08c294d975c5ba26519bea
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 0000000001000000020000000300000004000000050000000600000007000000
+  assetHash:
+    serializedVersion: 2
+    Hash: af9914d468ae102edbb21a6c07c307a1
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 31.932472, y: 20.360426, z: -44.657593}
+      lookAt: {x: 33.460735, y: 16.66532, z: -22.559534}
+      up: {x: 0.011352317, y: 0.9863701, z: 0.16414985}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: doorway
+    100002: doorway 1
+    100004: doorway 10
+    100006: doorway 11
+    100008: doorway 12
+    100010: doorway 13
+    100012: doorway 14
+    100014: doorway 2
+    100016: doorway 3
+    100018: doorway 4
+    100020: doorway 5
+    100022: doorway 6
+    100024: doorway 7
+    100026: doorway 8
+    100028: doorway 9
+    100030: Main Hall and porch
+    100032: //RootNode
+    100034: outdoor-art-club 1
+    100036: West Wing
+    400000: doorway
+    400002: doorway 1
+    400004: doorway 10
+    400006: doorway 11
+    400008: doorway 12
+    400010: doorway 13
+    400012: doorway 14
+    400014: doorway 2
+    400016: doorway 3
+    400018: doorway 4
+    400020: doorway 5
+    400022: doorway 6
+    400024: doorway 7
+    400026: doorway 8
+    400028: doorway 9
+    400030: Main Hall and porch
+    400032: //RootNode
+    400034: outdoor-art-club 1
+    400036: West Wing
+    2100000: _defaultMat
+    2100002: '[Roofing Shingles Multi]'
+    2100004: '[Roofing Shingles Variable]'
+    2100006: _29
+    2100008: '[Wood Floor]'
+    2100010: '[0086_MediumAquamarine]'
+    2100012: _1
+    2100014: _32
+    2100016: _31
+    2100018: _30
+    2100020: _3
+    2100022: '[Brick Antique 01]'
+    2100024: '[Translucent Glass Gray]'
+    2100026: _77
+    2100028: _62
+    2100030: _38
+    2100032: _40
+    2100034: _39
+    2100036: '[Roofing Shingles Asphalt]'
+    2100038: '[Cladding Siding Tan]'
+    2100040: _51
+    2100042: _80
+    2100044: _54
+    2100046: outdoor-art-club-siding
+    2100048: '[Stone Flagstone Ashlar]'
+    2100050: _65
+    2100052: _79
+    2100054: _66
+    2100056: _63
+    2100058: _41
+    2100060: '[0133_Gray]'
+    2100062: _44
+    2100064: _43
+    2100066: _45
+    2100068: _55
+    2100070: _6
+    2100072: '[Cladding Siding White]'
+    2100074: outdoor-art-club-redder-roof
+    2100076: _24
+    2100078: _71
+    2100080: _18
+    2100082: _21
+    2100084: _23
+    2100086: _25
+    2100088: _69
+    2100090: _67
+    2100092: _49
+    2100094: _68
+    2100096: _59
+    2100098: _60
+    2100100: '[Cladding Weathered]'
+    2100102: _37
+    2100104: _75
+    2100106: _76
+    2100108: _9
+    2100110: _58
+    2100112: _64
+    2100114: _61
+    2300000: doorway
+    2300002: doorway 1
+    2300004: doorway 10
+    2300006: doorway 11
+    2300008: doorway 12
+    2300010: doorway 13
+    2300012: doorway 14
+    2300014: doorway 2
+    2300016: doorway 3
+    2300018: doorway 4
+    2300020: doorway 5
+    2300022: doorway 6
+    2300024: doorway 7
+    2300026: doorway 8
+    2300028: doorway 9
+    2300030: Main Hall and porch
+    2300032: //RootNode
+    2300034: outdoor-art-club 1
+    2300036: West Wing
+    3300000: doorway
+    3300002: doorway 1
+    3300004: doorway 10
+    3300006: doorway 11
+    3300008: doorway 12
+    3300010: doorway 13
+    3300012: doorway 14
+    3300014: doorway 2
+    3300016: doorway 3
+    3300018: doorway 4
+    3300020: doorway 5
+    3300022: doorway 6
+    3300024: doorway 7
+    3300026: doorway 8
+    3300028: doorway 9
+    3300030: Main Hall and porch
+    3300032: //RootNode
+    3300034: outdoor-art-club 1
+    3300036: West Wing
+    4300000: Mesh outdoor-art-club
+    4300002: Mesh outdoor-art-club
+    4300004: Mesh West Wing
+    4300006: Mesh Main Hall and porch
+    4300008: Mesh doorway
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0086_MediumAquamarine]'
+    second: {fileID: 2100000, guid: 465570ca304d84942921f7e3b005ef9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0133_Gray]'
+    second: {fileID: 2100000, guid: 70e0ce0cfcce19841b7f4496b271269b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Brick Antique 01]'
+    second: {fileID: 2100000, guid: 0f1bb906e5f019741ae41ec80e56e3e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Cladding Siding Tan]'
+    second: {fileID: 2100000, guid: 02cdc2a46a6085f42b6e45af83d33045, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Cladding Siding White]'
+    second: {fileID: 2100000, guid: a9fdc7dec2dfb304aa8ada15a0c20477, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Cladding Weathered]'
+    second: {fileID: 2100000, guid: ab58aa732e1b24a48819613e261f974f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Roofing Shingles Asphalt]'
+    second: {fileID: 2100000, guid: 205737b2a9890df40b365187bde4f90c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Roofing Shingles Multi]'
+    second: {fileID: 2100000, guid: aed69bb1ae032d34a8636a168e27b53d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Roofing Shingles Variable]'
+    second: {fileID: 2100000, guid: f5276cfab11307847aaa76d4817f8614, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Stone Flagstone Ashlar]'
+    second: {fileID: 2100000, guid: 4fe8d19d05e41ae40b79ad3ec873622f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Gray]'
+    second: {fileID: 2100000, guid: 2118a170907839045bc21a04b9583dd3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood Floor]'
+    second: {fileID: 2100000, guid: c236717e1a4732a44a2ec3a21b716960, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _1
+    second: {fileID: 2100000, guid: 2c7159eec994c294eb5cb3e7370dd3b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _18
+    second: {fileID: 2100000, guid: 66959c220eced93458eda86d4f724f7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _21
+    second: {fileID: 2100000, guid: f0043b50c3aff224693efd069d5bcd9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _23
+    second: {fileID: 2100000, guid: 6062409fab1e3ec4eb03dd44a0075309, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _24
+    second: {fileID: 2100000, guid: 8984693180197514793aadd02e462f2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _25
+    second: {fileID: 2100000, guid: 0d8146beb0957b04bae7f26341afd3cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _29
+    second: {fileID: 2100000, guid: 69034cea19c97ae42a2ec1db2ca544e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _3
+    second: {fileID: 2100000, guid: e98d4f317dd4e634d926edd7f5e71e99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _30
+    second: {fileID: 2100000, guid: b15540eeb65b30e46b7b8d6afa86636d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _31
+    second: {fileID: 2100000, guid: 05efab33fc277f240928b67231ded25b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _32
+    second: {fileID: 2100000, guid: f262896d850eecc4eac6680863b34519, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _37
+    second: {fileID: 2100000, guid: dab4ca8851a06ca4ca0a78b7c4b02c58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _38
+    second: {fileID: 2100000, guid: 5c3dc84bc1f956a48bdd3831ffe89056, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _39
+    second: {fileID: 2100000, guid: 52e4786ba2931dc47a9d68ea16aaa549, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _40
+    second: {fileID: 2100000, guid: 0f8d46ae387790945940972472fb71e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _41
+    second: {fileID: 2100000, guid: 31ca0694f8658aa42936352f9324d9ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _43
+    second: {fileID: 2100000, guid: 94ae8c565be78c343842e23b7092a090, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _44
+    second: {fileID: 2100000, guid: 7fae94ab38a624f45a4ee483624f41cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _45
+    second: {fileID: 2100000, guid: 67bd70ac5fcd14c49bdebe19ce5dc5ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _49
+    second: {fileID: 2100000, guid: 1f56f87f3f2cc0f4e93102b2df17a882, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _51
+    second: {fileID: 2100000, guid: 2757d3007cced664fbc06b504fbe1da4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _54
+    second: {fileID: 2100000, guid: e9924a0502ae4ab4da1403ebb68a9a07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _55
+    second: {fileID: 2100000, guid: f337d5a0e751d4b49aea305df88ec85c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _58
+    second: {fileID: 2100000, guid: b99ef3a2598af7c418e0ec6bc566ce45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _59
+    second: {fileID: 2100000, guid: ee1683fa229455148bcb16a1f8679364, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _6
+    second: {fileID: 2100000, guid: bbaaaf84b12097f4aa57f4febadb640f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _60
+    second: {fileID: 2100000, guid: ee06eeb5368715c44b6f7168366148ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _61
+    second: {fileID: 2100000, guid: 329ae14dd33b5d9499ba6d7efd1968ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _62
+    second: {fileID: 2100000, guid: 30400e9f633801e4c8548bf5c1382560, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _63
+    second: {fileID: 2100000, guid: de7b37144db27474ab1d81db6f7da562, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _64
+    second: {fileID: 2100000, guid: 9865cf889ffb1fa4b81b9a33a606cf52, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _65
+    second: {fileID: 2100000, guid: afc2bb5ae213f6f4c95d192f39e5d940, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _66
+    second: {fileID: 2100000, guid: 2ce53257af2d95a47a4aa4afc62c9c55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _67
+    second: {fileID: 2100000, guid: e9f7b7d2a1d72d9498b37a6cf3d866bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _68
+    second: {fileID: 2100000, guid: 22fa97f5e35190c4389ea944308c8458, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _69
+    second: {fileID: 2100000, guid: 5bd14dbaa910d804a9cf62a641750daf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _71
+    second: {fileID: 2100000, guid: ecec5f9b4b0b68243abda7cea8aff26a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _75
+    second: {fileID: 2100000, guid: 69b956fcf7779884f9e18a375ff5b82b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _76
+    second: {fileID: 2100000, guid: ffbda4ce1ccff8e4899e65bf9da1e428, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _77
+    second: {fileID: 2100000, guid: 82ea44dadf174344089084ef34f8711a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _79
+    second: {fileID: 2100000, guid: c3a382c039a68ad4fb03e10876526689, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _80
+    second: {fileID: 2100000, guid: d8544bf596499144bbe56be8a8f80299, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _9
+    second: {fileID: 2100000, guid: 5d95e42296d83c844ab945dc14e69be2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: fcce099574e589641ab0bd0ebc62158c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: outdoor-art-club-redder-roof
+    second: {fileID: 2100000, guid: 8631bd7c0095e3b40b6fdf93598a73fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: outdoor-art-club-siding
+    second: {fileID: 2100000, guid: 20f4dea7a6dd22e48a7598b9469b7f40, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Brick_Antique
+    second: {fileID: 2800000, guid: cf4d407c14f6d62449a42c04c47fec39, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cladding_Siding_Tan
+    second: {fileID: 2800000, guid: 0d170c0182997934d8eedfa9e86c4526, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cladding_Siding_White
+    second: {fileID: 2800000, guid: 012fa816644b39742b20d2b55152f4d4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fencing_Weathered
+    second: {fileID: 2800000, guid: 0239f78716d8a7e4da20283b4b81d0b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: IMG_0503
+    second: {fileID: 2800000, guid: b5227143cdf6a474cb12d42bd3f8fe51, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Roofing_Shingles_Asphalt
+    second: {fileID: 2800000, guid: 55e6984d609143c43b1ce6a85dac3895, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Roofing_Shingles_Multi
+    second: {fileID: 2800000, guid: ac66b85652a012e4f82113086a1ceeea, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Roofing_Shingles_Variable
+    second: {fileID: 2800000, guid: cf6946968a313bd40ab7f247ce49132e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Stone_Flagstone_Ashlar
+    second: {fileID: 2800000, guid: 55104bcd5cd01384c80ab963e3f3c08c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood_Floor
+    second: {fileID: 2800000, guid: 3e5142884b233874999822712a5586f2, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

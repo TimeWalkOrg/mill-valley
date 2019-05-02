@@ -1,0 +1,347 @@
+fileFormatVersion: 2
+guid: 3b35d6b19beb2d64ba0ced34f1f57176
+timeCreated: 1526493086
+licenseType: Pro
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 93268f79dc1fbe5bcb4e78255b0fd9d2
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 25.014263, y: 12.68109, z: -21.594128}
+      lookAt: {x: 2.5723948, y: 6.4443583, z: -13.871009}
+      up: {x: -0.24031945, y: 0.9671643, z: 0.08270326}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: bank of mill valley building
+    100002: Bank of Mill Valley sign
+    100004: //RootNode
+    100006: Brick siding
+    100008: Columns in front
+    100010: Front doors
+    100012: Group 10
+    100014: Group 12
+    100016: Group 16
+    100018: Group 18
+    100020: Group 20
+    100022: Group 22
+    100024: Group 24
+    100026: Group 26
+    100028: Group 28
+    100030: Group 7
+    400000: bank of mill valley building
+    400002: Bank of Mill Valley sign
+    400004: //RootNode
+    400006: Brick siding
+    400008: Columns in front
+    400010: Front doors
+    400012: Group 10
+    400014: Group 12
+    400016: Group 16
+    400018: Group 18
+    400020: Group 20
+    400022: Group 22
+    400024: Group 24
+    400026: Group 26
+    400028: Group 28
+    400030: Group 7
+    2100000: _defaultMat
+    2100002: '[Cladding Siding White]'
+    2100004: '[Cladding Stucco White]'
+    2100006: Masonry.Unit Masonry.Brick.Modular.Vertical
+    2100008: '[Brick Antique 01]'
+    2100010: '[Translucent Resin Crush Gray]'
+    2100012: _1
+    2100014: '[Formica Beige]'
+    2100016: '[Color M03]'
+    2100018: '[Color M06]'
+    2100020: bank-green
+    2100022: '[0010_Snow]'
+    2100024: bank-tan
+    2100026: '[Textile Rug Stripes]'
+    2100028: '[Formica Laminate Dark]'
+    2100030: '[Translucent Glass Gray]'
+    2100032: '[Blinds Cellular White]'
+    2100034: '[Blinds Vertical Stripe Gray]'
+    2100036: '[Carrera Marble]'
+    2100038: '[Color C08]'
+    2100040: '[Roofing Scalloped Ornate]'
+    2300000: bank of mill valley building
+    2300002: Bank of Mill Valley sign
+    2300004: Brick siding
+    2300006: Columns in front
+    2300008: Group 10
+    2300010: Group 12
+    2300012: Group 16
+    2300014: Group 18
+    2300016: Group 20
+    2300018: Group 22
+    2300020: Group 24
+    2300022: Group 26
+    2300024: Group 28
+    2300026: Group 7
+    3300000: bank of mill valley building
+    3300002: Bank of Mill Valley sign
+    3300004: Brick siding
+    3300006: Columns in front
+    3300008: Group 10
+    3300010: Group 12
+    3300012: Group 16
+    3300014: Group 18
+    3300016: Group 20
+    3300018: Group 22
+    3300020: Group 24
+    3300022: Group 26
+    3300024: Group 28
+    3300026: Group 7
+    4300000: Mesh bank of mill valley building
+    4300002: Mesh Columns in front
+    4300004: Mesh Brick siding
+    4300006: Mesh Group 7
+    4300008: Mesh Group 10
+    4300010: Mesh Group 12
+    4300012: Mesh Bank of Mill Valley sign
+    4300014: Mesh Group 16
+    4300016: Mesh Group 18
+    4300018: Mesh Group 20
+    4300020: Mesh Group 22
+    4300022: Mesh Group 24
+    4300024: Mesh Group 26
+    4300026: Mesh Group 28
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Masonry.Unit Masonry.Brick.Modular.Vertical
+    second: {fileID: 2100000, guid: e6024fe91f923e84ea82993380e0e9f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0010_Snow]'
+    second: {fileID: 2100000, guid: 65c308355321dbc4991436682e5f371e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Blinds Cellular White]'
+    second: {fileID: 2100000, guid: 54e3fc8ff880ade4ba87af7c4b83d0e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Blinds Vertical Stripe Gray]'
+    second: {fileID: 2100000, guid: e698bc8759ffc2c42b0e6aac16517c2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Brick Antique 01]'
+    second: {fileID: 2100000, guid: 6356ec82d2a5ece4e92d9346574aff97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Carrera Marble]'
+    second: {fileID: 2100000, guid: f8fff707ffba32a47b6bb6b5e7b7ed1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Cladding Siding White]'
+    second: {fileID: 2100000, guid: f61c843dc70a5c044ac4e2be656689e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Cladding Stucco White]'
+    second: {fileID: 2100000, guid: 81b1c992ae2d2804cbaab31725371e00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color C08]'
+    second: {fileID: 2100000, guid: 14ae07890833e324f9325b8dfbc9cbfa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Formica Beige]'
+    second: {fileID: 2100000, guid: 7c143e1b9f238ac4493465ffb9a70f44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Formica Laminate Dark]'
+    second: {fileID: 2100000, guid: 3964329f7b01b8d499361e3baff27698, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Textile Rug Stripes]'
+    second: {fileID: 2100000, guid: 31be0fd7a73d0e34ea748069e3aaecc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Gray]'
+    second: {fileID: 2100000, guid: d6c1dfcc746e61844ad2b072a1b9b546, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Resin Crush Gray]'
+    second: {fileID: 2100000, guid: 8dab67519b852dd428aff7ee4f809f38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _1
+    second: {fileID: 2100000, guid: c5ba053fad65a9d438244cc07b3b0e5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: 494bb7cf37a5717468b1d1507f06be08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bank-green
+    second: {fileID: 2100000, guid: 22883af12fb5ce442b6a76f6f3c29128, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bank-tan
+    second: {fileID: 2100000, guid: 7eea7b20c5f4eb243b063de6aba3c936, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Blinds_Cellular_White
+    second: {fileID: 2800000, guid: 02abf300cb2bd1b44a835c28e255295c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Blinds_Vertical_Stripe_Gray
+    second: {fileID: 2800000, guid: 20e5b88de3bf2a24fa98868686d90235, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Brick_Antique
+    second: {fileID: 2800000, guid: 6f7a1081e1513564485bdb555ee5b55f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Carrera Marble
+    second: {fileID: 2800000, guid: a939c2363629517439cb6d00fe62a614, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cladding_Siding_White
+    second: {fileID: 2800000, guid: 6179c952377223d478bb1b1caeb61326, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cladding_Stucco_White
+    second: {fileID: 2800000, guid: f3ec2576a910c3d43b2a9198137a2c74, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Formica Beige
+    second: {fileID: 2800000, guid: add7a975d14845240bc9bec8c9a0f2c0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Formica Laminate Dark
+    second: {fileID: 2800000, guid: fb171c93fc81d02408f4690f358b1406, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Masonry.Unit Masonry.Brick.Modular.Vertical
+    second: {fileID: 2800000, guid: c85f244336d85804088a9aee79b5d25d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Textile_Rug_Stripes
+    second: {fileID: 2800000, guid: 7a32850d4b77c8e46a4de1e19852be42, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Translucent_Resin_Crush_Gray
+    second: {fileID: 2800000, guid: 56e0cb7ca953d8c45aa938b77d9ebee9, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

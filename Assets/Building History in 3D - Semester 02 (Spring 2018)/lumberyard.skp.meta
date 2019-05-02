@@ -1,0 +1,316 @@
+fileFormatVersion: 2
+guid: cb49c4a93bef89a4aa85c597e796c2fc
+timeCreated: 1526512496
+licenseType: Pro
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000
+  assetHash:
+    serializedVersion: 2
+    Hash: ac73282fe5582d6d0e71b08e0c03c2e0
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -1.9389402, y: 5.2734723, z: -16.272224}
+      lookAt: {x: 6.4190593, y: 3.8325148, z: 1.5958571}
+      up: {x: 0.030868063, y: 0.99734265, z: 0.065991044}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes:
+    - camera:
+        position: {x: 3.5560377, y: 1.7868117, z: 7.1279426}
+        lookAt: {x: 3.9144464, y: 1.5612584, z: -5.3876743}
+        up: {x: 0.0005155807, y: 0.9998378, z: -0.018004056}
+        fov: 35
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Scene 1
+    - camera:
+        position: {x: 2.879536, y: 2.3689563, z: 5.060864}
+        lookAt: {x: 3.7507977, y: 1.0816891, z: -7.3650703}
+        up: {x: 0.0071898964, y: 0.9947027, z: -0.1025423}
+        fov: 35
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Scene 3
+    - camera:
+        position: {x: 3.5560377, y: 1.7868117, z: 7.1279426}
+        lookAt: {x: 3.9144464, y: 1.5612584, z: -5.3876743}
+        up: {x: 0.0005155807, y: 0.9998378, z: -0.018004056}
+        fov: 35
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Scene 2
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: 1
+    100002: 1 1
+    100004: 1 2
+    100006: building-02
+    100008: Door
+    100010: Group 3
+    100012: Group 7
+    100014: //RootNode
+    100016: Lumberyard buildiing 01
+    400000: 1
+    400002: 1 1
+    400004: 1 2
+    400006: building-02
+    400008: Door
+    400010: Group 3
+    400012: Group 7
+    400014: //RootNode
+    400016: Lumberyard buildiing 01
+    2100000: _defaultMat
+    2100002: lumberyard-red-siding
+    2100004: _2
+    2100006: '[Metal Corrugated Shiny]'
+    2100008: '[Translucent Glass Gold]'
+    2100010: old planks
+    2100012: _1
+    2100014: Old Door_
+    2100016: '[Wood Veneer 02]'
+    2100018: Steel - Satin
+    2100020: '[Metal Steel Textured White]'
+    2100022: lumberyard-red-siding-rotated
+    2100024: '[Granite Dark Gray]'
+    2100026: '[Aluminum]'
+    2100028: '[Cladding Siding Tan]'
+    2300000: 1
+    2300002: 1 1
+    2300004: 1 2
+    2300006: building-02
+    2300008: Door
+    2300010: Group 3
+    2300012: Group 7
+    2300014: Lumberyard buildiing 01
+    3300000: 1
+    3300002: 1 1
+    3300004: 1 2
+    3300006: building-02
+    3300008: Door
+    3300010: Group 3
+    3300012: Group 7
+    3300014: Lumberyard buildiing 01
+    4300000: Mesh Lumberyard buildiing 01
+    4300002: Mesh Group 3
+    4300004: Mesh Door
+    4300006: Mesh Group 7
+    4300008: Mesh building-02
+    4300010: Mesh 1
+    4300012: Mesh 1
+    4300014: Mesh 1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Old Door_
+    second: {fileID: 2100000, guid: c82652600f170394f895b022f30d0a04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Steel - Satin
+    second: {fileID: 2100000, guid: 5ce056112acdfbc489d10e503a920e91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Aluminum]'
+    second: {fileID: 2100000, guid: c0303fc7a7867f04f84985ba4177a2c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Cladding Siding Tan]'
+    second: {fileID: 2100000, guid: 7033705aaea793144b18ba7c1d0d62fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Granite Dark Gray]'
+    second: {fileID: 2100000, guid: ac0931081481e374aa68521eb2484a66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Metal Corrugated Shiny]'
+    second: {fileID: 2100000, guid: 37d2f52d4cc945d4c91bc0d6aec77dc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Metal Steel Textured White]'
+    second: {fileID: 2100000, guid: 01a0d434b0493894488a11a4042b4527, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Gold]'
+    second: {fileID: 2100000, guid: 5f336d355e80cc348872e19b42201085, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood Veneer 02]'
+    second: {fileID: 2100000, guid: 1f7b6158d6dc4e240b99ed9984d14392, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _1
+    second: {fileID: 2100000, guid: f88cf23503ef7144f90705e035cc1a05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _2
+    second: {fileID: 2100000, guid: fc47a8d94ffd1804cba6f06cf95b2af5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: eb5311413dee8bc4e83ae400a39bcce2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lumberyard-red-siding
+    second: {fileID: 2100000, guid: 386a61f8c58597b43b42bcf9c3b8bdf6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lumberyard-red-siding-rotated
+    second: {fileID: 2100000, guid: 2eec7f416349b83488ce0288d8f7b4b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: old planks
+    second: {fileID: 2100000, guid: 4a842e6d833be7f4e8a1b0964c2222b6, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Aluminum
+    second: {fileID: 2800000, guid: f86e1d8d0b543c54bb278c8e7dc9bb3e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cladding_Siding_Tan
+    second: {fileID: 2800000, guid: 1134ae2948d64e9438133f0b5b902cee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Granite 01
+    second: {fileID: 2800000, guid: 1c9d96f81ad56d1428c5e3f34fd22702, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal_Corrogated_Shiny
+    second: {fileID: 2800000, guid: 2dff7d9089f0f344abf18038ff4d5368, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal_Steel_Textured_White
+    second: {fileID: 2800000, guid: c4549baf52d780c43b2b8eaeb1780b4c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_DoorsWoodSingleOld0233_1_M
+    second: {fileID: 2800000, guid: 4a8163108a5415243973063d95eb7b9c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_WoodPlanksOld0210_2_seamless_S
+    second: {fileID: 2800000, guid: 7ff0a7c5a9c088e4e8988e089a3516eb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Translucent_Glass_Tinted
+    second: {fileID: 2800000, guid: 8f31bb25940d8f841bb550c32033154d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood 02
+    second: {fileID: 2800000, guid: 1672e3eefafdc8742a63b09e827c56a7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: _Wood Floor Light_#2
+    second: {fileID: 2800000, guid: 6391fb623725ff54a8d4c1cd94e3cd29, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

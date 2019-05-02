@@ -1,0 +1,787 @@
+fileFormatVersion: 2
+guid: fc21a448f913dc94c8ba1740c4ff877d
+timeCreated: 1522803080
+licenseType: Pro
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c0000000c1000000c2000000c3000000c4000000c5000000c6000000c7000000c8000000c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000dd000000de000000df000000e0000000e1000000e2000000e3000000e4000000e5000000e6000000e7000000e8000000e9000000ea000000eb000000ec000000ed000000ee000000ef000000f0000000
+  assetHash:
+    serializedVersion: 2
+    Hash: e8dc1623733f89bb7f002078afe95e06
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 14.460202, y: 6.6872754, z: -26.834724}
+      lookAt: {x: 12.432463, y: 5.8951235, z: -18.682753}
+      up: {x: -0.022662112, y: 0.9955833, z: 0.09110681}
+      fov: 35.954937
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes:
+    - camera:
+        position: {x: -52.09586, y: 13.440549, z: -86.8666}
+        lookAt: {x: 7.6944575, y: 22.997124, z: -8.696809}
+        up: {x: -0.05011499, y: 0.99526, z: -0.08334276}
+        fov: 35.954937
+        aspectRatio: 1.6020672
+        orthoSize: 1
+        isPerspective: 1
+      name: Theater picture with top
+    - camera:
+        position: {x: -57.44938, y: 54.61287, z: -79.07734}
+        lookAt: {x: 18.723019, y: 31.34974, z: 7.96866}
+        up: {x: 0.12984464, y: 0.9803692, z: 0.14837994}
+        fov: 35.954937
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Scene 2
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Canopy large
+    100002: Canopy large 1
+    100004: Group 85
+    100006: Group 87
+    100008: HUB THEATRE#4
+    100010: hub-theatre
+    100012: //RootNode
+    100014: Railing
+    100016: Ribbing
+    100018: Ribbing 1
+    100020: Ribbing 10
+    100022: Ribbing 11
+    100024: Ribbing 12
+    100026: Ribbing 13
+    100028: Ribbing 14
+    100030: Ribbing 15
+    100032: Ribbing 16
+    100034: Ribbing 17
+    100036: Ribbing 18
+    100038: Ribbing 19
+    100040: Ribbing 2
+    100042: Ribbing 20
+    100044: Ribbing 21
+    100046: Ribbing 22
+    100048: Ribbing 23
+    100050: Ribbing 24
+    100052: Ribbing 25
+    100054: Ribbing 26
+    100056: Ribbing 27
+    100058: Ribbing 28
+    100060: Ribbing 29
+    100062: Ribbing 3
+    100064: Ribbing 30
+    100066: Ribbing 31
+    100068: Ribbing 32
+    100070: Ribbing 33
+    100072: Ribbing 34
+    100074: Ribbing 35
+    100076: Ribbing 36
+    100078: Ribbing 37
+    100080: Ribbing 4
+    100082: Ribbing 5
+    100084: Ribbing 6
+    100086: Ribbing 7
+    100088: Ribbing 8
+    100090: Ribbing 9
+    100092: Side post
+    100094: Side post 1
+    100096: Ticket booth
+    100098: Underneath ribbing
+    100100: Underneath ribbing 1
+    100102: Underneath ribbing 10
+    100104: Underneath ribbing 11
+    100106: Underneath ribbing 12
+    100108: Underneath ribbing 13
+    100110: Underneath ribbing 14
+    100112: Underneath ribbing 15
+    100114: Underneath ribbing 16
+    100116: Underneath ribbing 17
+    100118: Underneath ribbing 18
+    100120: Underneath ribbing 19
+    100122: Underneath ribbing 2
+    100124: Underneath ribbing 20
+    100126: Underneath ribbing 21
+    100128: Underneath ribbing 22
+    100130: Underneath ribbing 23
+    100132: Underneath ribbing 24
+    100134: Underneath ribbing 25
+    100136: Underneath ribbing 26
+    100138: Underneath ribbing 27
+    100140: Underneath ribbing 28
+    100142: Underneath ribbing 29
+    100144: Underneath ribbing 3
+    100146: Underneath ribbing 30
+    100148: Underneath ribbing 31
+    100150: Underneath ribbing 32
+    100152: Underneath ribbing 33
+    100154: Underneath ribbing 34
+    100156: Underneath ribbing 35
+    100158: Underneath ribbing 36
+    100160: Underneath ribbing 37
+    100162: Underneath ribbing 38
+    100164: Underneath ribbing 39
+    100166: Underneath ribbing 4
+    100168: Underneath ribbing 40
+    100170: Underneath ribbing 41
+    100172: Underneath ribbing 42
+    100174: Underneath ribbing 43
+    100176: Underneath ribbing 44
+    100178: Underneath ribbing 45
+    100180: Underneath ribbing 46
+    100182: Underneath ribbing 47
+    100184: Underneath ribbing 48
+    100186: Underneath ribbing 49
+    100188: Underneath ribbing 5
+    100190: Underneath ribbing 50
+    100192: Underneath ribbing 51
+    100194: Underneath ribbing 52
+    100196: Underneath ribbing 53
+    100198: Underneath ribbing 54
+    100200: Underneath ribbing 55
+    100202: Underneath ribbing 56
+    100204: Underneath ribbing 57
+    100206: Underneath ribbing 58
+    100208: Underneath ribbing 59
+    100210: Underneath ribbing 6
+    100212: Underneath ribbing 60
+    100214: Underneath ribbing 61
+    100216: Underneath ribbing 62
+    100218: Underneath ribbing 7
+    100220: Underneath ribbing 8
+    100222: Underneath ribbing 9
+    100224: Window Upstairs
+    100226: Window Upstairs 1
+    100228: Window Upstairs 2
+    100230: Window Upstairs 3
+    100232: Window Upstairs 4
+    100234: Window Upstairs 5
+    100236: Window Upstairs 6
+    100238: Group 40
+    100240: Group 8
+    100242: Balcony
+    100244: Doors - open
+    100246: Group 235
+    100248: Group 237
+    100250: Rooftop ribbing
+    100252: Sign - Hub Theatre
+    100254: Upstairs windows
+    100256: Window canopies
+    400000: Canopy large
+    400002: Canopy large 1
+    400004: Group 85
+    400006: Group 87
+    400008: HUB THEATRE#4
+    400010: hub-theatre
+    400012: //RootNode
+    400014: Railing
+    400016: Ribbing
+    400018: Ribbing 1
+    400020: Ribbing 10
+    400022: Ribbing 11
+    400024: Ribbing 12
+    400026: Ribbing 13
+    400028: Ribbing 14
+    400030: Ribbing 15
+    400032: Ribbing 16
+    400034: Ribbing 17
+    400036: Ribbing 18
+    400038: Ribbing 19
+    400040: Ribbing 2
+    400042: Ribbing 20
+    400044: Ribbing 21
+    400046: Ribbing 22
+    400048: Ribbing 23
+    400050: Ribbing 24
+    400052: Ribbing 25
+    400054: Ribbing 26
+    400056: Ribbing 27
+    400058: Ribbing 28
+    400060: Ribbing 29
+    400062: Ribbing 3
+    400064: Ribbing 30
+    400066: Ribbing 31
+    400068: Ribbing 32
+    400070: Ribbing 33
+    400072: Ribbing 34
+    400074: Ribbing 35
+    400076: Ribbing 36
+    400078: Ribbing 37
+    400080: Ribbing 4
+    400082: Ribbing 5
+    400084: Ribbing 6
+    400086: Ribbing 7
+    400088: Ribbing 8
+    400090: Ribbing 9
+    400092: Side post
+    400094: Side post 1
+    400096: Ticket booth
+    400098: Underneath ribbing
+    400100: Underneath ribbing 1
+    400102: Underneath ribbing 10
+    400104: Underneath ribbing 11
+    400106: Underneath ribbing 12
+    400108: Underneath ribbing 13
+    400110: Underneath ribbing 14
+    400112: Underneath ribbing 15
+    400114: Underneath ribbing 16
+    400116: Underneath ribbing 17
+    400118: Underneath ribbing 18
+    400120: Underneath ribbing 19
+    400122: Underneath ribbing 2
+    400124: Underneath ribbing 20
+    400126: Underneath ribbing 21
+    400128: Underneath ribbing 22
+    400130: Underneath ribbing 23
+    400132: Underneath ribbing 24
+    400134: Underneath ribbing 25
+    400136: Underneath ribbing 26
+    400138: Underneath ribbing 27
+    400140: Underneath ribbing 28
+    400142: Underneath ribbing 29
+    400144: Underneath ribbing 3
+    400146: Underneath ribbing 30
+    400148: Underneath ribbing 31
+    400150: Underneath ribbing 32
+    400152: Underneath ribbing 33
+    400154: Underneath ribbing 34
+    400156: Underneath ribbing 35
+    400158: Underneath ribbing 36
+    400160: Underneath ribbing 37
+    400162: Underneath ribbing 38
+    400164: Underneath ribbing 39
+    400166: Underneath ribbing 4
+    400168: Underneath ribbing 40
+    400170: Underneath ribbing 41
+    400172: Underneath ribbing 42
+    400174: Underneath ribbing 43
+    400176: Underneath ribbing 44
+    400178: Underneath ribbing 45
+    400180: Underneath ribbing 46
+    400182: Underneath ribbing 47
+    400184: Underneath ribbing 48
+    400186: Underneath ribbing 49
+    400188: Underneath ribbing 5
+    400190: Underneath ribbing 50
+    400192: Underneath ribbing 51
+    400194: Underneath ribbing 52
+    400196: Underneath ribbing 53
+    400198: Underneath ribbing 54
+    400200: Underneath ribbing 55
+    400202: Underneath ribbing 56
+    400204: Underneath ribbing 57
+    400206: Underneath ribbing 58
+    400208: Underneath ribbing 59
+    400210: Underneath ribbing 6
+    400212: Underneath ribbing 60
+    400214: Underneath ribbing 61
+    400216: Underneath ribbing 62
+    400218: Underneath ribbing 7
+    400220: Underneath ribbing 8
+    400222: Underneath ribbing 9
+    400224: Window Upstairs
+    400226: Window Upstairs 1
+    400228: Window Upstairs 2
+    400230: Window Upstairs 3
+    400232: Window Upstairs 4
+    400234: Window Upstairs 5
+    400236: Window Upstairs 6
+    400238: Group 40
+    400240: Group 8
+    400242: Balcony
+    400244: Doors - open
+    400246: Group 235
+    400248: Group 237
+    400250: Rooftop ribbing
+    400252: Sign - Hub Theatre
+    400254: Upstairs windows
+    400256: Window canopies
+    2100000: _defaultMat
+    2100002: _12
+    2100004: '[Cladding Stucco White]'
+    2100006: _8
+    2100008: _9
+    2100010: '[Translucent Glass Blue]'
+    2100012: '[0053_Ivory]'
+    2100014: '[0043_SaddleBrown]'
+    2100016: '[Translucent Glass Gray]'
+    2100018: '[Color M04]'
+    2100020: '[0024_OrangeRed]'
+    2100022: Awing stripes red
+    2100024: _14
+    2100026: '[Steel Brushed Stainless]'
+    2100028: '[Wood Cherry Original]'
+    2100030: '[Wood Floor]'
+    2100032: '[Suede Brown]'
+    2100034: '[Herringbone]'
+    2300000: Canopy large
+    2300002: Canopy large 1
+    2300004: Group 85
+    2300006: Group 87
+    2300008: HUB THEATRE#4
+    2300010: hub-theatre
+    2300012: Railing
+    2300014: Ribbing
+    2300016: Ribbing 1
+    2300018: Ribbing 10
+    2300020: Ribbing 11
+    2300022: Ribbing 12
+    2300024: Ribbing 13
+    2300026: Ribbing 14
+    2300028: Ribbing 15
+    2300030: Ribbing 16
+    2300032: Ribbing 17
+    2300034: Ribbing 18
+    2300036: Ribbing 19
+    2300038: Ribbing 2
+    2300040: Ribbing 20
+    2300042: Ribbing 21
+    2300044: Ribbing 22
+    2300046: Ribbing 23
+    2300048: Ribbing 24
+    2300050: Ribbing 25
+    2300052: Ribbing 26
+    2300054: Ribbing 27
+    2300056: Ribbing 28
+    2300058: Ribbing 29
+    2300060: Ribbing 3
+    2300062: Ribbing 30
+    2300064: Ribbing 31
+    2300066: Ribbing 32
+    2300068: Ribbing 33
+    2300070: Ribbing 34
+    2300072: Ribbing 35
+    2300074: Ribbing 36
+    2300076: Ribbing 37
+    2300078: Ribbing 4
+    2300080: Ribbing 5
+    2300082: Ribbing 6
+    2300084: Ribbing 7
+    2300086: Ribbing 8
+    2300088: Ribbing 9
+    2300090: Side post
+    2300092: Side post 1
+    2300094: Ticket booth
+    2300096: Underneath ribbing
+    2300098: Underneath ribbing 1
+    2300100: Underneath ribbing 10
+    2300102: Underneath ribbing 11
+    2300104: Underneath ribbing 12
+    2300106: Underneath ribbing 13
+    2300108: Underneath ribbing 14
+    2300110: Underneath ribbing 15
+    2300112: Underneath ribbing 16
+    2300114: Underneath ribbing 17
+    2300116: Underneath ribbing 18
+    2300118: Underneath ribbing 19
+    2300120: Underneath ribbing 2
+    2300122: Underneath ribbing 20
+    2300124: Underneath ribbing 21
+    2300126: Underneath ribbing 22
+    2300128: Underneath ribbing 23
+    2300130: Underneath ribbing 24
+    2300132: Underneath ribbing 25
+    2300134: Underneath ribbing 26
+    2300136: Underneath ribbing 27
+    2300138: Underneath ribbing 28
+    2300140: Underneath ribbing 29
+    2300142: Underneath ribbing 3
+    2300144: Underneath ribbing 30
+    2300146: Underneath ribbing 31
+    2300148: Underneath ribbing 32
+    2300150: Underneath ribbing 33
+    2300152: Underneath ribbing 34
+    2300154: Underneath ribbing 35
+    2300156: Underneath ribbing 36
+    2300158: Underneath ribbing 37
+    2300160: Underneath ribbing 38
+    2300162: Underneath ribbing 39
+    2300164: Underneath ribbing 4
+    2300166: Underneath ribbing 40
+    2300168: Underneath ribbing 41
+    2300170: Underneath ribbing 42
+    2300172: Underneath ribbing 43
+    2300174: Underneath ribbing 44
+    2300176: Underneath ribbing 45
+    2300178: Underneath ribbing 46
+    2300180: Underneath ribbing 47
+    2300182: Underneath ribbing 48
+    2300184: Underneath ribbing 49
+    2300186: Underneath ribbing 5
+    2300188: Underneath ribbing 50
+    2300190: Underneath ribbing 51
+    2300192: Underneath ribbing 52
+    2300194: Underneath ribbing 53
+    2300196: Underneath ribbing 54
+    2300198: Underneath ribbing 55
+    2300200: Underneath ribbing 56
+    2300202: Underneath ribbing 57
+    2300204: Underneath ribbing 58
+    2300206: Underneath ribbing 59
+    2300208: Underneath ribbing 6
+    2300210: Underneath ribbing 60
+    2300212: Underneath ribbing 61
+    2300214: Underneath ribbing 62
+    2300216: Underneath ribbing 7
+    2300218: Underneath ribbing 8
+    2300220: Underneath ribbing 9
+    2300222: Window Upstairs
+    2300224: Window Upstairs 1
+    2300226: Window Upstairs 2
+    2300228: Window Upstairs 3
+    2300230: Window Upstairs 4
+    2300232: Window Upstairs 5
+    2300234: Window Upstairs 6
+    2300236: Group 40
+    2300238: Group 8
+    2300240: //RootNode
+    2300242: Group 235
+    2300244: Group 237
+    2300246: Sign - Hub Theatre
+    3300000: Canopy large
+    3300002: Canopy large 1
+    3300004: Group 85
+    3300006: Group 87
+    3300008: HUB THEATRE#4
+    3300010: hub-theatre
+    3300012: Railing
+    3300014: Ribbing
+    3300016: Ribbing 1
+    3300018: Ribbing 10
+    3300020: Ribbing 11
+    3300022: Ribbing 12
+    3300024: Ribbing 13
+    3300026: Ribbing 14
+    3300028: Ribbing 15
+    3300030: Ribbing 16
+    3300032: Ribbing 17
+    3300034: Ribbing 18
+    3300036: Ribbing 19
+    3300038: Ribbing 2
+    3300040: Ribbing 20
+    3300042: Ribbing 21
+    3300044: Ribbing 22
+    3300046: Ribbing 23
+    3300048: Ribbing 24
+    3300050: Ribbing 25
+    3300052: Ribbing 26
+    3300054: Ribbing 27
+    3300056: Ribbing 28
+    3300058: Ribbing 29
+    3300060: Ribbing 3
+    3300062: Ribbing 30
+    3300064: Ribbing 31
+    3300066: Ribbing 32
+    3300068: Ribbing 33
+    3300070: Ribbing 34
+    3300072: Ribbing 35
+    3300074: Ribbing 36
+    3300076: Ribbing 37
+    3300078: Ribbing 4
+    3300080: Ribbing 5
+    3300082: Ribbing 6
+    3300084: Ribbing 7
+    3300086: Ribbing 8
+    3300088: Ribbing 9
+    3300090: Side post
+    3300092: Side post 1
+    3300094: Ticket booth
+    3300096: Underneath ribbing
+    3300098: Underneath ribbing 1
+    3300100: Underneath ribbing 10
+    3300102: Underneath ribbing 11
+    3300104: Underneath ribbing 12
+    3300106: Underneath ribbing 13
+    3300108: Underneath ribbing 14
+    3300110: Underneath ribbing 15
+    3300112: Underneath ribbing 16
+    3300114: Underneath ribbing 17
+    3300116: Underneath ribbing 18
+    3300118: Underneath ribbing 19
+    3300120: Underneath ribbing 2
+    3300122: Underneath ribbing 20
+    3300124: Underneath ribbing 21
+    3300126: Underneath ribbing 22
+    3300128: Underneath ribbing 23
+    3300130: Underneath ribbing 24
+    3300132: Underneath ribbing 25
+    3300134: Underneath ribbing 26
+    3300136: Underneath ribbing 27
+    3300138: Underneath ribbing 28
+    3300140: Underneath ribbing 29
+    3300142: Underneath ribbing 3
+    3300144: Underneath ribbing 30
+    3300146: Underneath ribbing 31
+    3300148: Underneath ribbing 32
+    3300150: Underneath ribbing 33
+    3300152: Underneath ribbing 34
+    3300154: Underneath ribbing 35
+    3300156: Underneath ribbing 36
+    3300158: Underneath ribbing 37
+    3300160: Underneath ribbing 38
+    3300162: Underneath ribbing 39
+    3300164: Underneath ribbing 4
+    3300166: Underneath ribbing 40
+    3300168: Underneath ribbing 41
+    3300170: Underneath ribbing 42
+    3300172: Underneath ribbing 43
+    3300174: Underneath ribbing 44
+    3300176: Underneath ribbing 45
+    3300178: Underneath ribbing 46
+    3300180: Underneath ribbing 47
+    3300182: Underneath ribbing 48
+    3300184: Underneath ribbing 49
+    3300186: Underneath ribbing 5
+    3300188: Underneath ribbing 50
+    3300190: Underneath ribbing 51
+    3300192: Underneath ribbing 52
+    3300194: Underneath ribbing 53
+    3300196: Underneath ribbing 54
+    3300198: Underneath ribbing 55
+    3300200: Underneath ribbing 56
+    3300202: Underneath ribbing 57
+    3300204: Underneath ribbing 58
+    3300206: Underneath ribbing 59
+    3300208: Underneath ribbing 6
+    3300210: Underneath ribbing 60
+    3300212: Underneath ribbing 61
+    3300214: Underneath ribbing 62
+    3300216: Underneath ribbing 7
+    3300218: Underneath ribbing 8
+    3300220: Underneath ribbing 9
+    3300222: Window Upstairs
+    3300224: Window Upstairs 1
+    3300226: Window Upstairs 2
+    3300228: Window Upstairs 3
+    3300230: Window Upstairs 4
+    3300232: Window Upstairs 5
+    3300234: Window Upstairs 6
+    3300236: Group 40
+    3300238: Group 8
+    3300240: //RootNode
+    3300242: Group 235
+    3300244: Group 237
+    3300246: Sign - Hub Theatre
+    4300000: Mesh hub-theatre
+    4300002: Mesh Underneath ribbing
+    4300004: Mesh Underneath ribbing
+    4300006: Mesh Group 85
+    4300008: Mesh Group 87
+    4300010: Mesh Ticket booth
+    4300012: Mesh Ribbing
+    4300014: Mesh Side post
+    4300016: Mesh Railing
+    4300018: Mesh Canopy large
+    4300020: Mesh Window Upstairs
+    4300022: Mesh HUB THEATRE#4
+    4300024: Mesh hub-theatre-1920
+    4300026: Mesh Group 8
+    4300028: Mesh Group 40
+    4300030: Mesh Group 235
+    4300032: Mesh Group 237
+    4300034: Mesh Sign - Hub Theatre
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Awing stripes red
+    second: {fileID: 2100000, guid: c95788716d7a6bb4b9f648786922b19a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0043_SaddleBrown]'
+    second: {fileID: 2100000, guid: 6b701c59e52a0014a9ef9cd5f09fccd1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0053_Ivory]'
+    second: {fileID: 2100000, guid: f8fac62cb36a07947944d295e06bd2ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Cladding Stucco White]'
+    second: {fileID: 2100000, guid: 6c16a70da27d8a84f963869811fe8cfc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color M04]'
+    second: {fileID: 2100000, guid: db6252611de5d8142a79cc3001e9a715, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Herringbone]'
+    second: {fileID: 2100000, guid: 162d90b49d1e3c64498ef94d546fdcc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Steel Brushed Stainless]'
+    second: {fileID: 2100000, guid: fbf94c316b57a3d409cbceef4d4d74fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Suede Brown]'
+    second: {fileID: 2100000, guid: 9c2195c102a85ec4db8d6f8ec177a918, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Blue]'
+    second: {fileID: 2100000, guid: 021849305133fd64fb4cb119b671b907, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Gray]'
+    second: {fileID: 2100000, guid: af5543d475a298b40a2de686f061b559, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood Cherry Original]'
+    second: {fileID: 2100000, guid: d9cec583ba19e1842af6d5dbf933e129, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood Floor]'
+    second: {fileID: 2100000, guid: e48c1a38332fef543a5f8b431ee7916f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _12
+    second: {fileID: 2100000, guid: 665b84b4e0efae94093cf5c888277920, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _14
+    second: {fileID: 2100000, guid: a02e6dadcad941d49aa7c2c0a9b94516, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _8
+    second: {fileID: 2100000, guid: 9e18084a61a3b3143be44d0dd8fe04d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _9
+    second: {fileID: 2100000, guid: 46e1b13aa7f74d94984f5ca724e091bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: fc207bd657fd4cf43aea71c302f03c22, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cladding_Stucco_White
+    second: {fileID: 2800000, guid: 58d1c8eb918bdea409c5fa95f6e12574, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Herringbone
+    second: {fileID: 2800000, guid: 890c534aac552914da6dd321b186dbd5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Steel Brushed Stainless
+    second: {fileID: 2800000, guid: a49306626caca844dae6a67e761fcd3a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Suede Brown
+    second: {fileID: 2800000, guid: a42190611078cf04eb27fef66eb0ad8e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood_Cherry_Original
+    second: {fileID: 2800000, guid: bcc4d5a7f0e375e428d782b565a90d84, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood_Floor
+    second: {fileID: 2800000, guid: f4fdc1bc7f41f2c4f9189bee539685cf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: awning stripes
+    second: {fileID: 2800000, guid: ccbb23bad25ce2348973fcd202ab7d7a, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

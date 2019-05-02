@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 772c39a0dbbd11349b016e58ee41bbbd
+timeCreated: 1516404780
+licenseType: Pro
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
+  assetHash:
+    serializedVersion: 2
+    Hash: c12cb82d26d607d2bce1677959b3b667
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -17.166483, y: 7.8878107, z: 10.468941}
+      lookAt: {x: -14.180326, y: 6.917735, z: 8.521544}
+      up: {x: 0.21992745, y: 0.9649153, z: -0.14342381}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Cupola
+    100002: doorKnob
+    100004: doorKnob 1
+    100006: Group 13
+    100008: Group 9
+    100010: Leal Building 1920
+    100012: //RootNode
+    100014: Roofline
+    400000: Cupola
+    400002: doorKnob
+    400004: doorKnob 1
+    400006: Group 13
+    400008: Group 9
+    400010: Leal Building 1920
+    400012: //RootNode
+    400014: Roofline
+    2100000: _defaultMat
+    2100002: '[Color K01]'
+    2100004: _5
+    2100006: '[Translucent Glass Blue]'
+    2100008: '[Color C08]'
+    2100010: '[Color M08]'
+    2100012: _11
+    2100014: '[Wood Veneer 01]'
+    2100016: '[Roofing Shingles Multi]'
+    2100018: Roof (finer)
+    2100020: '[Chris_Shoe_Sole]'
+    2100022: '[Chris_Shoe]'
+    2100024: '[Translucent Glass Gray]'
+    2300000: Cupola
+    2300002: doorKnob
+    2300004: doorKnob 1
+    2300006: Group 13
+    2300008: Group 9
+    2300010: Leal Building 1920
+    2300012: Roofline
+    3300000: Cupola
+    3300002: doorKnob
+    3300004: doorKnob 1
+    3300006: Group 13
+    3300008: Group 9
+    3300010: Leal Building 1920
+    3300012: Roofline
+    4300000: Mesh Leal Building 1920
+    4300002: Mesh Roofline
+    4300004: Mesh Cupola
+    4300006: Mesh doorKnob
+    4300008: Mesh Group 9
+    4300010: Mesh Group 13
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof (finer)
+    second: {fileID: 2100000, guid: dee161fd9f6375b469ae15ca8c91c07d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Chris_Shoe]'
+    second: {fileID: 2100000, guid: 1473e367f94c1854b9a84e326652ec98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Chris_Shoe_Sole]'
+    second: {fileID: 2100000, guid: f4ab8e1f623e61f40b9f6d74e016f42e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color C08]'
+    second: {fileID: 2100000, guid: ed41cb94eb7ce2146bfe856e1d6d9034, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color K01]'
+    second: {fileID: 2100000, guid: c30ef066aee978d47822b36e29bab3e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color M08]'
+    second: {fileID: 2100000, guid: 70f40c5f39fbf3e48836be4ba8924e9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Roofing Shingles Multi]'
+    second: {fileID: 2100000, guid: 01b4959acd67a524db971f762a7637f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Blue]'
+    second: {fileID: 2100000, guid: c57e877debad9364d89306794c93bbab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent Glass Gray]'
+    second: {fileID: 2100000, guid: 85c1183a7777bbb4b91bd94d6efaa3a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood Veneer 01]'
+    second: {fileID: 2100000, guid: 75333291ce1e96a48b4ee06c0185667d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _11
+    second: {fileID: 2100000, guid: f89fd37bb9e0a9748baa20f7c2f22c5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _5
+    second: {fileID: 2100000, guid: 8f16431e09bf7184582fa476001d4900, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: 15cf265427c57324e860b66b883775c7, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Roofing_Shingles_Multi
+    second: {fileID: 2800000, guid: 149f2c7c1c1589f47aa9399a9aadbb8c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood 01
+    second: {fileID: 2800000, guid: 578771551fbe238439ee19dcbda73574, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

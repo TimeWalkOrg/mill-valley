@@ -1,0 +1,277 @@
+fileFormatVersion: 2
+guid: b5af9ba0d0f733a41807edf745b20afe
+timeCreated: 1526499318
+licenseType: Pro
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 7cf8fcddce5eb5d0d9ebba0e45c0f809
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 19.16607, y: 9.529775, z: -38.295864}
+      lookAt: {x: 1.1729283, y: -6.4307747, z: 70.32238}
+      up: {x: -0.023446394, y: 0.9896552, z: 0.1415376}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Browns Building
+    100002: //RootNode
+    100004: Door - left
+    100006: Door - right
+    100008: Group 3
+    100010: Group 5
+    100012: Group 7
+    100014: Group 9
+    400000: Browns Building
+    400002: //RootNode
+    400004: Door - left
+    400006: Door - right
+    400008: Group 3
+    400010: Group 5
+    400012: Group 7
+    400014: Group 9
+    2100000: _defaultMat
+    2100002: '[Cladding Stucco White]'
+    2100004: '[Suede Green]'
+    2100006: '[Sandstone]'
+    2100008: '[Wood Veneer 01]'
+    2100010: '[Carrera Marble]'
+    2100012: '[Roofing Tile Spanish]'
+    2100014: _8
+    2100016: '[Suede Green]2'
+    2100018: '[Granite Dark Gray]'
+    2100020: '[Carrera Marble]1'
+    2100022: _1
+    2100024: '[Color B08]'
+    2100026: '[Metal Seamed]'
+    2100028: '[Color C08]'
+    2100030: '[Carpet Berber Pattern Gray]'
+    2300000: Browns Building
+    2300002: Door - left
+    2300004: Door - right
+    2300006: Group 3
+    2300008: Group 5
+    2300010: Group 7
+    2300012: Group 9
+    3300000: Browns Building
+    3300002: Door - left
+    3300004: Door - right
+    3300006: Group 3
+    3300008: Group 5
+    3300010: Group 7
+    3300012: Group 9
+    4300000: Mesh Browns Building
+    4300002: Mesh Group 3
+    4300004: Mesh Door - right
+    4300006: Mesh Door - left
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Carrera Marble]'
+    second: {fileID: 2100000, guid: 4d339ba39181a4649978f0acba842142, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Carrera Marble]1'
+    second: {fileID: 2100000, guid: 0585d4744fb23b649828863c64a74ce5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Cladding Stucco White]'
+    second: {fileID: 2100000, guid: 31325aa6c20cc8a41944800e0e897c48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color B08]'
+    second: {fileID: 2100000, guid: e8a0fb3bdf1094d4699504ff2e38c5b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color C08]'
+    second: {fileID: 2100000, guid: 7705ad879bec5d04bbf4c9479fab6601, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Granite Dark Gray]'
+    second: {fileID: 2100000, guid: ee7988baee2a25a47aae7ca33d18db67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Metal Seamed]'
+    second: {fileID: 2100000, guid: b226b0d0b74f6e34090b1273e99624b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Roofing Tile Spanish]'
+    second: {fileID: 2100000, guid: 26e5a63f36d355545aa5e3a52c84a853, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Sandstone]'
+    second: {fileID: 2100000, guid: c8765bca3c55d944ea7fad99d30fd492, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Suede Green]'
+    second: {fileID: 2100000, guid: 2d6c708132bd5f94d8fe02536cbca0ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Suede Green]2'
+    second: {fileID: 2100000, guid: 2c3f6be95b172c94392cd04e19b4367c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood Veneer 01]'
+    second: {fileID: 2100000, guid: c168251980a536342aed0f068ea37e33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _1
+    second: {fileID: 2100000, guid: 402b202e0ae34f649a3bf5abd8e508dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _8
+    second: {fileID: 2100000, guid: 87a0b3131e6e557479b0d8b959bcb749, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: d77098e6a0580c146ad0e216eb82d81a, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Carpet_Berber_Pattern_Gray
+    second: {fileID: 2800000, guid: 3fbab67bb0fa19044bd43854ee07cae4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Carrera Marble
+    second: {fileID: 2800000, guid: 730d162e3002d0e4bad73b4f065b406a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cladding_Stucco_White
+    second: {fileID: 2800000, guid: 487152bb2459d524f86cbdda7c726dfa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Granite 01
+    second: {fileID: 2800000, guid: cd80191f3ab8e0742afba22288331475, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal_Seamed
+    second: {fileID: 2800000, guid: 2af92ed38fc9aaa49a7a8e653714ba49, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Roofing_Tile_Spanish
+    second: {fileID: 2800000, guid: 579d486bab09b0d478860e596549aeaf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sandstone
+    second: {fileID: 2800000, guid: 5f3bfd71d871bdd458e7b461e1e078df, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Suede Green
+    second: {fileID: 2800000, guid: 837a31f2b12a10c43a81e30449eea7b6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood 01
+    second: {fileID: 2800000, guid: 18b260a25770f734798b2abc3012adb2, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

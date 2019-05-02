@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 61bb3426690aa634380b87b413cbfdae
+timeCreated: 1516626513
+licenseType: Pro
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 13b4bc25ff87502d8845a64488b36479
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 7.232854, y: 4.653104, z: 60.74847}
+      lookAt: {x: 9.408233, y: 4.2513824, z: 51.108234}
+      up: {x: 0.008940387, y: 0.9991749, z: -0.039619517}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: 1st floor
+    100002: 2nd floor
+    100004: CAFE
+    100006: Mill Valley Post
+    100008: //RootNode
+    100010: Restaurant/Grill
+    100012: Water Heaters
+    100014: Wedgewood#3
+    400000: 1st floor
+    400002: 2nd floor
+    400004: CAFE
+    400006: Mill Valley Post
+    400008: //RootNode
+    400010: Restaurant/Grill
+    400012: Water Heaters
+    400014: Wedgewood#3
+    2100000: _defaultMat
+    2100002: _9
+    2100004: _12
+    2100006: _13
+    2100008: _15
+    2100010: _14
+    2100012: _16
+    2100014: _10
+    2100016: _11
+    2100018: _5
+    2100020: '[Wood Floor Parquet]'
+    2100022: '[Color A08]'
+    2100024: '[Color C08]'
+    2100026: '[Suede Green]'
+    2100028: '[Carpet Diamond Olive]'
+    2100030: '[Wood OSB]'
+    2100032: '[Translucent Glass Dark Green]'
+    2100034: '[Wood Floor Dark]'
+    2100036: '[0107_MidnightBlue]'
+    2300000: 1st floor
+    2300002: 2nd floor
+    2300004: CAFE
+    2300006: Mill Valley Post
+    2300008: Restaurant/Grill
+    2300010: Water Heaters
+    2300012: Wedgewood#3
+    2300014: //RootNode
+    3300000: 1st floor
+    3300002: 2nd floor
+    3300004: CAFE
+    3300006: Mill Valley Post
+    3300008: Restaurant/Grill
+    3300010: Water Heaters
+    3300012: Wedgewood#3
+    3300014: //RootNode
+    4300000: Mesh 1st floor
+    4300002: Mesh Restaurant/Grill
+    4300004: Mesh Mill Valley Post
+    4300006: Mesh Wedgewood#3
+    4300008: Mesh Water Heaters
+    4300010: Mesh CAFE
+    4300012: Mesh 2nd floor
+    4300014: Mesh oshaugnhessy-1920
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0107_MidnightBlue]'
+    second: {fileID: 2100000, guid: 5588035e34694894e80c18b2b4472d6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Suede Green]'
+    second: {fileID: 2100000, guid: 062b460ab54b060478dd3d1fb83d4469, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood Floor Dark]'
+    second: {fileID: 2100000, guid: 6880e3521366a34449052af7d5d69349, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood Floor Parquet]'
+    second: {fileID: 2100024, guid: 60a4c8876afe8e84084cc33e4147095a, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood OSB]'
+    second: {fileID: 2100000, guid: 6880e3521366a34449052af7d5d69349, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _11
+    second: {fileID: 2100000, guid: bcf9e80dad404a442aa35324c441e948, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _12
+    second: {fileID: 2100000, guid: e6c318afc6cb5ba48902ae712f333fc2, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
