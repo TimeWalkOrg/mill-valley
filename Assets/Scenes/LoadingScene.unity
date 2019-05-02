@@ -1246,7 +1246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 591380438}
   m_Layer: 0
-  m_Name: Click me
+  m_Name: Click me to center camera in Scene window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3157,11 +3157,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 33086235095829840, guid: 920dbff816c7e1641b07b1ac4662e54f,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 2096519290}
     - target: {fileID: 114476632621375190, guid: 920dbff816c7e1641b07b1ac4662e54f,
         type: 3}
       propertyPath: CameraRig
@@ -3192,6 +3187,11 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 682501099}
+    - target: {fileID: 33086235095829840, guid: 920dbff816c7e1641b07b1ac4662e54f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 2096519290}
     - target: {fileID: 114428616735300668, guid: 920dbff816c7e1641b07b1ac4662e54f,
         type: 3}
       propertyPath: CameraRig
