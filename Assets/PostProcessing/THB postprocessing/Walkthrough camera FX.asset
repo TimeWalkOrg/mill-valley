@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -100,14 +101,14 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 2.43
+        intensity: 0.5
         threshold: 1
-        softKnee: 0.559
-        radius: 3.92
-        antiFlicker: 0
+        softKnee: 0.5
+        radius: 4
+        antiFlicker: 1
       lensDirt:
         texture: {fileID: 0}
-        intensity: 1
+        intensity: 3
   colorGrading:
     m_Enabled: 1
     m_Settings:
