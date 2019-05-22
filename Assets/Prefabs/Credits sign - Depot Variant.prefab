@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7985836229698233505
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1814233129723624, guid: 664d9f55dc7362b4e93f09406ec85af7, type: 3}
+      propertyPath: m_Name
+      value: Credits sign - Depot
+      objectReference: {fileID: 0}
+    - target: {fileID: 1814233129723624, guid: 664d9f55dc7362b4e93f09406ec85af7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1125
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99979186
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.020402336
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0888
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0414
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.002782756
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0028024067
+      objectReference: {fileID: 0}
+    - target: {fileID: 224816012793886720, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.000062624225
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807100420336408, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807100420336408, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807100420336408, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_text
+      value: '<b>The Mill Valley Depot</b>
+
+        <size=70%>87 Throckmorton Avenue
+
+        built c.1895
+
+        Replaced by current Bus Depot in 1929
+
+        </size>
+
+        <size=85%><color=#3999dc>Ted Barnett, Constantin George</color></size>'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807100420336408, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 127
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807100420336408, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807100420336408, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807100420336408, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807100420336408, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 33366256441679258, guid: 664d9f55dc7362b4e93f09406ec85af7,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1304647261979436, guid: 664d9f55dc7362b4e93f09406ec85af7, type: 3}
+      propertyPath: m_Name
+      value: TextMeshPro - train-depot
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 664d9f55dc7362b4e93f09406ec85af7, type: 3}
