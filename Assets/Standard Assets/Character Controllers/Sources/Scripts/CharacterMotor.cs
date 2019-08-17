@@ -175,11 +175,21 @@ public class CharacterMotor : MonoBehaviour
 	private CharacterController controller;
 
 	void Awake()
-	{
-		controller = GetComponent<CharacterController>();
-		tr = transform;
-		movement.tempGravity = movement.gravity;
-	}
+{
+controller = GetComponent<CharacterController>();
+
+        // Disables enableOverlapRecover that shoots character into air when overlap happens
+        // If not needed comment/delete logging of overlapRecovery
+        // Maybe implement diffrent way of overlap recovery if needed
+        controller.enableOverlapRecovery = false;
+        if (controller.enableOverlapRecovery == false)
+            Debug.Log("character.enableOverlapRecovery=false");
+        else if(controller.enableOverlapRecovery == true)
+            Debug.Log("character.enableOverlapRecovery=true");
+
+        tr = transform;
+movement.tempGravity = movement.gravity;
+}
 
 	void UpdateFunction()
 	{
