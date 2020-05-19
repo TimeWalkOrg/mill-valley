@@ -1,119 +1,340 @@
 fileFormatVersion: 2
 guid: de4c9337ba562884aa502cb85df7900a
 ModelImporter:
-  serializedVersion: 21
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: BEAR
-    100004: BEAR_
-    100006: BEAR_ Head
-    100008: BEAR_ L Calf
-    100010: BEAR_ L Clavicle
-    100012: BEAR_ L Finger0
-    100014: BEAR_ L Finger01
-    100016: BEAR_ L Foot
-    100018: BEAR_ L Forearm
-    100020: BEAR_ L Hand
-    100022: BEAR_ L Thigh
-    100024: BEAR_ L Toe0
-    100026: BEAR_ L Toe01
-    100028: BEAR_ L Toe02
-    100030: BEAR_ L UpperArm
-    100032: BEAR_ Neck
-    100034: BEAR_ Neck1
-    100036: BEAR_ Pelvis
-    100038: BEAR_ Queue de cheval 1
-    100040: BEAR_ R Calf
-    100042: BEAR_ R Clavicle
-    100044: BEAR_ R Finger0
-    100046: BEAR_ R Finger01
-    100048: BEAR_ R Foot
-    100050: BEAR_ R Forearm
-    100052: BEAR_ R Hand
-    100054: BEAR_ R Thigh
-    100056: BEAR_ R Toe0
-    100058: BEAR_ R Toe01
-    100060: BEAR_ R Toe02
-    100062: BEAR_ R UpperArm
-    100064: BEAR_ Spine
-    100066: BEAR_ Spine1
-    400000: //RootNode
-    400002: BEAR
-    400004: BEAR_
-    400006: BEAR_ Head
-    400008: BEAR_ L Calf
-    400010: BEAR_ L Clavicle
-    400012: BEAR_ L Finger0
-    400014: BEAR_ L Finger01
-    400016: BEAR_ L Foot
-    400018: BEAR_ L Forearm
-    400020: BEAR_ L Hand
-    400022: BEAR_ L Thigh
-    400024: BEAR_ L Toe0
-    400026: BEAR_ L Toe01
-    400028: BEAR_ L Toe02
-    400030: BEAR_ L UpperArm
-    400032: BEAR_ Neck
-    400034: BEAR_ Neck1
-    400036: BEAR_ Pelvis
-    400038: BEAR_ Queue de cheval 1
-    400040: BEAR_ R Calf
-    400042: BEAR_ R Clavicle
-    400044: BEAR_ R Finger0
-    400046: BEAR_ R Finger01
-    400048: BEAR_ R Foot
-    400050: BEAR_ R Forearm
-    400052: BEAR_ R Hand
-    400054: BEAR_ R Thigh
-    400056: BEAR_ R Toe0
-    400058: BEAR_ R Toe01
-    400060: BEAR_ R Toe02
-    400062: BEAR_ R UpperArm
-    400064: BEAR_ Spine
-    400066: BEAR_ Spine1
-    4300000: BEAR
-    7400000: Take 001
-    7400002: Take 001 //// BEAR_
-    9500000: //RootNode
-    11100000: //RootNode
-    11100002: BEAR
-    11100004: BEAR_
-    11100006: BEAR_ Head
-    11100008: BEAR_ L Calf
-    11100010: BEAR_ L Clavicle
-    11100012: BEAR_ L Finger0
-    11100014: BEAR_ L Finger01
-    11100016: BEAR_ L Foot
-    11100018: BEAR_ L Forearm
-    11100020: BEAR_ L Hand
-    11100022: BEAR_ L Thigh
-    11100024: BEAR_ L Toe0
-    11100026: BEAR_ L Toe01
-    11100028: BEAR_ L Toe02
-    11100030: BEAR_ L UpperArm
-    11100032: BEAR_ Neck
-    11100034: BEAR_ Neck1
-    11100036: BEAR_ Pelvis
-    11100038: BEAR_ Queue de cheval 1
-    11100040: BEAR_ R Calf
-    11100042: BEAR_ R Clavicle
-    11100044: BEAR_ R Finger0
-    11100046: BEAR_ R Finger01
-    11100048: BEAR_ R Foot
-    11100050: BEAR_ R Forearm
-    11100052: BEAR_ R Hand
-    11100054: BEAR_ R Thigh
-    11100056: BEAR_ R Toe0
-    11100058: BEAR_ R Toe01
-    11100060: BEAR_ R Toe02
-    11100062: BEAR_ R UpperArm
-    11100064: BEAR_ Spine
-    11100066: BEAR_ Spine1
-    13700000: BEAR
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: BEAR
+  - first:
+      1: 100004
+    second: BEAR_
+  - first:
+      1: 100006
+    second: BEAR_ Head
+  - first:
+      1: 100008
+    second: BEAR_ L Calf
+  - first:
+      1: 100010
+    second: BEAR_ L Clavicle
+  - first:
+      1: 100012
+    second: BEAR_ L Finger0
+  - first:
+      1: 100014
+    second: BEAR_ L Finger01
+  - first:
+      1: 100016
+    second: BEAR_ L Foot
+  - first:
+      1: 100018
+    second: BEAR_ L Forearm
+  - first:
+      1: 100020
+    second: BEAR_ L Hand
+  - first:
+      1: 100022
+    second: BEAR_ L Thigh
+  - first:
+      1: 100024
+    second: BEAR_ L Toe0
+  - first:
+      1: 100026
+    second: BEAR_ L Toe01
+  - first:
+      1: 100028
+    second: BEAR_ L Toe02
+  - first:
+      1: 100030
+    second: BEAR_ L UpperArm
+  - first:
+      1: 100032
+    second: BEAR_ Neck
+  - first:
+      1: 100034
+    second: BEAR_ Neck1
+  - first:
+      1: 100036
+    second: BEAR_ Pelvis
+  - first:
+      1: 100038
+    second: BEAR_ Queue de cheval 1
+  - first:
+      1: 100040
+    second: BEAR_ R Calf
+  - first:
+      1: 100042
+    second: BEAR_ R Clavicle
+  - first:
+      1: 100044
+    second: BEAR_ R Finger0
+  - first:
+      1: 100046
+    second: BEAR_ R Finger01
+  - first:
+      1: 100048
+    second: BEAR_ R Foot
+  - first:
+      1: 100050
+    second: BEAR_ R Forearm
+  - first:
+      1: 100052
+    second: BEAR_ R Hand
+  - first:
+      1: 100054
+    second: BEAR_ R Thigh
+  - first:
+      1: 100056
+    second: BEAR_ R Toe0
+  - first:
+      1: 100058
+    second: BEAR_ R Toe01
+  - first:
+      1: 100060
+    second: BEAR_ R Toe02
+  - first:
+      1: 100062
+    second: BEAR_ R UpperArm
+  - first:
+      1: 100064
+    second: BEAR_ Spine
+  - first:
+      1: 100066
+    second: BEAR_ Spine1
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: BEAR
+  - first:
+      4: 400004
+    second: BEAR_
+  - first:
+      4: 400006
+    second: BEAR_ Head
+  - first:
+      4: 400008
+    second: BEAR_ L Calf
+  - first:
+      4: 400010
+    second: BEAR_ L Clavicle
+  - first:
+      4: 400012
+    second: BEAR_ L Finger0
+  - first:
+      4: 400014
+    second: BEAR_ L Finger01
+  - first:
+      4: 400016
+    second: BEAR_ L Foot
+  - first:
+      4: 400018
+    second: BEAR_ L Forearm
+  - first:
+      4: 400020
+    second: BEAR_ L Hand
+  - first:
+      4: 400022
+    second: BEAR_ L Thigh
+  - first:
+      4: 400024
+    second: BEAR_ L Toe0
+  - first:
+      4: 400026
+    second: BEAR_ L Toe01
+  - first:
+      4: 400028
+    second: BEAR_ L Toe02
+  - first:
+      4: 400030
+    second: BEAR_ L UpperArm
+  - first:
+      4: 400032
+    second: BEAR_ Neck
+  - first:
+      4: 400034
+    second: BEAR_ Neck1
+  - first:
+      4: 400036
+    second: BEAR_ Pelvis
+  - first:
+      4: 400038
+    second: BEAR_ Queue de cheval 1
+  - first:
+      4: 400040
+    second: BEAR_ R Calf
+  - first:
+      4: 400042
+    second: BEAR_ R Clavicle
+  - first:
+      4: 400044
+    second: BEAR_ R Finger0
+  - first:
+      4: 400046
+    second: BEAR_ R Finger01
+  - first:
+      4: 400048
+    second: BEAR_ R Foot
+  - first:
+      4: 400050
+    second: BEAR_ R Forearm
+  - first:
+      4: 400052
+    second: BEAR_ R Hand
+  - first:
+      4: 400054
+    second: BEAR_ R Thigh
+  - first:
+      4: 400056
+    second: BEAR_ R Toe0
+  - first:
+      4: 400058
+    second: BEAR_ R Toe01
+  - first:
+      4: 400060
+    second: BEAR_ R Toe02
+  - first:
+      4: 400062
+    second: BEAR_ R UpperArm
+  - first:
+      4: 400064
+    second: BEAR_ Spine
+  - first:
+      4: 400066
+    second: BEAR_ Spine1
+  - first:
+      43: 4300000
+    second: BEAR
+  - first:
+      74: 7400000
+    second: Take 001
+  - first:
+      74: 7400002
+    second: Take 001 //// BEAR_
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      111: 11100000
+    second: //RootNode
+  - first:
+      111: 11100002
+    second: BEAR
+  - first:
+      111: 11100004
+    second: BEAR_
+  - first:
+      111: 11100006
+    second: BEAR_ Head
+  - first:
+      111: 11100008
+    second: BEAR_ L Calf
+  - first:
+      111: 11100010
+    second: BEAR_ L Clavicle
+  - first:
+      111: 11100012
+    second: BEAR_ L Finger0
+  - first:
+      111: 11100014
+    second: BEAR_ L Finger01
+  - first:
+      111: 11100016
+    second: BEAR_ L Foot
+  - first:
+      111: 11100018
+    second: BEAR_ L Forearm
+  - first:
+      111: 11100020
+    second: BEAR_ L Hand
+  - first:
+      111: 11100022
+    second: BEAR_ L Thigh
+  - first:
+      111: 11100024
+    second: BEAR_ L Toe0
+  - first:
+      111: 11100026
+    second: BEAR_ L Toe01
+  - first:
+      111: 11100028
+    second: BEAR_ L Toe02
+  - first:
+      111: 11100030
+    second: BEAR_ L UpperArm
+  - first:
+      111: 11100032
+    second: BEAR_ Neck
+  - first:
+      111: 11100034
+    second: BEAR_ Neck1
+  - first:
+      111: 11100036
+    second: BEAR_ Pelvis
+  - first:
+      111: 11100038
+    second: BEAR_ Queue de cheval 1
+  - first:
+      111: 11100040
+    second: BEAR_ R Calf
+  - first:
+      111: 11100042
+    second: BEAR_ R Clavicle
+  - first:
+      111: 11100044
+    second: BEAR_ R Finger0
+  - first:
+      111: 11100046
+    second: BEAR_ R Finger01
+  - first:
+      111: 11100048
+    second: BEAR_ R Foot
+  - first:
+      111: 11100050
+    second: BEAR_ R Forearm
+  - first:
+      111: 11100052
+    second: BEAR_ R Hand
+  - first:
+      111: 11100054
+    second: BEAR_ R Thigh
+  - first:
+      111: 11100056
+    second: BEAR_ R Toe0
+  - first:
+      111: 11100058
+    second: BEAR_ R Toe01
+  - first:
+      111: 11100060
+    second: BEAR_ R Toe02
+  - first:
+      111: 11100062
+    second: BEAR_ R UpperArm
+  - first:
+      111: 11100064
+    second: BEAR_ Spine
+  - first:
+      111: 11100066
+    second: BEAR_ Spine1
+  - first:
+      137: 13700000
+    second: BEAR
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BEAR
+    second: {fileID: 2100000, guid: 4dc44f32381173a48a349c09ef2d7f04, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -126,6 +347,8 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -133,13 +356,43 @@ ModelImporter:
     animationWrapMode: 2
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      internalID: 7400000
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 0.01
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
@@ -147,9 +400,14 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -160,10 +418,32 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 4
     normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips:
+  - a435a615b667235479174bf226411fce
+  - 75a018c52eaabf649b1e902192df90e1
+  - 5e3014098e920c949a8471dd25d181e6
+  - fe9a7f062994afc4d8af9acfbf8b1728
+  - 5625f44b53e722343998b54d4caa9d0b
+  - d99b5632b32006142a80ec2a3990dc8f
+  - 37412a366d150ed489fe6615ffa75aa7
+  - 1b41992139c40b0418b89256339f958a
+  - 67137b92dd950684c82b84900b7dddd0
+  - 110b0461860488d44b0c678231e27a82
+  - ce8478c38aca2844dae26926fded796a
+  - cf7c0424ee4f6a143a1adab161ef302b
+  - d6f089faf8dca7b428e186baa5c2d1d3
+  - 4df3420940e35bf4a8a793a4567f755c
+  - d8eab85b8922a6041ac9274de9bdfe72
+  - 57c0a0d93beddda4d8967ff37ed99144
+  - bae04c42709c83741b6fe5c2cfe405cc
+  - 4b264c03d5cc9c240aa62020b6946147
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -173,8 +453,8 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.01
     rootMotionBoneName: BEAR_ Pelvis
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 0
