@@ -1,29 +1,7 @@
 fileFormatVersion: 2
 guid: 18a8bca08f9f3594f9d8e155834642d7
 SketchUpImporter:
-  generateBackFace: 1
-  mergeCoplanarFaces: 0
-  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000
-  assetHash:
-    serializedVersion: 2
-    Hash: 8348425d1a055daabfb9bc8b91f6bd68
-  longitude: -105.242139
-  latitude: 40.018309
-  northCorrection: -0
-  fileUnit: 0
-  sketchUpImportData:
-    defaultCamera:
-      position: {x: 0, y: 0, z: 0}
-      lookAt: {x: 0.0254, y: 0, z: 0}
-      up: {x: 0, y: 1, z: 0}
-      fov: 45
-      aspectRatio: 1.33
-      orthoSize: 1
-      isPerspective: 1
-      nearPlane: 0
-      farPlane: 0
-    scenes: []
-  serializedVersion: 25
+  serializedVersion: 20101
   internalIDToNameTable: []
   externalObjects:
   - first:
@@ -90,14 +68,14 @@ SketchUpImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: main-material
-    second: {fileID: 2100000, guid: 48f8c3103abfcee45be3d888b46154a6, type: 2}
+    second: {fileID: 2100000, guid: 0fb114a3749d74b2bbf35446c26df9bd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: metal frame
     second: {fileID: 2100000, guid: a037ea1f6871d44478d99508cf74e79e, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 2
     materialSearch: 0
     materialLocation: 1
@@ -130,15 +108,18 @@ SketchUpImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
@@ -148,6 +129,9 @@ SketchUpImporter:
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
@@ -160,7 +144,6 @@ SketchUpImporter:
     normalSmoothingSource: 0
   referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
     serializedVersion: 3
     human: []
@@ -178,9 +161,18 @@ SketchUpImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  generateBackFace: 1
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 20ad75952fc4a2ed4fac2d19f9505a4a
+  fileUnit: 0
