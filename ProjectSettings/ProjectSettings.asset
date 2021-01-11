@@ -319,9 +319,7 @@ PlayerSettings:
   m_BuildTargetVRSettings:
   - m_BuildTarget: Standalone
     m_Enabled: 0
-    m_Devices:
-    - Oculus
-    - None
+    m_Devices: []
   - m_BuildTarget: iPhone
     m_Enabled: 0
     m_Devices: []
