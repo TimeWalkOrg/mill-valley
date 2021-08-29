@@ -10,6 +10,7 @@ public class MegaWireHandles
 #if UNITY_5_6 || UNITY_2017
 		Handles.DotHandleCap(id, pos, rot, size, EventType.Repaint);
 #else
+		// TODO: commented out line below for MegaWire compatibility issue.  Add back?
 		//Handles.DotCap(id, pos, rot, size);
 #endif
 	}
@@ -19,6 +20,8 @@ public class MegaWireHandles
 #if UNITY_5_6 || UNITY_2017
 		Handles.SphereHandleCap(id, pos, rot, size, EventType.Repaint);
 #else
+
+		// TODO: commented out line below for MegaWire compatibility issue.  Add back?
 		//Handles.SphereCap(id, pos, rot, size);
 
 #endif
