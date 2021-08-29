@@ -10,7 +10,7 @@ public class MegaWireHandles
 #if UNITY_5_6 || UNITY_2017
 		Handles.DotHandleCap(id, pos, rot, size, EventType.Repaint);
 #else
-		Handles.DotCap(id, pos, rot, size);
+		//Handles.DotCap(id, pos, rot, size);
 #endif
 	}
 
@@ -19,7 +19,8 @@ public class MegaWireHandles
 #if UNITY_5_6 || UNITY_2017
 		Handles.SphereHandleCap(id, pos, rot, size, EventType.Repaint);
 #else
-		Handles.SphereCap(id, pos, rot, size);
+		//Handles.SphereCap(id, pos, rot, size);
+
 #endif
 	}
 }

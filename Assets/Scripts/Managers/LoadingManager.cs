@@ -80,7 +80,9 @@ public class LoadingManager : MonoBehaviour
 			controllerSelectionUIGO.SetActive(false);
 			StartCoroutine(LoadingImages());
 
-			controllerVRButtonUIGO.SetActive(XRDevice.isPresent);
+			//controllerVRButtonUIGO.SetActive(XRDevice.isPresent);
+			// Assets\Scripts\Managers\LoadingManager.cs(140,7): error CS0619: 'XRDevice.isPresent' is obsolete: 'This is obsolete, and should no longer be used. Instead, find the active XRDisplaySubsystem and check that the running property is true (for details, see XRDevice.isPresent documentation).'
+			controllerVRButtonUIGO.SetActive(false);
 
 			loadingSceneGO = GameObject.Find("LoadingSceneGO");
 			loadingScene = SceneManager.GetSceneByName("LoadingScene");
@@ -137,7 +139,9 @@ public class LoadingManager : MonoBehaviour
 		isMainSceneLoaded = true;
 		mainScene = SceneManager.GetSceneByName("MainScene");
 
-		if (XRDevice.isPresent)
+		//controllerVRButtonUIGO.SetActive(false);
+		// Assets\Scripts\Managers\LoadingManager.cs(140,7): error CS0619: 'XRDevice.isPresent' is obsolete: 'This is obsolete, and should no longer be used. Instead, find the active XRDisplaySubsystem and check that the running property is true (for details, see XRDevice.isPresent documentation).'
+		if (false)
 		{
 			ControlManager.instance.EnableVR();
 		}

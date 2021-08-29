@@ -125,7 +125,8 @@ public class ControlManager : MonoBehaviour
 	public GameObject currentControlUI;
 	[HideInInspector]
 	public ControlType currentControlType;
-	public bool IsVR { get { return (XRDevice.isPresent); } }
+	public bool IsVR { get { return (false); } }
+	//	public bool IsVR { get { return (XRDevice.isPresent); } }
 
 	public ControlType testingControlType;
 
@@ -159,6 +160,8 @@ public class ControlManager : MonoBehaviour
 		if (Input.GetKeyUp(KeyCode.C))
 			ToggleCredits();
 
+		// TODO: Reinstate XR code below
+		/*
 		if (UnityEngine.XR.XRSettings.enabled)
 		{
 			OVRInput.Button oculusTouchButtonA = OVRInput.Button.One;
@@ -196,6 +199,7 @@ public class ControlManager : MonoBehaviour
 				// not used
 			}
 		}
+		*/
 
 	}
 
@@ -407,9 +411,10 @@ public class ControlManager : MonoBehaviour
 		currentControlType = testingControlType;
 
 		// check for actual VR isPresent
-		if (currentControlType == ControlType.VR && !XRDevice.isPresent)
-			currentControlType = ControlType.FPS;
-
+		// TODO: Reinstate XRDevice test below
+		//if (currentControlType == ControlType.VR && !XRDevice.isPresent)
+		//	currentControlType = ControlType.FPS;
+		currentControlType = ControlType.FPS;
 		// Enable control type
 		switch (currentControlType)
 		{
