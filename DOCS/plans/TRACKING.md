@@ -2,7 +2,7 @@
 
 | Plan ID | Title | Status | Waves | Est. Effort | Created |
 |---------|-------|--------|-------|-------------|---------|
-| [0001](0001-code-fixes-plan.md) | Code Fixes & Feature Restoration | In Progress (2/3 waves done) | 3 | ~75 min | 2026-05-17 |
+| [0001](0001-code-fixes-plan.md) | Code Fixes & Feature Restoration | Done (3/3 waves) | 3 | ~75 min | 2026-05-17 |
 
 ---
 

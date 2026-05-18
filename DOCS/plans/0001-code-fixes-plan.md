@@ -1,7 +1,7 @@
 # Plan 0001 — Code Fixes & Feature Restoration
 
 **Created**: 2026-05-17  
-**Status**: Wave 1 ✅ Wave 2 ✅ Wave 3 pending (requires com.unity.xr.oculus)  
+**Status**: Wave 1 ✅ Wave 2 ✅ Wave 3 ✅ (code complete; com.unity.xr.oculus package install still manual)  
 **Total estimated effort**: ~75 minutes (Waves 1–2 no prerequisites; Wave 3 requires VR hardware)
 
 ---

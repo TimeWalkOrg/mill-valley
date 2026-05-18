@@ -38,8 +38,9 @@ Last updated: 2026-05-17 (Waves 1 & 2 implemented)
 **Remaining option**: Purchase ZenFulcrum EmbeddedBrowser for in-game embedded browser experience.
 
 ### FEATURE-002: VR Mode
-**Status**: Disabled  
-**Reason**: Oculus OVR SDK removed during Unity upgrade; replacement not yet installed.  
+**Status**: Code wiring complete — package not yet installed  
+**Remaining step**: Install `com.unity.xr.oculus` via **Window → Package Manager → Add package by name**, then enable Oculus in **Edit → Project Settings → XR Plug-in Management**.  
+**What was done**: `ControlManager.IsVR` and `EnableTestingControlType()` now call `XRDeviceUtil.isPresent()` instead of hardcoded `false`. `LoadingManager` VR button and `EnableVR()` call are now live. VR will activate automatically once the package is installed and a headset is connected.  
 **See**: `DOCS/VR_MIGRATION_GUIDE.md` for full re-enablement steps.
 
 ### FEATURE-003: Oculus Spatial Audio

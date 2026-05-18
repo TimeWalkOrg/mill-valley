@@ -125,8 +125,7 @@ public class ControlManager : MonoBehaviour
 	public GameObject currentControlUI;
 	[HideInInspector]
 	public ControlType currentControlType;
-	public bool IsVR { get { return (false); } }
-	//	public bool IsVR { get { return (XRDevice.isPresent); } }
+	public bool IsVR { get { return XRDeviceUtil.isPresent(); } }
 
 	public ControlType testingControlType;
 
@@ -410,11 +409,8 @@ public class ControlManager : MonoBehaviour
 
 		currentControlType = testingControlType;
 
-		// check for actual VR isPresent
-		// TODO: Reinstate XRDevice test below
-		//if (currentControlType == ControlType.VR && !XRDevice.isPresent)
-		//	currentControlType = ControlType.FPS;
-		currentControlType = ControlType.FPS;
+		if (currentControlType == ControlType.VR && !XRDeviceUtil.isPresent())
+			currentControlType = ControlType.FPS;
 		// Enable control type
 		switch (currentControlType)
 		{
