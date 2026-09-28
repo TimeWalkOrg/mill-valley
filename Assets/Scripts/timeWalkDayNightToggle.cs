@@ -75,7 +75,7 @@ public class timeWalkDayNightToggle : MonoBehaviour {
 
 	public void SetDay()
 	{
-		nowIsDay = false;
+		nowIsDay = true;
 		lastNowIsDay = nowIsDay;
 
 		RenderSettings.skybox = dayMaterial;

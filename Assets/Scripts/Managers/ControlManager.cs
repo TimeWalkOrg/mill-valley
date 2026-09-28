@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR;
+using UnityEngine.SpatialTracking;
 
 [System.Serializable]
 public class YearData
@@ -128,6 +129,12 @@ public class ControlManager : MonoBehaviour
 	public bool IsVR { get { return XRDeviceUtil.isPresent(); } }
 
 	public ControlType testingControlType;
+	private Dictionary<string, bool> _prevButtons = new Dictionary<string, bool>();
+
+	// True once the user has actually chosen a control mode. Until then the in-game VR
+	// button shortcuts (credits/night/year) must NOT fire, otherwise pressing A/B on the
+	// selection menu both picks a mode AND triggers an in-game action. See Update().
+	private bool _modeSelected = false;
 
 	#region mono
 	private void Start()
@@ -159,46 +166,16 @@ public class ControlManager : MonoBehaviour
 		if (Input.GetKeyUp(KeyCode.C))
 			ToggleCredits();
 
-		// TODO: Reinstate XR code below
-		/*
-		if (UnityEngine.XR.XRSettings.enabled)
+		if (_modeSelected && XRDeviceUtil.isPresent())
 		{
-			OVRInput.Button oculusTouchButtonA = OVRInput.Button.One;
-			OVRInput.Button oculusTouchButtonB = OVRInput.Button.Two;
-			OVRInput.Button oculusTouchButtonC = OVRInput.Button.Three;
-			OVRInput.Button oculusTouchButtonD = OVRInput.Button.Four;
+			InputDevice right = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
+			InputDevice left  = InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
 
-			OVRInput.Button oculusTouchButtonE = OVRInput.Button.PrimaryThumbstick;
-
-
-			OVRInput.Controller activeController = OVRInput.GetActiveController();
-
-			if (OVRInput.GetUp(oculusTouchButtonA))
-			{
-				ToggleCredits();
-			}
-
-			if (OVRInput.GetUp(oculusTouchButtonB))
-			{
-				ToggleNight();
-			}
-
-			if (OVRInput.GetUp(oculusTouchButtonC))
-			{
-				ToggleYear(-2);
-			}
-
-			if (OVRInput.GetUp(oculusTouchButtonD))
-			{
-				ToggleYear();
-			}
-
-			if (OVRInput.GetUp(oculusTouchButtonE))
-			{
-				// not used
-			}
+			if (GetButtonUp(right, CommonUsages.primaryButton,   "right_A")) ToggleCredits();
+			if (GetButtonUp(right, CommonUsages.secondaryButton, "right_B")) ToggleNight();
+			if (GetButtonUp(left,  CommonUsages.primaryButton,   "left_X"))  ToggleYear(-2);
+			if (GetButtonUp(left,  CommonUsages.secondaryButton, "left_Y"))  ToggleYear();
 		}
-		*/
 
 	}
 
@@ -359,6 +336,15 @@ public class ControlManager : MonoBehaviour
 		}
 		//Debug.Log("Input received: " + missive.controllerType.ToString() + " / " + missive.buttonType.ToString());
 	}
+
+	private bool GetButtonUp(InputDevice device, InputFeatureUsage<bool> usage, string key)
+	{
+		bool cur = false;
+		device.TryGetFeatureValue(usage, out cur);
+		bool prev = _prevButtons.ContainsKey(key) && _prevButtons[key];
+		_prevButtons[key] = cur;
+		return prev && !cur;
+	}
 	#endregion
 
 	#region control type
@@ -370,7 +356,8 @@ public class ControlManager : MonoBehaviour
 			currentControlUI.SetActive(false);
 
 		currentControlType = missive.controlType;
-		
+		_modeSelected = true;
+
 		// Enable control type
 		switch (missive.controlType)
 		{
@@ -398,6 +385,12 @@ public class ControlManager : MonoBehaviour
 		LoadingManager.instance.ToggleLoadingScene(false);
 		LoadingManager.instance.ToggleMainScene(true);
 		ToggleYear(1920);
+
+		// REGRESSION FIX (OVR->XR migration gap): VR can also be entered through this
+		// missive/mouse path (the on-screen VR button), not just EnableVR(). Without this
+		// the center-eye camera would again lack a head-pose driver. See ConfigureVRCamera().
+		if (missive.controlType == ControlType.VR)
+			ConfigureVRCamera();
 	}
 
 	public void EnableTestingControlType()
@@ -408,6 +401,7 @@ public class ControlManager : MonoBehaviour
 			currentControlUI.SetActive(false);
 
 		currentControlType = testingControlType;
+		_modeSelected = true;
 
 		if (currentControlType == ControlType.VR && !XRDeviceUtil.isPresent())
 			currentControlType = ControlType.FPS;
@@ -438,6 +432,138 @@ public class ControlManager : MonoBehaviour
 		LoadingManager.instance.ToggleLoadingScene(false);
 		LoadingManager.instance.ToggleMainScene(true);
 		ToggleYear(1920);
+
+		// REGRESSION FIX (OVR->XR migration gap): when this testing path selects VR,
+		// the center-eye camera still has no head-pose driver, so head tracking is
+		// missing/inverted and background buildings z-fight. Repair it now that the
+		// rig is active. See ConfigureVRCamera() for details.
+		if (currentControlType == ControlType.VR)
+			ConfigureVRCamera();
+	}
+
+	// REGRESSION FIX (OVR->XR migration, Unity 2020.3 upgrade): the old Oculus OVR
+	// SDK was deleted but its head-pose driver was never replaced, so the VR rig's
+	// center-eye camera (OVRCameraRig/CenterEyeAnchor) is no longer driven by the
+	// HMD. Symptoms: head tracking missing or inverted (BUG 1) because nothing maps
+	// the CenterEye XRNode pose onto the camera transform. We add the package-provided
+	// UnityEngine.SpatialTracking.TrackedPoseDriver at runtime to restore tracking.
+	// We also raise the near clip plane to 0.3 to improve depth-buffer precision and
+	// reduce z-fighting/flashing on distant background buildings (BUG 3) caused by the
+	// old extreme 0.1/1000 (10000:1) near/far ratio.
+	// Idempotent: safe to call multiple times (re-uses an existing driver).
+	private void ConfigureVRCamera()
+	{
+		if (!XRDeviceUtil.isPresent())
+			return;
+
+		Camera cam = GetVRCamera();
+		if (cam == null)
+			return;
+
+		// Ensure a TrackedPoseDriver exists (idempotent) and drives the head pose.
+		TrackedPoseDriver tpd = cam.GetComponent<TrackedPoseDriver>();
+		if (tpd == null)
+			tpd = cam.gameObject.AddComponent<TrackedPoseDriver>();
+
+		tpd.SetPoseSource(TrackedPoseDriver.DeviceType.GenericXRDevice, TrackedPoseDriver.TrackedPose.Center);
+		tpd.trackingType = TrackedPoseDriver.TrackingType.RotationAndPosition;
+		tpd.UseRelativeTransform = false;
+
+		// Raise near clip to improve depth precision (only if currently too small).
+		if (cam.nearClipPlane < 0.3f)
+			cam.nearClipPlane = 0.3f;
+
+		// CRITICAL: disable any OTHER camera that renders to the HMD. MainScene contains a
+		// stray root-level stereo camera ("CameraNEW", a Cinemachine-driven camera from the
+		// CinemachineNEW object) that is NOT under the VR rig. With two stereo cameras live,
+		// that stationary Cinemachine camera dominates the headset view, so the player sees a
+		// fixed viewpoint even though the rig (and CenterEyeAnchor) are moving. Leave only the
+		// rig's center-eye camera rendering to the headset.
+		Camera[] sceneCams = FindObjectsOfType<Camera>();
+		foreach (Camera other in sceneCams)
+		{
+			if (other == null || other == cam)
+				continue;
+			if (other.targetTexture != null)
+				continue; // leave render-to-texture cameras (e.g. UI/portals) alone
+			if (other.stereoTargetEye == StereoTargetEyeMask.Both)
+			{
+				other.enabled = false;
+				AudioListener al = other.GetComponent<AudioListener>();
+				if (al != null) al.enabled = false; // avoid "2 audio listeners" + keep rig's
+				Debug.Log("[MV] Disabled competing HMD camera: " + other.gameObject.name);
+			}
+		}
+
+		// In VR mode, ensure the rig can be moved with the thumbsticks. VRLocomotion is
+		// not attached to the rig prefab, so add it at runtime to the rig root (moving its
+		// transform moves the whole rig, camera included). Idempotent. Skipped during the
+		// menu preview because currentControlType isn't VR until a mode is chosen.
+		if (currentControlType == ControlType.VR && currentControlGO != null)
+		{
+			if (currentControlGO.GetComponent<VRLocomotion>() == null)
+				currentControlGO.AddComponent<VRLocomotion>();
+		}
+	}
+
+	// Returns the VR rig's center-eye camera (controls[2].controlObjects[0]), or null.
+	// We deliberately avoid Camera.main: the rig has multiple GameObjects tagged
+	// MainCamera, so Camera.main is ambiguous. Prefer the GameObject named
+	// "CenterEyeAnchor" (the only enabled camera in the OVRCameraRig), otherwise fall
+	// back to the first camera found. Works whether or not the rig is currently active
+	// (GetComponentsInChildren(true) includes inactive children).
+	public Camera GetVRCamera()
+	{
+		if (controls == null || controls.Length < 3)
+			return null;
+		if (controls[2].controlObjects == null || controls[2].controlObjects.Length < 1)
+			return null;
+
+		GameObject rig = controls[2].controlObjects[0];
+		if (rig == null)
+			return null;
+
+		Camera[] cameras = rig.GetComponentsInChildren<Camera>(true);
+		foreach (Camera c in cameras)
+		{
+			if (c != null && c.gameObject.name == "CenterEyeAnchor")
+				return c;
+		}
+		foreach (Camera c in cameras)
+		{
+			if (c != null)
+				return c;
+		}
+		return null;
+	}
+
+	// Activates the VR rig early — before a control mode is chosen — so the world-space
+	// startup selection menu has a live, head-tracked camera to attach to and so the user
+	// has head tracking while reading the menu. Sets currentControlGO to the rig so the
+	// subsequent mode selection (OnControlSelect/EnableVR) cleanly deactivates it first.
+	// Returns the center-eye camera (or null if no headset / rig unavailable).
+	// NOTE: while this preview rig is active alongside the loading-scene camera you may
+	// see a "2 audio listeners" warning until a mode is selected — harmless.
+	public Camera ActivateVRRigForMenu()
+	{
+		if (!XRDeviceUtil.isPresent())
+			return null;
+		if (controls == null || controls.Length < 3)
+			return null;
+		if (controls[2].controlObjects == null || controls[2].controlObjects.Length < 1)
+			return null;
+
+		GameObject rig = controls[2].controlObjects[0];
+		if (rig == null)
+			return null;
+
+		currentControlGO = rig;
+		rig.SetActive(true);
+		ConfigureVRCamera();
+		Camera vc = GetVRCamera();
+		Debug.Log("[MV] ActivateVRRigForMenu rig=" + rig.name + " active=" + rig.activeInHierarchy +
+				  " vrCam=" + (vc != null ? vc.gameObject.name + " enabled=" + vc.enabled : "NULL"));
+		return vc;
 	}
 
 	public void EnableVR()
@@ -448,7 +574,8 @@ public class ControlManager : MonoBehaviour
 			currentControlUI.SetActive(false);
 
 		currentControlType = ControlType.VR;
-		
+		_modeSelected = true;
+
 		// Enable control type
 		currentControlGO = controls[2].controlObjects[0];
 		currentControlUI = null;
@@ -461,6 +588,10 @@ public class ControlManager : MonoBehaviour
 		LoadingManager.instance.ToggleLoadingScene(false);
 		LoadingManager.instance.ToggleMainScene(true);
 		ToggleYear(1920);
+
+		// REGRESSION FIX (OVR->XR migration gap): restore head tracking and depth
+		// precision on the now-active VR rig. See ConfigureVRCamera() for details.
+		ConfigureVRCamera();
 	}
 
 	public void DisableAllControlTypes()
