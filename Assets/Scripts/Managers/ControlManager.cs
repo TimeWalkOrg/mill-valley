@@ -537,35 +537,6 @@ public class ControlManager : MonoBehaviour
 		return null;
 	}
 
-	// Activates the VR rig early — before a control mode is chosen — so the world-space
-	// startup selection menu has a live, head-tracked camera to attach to and so the user
-	// has head tracking while reading the menu. Sets currentControlGO to the rig so the
-	// subsequent mode selection (OnControlSelect/EnableVR) cleanly deactivates it first.
-	// Returns the center-eye camera (or null if no headset / rig unavailable).
-	// NOTE: while this preview rig is active alongside the loading-scene camera you may
-	// see a "2 audio listeners" warning until a mode is selected — harmless.
-	public Camera ActivateVRRigForMenu()
-	{
-		if (!XRDeviceUtil.isPresent())
-			return null;
-		if (controls == null || controls.Length < 3)
-			return null;
-		if (controls[2].controlObjects == null || controls[2].controlObjects.Length < 1)
-			return null;
-
-		GameObject rig = controls[2].controlObjects[0];
-		if (rig == null)
-			return null;
-
-		currentControlGO = rig;
-		rig.SetActive(true);
-		ConfigureVRCamera();
-		Camera vc = GetVRCamera();
-		Debug.Log("[MV] ActivateVRRigForMenu rig=" + rig.name + " active=" + rig.activeInHierarchy +
-				  " vrCam=" + (vc != null ? vc.gameObject.name + " enabled=" + vc.enabled : "NULL"));
-		return vc;
-	}
-
 	public void EnableVR()
 	{
 		if (currentControlGO != null)
