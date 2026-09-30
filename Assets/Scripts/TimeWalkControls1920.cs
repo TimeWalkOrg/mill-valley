@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimeWalkControls1920 : MonoBehaviour
 {
@@ -43,7 +44,7 @@ public class TimeWalkControls1920 : MonoBehaviour
         // Press "R" key to Restart the level
         if (Input.GetKeyDown(KeyCode.R))
         { // pressed the "R" restart level key
-            Application.LoadLevel(0);
+            SceneManager.LoadScene(0, LoadSceneMode.Single);
         }
         // Press "Q" key to Restart the level
         if (Input.GetKeyDown(KeyCode.Q))

@@ -59,19 +59,9 @@ public class FirstPersonUIComponent : MonoBehaviour
 
 	private void OnWebView(WebViewMissive missive)
 	{
-		// TODO needs #define
 		if (missive.url != "")
 		{
-			gameUIGO.SetActive(false);
-			webViewUIGO.SetActive(true);
-			//browser.Url = missive.url;
-			ToggleFPSControl(false);
-		}
-		else
-		{
-			gameUIGO.SetActive(true);
-			webViewUIGO.SetActive(false);
-			ToggleFPSControl(true);
+			Application.OpenURL(missive.url);
 		}
 	}
 

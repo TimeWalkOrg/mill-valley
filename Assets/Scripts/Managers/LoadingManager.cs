@@ -70,6 +70,9 @@ public class LoadingManager : MonoBehaviour
 	private AsyncOperation asyncLoaderSecondaryScene;
 	private bool isSecondaryLoading = false;
 
+	// Guard so the one-time VR canvas conversion is not repeated.
+	private bool isVRSelectionMenuSetup = false;
+
 	#region mono
 	private void Start()
 	{
@@ -80,10 +83,7 @@ public class LoadingManager : MonoBehaviour
 			controllerSelectionUIGO.SetActive(false);
 			StartCoroutine(LoadingImages());
 
-			//controllerVRButtonUIGO.SetActive(XRDevice.isPresent);
-			//TODO: Add back VR input test above.  Address error described below:
-			// Assets\Scripts\Managers\LoadingManager.cs(140,7): error CS0619: 'XRDevice.isPresent' is obsolete: 'This is obsolete, and should no longer be used. Instead, find the active XRDisplaySubsystem and check that the running property is true (for details, see XRDevice.isPresent documentation).'
-			controllerVRButtonUIGO.SetActive(false);
+			controllerVRButtonUIGO.SetActive(XRDeviceUtil.isPresent());
 
 			loadingSceneGO = GameObject.Find("LoadingSceneGO");
 			loadingScene = SceneManager.GetSceneByName("LoadingScene");
@@ -140,20 +140,84 @@ public class LoadingManager : MonoBehaviour
 		isMainSceneLoaded = true;
 		mainScene = SceneManager.GetSceneByName("MainScene");
 
-		//controllerVRButtonUIGO.SetActive(false);
-		//TODO: Add back VR input test above.  Address error described below:
-		// Assets\Scripts\Managers\LoadingManager.cs(140,7): error CS0619: 'XRDevice.isPresent' is obsolete: 'This is obsolete, and should no longer be used. Instead, find the active XRDisplaySubsystem and check that the running property is true (for details, see XRDevice.isPresent documentation).'
-		if (false)
+		// XR now initializes manually (see XRBootstrap) instead of auto-init-on-startup,
+		// to avoid the pre-splash main-thread deadlock. Wait for it to finish before
+		// checking isPresent() so we don't wrongly fall into desktop mode. This is cheap:
+		// the async scene load above already took several seconds, so XR is normally ready.
+		while (!XRBootstrap.IsXRReady)
+			yield return null;
+
+		Debug.Log("[MV] LoadAsyncScene done. isPresent=" + XRDeviceUtil.isPresent() +
+				  " xrActive=" + XRBootstrap.IsXRActive);
+		loadingUIGO.SetActive(false);
+
+		if (XRDeviceUtil.isPresent())
 		{
+			// In a headset, the 3-option desktop menu (Fly-through / Walk-through / VR) is
+			// confusing and only "VR" is actually usable (the other two are desktop control
+			// schemes). So skip the menu and go straight into walkable VR. EnableVR() sets up
+			// head tracking and attaches VRLocomotion (left stick = walk, right stick = turn).
+			Debug.Log("[MV] Headset present -> auto-starting VR mode");
 			ControlManager.instance.EnableVR();
 		}
 		else
 		{
-			loadingUIGO.SetActive(false);
+			// Desktop: show the mouse-clickable selection menu.
 			controllerSelectionUIGO.SetActive(true);
 		}
-		
+
 		isFirstMainSceneLoaded = true;
+	}
+
+	// BUG 2 FIX (VR): The control-selection menu uses a Screen-Space Overlay canvas,
+	// which is invisible in a headset and has no mouse pointer. Convert it to World
+	// Space, parent it to the active VR camera so it follows the head, and place it a
+	// readable distance in front of the user. Then attach VRMenuInput so the user can
+	// select a mode with the controller buttons. Runs only once (idempotent).
+	private void SetupVRSelectionMenu()
+	{
+		if (isVRSelectionMenuSetup)
+			return;
+
+		if (controllerSelectionUIGO == null)
+			return;
+
+		// Activate the VR rig now so there is a live, head-tracked center-eye camera to
+		// attach the menu to. Without this the rig (and its only HMD camera) is inactive
+		// until a mode is chosen, so the menu would parent to the wrong camera (e.g. the
+		// desktop MainCamera) and would not be visible/head-tracked in the headset.
+		Camera cam = ControlManager.instance.ActivateVRRigForMenu();
+		if (cam == null)
+			cam = ControlManager.instance.GetVRCamera();
+		Debug.Log("[MV] SetupVRSelectionMenu cam=" + (cam != null ? cam.gameObject.name : "NULL"));
+
+		// Convert the menu canvas to World Space so it renders in the HMD. The Canvas is a
+		// PARENT of controllerSelectionUIGO (the selection UI is a child panel), so look up
+		// the hierarchy first; fall back to a child search just in case.
+		Canvas canvas = controllerSelectionUIGO.GetComponentInParent<Canvas>();
+		if (canvas == null)
+			canvas = controllerSelectionUIGO.GetComponentInChildren<Canvas>(true);
+		Debug.Log("[MV] SetupVRSelectionMenu canvas=" + (canvas != null ? canvas.gameObject.name : "NULL"));
+		if (canvas != null)
+		{
+			canvas.renderMode = RenderMode.WorldSpace;
+
+			Transform canvasTransform = canvas.transform;
+			if (cam != null)
+				canvasTransform.SetParent(cam.transform, false);
+
+			// 2m in front of the head, facing forward, scaled down so a large pixel
+			// canvas (e.g. 1920x1080) reads as a reasonably sized world-space panel.
+			canvasTransform.localPosition = new Vector3(0f, 0f, 2f);
+			canvasTransform.localRotation = Quaternion.identity;
+			canvasTransform.localScale = Vector3.one * 0.0025f;
+		}
+
+		// Attach controller-based selection input (idempotent).
+		if (controllerSelectionUIGO.GetComponent<VRMenuInput>() == null)
+			controllerSelectionUIGO.AddComponent<VRMenuInput>();
+
+		isVRSelectionMenuSetup = true;
 	}
 
 	public void LoadSecondaryScene(string sceneName, GameObject playerGO, Transform portalSpawn)

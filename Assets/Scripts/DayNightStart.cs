@@ -20,7 +20,6 @@ public class DayNightStart : MonoBehaviour
         UpdateLights();
         turnSpeed = 360.0f / (minutesInDay * 60.0f) * Time.deltaTime;
         transform.RotateAround(transform.position, transform.right, turnSpeed);
-        Debug.Log(percentageOfDay);
     }
     void UpdateLights()
     {
