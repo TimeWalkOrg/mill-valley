@@ -1,0 +1,40 @@
+# Unity: keep line endings stable across Windows/macOS clones and never touch binaries.
+* text=auto eol=lf
+*.cs text diff=csharp eol=lf
+*.meta text eol=lf
+*.unity text eol=lf
+*.prefab text eol=lf
+*.asset text eol=lf
+*.mat text eol=lf
+*.json text eol=lf
+*.shader text eol=lf
+*.md text eol=lf
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.tga binary
+*.psd binary
+*.tif binary
+*.tiff binary
+*.fbx binary
+*.FBX binary
+*.obj binary
+*.blend binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.mp4 binary
+*.ttf binary
+*.otf binary
+*.dll binary
+*.so binary
+*.a binary
+*.aar binary
+*.jar binary
+*.apk binary
+*.bytes binary
+*.cubemap binary
+*.exr binary
+*.hdr binary
