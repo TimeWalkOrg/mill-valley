@@ -7,7 +7,8 @@ and as a Windows desktop walk-through / fly-through.
 - **Unity:** 2020.3.48f1 (LTS), built-in render pipeline
 - **XR:** Unity XR Plug-in Management + Oculus XR Plugin 1.13.1 (Android + desktop Oculus)
 - **Android target:** ARM64, IL2CPP, OpenGL ES 3, minSdk 29 / targetSdk 32, Quest 2 (Quest 1 dropped)
-- **Latest Quest APK (Eric's June 2026 build):** <https://github.com/arnaurodondev/mill-valley/releases/tag/quest-june-2026>
+- **Latest Quest APK (improvements branch, 2026-10-05, untested on device):** <https://github.com/TimeWalkOrg/mill-valley/releases/tag/quest-improvements-20261005>
+- **Last device-tested APK (Eric, June 2026):** <https://github.com/arnaurodondev/mill-valley/releases/tag/quest-june-2026>
 
 ## Opening the project
 
@@ -55,7 +56,28 @@ and `Assets/Scripts/Managers/VRLocomotion.cs`.
 ## Building
 
 Both build scripts live in `Assets/Editor/` and use the enabled scenes from
-Build Settings. Run them headlessly (no editor GUI open on the project):
+Build Settings. Run them headlessly (no editor GUI open on the project).
+
+Headless-build prerequisites (learned the hard way):
+
+- **Unity Hub must be running and signed in.** Unity 2020.3 in `-batchmode` validates
+  its license through Hub's background licensing client; with Hub closed it fails with
+  "No valid Unity Editor license found" even though the license is fine.
+- **Android targetSdk 32 needs `platforms;android-32` in the SDK.** The Unity-bundled SDK
+  under `Program Files` is read-only, so Unity cannot auto-install it. Copy the SDK to a
+  writable location, add the platform with `sdkmanager`, and point `ANDROID_SDK_ROOT` at it:
+
+  ```powershell
+  robocopy "C:\Program Files\Unity\Hub\Editor\2020.3.48f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK" D:\Android\sdk /E
+  $env:JAVA_HOME = "C:\Program Files\Unity\Hub\Editor\2020.3.48f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK"
+  "y" | & D:\Android\sdk\tools\bin\sdkmanager.bat --sdk_root=D:\Android\sdk "platforms;android-32"
+  $env:ANDROID_SDK_ROOT = "D:\Android\sdk"
+  ```
+- Only one Unity instance can have the project open; close the editor before a headless build.
+- Batch runs occasionally exit silently during script compilation; check the exit code and
+  re-run if the log has no `[MillValleyBuild]` / `[HelmBuild]` result line.
+- `Logs/` and `UserSettings/` are untracked; `.gitattributes` marks binaries so
+  `core.autocrlf` clones don't corrupt textures.
 
 **Quest APK** → `Builds/Android/MillValley.apk`
 
@@ -67,7 +89,7 @@ Build Settings. Run them headlessly (no editor GUI open on the project):
 ```
 
 Uses the Unity-bundled Android SDK unless `ANDROID_SDK_ROOT` / `ANDROID_HOME` is
-set. Install with `adb install -r Builds/Android/MillValley.apk` or Meta Quest
+set (see prerequisites above - you will need the override for targetSdk 32). Install with `adb install -r Builds/Android/MillValley.apk` or Meta Quest
 Developer Hub. (`MillValleyBuildScript.BuildAndRunAndroid` is kept as an alias.)
 
 **Windows x64 desktop** → `Builds/Windows/MillValley.exe`
